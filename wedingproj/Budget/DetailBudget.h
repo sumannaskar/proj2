@@ -31,6 +31,7 @@
     IBOutlet UILabel *amountpaidtext;
     
     NSMutableArray *json;
+    NSMutableArray *vendorid;
     
     
     

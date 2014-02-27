@@ -17,7 +17,7 @@
 @end
 
 @implementation EditBudget
-@synthesize eventnamepass,infopass,paymentduedatepass,vendernamepass,amountpaidtodatepass,totalamountduepass,budgetidpass,eventidpass;
+@synthesize eventnamepass,infopass,paymentduedatepass,vendernamepass,amountpaidtodatepass,totalamountduepass,budgetidpass,eventidpass,vendoridpass;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,6 +54,8 @@
         [vendernametext setInputView:respondingView];
         
         vendorname =[[NSMutableArray alloc]init];
+        vendorid =[[NSMutableArray alloc]init];
+        
         
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL1]];
         NSLog(@"my--%@",url);
@@ -98,7 +100,11 @@
             
             options:kNilOptions
             error:&error];
-    [vendorname addObject:[json valueForKey:@"vendor_name"]];
+    for (NSDictionary *data in json ) {
+        [vendorname addObject:[data valueForKey:@"vendor_name"]];
+        [vendorid addObject:[data valueForKey:@"vendor_id"]];
+        
+    }
     
     
     
@@ -149,6 +155,7 @@
 {
     
     vendernametext.text=[vendorname objectAtIndex:row];
+    vendoridpass=[vendorid objectAtIndex:row];
     
     
 }
@@ -161,7 +168,7 @@
 }
 
 - (IBAction)save:(id)sender {
-    NSString *savedata =[[NSString alloc]initWithFormat:@"budget_id=%@&event_id=%@&name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",budgetidpass,eventidpass,eventnametext.text,vendernametext.text,paymentduedatetext.text,amountpaidtodatetext.text,amountpaidtodatetext.text,infotext.text];
+    NSString *savedata =[[NSString alloc]initWithFormat:@"budget_id=%@&event_id=%@&name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",budgetidpass,eventidpass,eventnametext.text,vendoridpass,paymentduedatetext.text,amountpaidtodatetext.text,amountpaidtodatetext.text,infotext.text];
     NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;

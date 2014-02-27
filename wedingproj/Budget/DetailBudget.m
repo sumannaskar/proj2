@@ -31,6 +31,7 @@
     [super viewDidLoad];
     infotext.editable=NO;
     json = [[NSMutableArray alloc]init];
+    vendorid = [[NSMutableArray alloc]init];
  
     
     
@@ -73,11 +74,12 @@
             error:&error];
     
     eventnametext.text=[[json objectAtIndex:0] valueForKey:@"name"];
-    vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_id"];
+    //vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_id"];//replace vendor_id with vendor_name
     Pamentduedatetext.text=[[json objectAtIndex:0] valueForKey:@"due_date"];
     amountpaidtext.text=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
     totalamountduetext.text=[[json objectAtIndex:0] valueForKey:@"amount_due"];
     infotext.text=[[json objectAtIndex:0] valueForKey:@"info"];
+    vendorid =[[json objectAtIndex:0] valueForKey:@"vendor_id"];
     
 
 }
@@ -96,7 +98,8 @@
     
     EditBudget *EditBudget_=[[EditBudget alloc]init];
     EditBudget_.eventnamepass =[[json objectAtIndex:0] valueForKey:@"name"];
-    EditBudget_.vendernamepass=[[json objectAtIndex:0] valueForKey:@"vendor_id"];
+    //EditBudget_.vendernamepass=[[json objectAtIndex:0] valueForKey:@"vendor_id"];//replace
+    EditBudget_.vendoridpass=[[json objectAtIndex:0] valueForKey:@"vendor_id"];
     EditBudget_.paymentduedatepass =[[json objectAtIndex:0] valueForKey:@"due_date"];
     EditBudget_.amountpaidtodatepass=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
     EditBudget_.totalamountduepass =[[json objectAtIndex:0] valueForKey:@"amount_due"];

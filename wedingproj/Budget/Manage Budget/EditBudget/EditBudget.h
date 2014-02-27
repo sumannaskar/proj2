@@ -33,7 +33,7 @@
     IBOutlet UIToolbar *picekrtoolbr;
     NSMutableArray *json;
     NSMutableArray *vendorname;
-    
+     NSMutableArray *vendorid;
     
     NSString *eventnamepass;
     
@@ -53,6 +53,7 @@
 @property(nonatomic,retain)NSString *infopass;
 @property(nonatomic,retain)NSString *budgetidpass;
 @property(nonatomic,retain)NSString *eventidpass;
+@property(nonatomic,retain)NSString *vendoridpass;
 
 
 @end
