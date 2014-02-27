@@ -26,6 +26,8 @@
     NSString *AddData;
     NSMutableArray *AddTaskmessage;
     NSMutableArray *totaleventlist;
+    NSMutableArray *totaleventIdlist;
+    NSString *Eventid;
    
 }
 

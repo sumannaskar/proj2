@@ -36,15 +36,17 @@
     NSArray* rawstateList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
     
     totaleventlist=[[NSMutableArray alloc ]init];
+    totaleventIdlist=[[NSMutableArray alloc ]init];
     
     for(int i=0;i<rawstateList.count;i++)
     {
         NSDictionary *tempDict=[rawstateList objectAtIndex:i];
         [totaleventlist addObject:[tempDict objectForKey:@"event_name"]];
+        [totaleventIdlist addObject:[tempDict objectForKey:@"event_id"]];
         
     }
 
-    
+    //NSLog(@"%@",[tempDict objectForKey:@"event_id"]);
     nametxt.delegate=self;
     informationtxt.delegate=self;
     self.datetxt.delegate=self;
@@ -219,6 +221,8 @@
     if (self.pickerVw.tag==2) {
         //self.eventtxt.text=[eventarray objectAtIndex:row];
         self.eventtxt.text=[totaleventlist objectAtIndex:row];
+        Eventid=[totaleventIdlist objectAtIndex:row];
+        NSLog(@"%@",Eventid);
         
     }
     
