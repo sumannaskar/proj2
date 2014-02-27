@@ -19,6 +19,9 @@
     
     IBOutlet UITextField *budgettxt;
     
+    NSString *AddData;
+    NSMutableArray *AddEventmessage;
+    
 }
 
 @property (strong, nonatomic) IBOutlet UITextField *dresscodetxt;
@@ -40,5 +43,8 @@
 
 - (IBAction)donedate:(id)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
+
+
+- (IBAction)AddEventactn:(UIButton *)sender;
 
 @end

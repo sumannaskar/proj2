@@ -19,6 +19,9 @@
     
     IBOutlet UITextField *budgettxt;
     
+    NSString *EditData;
+    NSMutableArray *EditEventmessage;
+    
 }
 @property (strong, nonatomic) NSString *eventnamestr;
 @property (strong, nonatomic) NSString *startstr;

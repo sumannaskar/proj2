@@ -41,8 +41,8 @@
     EventScroll.delegate = self;
     EventTable.scrollEnabled = NO;
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
-    [self image];
-    [EventScroll addSubview:EventTable];
+//    [self image];
+//    [EventScroll addSubview:EventTable];
     
     
     dispatch_async(kBgQueue, ^{
@@ -91,6 +91,8 @@
 {
     
     NSLog(@"FetchData");
+    [self image];
+    [EventScroll addSubview:EventTable];
     [EventTable reloadData];
 }
 -(IBAction)Add:(UIBarButtonItem *)sender
@@ -195,50 +197,50 @@
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    int cellheight=40;
-    if([[UIScreen mainScreen] bounds].size.height  < 600)
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 568)
-        {
-            
-            cellheight=cellheight+20;
-            
-            
-        }
-        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-            
-            //no change
-            
-        }
-        else
-        {
-            //no change
-            
-        }
-        
-        
-    }
-    else
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 1024)
-        {
-            
-            cellheight=cellheight+40;
-            
-        }
-        else
-        {
-            
-            cellheight=cellheight+80;
-        }
-    }
-    // NSLog(@"cellheight-- %d",cellheight);
-    return cellheight;
-    
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    int cellheight=40;
+//    if([[UIScreen mainScreen] bounds].size.height  < 600)
+//    {
+//        if ([[UIScreen mainScreen] bounds].size.height == 568)
+//        {
+//            
+//            cellheight=cellheight+20;
+//            
+//            
+//        }
+//        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+//        {
+//            
+//            //no change
+//            
+//        }
+//        else
+//        {
+//            //no change
+//            
+//        }
+//        
+//        
+//    }
+//    else
+//    {
+//        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+//        {
+//            
+//            cellheight=cellheight+40;
+//            
+//        }
+//        else
+//        {
+//            
+//            cellheight=cellheight+80;
+//        }
+//    }
+//    // NSLog(@"cellheight-- %d",cellheight);
+//    return cellheight;
+//    
+//}
 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer
 {
@@ -258,7 +260,8 @@
     NSLog(@"%@",eventnamestr);
     EditEventViewController *EditeventVc=[[EditEventViewController alloc] init];
      NSDictionary *tempdic=[raweventList objectAtIndex:button.tag];
-    EditeventVc.eventnamestr=[tempdic objectForKey:@"event_name"];;
+    EditeventVc.eventnamestr=[tempdic objectForKey:@"event_name"];
+    EditeventVc.eventnamestr=[tempdic objectForKey:@"event_name"];
     EditeventVc.startstr=[tempdic objectForKey:@"start_time"];
     EditeventVc.endstr=[tempdic objectForKey:@"end_time"];
     EditeventVc.dresscodestr=[tempdic objectForKey:@"dress_code"];
@@ -269,17 +272,19 @@
 
 -(void)image
 {
+     int tableRowheight=50*[raweventList count];
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
+       
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
-            int tableRowheight = 100*50;
+            
             EventTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             EventScroll.contentSize = CGSizeMake(320, tableRowheight);
         }
         else if ([[UIScreen mainScreen] bounds].size.height == 480)
         {
-            int tableRowheight = 100*50;
+            
             EventTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             EventScroll.contentSize = CGSizeMake(320, tableRowheight);
             
@@ -296,9 +301,9 @@
     else
     {
         //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
-        int tableRowheight = 100*50;
-        EventTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-        EventScroll.contentSize = CGSizeMake(320, tableRowheight);
+       
+        EventTable.frame=CGRectMake(0, 0, 320,tableRowheight*2);
+        EventScroll.contentSize = CGSizeMake(320,tableRowheight);
         
         
     }
