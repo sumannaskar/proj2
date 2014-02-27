@@ -10,6 +10,8 @@
 #import "GuestViewController.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_create&"]
+
+#define GroupURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&apikey=micronix_10_2014_wedsimple_proj"]
 @interface AddGuestViewController ()
 
 @end
@@ -46,12 +48,63 @@
     
     scroll.contentSize=CGSizeMake(320, 500);
     
-    GroupArray=[[NSArray alloc]initWithObjects:@"Group1",@"Group2",@"Group3",@"Group4",@"Group5",@"Group6", nil];
+      json = [[NSMutableArray alloc]init];
+    GroupArray = [[NSMutableArray alloc]init];
+    AddArray = [[NSMutableArray alloc]init];
     
-    CompletedArray=[[NSArray alloc]initWithObjects:@"YES",@"NO", nil];
+   // CompletedArray=[[NSArray alloc]initWithObjects:@"YES",@"NO", nil];
     
     WithArray=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",GroupURL]];
+    //NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData1:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
 
+
+}
+-(void)fetchedData1:(NSData *)responseData
+{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    // NSLog(@"%@",[json valueForKey:@"status"]);
+    
+    // [HUD hideUIBlockingIndicator];
+    for(NSString *loc in [json valueForKey:@"group_name"]) {
+        
+        [GroupArray addObject:loc];
+        
+    }
+    [self.pickerVw reloadAllComponents];
+    // NSLog(@"%@",GroupArray);
 }
 
 - (void)didReceiveMemoryWarning

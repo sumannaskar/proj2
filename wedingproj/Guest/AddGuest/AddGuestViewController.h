@@ -11,7 +11,7 @@
 @interface AddGuestViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate,UITextViewDelegate>
 {
     
-    NSArray *GroupArray;
+    NSMutableArray *GroupArray;
     NSArray *CompletedArray;
     NSArray *WithArray;
     
@@ -20,6 +20,7 @@
     IBOutlet UITextField *nametxt;
     
     NSMutableArray *AddArray;
+     NSMutableArray *json;
     
 }
 

@@ -34,6 +34,7 @@
     // Do any additional setup after loading the view from its nib.
     json = [[NSMutableArray alloc]init];
     GroupArray = [[NSMutableArray alloc]init];
+     UpdateArray = [[NSMutableArray alloc]init];
     
      nametxt.text = self.nameString;
      self.RoleText.text = self.roleString;
