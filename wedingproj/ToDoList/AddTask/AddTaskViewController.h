@@ -25,6 +25,7 @@
     IBOutlet UITextField *nametxt;
     NSString *AddData;
     NSMutableArray *AddTaskmessage;
+    NSMutableArray *totaleventlist;
    
 }
 

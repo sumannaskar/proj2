@@ -261,12 +261,14 @@
     EditTaskVc.tasknamestr=[tempdic objectForKey:@"task_name"];
     EditTaskVc.duedatestr=[tempdic objectForKey:@"due_date"];
     EditTaskVc.categorystr=[tempdic objectForKey:@"category"];
-    EditTaskVc.eventnamestr=[tempdic objectForKey:@"event_id"];
-    EditTaskVc.vendorstr=[tempdic objectForKey:@"vendor_id"];
+    EditTaskVc.eventnamestr=[tempdic objectForKey:@"event_name"];
+    NSLog(@"%@",[tempdic objectForKey:@"event_name"]);
+    EditTaskVc.vendorstr=[tempdic objectForKey:@"vendor_name"];
     EditTaskVc.statusstr=[tempdic objectForKey:@"status"];
     EditTaskVc.infotxtstr=[tempdic objectForKey:@"info"];
 
     [self.navigationController pushViewController:EditTaskVc animated:YES];
+    
 }
 
 -(void)image

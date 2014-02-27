@@ -9,6 +9,8 @@
 #import "AddTaskViewController.h"
 #import "TodolistViewController.h"
 #define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_create&"]
+#define keventlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
+
 
 @interface AddTaskViewController ()
 
@@ -29,6 +31,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSError *error;
+    NSData* eventListData = [NSData dataWithContentsOfURL: keventlistURL];
+    NSArray* rawstateList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
+    
+    totaleventlist=[[NSMutableArray alloc ]init];
+    
+    for(int i=0;i<rawstateList.count;i++)
+    {
+        NSDictionary *tempDict=[rawstateList objectAtIndex:i];
+        [totaleventlist addObject:[tempDict objectForKey:@"event_name"]];
+        
+    }
+
     
     nametxt.delegate=self;
     informationtxt.delegate=self;
@@ -149,7 +164,9 @@
     }
     if (self.pickerVw.tag==2) {
         
-        return [eventarray count];
+       // return [eventarray count];
+        return [totaleventlist count];
+
     }
     if (self.pickerVw.tag==3) {
         
@@ -175,7 +192,8 @@
     }
 
     if (self.pickerVw.tag==2) {
-       return [eventarray objectAtIndex:row];
+//       return [eventarray objectAtIndex:row];
+        return [totaleventlist objectAtIndex:row];
     }
     if (self.pickerVw.tag==3) {
         return [vendorarray objectAtIndex:row];
@@ -199,7 +217,9 @@
     
     
     if (self.pickerVw.tag==2) {
-        self.eventtxt.text=[eventarray objectAtIndex:row];
+        //self.eventtxt.text=[eventarray objectAtIndex:row];
+        self.eventtxt.text=[totaleventlist objectAtIndex:row];
+        
     }
     
     if (self.pickerVw.tag==3) {
@@ -229,7 +249,8 @@
     if (self.donebtn.tag==2) {
         if (!(self.eventtxt.text.length>0)) {
             
-            self.eventtxt.text=[eventarray objectAtIndex:0];
+//            self.eventtxt.text=[eventarray objectAtIndex:0];
+             self.eventtxt.text=[totaleventlist objectAtIndex:0];
             
         }
         
