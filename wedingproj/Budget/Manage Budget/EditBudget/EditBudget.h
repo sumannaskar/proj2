@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditBudget : UIViewController<UITextFieldDelegate,UITextViewDelegate>
+@interface EditBudget : UIViewController<UITextFieldDelegate,UITextViewDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 {
     
     IBOutlet UIImageView *background;
@@ -32,7 +32,7 @@
     NSArray *pkarray;//delete after use
     IBOutlet UIToolbar *picekrtoolbr;
     NSMutableArray *json;
-    
+    NSMutableArray *vendorname;
     
     
     NSString *eventnamepass;

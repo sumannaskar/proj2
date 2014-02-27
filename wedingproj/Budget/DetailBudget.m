@@ -34,15 +34,14 @@
  
     
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"1"]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"2"]];
     NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
     (kBgQueue, ^
      {
-         NSData* data = [NSData dataWithContentsOfURL:
-                         url];
+         NSData* data = [NSData dataWithContentsOfURL:url];
          NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
          
          

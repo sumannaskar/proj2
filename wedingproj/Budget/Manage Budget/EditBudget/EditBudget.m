@@ -9,6 +9,8 @@
 #import "EditBudget.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_update&"]
+#define URL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&apikey=micronix_10_2014_wedsimple_proj"]
+
 
 @interface EditBudget ()
 
@@ -31,9 +33,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [paymentduedatetext setInputView:datepickerView];
-    vendernametext.userInteractionEnabled=NO;
+    
    // pkarray=[[NSArray alloc]initWithObjects:@"A",@"B", nil];
     [datepickerVW setDate:[NSDate date]];
+    json =[[NSMutableArray alloc]init];
     
     
     paymentduedatetext.text=paymentduedatepass;
@@ -42,8 +45,64 @@
     vendernametext.text=vendernamepass;
     amountpaidtodatetext.text=amountpaidtodatepass;
     totalamountduetext.text=totalamountduepass;
+    if (vendernametext.text.length > 0) {
+        vendernametext.userInteractionEnabled=NO;
     }
+    else
+    {
+        vendernametext.userInteractionEnabled=YES;
+        [vendernametext setInputView:respondingView];
+        
+        vendorname =[[NSMutableArray alloc]init];
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL1]];
+        NSLog(@"my--%@",url);
+        
+        // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+        dispatch_async
+        (kBgQueue, ^
+         {
+             NSData* data = [NSData dataWithContentsOfURL:
+                             url];
+             NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+             
+             
+             if (data.length<1 || [tempstring isEqualToString:@"null"])
+             {
+                 
+                 
+                 //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+                 
+             }
+             
+             else
+             {
+                 [self performSelectorOnMainThread:@selector(fetchedData:)
+                                        withObject:data waitUntilDone:YES];
+                 
+             }
+         }
+         );
 
+        
+    }
+    
+}
+
+
+-(void)fetchedData:(NSData *)responseData
+{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    [vendorname addObject:[json valueForKey:@"vendor_name"]];
+    
+    
+    
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
@@ -61,38 +120,38 @@
 }
 
 #pragma -pickerview delecates
-//- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-//{
-//    return 1;
-//}
-//
-//
-//
-//
-//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-//{
-//  
-//         return [pkarray count];
-//  
-//}
-//
-//
-//
-//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-//
-//{
-//      return [pkarray objectAtIndex:row];
-//    
-//}
-//
-//
-//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-//{
-//    
-//    vendernametext.text=[pkarray objectAtIndex:row];
-//    
-//    
-//}
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+
+
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+  
+         return [vendorname count];
+  
+}
+
+
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+
+{
+      return [vendorname objectAtIndex:row];
+    
+}
+
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    
+    vendernametext.text=[vendorname objectAtIndex:row];
+    
+    
+}
 
 
 - (void)didReceiveMemoryWarning
