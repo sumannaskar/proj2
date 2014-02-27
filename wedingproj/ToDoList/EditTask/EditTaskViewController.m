@@ -58,6 +58,8 @@
     vendorarray=[[NSArray alloc]initWithObjects:@"Vendor1",@"Vendor2",@"Vendor3",@"Vendor4",@"Vendor5", nil];
     
     statusarray=[[NSArray alloc]initWithObjects:@"NO",@"YES", nil];
+    
+    [self alreadyinrecord];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
@@ -246,7 +248,7 @@
         
     }
     
-    if (self.cancelbtn.tag==1) {
+    if (self.cancelbtn.tag==4) {
         
         self.statustxt.text=@"";
         [self.statustxt resignFirstResponder];
@@ -284,7 +286,7 @@
 }
 - (IBAction)canceldate:(UIBarButtonItem *)sender
 {
-    self.datetxt.text=@"";
+    self.datetxt.text=self.duedatestr;
     [self.datetxt resignFirstResponder];
 }
 - (NSString *)formatDate:(NSDate *)date
@@ -294,6 +296,20 @@
     [dateFormatter setDateFormat:@"dd'/'MM'/'yyyy"];
     NSString *formattedDate = [dateFormatter stringFromDate:date];
     return formattedDate;
+}
+-(void)alreadyinrecord
+{
+    nametxt.text=self.tasknamestr;
+    self.datetxt.text=self.duedatestr;
+    self.categorytxt.text=self.categorystr;
+    self.eventtxt.text=self.eventnamestr;
+    self.statustxt.text=self.statusstr;
+    self.vendortxt.text=self.vendorstr;
+    informationtxt.text=self.infotxtstr;
+    
+    
+    
+    
 }
 
 @end

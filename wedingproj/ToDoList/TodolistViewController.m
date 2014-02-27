@@ -10,6 +10,8 @@
 #import "AddTaskViewController.h"
 #import "EditTaskViewController.h"
 #define NIB_NAME @"Cell3"
+#define keventlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do&apikey=micronix_10_2014_wedsimple_proj"]
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 @interface TodolistViewController ()
 
 @end
@@ -38,7 +40,57 @@
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
     [self image];
     [EventScroll addSubview:EventTable];
+    
+    
+    dispatch_async(kBgQueue, ^{
+        //        NSURL *tempUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@%@",firstCatagoryURL,self.deviceString,secondCatagoryURL]];
+        NSData *tempcatagorydata=[NSData dataWithContentsOfURL:keventlistURL];
+        NSString *tempstring = [[NSString alloc] initWithData:tempcatagorydata encoding:NSUTF8StringEncoding];
+        
+        
+        if (tempcatagorydata.length<1 || [tempstring isEqualToString:@"null"])
+        {
+            
+            //            if ([InternetValidation connectedToNetwork])
+            //            {
+            //                [self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+            //
+            //            }
+            
+            //            else
+            //            {
+            //                [self performSelectorOnMainThread:@selector(connection) withObject:nil waitUntilDone:YES];
+            //                NSLog(@"no net");
+            //
+            //            }
+            
+        }
+        
+        else
+        {
+            NSError *error;
+            NSArray *tempArray=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
+            rawtaskList = [[NSArray alloc]initWithArray:tempArray];
+            
+            
+            [self performSelectorOnMainThread:@selector(fetchedData:) withObject:nil waitUntilDone:YES];
+            
+            
+        }
+        
+        
+        
+    });
+
 }
+
+- (void)fetchedData:(NSData *)responseData
+{
+    
+    NSLog(@"FetchData");
+    [EventTable reloadData];
+}
+
 -(IBAction)Add:(UIBarButtonItem *)sender
 {
     AddTaskViewController *AddeventVc=[[AddTaskViewController alloc] init];
@@ -61,9 +113,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [EventTable setRowHeight: 100.00];
+    //[EventTable setRowHeight: 100.00];
     // Return the number of rows in the section.
-    return 50;
+    //return 50;
+    return [rawtaskList count];
 }
 //for normal table view....
 
@@ -122,7 +175,14 @@
         [cell.checkImgv setImage:[UIImage imageNamed:[checkImage objectAtIndex:indexPath.row]]];
     }
     
-    cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    NSDictionary *tempdic=[rawtaskList objectAtIndex:indexPath.row];
+    tasknamestr=[tempdic objectForKey:@"task_name"];
+    
+    
+    //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    cell.EventLbl.text=tasknamestr;
+    NSLog(@"%@",tasknamestr);
     
     
     [cell.editBtn addTarget:self action:@selector(Edit:) forControlEvents:UIControlEventTouchUpInside];
@@ -130,6 +190,51 @@
     
     return cell;
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    int cellheight=40;
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            
+            cellheight=cellheight+20;
+            
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            
+            //no change
+            
+        }
+        else
+        {
+            //no change
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            
+            cellheight=cellheight+40;
+            
+        }
+        else
+        {
+            
+            cellheight=cellheight+80;
+        }
+    }
+    // NSLog(@"cellheight-- %d",cellheight);
+    return cellheight;
+    
+}
+
 - (void)handleTap:(UITapGestureRecognizer *)recognizer
 {
     // NSLog(@"%d",recognizer.view.tag);
@@ -146,6 +251,15 @@
 {
     NSLog(@"%ld",(long)button.tag);
     EditTaskViewController *EditTaskVc=[[EditTaskViewController alloc] init];
+    NSDictionary *tempdic=[rawtaskList objectAtIndex:button.tag];
+    EditTaskVc.tasknamestr=[tempdic objectForKey:@"task_name"];;
+    EditTaskVc.duedatestr=[tempdic objectForKey:@"due_date"];
+    EditTaskVc.categorystr=[tempdic objectForKey:@"category"];
+    EditTaskVc.eventnamestr=[tempdic objectForKey:@"event_id"];
+    EditTaskVc.vendorstr=[tempdic objectForKey:@"vendor_id"];
+    EditTaskVc.statusstr=[tempdic objectForKey:@"status"];
+    EditTaskVc.infotxtstr=[tempdic objectForKey:@"info"];
+
     [self.navigationController pushViewController:EditTaskVc animated:YES];
 }
 
