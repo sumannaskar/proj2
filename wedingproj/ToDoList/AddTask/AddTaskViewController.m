@@ -7,6 +7,7 @@
 //
 
 #import "AddTaskViewController.h"
+#import "TodolistViewController.h"
 #define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_create&"]
 
 @interface AddTaskViewController ()
@@ -85,23 +86,15 @@
  {
      UIAlertView *addsuccess=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Added Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
      [addsuccess show];
+     TodolistViewController *ToDolistVc=[[TodolistViewController alloc] init];
+     [self.navigationController pushViewController:ToDolistVc animated:YES];
+     
  }
-//    if([[registermessage valueForKey:@"status" ] isEqualToString:@"An user is already registered with this mail ID"])
-//    {
-//        UIAlertView *regfail =[[UIAlertView alloc]initWithTitle:@"Casa de Salud App" message:[NSString stringWithFormat:@"%@",[registermessage valueForKey:@"status" ]] delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
-//        [regfail show];
-//        
-//    }
-    
-
-//        
-//        UIAlertView *regsucess =[[UIAlertView alloc]initWithTitle:@"Casa de Salud App" message:[NSString stringWithFormat:@"%@ and login ",[registermessage valueForKey:@"status" ]] delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
-//        [regsucess show];
-    
-    
-
-    
-    
+    else
+    {
+        UIAlertView *addfailed=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Task not added, Try again" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [addfailed show];
+    }
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField

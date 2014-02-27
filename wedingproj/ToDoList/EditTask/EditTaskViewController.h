@@ -24,8 +24,11 @@
     IBOutlet UITextView *informationtxt;
     IBOutlet UITextField *nametxt;
     
+    NSString *EditData;
+    NSMutableArray *EditTaskmessage;
+    
 }
-
+@property (strong, nonatomic) NSString *taskidstr;
 @property (strong, nonatomic) NSString *tasknamestr;
 @property (strong, nonatomic) NSString *duedatestr;
 @property (strong, nonatomic) NSString *categorystr;
@@ -58,5 +61,6 @@
 - (IBAction)donedate:(id)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
 
+- (IBAction)savechanges:(UIButton *)sender;
 
 @end
