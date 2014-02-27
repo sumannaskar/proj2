@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllBudget">
             <connections>
+                <outlet property="allbudget" destination="qIf-rB-1wq" id="2Bv-xy-Oul"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>

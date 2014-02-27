@@ -10,7 +10,10 @@
 
 @interface AllBudget : UIViewController
 {
-    
+    NSMutableArray *json;
+    IBOutlet UITableView *allbudget;
+    NSMutableArray *budgetname;
+    NSMutableArray *budgetid;
 }
 @property(nonatomic,retain)NSString *eventidpass;
 

@@ -10,6 +10,8 @@
 #import "DeleteBudget.h"
 #import "AddBudget.h"
 #import "DetailBudget.h"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_event&"]
 
 @interface AllBudget ()
 
@@ -28,9 +30,60 @@
 
 - (void)viewDidLoad
 {
+    json =[[NSMutableArray alloc]init];
+    budgetname =[[NSMutableArray alloc]init];
+    budgetid =[[NSMutableArray alloc]init];
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+//    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,eventidpass]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"4"]];
+    NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+
 }
+
+-(void)fetchedData:(NSData *)responseData
+{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    
+    
+    for (NSDictionary *data in json ) {
+        [budgetname addObject:[data valueForKey:@"name"]];
+        [budgetid addObject:[data valueForKey:@"budget_id"]];
+        
+    }
+    [allbudget reloadData];
+    
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -38,7 +91,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 50;
+    return budgetname.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -50,7 +103,7 @@
      if(cell==nil)
      {
          cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellidentifire];
-         cell.textLabel.text=@"budget name";
+         cell.textLabel.text=[budgetname objectAtIndex:indexPath.row];
          
          
          return cell;
@@ -84,6 +137,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailBudget *DetailBudget_ =[[DetailBudget alloc]init];
+    DetailBudget_.budgetidpass =[budgetid objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:DetailBudget_ animated:YES];
     
 }

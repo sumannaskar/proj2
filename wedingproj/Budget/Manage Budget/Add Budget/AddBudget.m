@@ -29,7 +29,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     [paymentduedatetext setInputView:datepickerView];
     [vendernametext setInputView:respondingView];
     [datepickerVW setDate:[NSDate date]];
@@ -100,7 +99,7 @@
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
-    [dateFormatter setDateFormat:@"dd'/'MM'/'yyyy"];
+    [dateFormatter setDateFormat:@"dd'/'MM'/'yyyy hh:mm a"];
     NSString *formattedDate = [dateFormatter stringFromDate:date];
     return formattedDate;
 }

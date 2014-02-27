@@ -41,7 +41,7 @@
 }
 - (IBAction)done:(id)sender;
 - (IBAction)edit:(id)sender;
-
+@property(nonatomic,retain)NSString *budgetidpass;
 
 
 @end

@@ -643,6 +643,7 @@
 		7AA585DB18BF09AA00E59852 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				7AA585E818BF647A00E59852 /* ManageVenor */,
 				7AA585DC18BF09AA00E59852 /* VendorViewController.h */,
 				7AA585DD18BF09AA00E59852 /* VendorViewController.m */,
 				7AA585DE18BF09AA00E59852 /* VendorViewController.xib */,
@@ -669,6 +670,13 @@
 			);
 			name = DetailBudget;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		7AA585E818BF647A00E59852 /* ManageVenor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ManageVenor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

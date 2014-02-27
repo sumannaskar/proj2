@@ -16,6 +16,7 @@
 @end
 
 @implementation DetailBudget
+@synthesize budgetidpass;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,7 +37,7 @@
  
     
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"2"]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,budgetidpass]];
     NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
@@ -75,7 +76,7 @@
             error:&error];
     
     eventnametext.text=[[json objectAtIndex:0] valueForKey:@"name"];
-    //vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_id"];//replace vendor_id with vendor_name
+    vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_name"];
     Pamentduedatetext.text=[[json objectAtIndex:0] valueForKey:@"due_date"];
     amountpaidtext.text=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
     totalamountduetext.text=[[json objectAtIndex:0] valueForKey:@"amount_due"];
@@ -99,7 +100,7 @@
     
     EditBudget *EditBudget_=[[EditBudget alloc]init];
     EditBudget_.eventnamepass =[[json objectAtIndex:0] valueForKey:@"name"];
-    //EditBudget_.vendernamepass=[[json objectAtIndex:0] valueForKey:@"vendor_id"];//replace
+    EditBudget_.vendernamepass=[[json objectAtIndex:0] valueForKey:@"vendor_name"];
     EditBudget_.vendoridpass=[[json objectAtIndex:0] valueForKey:@"vendor_id"];
     EditBudget_.paymentduedatepass =[[json objectAtIndex:0] valueForKey:@"due_date"];
     EditBudget_.amountpaidtodatepass=[[json objectAtIndex:0] valueForKey:@"amount_paid"];

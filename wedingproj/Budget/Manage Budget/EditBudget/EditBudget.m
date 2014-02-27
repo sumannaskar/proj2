@@ -120,7 +120,7 @@
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
-    [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd"];
+    [dateFormatter setDateFormat:@"dd'-'MM'-'yyyy hh:mm a"];
     NSString *formattedDate = [dateFormatter stringFromDate:date];
     return formattedDate;
 }
