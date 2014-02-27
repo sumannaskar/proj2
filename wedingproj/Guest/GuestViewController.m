@@ -13,6 +13,8 @@
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_all&event_id=3&apikey=micronix_10_2014_wedsimple_proj"]
 
+#define DeleteURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_muldel&"]
+
 @interface GuestViewController ()
 
 @end
@@ -47,8 +49,9 @@
     checkImage = [[NSMutableArray alloc]init];
     InvScroll.delegate = self;
     InvTable.scrollEnabled = NO;
-    
-    
+   
+    [self setTableHeight];
+     [InvScroll addSubview:InvTable];
     
     
     
@@ -115,8 +118,7 @@
         for(NSString *loc in [json valueForKey:@"no_of_guest"]) {
             [NoOfPerson addObject:loc];
         }
-    [self image];
-    [InvScroll addSubview:InvTable];
+    [self setTableHeight];
     [InvTable reloadData];
    // }
         
@@ -132,7 +134,7 @@
 {
     //[InvTable setRowHeight: 50.00];
     // Return the number of rows in the section.
-     NSLog(@"%d",[Gname count]);
+    // NSLog(@"%d",[Gname count]);
     return [Gname count];
 }
 //for normal table view....
@@ -228,36 +230,25 @@
     [self.navigationController pushViewController:EditVc animated:YES];
 }
 
--(void)image
+-(void)setTableHeight
 {
-    int tableRowheight = 50*[Gname count];
+    
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        if ([[UIScreen mainScreen] bounds].size.height == 568)
-        {
-            
-            InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-            InvScroll.contentSize = CGSizeMake(320, tableRowheight);
-        }
-        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-                        InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-            InvScroll.contentSize = CGSizeMake(320, tableRowheight);
-            
-        }
-        else
-        {
-            InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-            InvScroll.contentSize = CGSizeMake(320, tableRowheight);
-        }
+         [InvTable setRowHeight:55];
+        NSInteger tableRowheight = 60*[Gname count];
+       
+        InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
+        InvScroll.contentSize = CGSizeMake(320, tableRowheight);
         
         
     }
     else
     {
-        //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
-        InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-        InvScroll.contentSize = CGSizeMake(320, tableRowheight);
+        [InvTable setRowHeight:85];
+        NSInteger tableRowheight = 90*[Gname count];
+        InvTable.frame=CGRectMake(0, 0, 768, tableRowheight*2);
+        InvScroll.contentSize = CGSizeMake(768, tableRowheight);
         
         
     }
@@ -269,16 +260,59 @@
      NSString *str3 = @"";
     for (int i=0; i<[Gid count]; i++) {
         if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"]) {
-            //NSString * str = [NSString stringWithFormat:@"%@%@%@", str,@"id",[Gid objectAtIndex:i] ];
-            //str1 = [Gid objectAtIndex:i];
+            
              str2=[NSString stringWithFormat:@"%@%@",[Gid objectAtIndex:i],str1];
             str3=[NSString stringWithFormat:@"%@%@",str3, str2];
         }
     }
     NSString *str4 = [str3 substringToIndex:[str3 length]-1];
-    NSLog(@"%@",str4);
+   // NSLog(@"%@",str4);
+    
+    Deletejson = [[NSDictionary alloc]init];
+    
+    NSString *deleteGuest =[[NSString alloc]initWithFormat:@"guest_id=%@&apikey=micronix_10_2014_wedsimple_proj",str4];
+    
+    //NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    //  NSLog(@"%@",urlTextEscaped);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",DeleteURL,deleteGuest]];
+    //NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData1:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+    
 }
-
+-(void)fetchedData1:(NSData *)responseData
+{
+    NSError *error;
+    Deletejson = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    NSLog(@"%@",Deletejson);
+}
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
     AddGuestViewController *AddguestVc=[[AddGuestViewController alloc] init];
     [self.navigationController pushViewController:AddguestVc animated:YES];

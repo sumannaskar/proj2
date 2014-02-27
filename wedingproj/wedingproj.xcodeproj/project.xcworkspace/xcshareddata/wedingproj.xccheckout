@@ -5,19 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>F3C5B9CC-63E3-4704-A0EA-40C2862B9941</string>
+=======
+	<string>F754FB8B-C1BA-4C77-92A9-D8C5E001012C</string>
+>>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectName</key>
 	<string>wedingproj</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>A72B769B-4DC0-43E1-82BB-68E1862802DE</key>
+=======
+		<key>724215B1-65F9-4CD4-91F6-D932B121D77D</key>
+>>>>>>> FETCH_HEAD
 		<string>https://github.com/sumannaskar/proj2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>wedingproj/wedingproj.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>A72B769B-4DC0-43E1-82BB-68E1862802DE</key>
+=======
+		<key>724215B1-65F9-4CD4-91F6-D932B121D77D</key>
+>>>>>>> FETCH_HEAD
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +37,22 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
+<<<<<<< HEAD
 	<string>A72B769B-4DC0-43E1-82BB-68E1862802DE</string>
+=======
+	<string>724215B1-65F9-4CD4-91F6-D932B121D77D</string>
+>>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>A72B769B-4DC0-43E1-82BB-68E1862802DE</string>
+=======
+			<string>724215B1-65F9-4CD4-91F6-D932B121D77D</string>
+>>>>>>> FETCH_HEAD
 			<key>IDESourceControlWCCName</key>
 			<string>proj2</string>
 		</dict>

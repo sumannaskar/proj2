@@ -23,6 +23,8 @@
     
     IBOutlet UITextView *informationtxt;
     IBOutlet UITextField *nametxt;
+    NSString *AddData;
+    NSMutableArray *AddTaskmessage;
    
 }
 
@@ -47,5 +49,8 @@
 
 - (IBAction)donedate:(id)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
+
+- (IBAction)AddTaskactn:(UIButton *)sender;
+
 
 @end

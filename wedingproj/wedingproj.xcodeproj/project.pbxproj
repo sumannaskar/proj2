@@ -335,9 +335,6 @@
 				7AA5852918BF097D00E59852 /* BudgetViewController.m */,
 				7AA5852A18BF097D00E59852 /* BudgetViewController.xib */,
 				7AA5852B18BF097D00E59852 /* CalculateBudget */,
-				7AA5852F18BF097D00E59852 /* DetailBudget.h */,
-				7AA5853018BF097D00E59852 /* DetailBudget.m */,
-				7AA5853118BF097D00E59852 /* DetailBudget.xib */,
 				7AA5853218BF097D00E59852 /* Manage Budget */,
 			);
 			path = Budget;
@@ -356,14 +353,15 @@
 		7AA5853218BF097D00E59852 /* Manage Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AA5854B18BF097D00E59852 /* ManageBudget.h */,
+				7AA5854C18BF097D00E59852 /* ManageBudget.m */,
+				7AA5854D18BF097D00E59852 /* ManageBudget.xib */,
+				7AA585E718BF1D7F00E59852 /* DetailBudget */,
 				7AA5853318BF097D00E59852 /* Add Budget */,
 				7AA5853718BF097D00E59852 /* AllBudget */,
 				7AA5853B18BF097D00E59852 /* Customcell */,
 				7AA5853F18BF097D00E59852 /* DeleteBudget */,
 				7AA5854718BF097D00E59852 /* EditBudget */,
-				7AA5854B18BF097D00E59852 /* ManageBudget.h */,
-				7AA5854C18BF097D00E59852 /* ManageBudget.m */,
-				7AA5854D18BF097D00E59852 /* ManageBudget.xib */,
 			);
 			path = "Manage Budget";
 			sourceTree = "<group>";
@@ -678,6 +676,17 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		7AA585E718BF1D7F00E59852 /* DetailBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5852F18BF097D00E59852 /* DetailBudget.h */,
+				7AA5853018BF097D00E59852 /* DetailBudget.m */,
+				7AA5853118BF097D00E59852 /* DetailBudget.xib */,
+			);
+			name = DetailBudget;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -962,7 +971,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wedingproj/wedingproj-Prefix.pch";
 				INFOPLIST_FILE = "wedingproj/wedingproj-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -975,7 +986,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wedingproj/wedingproj-Prefix.pch";
 				INFOPLIST_FILE = "wedingproj/wedingproj-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

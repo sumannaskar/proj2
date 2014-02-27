@@ -27,6 +27,13 @@
     IBOutlet UIButton *done;
     
     IBOutlet UIButton *edit;
+    IBOutlet UILabel *amountpaid;
+    IBOutlet UILabel *amountpaidtext;
+    
+    NSMutableArray *json;
+    
+    
+    
     
 }
 - (IBAction)done:(id)sender;

@@ -32,7 +32,7 @@
     InvScroll.delegate = self;
     InvTable.scrollEnabled = NO;
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
-    [self image];
+    [self setTableHeight];
     [InvScroll addSubview:InvTable];
 }
 
@@ -49,7 +49,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [InvTable setRowHeight: 100.00];
     // Return the number of rows in the section.
     return 50;
 }
@@ -134,41 +133,29 @@
     NSLog(@"%ld",(long)button.tag);
 }
 
--(void)image
+-(void)setTableHeight
 {
-    if([[UIScreen mainScreen] bounds].size.height  < 600)
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 568)
+    
+        if([[UIScreen mainScreen] bounds].size.height  < 600)
         {
-            int tableRowheight = 100*50;
+            [InvTable setRowHeight:60];
+            int tableRowheight = 60*50;
+            
             InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             InvScroll.contentSize = CGSizeMake(320, tableRowheight);
-        }
-        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-            int tableRowheight = 100*50;
-            InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-            InvScroll.contentSize = CGSizeMake(320, tableRowheight);
+            
             
         }
         else
         {
-            int tableRowheight = 100*50;
+            [InvTable setRowHeight:90];
+            int tableRowheight = 90*50;
             InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-            InvScroll.contentSize = CGSizeMake(320, tableRowheight);
+            InvScroll.contentSize = CGSizeMake(768, tableRowheight);
+            
+            
         }
-        
-        
-    }
-    else
-    {
-        //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
-        int tableRowheight = 100*50;
-        InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-        InvScroll.contentSize = CGSizeMake(320, tableRowheight);
-        
-        
-    }
+
 }
 
 

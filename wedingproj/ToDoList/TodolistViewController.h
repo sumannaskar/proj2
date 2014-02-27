@@ -10,11 +10,17 @@
 #import "Cell3.h"
 @interface TodolistViewController : UIViewController<UIScrollViewDelegate,UIGestureRecognizerDelegate>
 {
+    
+    NSArray *rawtaskList;
     IBOutlet UITableView *EventTable;
     IBOutlet UIScrollView *EventScroll;
     Cell3 *cell;
     NSMutableArray *checkImage;
     BOOL isLoad;
+    
+    
+    NSString *tasknamestr;
+
 }
 
 - (IBAction)Add:(UIBarButtonItem *)sender;

@@ -7,6 +7,8 @@
 //
 
 #import "AddTaskViewController.h"
+#import "TodolistViewController.h"
+#define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_create&"]
 
 @interface AddTaskViewController ()
 
@@ -48,7 +50,7 @@
     self.vendortxt.tag=3;
     self.statustxt.tag=4;
     
-    
+    informationtxt.text=@"type text here...";
     scroll.contentSize=CGSizeMake(320, 500);
     
     pkarray=[[NSArray alloc]initWithObjects:@"Category1",@"Category2",@"Category3",@"Category4",@"Category5",@"Category6", nil];
@@ -58,6 +60,41 @@
     vendorarray=[[NSArray alloc]initWithObjects:@"Vendor1",@"Vendor2",@"Vendor3",@"Vendor4",@"Vendor5", nil];
     
     statusarray=[[NSArray alloc]initWithObjects:@"NO",@"YES", nil];
+}
+
+-(void)AddDetails
+{
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,self.eventtxt.text,self.vendortxt.text,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
+    NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"%@",urlTextEscaped);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddTaskURL,urlTextEscaped]];
+    NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    NSLog(@"%@",url);
+    [theRequest setHTTPMethod:@"POST"];
+    [theRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSError *error;
+    NSURLResponse *response;
+    
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
+    AddData=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",response);
+    
+    AddTaskmessage= [NSJSONSerialization JSONObjectWithData:urlData options:kNilOptions error:&error];
+    
+   
+ if([[AddTaskmessage valueForKey:@"status" ] isEqualToString:@"Record Created"])
+ {
+     UIAlertView *addsuccess=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Added Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+     [addsuccess show];
+     TodolistViewController *ToDolistVc=[[TodolistViewController alloc] init];
+     [self.navigationController pushViewController:ToDolistVc animated:YES];
+     
+ }
+    else
+    {
+        UIAlertView *addfailed=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Task not added, Try again" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [addfailed show];
+    }
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
@@ -264,9 +301,30 @@
 }
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-    [textView resignFirstResponder];
+    if ([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
     return YES;
 }
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    if ([informationtxt.text isEqualToString:@"type text here..."]) {
+        informationtxt.text = @"";
+        informationtxt.textColor = [UIColor blackColor]; //optional
+    }
+    [textView becomeFirstResponder];
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    if ([informationtxt.text isEqualToString:@""]) {
+        informationtxt.text = @"type text here...";
+        informationtxt.textColor = [UIColor lightGrayColor]; //optional
+    }
+    [textView resignFirstResponder];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -286,6 +344,21 @@
 {
     self.datetxt.text=@"";
     [self.datetxt resignFirstResponder];
+}
+
+- (IBAction)AddTaskactn:(UIButton *)sender {
+    
+    if (nametxt.text.length >0 && self.eventtxt.text.length >0 &&self.datetxt.text.length>0 && self.categorytxt.text.length>0&& self.vendortxt.text.length>0 && self.statustxt.text.length>0 &&informationtxt.text.length>0)
+    {
+        
+        [self AddDetails];
+        
+    }
+    else
+    {
+        UIAlertView *fillall =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Fill all the fields" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [fillall show];
+    }
 }
 - (NSString *)formatDate:(NSDate *)date
 {

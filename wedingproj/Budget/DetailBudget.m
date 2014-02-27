@@ -8,6 +8,8 @@
 
 #import "DetailBudget.h"
 #import "EditBudget.h"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_single&"]
 
 @interface DetailBudget ()
 
@@ -28,8 +30,58 @@
 {
     [super viewDidLoad];
     infotext.editable=NO;
-    // Do any additional setup after loading the view from its nib.
+    json = [[NSMutableArray alloc]init];
+ 
+    
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"2"]];
+    NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
 }
+
+-(void)fetchedData:(NSData *)responseData
+{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    
+    eventnametext.text=[[json objectAtIndex:0] valueForKey:@"name"];
+    vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_id"];
+    Pamentduedatetext.text=[[json objectAtIndex:0] valueForKey:@"due_date"];
+    amountpaidtext.text=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
+    totalamountduetext.text=[[json objectAtIndex:0] valueForKey:@"amount_due"];
+    infotext.text=[[json objectAtIndex:0] valueForKey:@"info"];
+    
+
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -43,6 +95,16 @@
 - (IBAction)edit:(id)sender {
     
     EditBudget *EditBudget_=[[EditBudget alloc]init];
+    EditBudget_.eventnamepass =[[json objectAtIndex:0] valueForKey:@"name"];
+    EditBudget_.vendernamepass=[[json objectAtIndex:0] valueForKey:@"vendor_id"];
+    EditBudget_.paymentduedatepass =[[json objectAtIndex:0] valueForKey:@"due_date"];
+    EditBudget_.amountpaidtodatepass=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
+    EditBudget_.totalamountduepass =[[json objectAtIndex:0] valueForKey:@"amount_due"];
+    EditBudget_.infopass =[[json objectAtIndex:0] valueForKey:@"info"];
+    EditBudget_.eventidpass=[[json objectAtIndex:0] valueForKey:@"event_id"];
+    EditBudget_.budgetidpass=[[json objectAtIndex:0] valueForKey:@"budget_id"];
+    
+    
     [self.navigationController pushViewController:EditBudget_ animated:YES];
     
     

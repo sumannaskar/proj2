@@ -31,6 +31,11 @@
     IBOutlet UITextField *vendernametext;
     NSArray *pkarray;//delete after use
     IBOutlet UIToolbar *picekrtoolbr;
+    NSMutableArray *json;
+    NSMutableArray *vendorname;
+    
+    
+    NSString *eventnamepass;
     
 
     
@@ -40,6 +45,14 @@
 - (IBAction)cancel:(UIBarButtonItem *)sender;
 - (IBAction)donedate:(id)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
+@property(nonatomic,retain)NSString *eventnamepass;
+@property(nonatomic,retain)NSString *paymentduedatepass;
+@property(nonatomic,retain)NSString *totalamountduepass;
+@property(nonatomic,retain)NSString *amountpaidtodatepass;
+@property(nonatomic,retain)NSString *vendernamepass;
+@property(nonatomic,retain)NSString *infopass;
+@property(nonatomic,retain)NSString *budgetidpass;
+@property(nonatomic,retain)NSString *eventidpass;
 
 
 @end
