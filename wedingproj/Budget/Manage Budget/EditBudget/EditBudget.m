@@ -8,13 +8,14 @@
 
 #import "EditBudget.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_single&"]
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_update&"]
 
 @interface EditBudget ()
 
 @end
 
 @implementation EditBudget
+@synthesize eventnamepass,infopass,paymentduedatepass,vendernamepass,amountpaidtodatepass,totalamountduepass,budgetidpass,eventidpass;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,11 +31,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [paymentduedatetext setInputView:datepickerView];
-    [vendernametext setInputView:respondingView];
-    pkarray=[[NSArray alloc]initWithObjects:@"A",@"B", nil];
+    vendernametext.userInteractionEnabled=NO;
+   // pkarray=[[NSArray alloc]initWithObjects:@"A",@"B", nil];
     [datepickerVW setDate:[NSDate date]];
     
-}
+    
+    paymentduedatetext.text=paymentduedatepass;
+    eventnametext.text=eventnamepass;
+    infotext.text=infopass;
+    vendernametext.text=vendernamepass;
+    amountpaidtodatetext.text=amountpaidtodatepass;
+    totalamountduetext.text=totalamountduepass;
+    }
+
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     [textField resignFirstResponder];
@@ -45,44 +55,44 @@
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
-    [dateFormatter setDateFormat:@"dd'/'MM'/'yyyy hh:mm a"];
+    [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd"];
     NSString *formattedDate = [dateFormatter stringFromDate:date];
     return formattedDate;
 }
 
 #pragma -pickerview delecates
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    return 1;
-}
-
-
-
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-  
-         return [pkarray count];
-  
-}
-
-
-
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-
-{
-      return [pkarray objectAtIndex:row];
-    
-}
-
-
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-{
-    
-    vendernametext.text=[pkarray objectAtIndex:row];
-    
-    
-}
+//- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+//{
+//    return 1;
+//}
+//
+//
+//
+//
+//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+//{
+//  
+//         return [pkarray count];
+//  
+//}
+//
+//
+//
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+//
+//{
+//      return [pkarray objectAtIndex:row];
+//    
+//}
+//
+//
+//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+//{
+//    
+//    vendernametext.text=[pkarray objectAtIndex:row];
+//    
+//    
+//}
 
 
 - (void)didReceiveMemoryWarning
@@ -92,6 +102,25 @@
 }
 
 - (IBAction)save:(id)sender {
+    NSString *savedata =[[NSString alloc]initWithFormat:@"budget_id=%@&event_id=%@&name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",budgetidpass,eventidpass,eventnametext.text,vendernametext.text,paymentduedatetext.text,amountpaidtodatetext.text,amountpaidtodatetext.text,infotext.text];
+    NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;
+    
+    NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    
+    [theRequest setHTTPMethod:@"POST"];
+    [theRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSError *error;
+    NSURLResponse *response;
+    
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
+    NSString *data=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",data);
+    
+    
+    
+    
 }
 
 - (IBAction)done:(id)sender
@@ -115,7 +144,7 @@
 }
 - (IBAction)canceldate:(UIBarButtonItem *)sender
 {
-    paymentduedatetext.text=@"";
+    paymentduedatetext.text=paymentduedatepass;
     [paymentduedatetext resignFirstResponder];
     
 }

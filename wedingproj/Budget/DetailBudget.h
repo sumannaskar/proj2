@@ -31,11 +31,8 @@
     IBOutlet UILabel *amountpaidtext;
     
     NSMutableArray *json;
-    NSMutableArray *eventnamearray;
-    NSMutableArray *vendernamearray;
-    NSMutableArray *Pamentduedatearray;
-    NSMutableArray *totalamountduearray;
-    NSMutableArray *ns;
+    
+    
     
     
 }

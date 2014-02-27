@@ -338,15 +338,15 @@
 		7AA5853218BF097D00E59852 /* Manage Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AA5854B18BF097D00E59852 /* ManageBudget.h */,
+				7AA5854C18BF097D00E59852 /* ManageBudget.m */,
+				7AA5854D18BF097D00E59852 /* ManageBudget.xib */,
 				7AA585E718BF1D7F00E59852 /* DetailBudget */,
 				7AA5853318BF097D00E59852 /* Add Budget */,
 				7AA5853718BF097D00E59852 /* AllBudget */,
 				7AA5853B18BF097D00E59852 /* Customcell */,
 				7AA5853F18BF097D00E59852 /* DeleteBudget */,
 				7AA5854718BF097D00E59852 /* EditBudget */,
-				7AA5854B18BF097D00E59852 /* ManageBudget.h */,
-				7AA5854C18BF097D00E59852 /* ManageBudget.m */,
-				7AA5854D18BF097D00E59852 /* ManageBudget.xib */,
 			);
 			path = "Manage Budget";
 			sourceTree = "<group>";

@@ -96,6 +96,16 @@
 - (IBAction)edit:(id)sender {
     
     EditBudget *EditBudget_=[[EditBudget alloc]init];
+    EditBudget_.eventnamepass =[[json objectAtIndex:0] valueForKey:@"name"];
+    EditBudget_.vendernamepass=[[json objectAtIndex:0] valueForKey:@"vendor_id"];
+    EditBudget_.paymentduedatepass =[[json objectAtIndex:0] valueForKey:@"due_date"];
+    EditBudget_.amountpaidtodatepass=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
+    EditBudget_.totalamountduepass =[[json objectAtIndex:0] valueForKey:@"amount_due"];
+    EditBudget_.infopass =[[json objectAtIndex:0] valueForKey:@"info"];
+    EditBudget_.eventidpass=[[json objectAtIndex:0] valueForKey:@"event_id"];
+    EditBudget_.budgetidpass=[[json objectAtIndex:0] valueForKey:@"budget_id"];
+    
+    
     [self.navigationController pushViewController:EditBudget_ animated:YES];
     
     
