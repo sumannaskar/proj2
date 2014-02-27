@@ -17,9 +17,10 @@
     
     IBOutlet UIScrollView *scroll;
     
-    
-    IBOutlet UITextView *informationtxt;
     IBOutlet UITextField *nametxt;
+    
+    NSMutableArray *AddArray;
+    
 }
 
 @property (retain, nonatomic) IBOutlet UIView *respondingView;
@@ -34,6 +35,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *EmailText;
 @property (strong, nonatomic) IBOutlet UITextField *GroupText;
 @property (strong, nonatomic) IBOutlet UITextField *WithText;
-@property (strong, nonatomic) IBOutlet UITextField *completedText;
+@property (strong, nonatomic) IBOutlet UIButton *Add;
+- (IBAction)AddGuest:(UIButton *)sender;
 
 @end

@@ -7,7 +7,9 @@
 //
 
 #import "AddGuestViewController.h"
-
+#import "GuestViewController.h"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_create&"]
 @interface AddGuestViewController ()
 
 @end
@@ -28,22 +30,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     nametxt.delegate=self;
-    informationtxt.delegate=self;
     self.RoleText.delegate=self;
     self.EmailText.delegate=self;
     self.GroupText.delegate=self;
-    self.completedText.delegate=self;
      self.WithText.delegate=self;
     self.pickerVw.dataSource=self;
     self.pickerVw.delegate=self;
     self.pickerVw.showsSelectionIndicator=YES;
     
     [self.GroupText setInputView:self.respondingView];
-    [self.completedText setInputView:self.respondingView];
     [self.WithText setInputView:self.respondingView];
     
     self.GroupText.tag=1;
-    self.completedText.tag=2;
     self.WithText.tag=3;
     
     scroll.contentSize=CGSizeMake(320, 500);
@@ -52,7 +50,7 @@
     
     CompletedArray=[[NSArray alloc]initWithObjects:@"YES",@"NO", nil];
     
-    WithArray=[[NSArray alloc]initWithObjects:@"With 1 Person",@"With 2 Persons",@"With 3 Persons",@"With 4 Persons",@"With 5 Persons",@"With 6 Persons",@"With 7 Persons",@"With 8 Persons",@"With 9 Persons",@"With 10 Persons", nil];
+    WithArray=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil];
 
 }
 
@@ -70,12 +68,6 @@
         self.cancelbtn.tag=1;
         [self.pickerVw reloadAllComponents];
         
-    }
-    if (textField.tag==2) {
-        self.pickerVw.tag=2;
-        self.donebtn.tag=2;
-        self.cancelbtn.tag=2;
-        [self.pickerVw reloadAllComponents];
     }
     if (textField.tag==3) {
         self.pickerVw.tag=3;
@@ -103,10 +95,6 @@
         //rowCount=[pkarray count];
         return [GroupArray count];
     }
-    if (self.pickerVw.tag==2) {
-        //rowCount=[eventarray count];
-        return [CompletedArray count];
-    }
     if (self.pickerVw.tag==3) {
         //rowCount=[eventarray count];
         return [WithArray count];
@@ -127,10 +115,6 @@
     if (self.pickerVw.tag==1) {
         return [GroupArray objectAtIndex:row];
     }
-    else if (self.pickerVw.tag==2)
-    {
-        return [CompletedArray objectAtIndex:row];
-    }
     else {
         return [WithArray objectAtIndex:row];
     }
@@ -142,10 +126,6 @@
     
     if (self.pickerVw.tag==1) {
         self.GroupText.text=[GroupArray objectAtIndex:row];
-    }
-    
-    if (self.pickerVw.tag==2) {
-        self.completedText.text=[CompletedArray objectAtIndex:row];
     }
     if (self.pickerVw.tag==3) {
         self.WithText.text=[WithArray objectAtIndex:row];
@@ -167,25 +147,16 @@
         
     }
     
-    if (self.donebtn.tag==2) {
-        if (!(self.completedText.text.length>0)) {
-            
-            self.completedText.text=[CompletedArray objectAtIndex:0];
-            
-        }
-        
-        [self.completedText resignFirstResponder];
-        
-    }
     if (self.donebtn.tag==3) {
-        if (!(self.completedText.text.length>0)) {
+        if (!(self.WithText.text.length>0)) {
             
             self.WithText.text=[WithArray objectAtIndex:0];
             
         }
         
         [self.WithText resignFirstResponder];
-        
+
+
     }
     
 }
@@ -199,12 +170,6 @@
         
     }
     
-    if (self.cancelbtn.tag==2) {
-        
-        self.completedText.text=@"";
-        [self.completedText resignFirstResponder];
-        
-    }
     
     if (self.cancelbtn.tag==3) {
         
@@ -227,4 +192,50 @@
     return YES;
 }
 
+- (IBAction)AddGuest:(UIButton *)sender {
+    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,self.RoleText.text,self.EmailText.text,@"1",self.WithText.text];
+    
+    NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    //  NSLog(@"%@",urlTextEscaped);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]];
+    //  NSLog(@"%@",url);
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+    GuestViewController *GuestVC =[[GuestViewController alloc]init];
+    [self.navigationController pushViewController:GuestVC animated:YES];
+
+}
+
+-(void)fetchedData:(NSData *)responseData
+{
+    NSError *error;
+    AddArray = [NSJSONSerialization
+                   JSONObjectWithData:responseData //1
+                   
+                   options:kNilOptions
+                   error:&error];
+    // NSLog(@"%@",UpdateArray);
+}
 @end

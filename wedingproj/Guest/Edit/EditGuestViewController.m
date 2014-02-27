@@ -7,8 +7,11 @@
 //
 
 #import "EditGuestViewController.h"
+#import "GuestViewController.h"
+
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&apikey=micronix_10_2014_wedsimple_proj"]
+#define SaveURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_update&"]
 @interface EditGuestViewController ()
 
 @end
@@ -27,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"%@",self.GidString);
     // Do any additional setup after loading the view from its nib.
     json = [[NSMutableArray alloc]init];
     GroupArray = [[NSMutableArray alloc]init];
@@ -57,7 +61,7 @@
     
    // GroupArray=[[NSArray alloc]initWithObjects:@"Group1",@"Group2",@"Group3",@"Group4",@"Group5",@"Group6", nil];
     
-     WithArray=[[NSArray alloc]initWithObjects:@"With 1 Person",@"With 2 Persons",@"With 3 Persons",@"With 4 Persons",@"With 5 Persons",@"With 6 Persons",@"With 7 Persons",@"With 8 Persons",@"With 9 Persons",@"With 10 Persons", nil];
+     WithArray=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil];
     
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL]];
@@ -107,10 +111,9 @@
         [GroupArray addObject:loc];
         
     }
-    
+    int i=0;
     for(NSString *loc in [json valueForKey:@"id"]) {
-        int i=0;
-        if ([loc isEqualToString:self.groupString]) {
+            if ([loc isEqualToString:self.groupString]) {
             self.GroupText.text = [GroupArray objectAtIndex:i];
             self.groupString = [GroupArray objectAtIndex:i];
             break;
@@ -260,4 +263,53 @@
     return YES;
 }
 
+- (IBAction)SaveAction:(UIButton *)sender {
+    
+//     NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"guest_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",self.GidString,nametxt.text,self.RoleText.text,self.EmailText.text,self.GroupText.text,self.WithText.text];
+    
+    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"guest_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",self.GidString,nametxt.text,self.RoleText.text,self.EmailText.text,@"1",self.WithText.text];
+    
+    NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+  //  NSLog(@"%@",urlTextEscaped);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",SaveURL,urlTextEscaped]];
+  //  NSLog(@"%@",url);
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData1:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+    
+    GuestViewController *GuestVC =[[GuestViewController alloc]init];
+    [self.navigationController pushViewController:GuestVC animated:YES];
+    
+}
+-(void)fetchedData1:(NSData *)responseData
+{
+    NSError *error;
+    UpdateArray = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+   // NSLog(@"%@",UpdateArray);
+}
 @end

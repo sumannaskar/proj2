@@ -15,49 +15,50 @@
                 <outlet property="nametxt" destination="G8v-oa-VPD" id="rtW-Vw-c2F"/>
                 <outlet property="pickerVw" destination="WMt-82-2KC" id="V50-O7-ybw"/>
                 <outlet property="respondingView" destination="JsS-Dh-Lif" id="49C-3r-w7i"/>
+                <outlet property="save" destination="2i0-MZ-vaH" id="JCA-H0-wzL"/>
                 <outlet property="scroll" destination="iAG-lf-PtN" id="RZP-z9-CKO"/>
                 <outlet property="view" destination="7eV-Iy-hhB" id="vaA-Hg-zRd"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="7eV-Iy-hhB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568.00000000000011"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="NCz-gN-tmd">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568.00000000000011"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="iAG-lf-PtN">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="471"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320.00000000000006" height="471"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="17" id="G8v-oa-VPD">
-                            <rect key="frame" x="130" y="43" width="170" height="30"/>
+                            <rect key="frame" x="129.99999999999997" y="43" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Role" minimumFontSize="17" id="DuS-ZP-LjE">
-                            <rect key="frame" x="130" y="108" width="170" height="30"/>
+                            <rect key="frame" x="129.99999999999997" y="108" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Choose Category" minimumFontSize="17" id="IzK-p0-4O0">
-                            <rect key="frame" x="130" y="187" width="170" height="30"/>
+                            <rect key="frame" x="129.99999999999997" y="187" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Choose Event" minimumFontSize="17" id="wVX-6R-uac">
-                            <rect key="frame" x="130" y="252" width="170" height="30"/>
+                            <rect key="frame" x="129.99999999999997" y="252" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Vendor" minimumFontSize="17" id="2as-H7-1ar">
-                            <rect key="frame" x="130" y="324" width="170" height="30"/>
+                            <rect key="frame" x="129.99999999999997" y="324" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -98,9 +99,12 @@
                     <rect key="frame" x="64" y="487" width="192" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Add">
+                    <state key="normal" title="SAVE">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="SaveAction:" destination="-1" eventType="touchUpInside" id="hlw-dY-tmz"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

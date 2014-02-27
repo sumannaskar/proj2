@@ -20,6 +20,9 @@
     
     
     IBOutlet UITextField *nametxt;
+    
+    NSMutableArray *UpdateArray;
+     NSString *savedata;
 }
 
 @property (retain, nonatomic) IBOutlet UIView *respondingView;
@@ -35,11 +38,16 @@
 @property (strong, nonatomic) IBOutlet UITextField *GroupText;
 @property (strong, nonatomic) IBOutlet UITextField *WithText;
 
-
+@property (strong, nonatomic) NSString *GidString;
 @property (strong, nonatomic) NSString *nameString;
 @property (strong, nonatomic) NSString *roleString;
 @property (strong, nonatomic) NSString *emailString;
 @property (strong, nonatomic) NSString *groupString;
 @property (strong, nonatomic) NSString *withString;
+
+@property (strong, nonatomic) IBOutlet UIButton *save;
+
+- (IBAction)SaveAction:(UIButton *)sender;
+
 
 @end

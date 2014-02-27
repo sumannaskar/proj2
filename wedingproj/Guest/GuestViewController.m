@@ -216,6 +216,7 @@
     NSLog(@"%ld",(long)button.tag);
     EditGuestViewController *EditVc=[[EditGuestViewController alloc] init];
     
+     EditVc.GidString = [Gid objectAtIndex:button.tag];
      EditVc.nameString = [Gname objectAtIndex:button.tag];
      EditVc.roleString = [role objectAtIndex:button.tag];
      EditVc.emailString = [email objectAtIndex:button.tag];
@@ -263,11 +264,19 @@
 }
 - (IBAction)DeleteAction:(UIBarButtonItem *)sender {
     
-    for (int i=1; i<[Gid count]; i++) {
+    NSString *str1 = @"-";
+    NSString *str2;
+     NSString *str3 = @"";
+    for (int i=0; i<[Gid count]; i++) {
         if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"]) {
             //NSString * str = [NSString stringWithFormat:@"%@%@%@", str,@"id",[Gid objectAtIndex:i] ];
+            //str1 = [Gid objectAtIndex:i];
+             str2=[NSString stringWithFormat:@"%@%@",[Gid objectAtIndex:i],str1];
+            str3=[NSString stringWithFormat:@"%@%@",str3, str2];
         }
     }
+    NSString *str4 = [str3 substringToIndex:[str3 length]-1];
+    NSLog(@"%@",str4);
 }
 
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
