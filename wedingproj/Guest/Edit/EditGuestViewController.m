@@ -112,6 +112,7 @@
         int i=0;
         if ([loc isEqualToString:self.groupString]) {
             self.GroupText.text = [GroupArray objectAtIndex:i];
+            self.groupString = [GroupArray objectAtIndex:i];
             break;
         }
         i = i+1;

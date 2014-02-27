@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
+		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
 		7AA584F918BF096E00E59852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584F818BF096E00E59852 /* Foundation.framework */; };
 		7AA584FB18BF096E00E59852 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584FA18BF096E00E59852 /* CoreGraphics.framework */; };
 		7AA584FD18BF096E00E59852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584FC18BF096E00E59852 /* UIKit.framework */; };
@@ -96,6 +98,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
+		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
+		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
 		7AA584F518BF096E00E59852 /* wedingproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wedingproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA584F818BF096E00E59852 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AA584FA18BF096E00E59852 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -233,6 +238,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B9AF8C618BF15BA00B97DC6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				4B9AF8C718BF15E900B97DC6 /* GuestCell.h */,
+				4B9AF8C818BF15E900B97DC6 /* GuestCell.m */,
+				4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		7AA584EC18BF096E00E59852 = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +475,7 @@
 		7AA5857A18BF098700E59852 /* Guest */ = {
 			isa = PBXGroup;
 			children = (
+				4B9AF8C618BF15BA00B97DC6 /* cell */,
 				7AA5857B18BF098700E59852 /* AddGuest */,
 				7AA5857F18BF098700E59852 /* Edit */,
 				7AA5858318BF098700E59852 /* GuestViewController.h */,
@@ -739,6 +755,7 @@
 			files = (
 				7AA585DA18BF09A300E59852 /* TodolistViewController.xib in Resources */,
 				7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */,
+				4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */,
 				7AA585B418BF099900E59852 /* Cell.xib in Resources */,
 				7AA5857718BF098300E59852 /* EditEventViewController.xib in Resources */,
 				7AA585D818BF09A300E59852 /* EditTaskViewController.xib in Resources */,
@@ -790,6 +807,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */,
 				7AA585B118BF099900E59852 /* SelectViewController.m in Sources */,
 				7AA5855418BF097D00E59852 /* AddBudget.m in Sources */,
 				7AA5857818BF098300E59852 /* EventViewController.m in Sources */,
@@ -1023,6 +1041,7 @@
 				7AA5852318BF096E00E59852 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AA5852418BF096E00E59852 /* Build configuration list for PBXNativeTarget "wedingprojTests" */ = {
 			isa = XCConfigurationList;
@@ -1031,6 +1050,7 @@
 				7AA5852618BF096E00E59852 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

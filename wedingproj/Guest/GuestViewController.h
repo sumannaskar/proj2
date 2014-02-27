@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-//#include "Cell.h"
-@interface GuestViewController : UIViewController<UIGestureRecognizerDelegate>
+#import "GuestCell.h"
+@interface GuestViewController : UIViewController<UIScrollViewDelegate,UIGestureRecognizerDelegate>
 {
-    IBOutlet UITableView *GuestTable;
     
+    IBOutlet UITableView *InvTable;
+    IBOutlet UIScrollView *InvScroll;
+    GuestCell *cell1;
     NSMutableArray *checkImage;
+    BOOL isLoad;
+    
      NSDictionary *json;
     
      NSMutableArray *Gid;

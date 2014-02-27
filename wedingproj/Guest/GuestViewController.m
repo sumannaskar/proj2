@@ -9,7 +9,7 @@
 #import "GuestViewController.h"
 #import "AddGuestViewController.h"
 #import "EditGuestViewController.h"
-#define NIB_NAME @"Cell"
+#define NIB_NAME @"GuestCell"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_all&event_id=3&apikey=micronix_10_2014_wedsimple_proj"]
 
@@ -40,6 +40,17 @@
      email=[[NSMutableArray alloc]init];
      GroupId=[[NSMutableArray alloc]init];
      NoOfPerson=[[NSMutableArray alloc]init];
+    
+    
+    
+    isLoad = YES;
+    checkImage = [[NSMutableArray alloc]init];
+    InvScroll.delegate = self;
+    InvTable.scrollEnabled = NO;
+    
+    
+    
+    
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL]];
     //NSLog(@"my--%@",url);
@@ -87,7 +98,6 @@
 //    }
 //    else{
         for(NSString *loc in [json valueForKey:@"guest_id"]) {
-            NSLog(@"%@",loc);
             [Gid addObject:loc];
         }
         for(NSString *loc in [json valueForKey:@"name"]) {
@@ -105,7 +115,9 @@
         for(NSString *loc in [json valueForKey:@"no_of_guest"]) {
             [NoOfPerson addObject:loc];
         }
-    [GuestTable reloadData];
+    [self image];
+    [InvScroll addSubview:InvTable];
+    [InvTable reloadData];
    // }
         
 }
@@ -118,215 +130,144 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    //[InvTable setRowHeight: 50.00];
     // Return the number of rows in the section.
+     NSLog(@"%d",[Gname count]);
     return [Gname count];
 }
 //for normal table view....
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
- {
- 
- static NSString *identifire=@"cellidentifire";
- UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifire];
- if (cell == nil) {
- cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifire];
- 
-     cell.textLabel.text=[Gname objectAtIndex:indexPath.row];
-     //cell.textLabel.textAlignment = NSTextAlignmentCenter;
-     UIButton *detailsButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-     detailsButton.frame = CGRectMake(0, 0, 72, 37);
-     [detailsButton setTitle:@"Details" forState:UIControlStateNormal];
-     [detailsButton addTarget:self action:@selector(ViewDetails:) forControlEvents:UIControlEventTouchUpInside];
-     detailsButton.tag = indexPath.row;
-     cell.accessoryType = UITableViewCellAccessoryNone;
-     cell.accessoryView = detailsButton;
-     return cell;
- }
- 
- //cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
- //cell.imageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
-     
-     
- return cell;
- 
- }
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+// {
+//
+//     static NSString *cellidentifire;
+//     UITableViewCell *cell;
+//     cell=[tableView dequeueReusableCellWithIdentifier:cellidentifire];
+//     if(cell==nil)
+//     {
+//         cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellidentifire];
+//         cell.textLabel.text=[NSString stringWithFormat:@"%d",a];
+//         NSLog(@"%d",a);
+//         a=a+1;
+//         cell.accessoryType=UITableViewCellStyleDefault;
+//         //[cell setSelectionStyle:UITableViewCellSelectionStyleGray];
+//         return cell;
+//     }
+//     return cell;
+//
+////[NSString stringWithFormat:@"%d",a];
+//
+// }
 
 //for customize cell......
 
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *simpleTableIdentifier = @"SimpleTableCell";
-//    
-//    Cell *cell = (Cell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-//    if (cell == nil)
-//    {
-//        UINib* nib = [UINib nibWithNibName:NIB_NAME bundle:nil];
-//        NSArray* array = [nib instantiateWithOwner:self options:nil];
-//        cell = [array objectAtIndex:0];
-//    }
-//    cell.backgroundColor=[UIColor clearColor];
-//    // cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
-//    // cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
-//    //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
-//    [cell.cellbkimgv setImage:[UIImage imageNamed:@"tp-bg.png"]];
-//    cell.date.text=[date1 objectAtIndex:indexPath.row];
-//    //[cell.date setFont:[UIFont fontWithName:@"Arial" size:10]];
-//    if ([[read objectAtIndex:indexPath.row]  isEqual: @"unread"]) {
-//        if([[UIScreen mainScreen] bounds].size.height  < 600)
-//        {
-//            cell.lebel.text=[subject objectAtIndex:indexPath.row];
-//            [cell.lebel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:16]];
-//            [cell.date setFont:[UIFont fontWithName:@"Arial" size:10]];
-//            
-//        }
-//        else
-//        {
-//            cell.lebel.text=[subject objectAtIndex:indexPath.row];
-//            [cell.lebel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:30]];
-//            [cell.date setFont:[UIFont fontWithName:@"Arial" size:16]];
-//            
-//        }
-//        
-//        
-//        
-//    }
-//    
-//    else
-//    {
-//        if([[UIScreen mainScreen] bounds].size.height  < 600)
-//        {
-//            
-//            cell.lebel.text=[subject objectAtIndex:indexPath.row];
-//            [cell.lebel setFont:[UIFont fontWithName:@"Arial" size:16]];
-//            [cell.date setFont:[UIFont fontWithName:@"Arial" size:10]];
-//        }
-//        
-//        else
-//        {
-//            cell.lebel.text=[subject objectAtIndex:indexPath.row];
-//            [cell.lebel setFont:[UIFont fontWithName:@"Arial" size:30]];
-//            [cell.date setFont:[UIFont fontWithName:@"Arial" size:16]];
-//            
-//        }
-//        
-//    }
-//    return cell;
-//}
-
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    static NSString *simpleTableIdentifier = @"SimpleTableCell";
     
+    cell1 = (GuestCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell1 == nil)
+    {
+        UINib* nib = [UINib nibWithNibName:NIB_NAME bundle:nil];
+        NSArray* array = [nib instantiateWithOwner:self options:nil];
+        cell1 = [array objectAtIndex:0];
+    }
+    cell1.checkImgv.tag = indexPath.row;
+    //Sets up taprecognizer for each imageview
+    UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    
+    tap.delegate = self;
+    [cell1.checkImgv addGestureRecognizer:tap];
+    //Enable the image to be clicked
+    cell1.checkImgv.userInteractionEnabled = YES;
+    
+    if (isLoad == YES) {
+        [cell1.checkImgv setImage:[UIImage imageNamed:@"index2.jpg"]];
+        [checkImage addObject:@"index2.jpg"];
+    }
+    else{
+        [cell1.checkImgv setImage:[UIImage imageNamed:[checkImage objectAtIndex:indexPath.row]]];
+    }
+    
+    cell1.guestLbl.text = [Gname objectAtIndex:indexPath.row];
+     NSLog(@"%@",[Gname objectAtIndex:indexPath.row]);
+    
+    [cell1.statusBtn addTarget:self action:@selector(InvStatus:) forControlEvents:UIControlEventTouchUpInside];
+    cell1.statusBtn.tag = indexPath.row;
+    
+    return cell1;
 }
-
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    //return 60;
-//    //int cellheight=60;
-//    if([[UIScreen mainScreen] bounds].size.height  < 600)
-//    {
-//        if ([[UIScreen mainScreen] bounds].size.height == 568)
-//        {
-//            
-//           // cellheight=cellheight+20;
-//            
-//            
-//        }
-//        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-//        {
-//            
-//            //no change
-//            
-//        }
-//        else
-//        {
-//            //no change
-//            
-//        }
-//        
-//        
-//    }
-//    else
-//    {
-//        if ([[UIScreen mainScreen] bounds].size.height == 1024)
-//        {
-//            
-//           // cellheight=cellheight+10;
-//            
-//        }
-//        else
-//        {
-//            
-//           // cellheight=cellheight+10;
-//        }
-//    }
-//    // NSLog(@"cellheight-- %d",cellheight);
-//    //return cellheight;
-//    
-//    
-//}
-
--(void)ViewDetails:(UIButton*)button
+- (void)handleTap:(UITapGestureRecognizer *)recognizer
+{
+    // NSLog(@"%d",recognizer.view.tag);
+    isLoad = NO;
+    if ([[checkImage objectAtIndex:recognizer.view.tag]isEqualToString:@"index2.jpg"] ) {
+        [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index.jpg"];
+    }
+    else{
+        [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index2.jpg"];
+    }
+    [InvTable reloadData];
+}
+-(void) InvStatus:(UIButton*)button
 {
     NSLog(@"%ld",(long)button.tag);
-    EditGuestViewController *EditguestVc=[[EditGuestViewController alloc] init];
+    EditGuestViewController *EditVc=[[EditGuestViewController alloc] init];
     
-    EditguestVc.nameString = [Gname objectAtIndex:button.tag];
-    EditguestVc.roleString = [role objectAtIndex:button.tag];
-    EditguestVc.emailString = [email objectAtIndex:button.tag];
-    EditguestVc.groupString = [GroupId objectAtIndex:button.tag];
-    EditguestVc.withString = [NoOfPerson objectAtIndex:button.tag];
-    [self.navigationController pushViewController:EditguestVc animated:YES];
-
+     EditVc.nameString = [Gname objectAtIndex:button.tag];
+     EditVc.roleString = [role objectAtIndex:button.tag];
+     EditVc.emailString = [email objectAtIndex:button.tag];
+     EditVc.groupString = [GroupId objectAtIndex:button.tag];
+     EditVc.withString = [NoOfPerson objectAtIndex:button.tag];
+    
+    
+    
+    [self.navigationController pushViewController:EditVc animated:YES];
 }
-- (void)didReceiveMemoryWarning
+
+-(void)image
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    int tableRowheight = 50*[Gname count];
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            
+            InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
+            InvScroll.contentSize = CGSizeMake(320, tableRowheight);
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+                        InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
+            InvScroll.contentSize = CGSizeMake(320, tableRowheight);
+            
+        }
+        else
+        {
+            InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
+            InvScroll.contentSize = CGSizeMake(320, tableRowheight);
+        }
+        
+        
+    }
+    else
+    {
+        //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
+        InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
+        InvScroll.contentSize = CGSizeMake(320, tableRowheight);
+        
+        
+    }
 }
-
-//-(void)image
-//{
-//    if([[UIScreen mainScreen] bounds].size.height  < 600)
-//    {
-//        if ([[UIScreen mainScreen] bounds].size.height == 568)
-//        {
-//            int tableRowheight = 100*10;
-//            GuestTable.frame=CGRectMake(0, 0, 320, tableRowheight+10);
-//            GuestScroll.contentSize = CGSizeMake(320, tableRowheight+10);
-//        }
-//        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-//        {
-//            int tableRowheight = 100*50;
-//            GuestTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-//            GuestScroll.contentSize = CGSizeMake(320, tableRowheight);
-//            
-//        }
-//        else
-//        {
-//            int tableRowheight = 100*10;
-//            GuestTable.frame=CGRectMake(0, 0, 320, tableRowheight+10);
-//            GuestScroll.contentSize = CGSizeMake(320, tableRowheight+10);
-//        }
-//        
-//        
-//    }
-//    else
-//    {
-//         //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
-//        int tableRowheight = 100*10;
-//        GuestTable.frame=CGRectMake(0, 0, 320, tableRowheight+10);
-//        GuestScroll.contentSize = CGSizeMake(320, tableRowheight+10);
-//
-//
-//    }
-//}
-//
-//
 - (IBAction)DeleteAction:(UIBarButtonItem *)sender {
+    
+    for (int i=1; i<[Gid count]; i++) {
+        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"]) {
+            //NSString * str = [NSString stringWithFormat:@"%@%@%@", str,@"id",[Gid objectAtIndex:i] ];
+        }
+    }
 }
 
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
