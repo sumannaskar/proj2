@@ -229,28 +229,28 @@
     
     if (self.cancelbtn.tag==1) {
         
-        self.categorytxt.text=@"";
+        self.categorytxt.text=self.categorystr;
         [self.categorytxt resignFirstResponder];
         
     }
     
     if (self.cancelbtn.tag==2) {
         
-        self.eventtxt.text=@"";
+        self.eventtxt.text=self.eventnamestr;
         [self.eventtxt resignFirstResponder];
         
     }
     
     if (self.cancelbtn.tag==3) {
         
-        self.vendortxt.text=@"";
+        self.vendortxt.text=self.vendorstr;
         [self.vendortxt resignFirstResponder];
         
     }
     
     if (self.cancelbtn.tag==4) {
         
-        self.statustxt.text=@"";
+        self.statustxt.text=self.statusstr;
         [self.statustxt resignFirstResponder];
         
     }
