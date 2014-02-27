@@ -10,8 +10,14 @@
 
 @interface AllBudget : UIViewController
 {
-    
+    NSMutableArray *json;
+    IBOutlet UITableView *allbudget;
+    NSMutableArray *budgetname;
+    NSMutableArray *budgetid;
 }
+@property(nonatomic,retain)NSString *eventidpass;
+
 - (IBAction)addBudget:(id)sender;
 - (IBAction)deleteBudget:(UIBarButtonItem *)sender;
+
 @end

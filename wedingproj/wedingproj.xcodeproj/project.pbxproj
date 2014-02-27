@@ -353,13 +353,13 @@
 		7AA5853218BF097D00E59852 /* Manage Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AA5853B18BF097D00E59852 /* Customcell */,
 				7AA5854B18BF097D00E59852 /* ManageBudget.h */,
 				7AA5854C18BF097D00E59852 /* ManageBudget.m */,
 				7AA5854D18BF097D00E59852 /* ManageBudget.xib */,
 				7AA585E718BF1D7F00E59852 /* DetailBudget */,
 				7AA5853318BF097D00E59852 /* Add Budget */,
 				7AA5853718BF097D00E59852 /* AllBudget */,
-				7AA5853B18BF097D00E59852 /* Customcell */,
 				7AA5853F18BF097D00E59852 /* DeleteBudget */,
 				7AA5854718BF097D00E59852 /* EditBudget */,
 			);
@@ -659,6 +659,7 @@
 		7AA585DB18BF09AA00E59852 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				7AA585E818BF647A00E59852 /* ManageVenor */,
 				7AA585DC18BF09AA00E59852 /* VendorViewController.h */,
 				7AA585DD18BF09AA00E59852 /* VendorViewController.m */,
 				7AA585DE18BF09AA00E59852 /* VendorViewController.xib */,
@@ -685,6 +686,13 @@
 			);
 			name = DetailBudget;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		7AA585E818BF647A00E59852 /* ManageVenor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ManageVenor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

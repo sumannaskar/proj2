@@ -31,6 +31,9 @@
     IBOutlet UILabel *amountpaidtext;
     
     NSMutableArray *json;
+    NSMutableArray *vendorid;
+    
+    
     
     
     
@@ -38,7 +41,7 @@
 }
 - (IBAction)done:(id)sender;
 - (IBAction)edit:(id)sender;
-
+@property(nonatomic,retain)NSString *budgetidpass;
 
 
 @end

@@ -29,7 +29,11 @@
     IBOutlet UIDatePicker *datepickerVW;
     IBOutlet UILabel *vendername;
     IBOutlet UITextField *vendernametext;
-      NSArray *pkarray;//delete after use
+    NSMutableArray *json;
+    NSMutableArray *vendorname;
+    NSMutableArray *vendorid;
+    NSString *vendoridpass;
+    
 }
 
 - (IBAction)save:(id)sender;

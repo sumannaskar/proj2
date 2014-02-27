@@ -17,7 +17,6 @@ cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddGuestViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Guest/AddGuest/AddGuestViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/Customcell.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Customcell/Customcell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/Cell.o /Users/macmini2/Desktop/proj2/wedingproj/Invitation/GroupWise/SendInv/cell/Cell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/GuestViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Guest/GuestViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/WelcomeViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Welcome/WelcomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -26,6 +25,7 @@ cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AppDelegate.o /Users/macmini2/Desktop/proj2/wedingproj/wedingproj/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/CalculateBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/CalculateBudget/CalculateBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/Cell3.o /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/cell/Cell3.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -287,9 +287,9 @@ t1393479767
 s401
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m
-c00000000530ED05700000000000004A3
-t1393479767
-s1187
+c00000000530F2B3800000000000004A4
+t1393503032
+s1188
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.xib
 c00000000530ED0570000000000000CD3
@@ -312,29 +312,29 @@ t1393479767
 s9087
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.h
-c00000000530F02300000000000000356
-t1393492528
-s854
+c00000000530F38CA00000000000003B0
+t1393506506
+s944
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m
-c00000000530F077A0000000000000D49
-t1393493882
-s3401
+c00000000530F39B30000000000000E2E
+t1393506739
+s3630
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib
-c00000000530F0230000000000000343C
-t1393492528
-s13372
+c00000000530F36CE0000000000003449
+t1393505998
+s13385
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.h
-c00000000530ED0570000000000000476
-t1393479767
-s1142
+c00000000530F1E6800000000000004C5
+t1393499752
+s1221
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.m
-c00000000530ED0570000000000000A37
-t1393479767
-s2615
+c00000000530F2B380000000000001546
+t1393503032
+s5446
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.xib
 c00000000530ED057000000000000492C
@@ -342,19 +342,19 @@ t1393479767
 s18732
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.h
-c00000000530ED0570000000000000135
-t1393479767
-s309
+c00000000530F36CE00000000000001E1
+t1393505998
+s481
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.m
-c00000000530ED0570000000000000B19
-t1393479767
-s2841
+c00000000530F396A000000000000122B
+t1393506666
+s4651
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.xib
-c00000000530ED0570000000000000EE4
-t1393479767
-s3812
+c00000000530F36CE0000000000000F3C
+t1393505998
+s3900
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Customcell/Customcell.h
 c00000000530ED0570000000000000147
@@ -367,9 +367,9 @@ t1393479767
 s633
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Customcell/Customcell.xib
-c00000000530ED0570000000000000C7E
-t1393479767
-s3198
+c00000000530F2B380000000000000C7F
+t1393503032
+s3199
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.h
 c00000000530ED05700000000000001CF
@@ -377,9 +377,9 @@ t1393479767
 s463
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.m
-c00000000530ED05700000000000011A7
-t1393479767
-s4519
+c00000000530F2B380000000000001558
+t1393503032
+s5464
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.xib
 c00000000530ED0570000000000000D62
@@ -402,14 +402,14 @@ t1393479767
 s2876
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.h
-c00000000530F06330000000000000706
-t1393493555
-s1798
+c00000000530F1E680000000000000753
+t1393499752
+s1875
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.m
-c00000000530F06520000000000001774
-t1393493586
-s6004
+c00000000530F1E68000000000000188E
+t1393499752
+s6286
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.xib
 c00000000530ED0570000000000004AE7
@@ -417,14 +417,14 @@ t1393479767
 s19175
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/ManageBudget.h
-c00000000530ED057000000000000012E
-t1393479767
-s302
+c00000000530F2B380000000000000184
+t1393503032
+s388
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/ManageBudget.m
-c00000000530ED0570000000000000740
-t1393479767
-s1856
+c00000000530F2B380000000000000DD2
+t1393503032
+s3538
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/ManageBudget.xib
 c00000000530ED0570000000000000AEE
@@ -436,32 +436,32 @@ t1393492528
 s114164
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o
-t1393492528
-s69384
+t1393506001
+s82224
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o
-t1393492528
-s83080
+t1393506036
+s104668
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddGuestViewController.o
 t1393492528
 s92500
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o
-t1393492528
-s103968
+t1393503032
+s128528
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o
-t1393492528
-s64420
+t1393506666
+s76176
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AppDelegate.o
 t1393492528
 s74096
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o
-t1393492528
-s53120
+t1393503032
+s53188
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/CalculateBudget.o
 t1393492528
@@ -488,36 +488,36 @@ t1393492528
 s48576
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o
-t1393492528
-s67944
+t1393503032
+s72596
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudgetCC.o
 t1393492528
 s48844
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o
-t1393493882
-s73120
+t1393506739
+s75464
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o
-t1393493586
-s99768
+t1393499752
+s102656
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o
-t1393492528
-s92720
+t1393506001
+s93316
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditGuestViewController.o
 t1393492528
 s96552
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o
-t1393492528
-s104120
+t1393503032
+s138500
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o
-t1393492528
-s91004
+t1393506001
+s89116
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/GuestViewController.o
 t1393492528
@@ -540,8 +540,8 @@ t1393492528
 s51060
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o
-t1393492528
-s52920
+t1393506036
+s62724
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/SelectViewController.o
 t1393492528
@@ -552,12 +552,12 @@ t1393492528
 s72544
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o
-t1393492528
-s81612
+t1393503032
+s91360
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o
-t1393492528
-s42724
+t1393503032
+s42172
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/WelcomeViewController.o
 t1393492528
@@ -581,11 +581,11 @@ t1393480313
 s525
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app
-t1393493882
+t1393506739
 s1394
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM
-t1393493882
+t1393506667
 s102
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AddBudget.nib
@@ -593,20 +593,20 @@ t1393480312
 s6888
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AddEventViewController.nib
-t1393480312
-s5424
+t1393506040
+s5489
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AddGuestViewController.nib
 t1393480312
 s5058
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AddTaskViewController.nib
-t1393480312
-s5673
+t1393499752
+s5739
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AllBudget.nib
-t1393480312
-s1950
+t1393506039
+s1992
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/BudgetViewController.nib
 t1393480312
@@ -633,7 +633,7 @@ t1393492528
 s2473
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/Customcell.nib
-t1393480312
+t1393503032
 s1978
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/DeleteBudget.nib
@@ -645,8 +645,8 @@ t1393480312
 s2062
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/DetailBudget.nib
-t1393492528
-s4350
+t1393506040
+s4259
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/EditBudget.nib
 t1393480312
@@ -661,8 +661,8 @@ t1393480312
 s4489
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/EditTaskViewController.nib
-t1393480312
-s5679
+t1393503032
+s5738
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/EventViewController.nib
 t1393480312
@@ -713,8 +713,8 @@ t1393480307
 s2082
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/VendorViewController.nib
-t1393480312
-s836
+t1393506039
+s2698
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/WelcomeViewController.nib
 t1393480312
@@ -733,23 +733,23 @@ t1393480312
 s8227
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj
-t1393493882
-s341420
+t1393506739
+s384988
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.h
-c00000000530ED05700000000000004E0
-t1393479767
-s1248
+c00000000530F2B370000000000000550
+t1393503031
+s1360
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m
-c00000000530ED05700000000000010AE
-t1393479767
-s4270
+c00000000530F2B370000000000001AB1
+t1393503031
+s6833
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.xib
-c00000000530ED057000000000000480C
-t1393479767
-s18444
+c00000000530F2B3700000000000048C7
+t1393503031
+s18631
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Event/Cell/Cell2.h
 c00000000530ED0570000000000000182
@@ -767,9 +767,9 @@ t1393479767
 s3721
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.h
-c00000000530ED0570000000000000617
-t1393479767
-s1559
+c00000000530F2B37000000000000065A
+t1393503031
+s1626
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m
 c00000000530EE8C30000000000001240
@@ -787,9 +787,9 @@ t1393479767
 s759
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.m
-c00000000530ED0570000000000002534
-t1393479767
-s9524
+c00000000530F2B3700000000000025EF
+t1393503031
+s9711
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.xib
 c00000000530ED05700000000000010B9
@@ -972,34 +972,34 @@ t1393479767
 s3602
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.h
-c00000000530ED0570000000000000597
-t1393479767
-s1431
+c00000000530F09DC0000000000000600
+t1393494492
+s1536
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m
-c00000000530ED0570000000000001B21
-t1393479767
-s6945
+c00000000530F1E6900000000000027EF
+t1393499753
+s10223
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.xib
-c00000000530ED0570000000000004E98
-t1393479767
-s20120
+c00000000530F09DC0000000000004F52
+t1393494492
+s20306
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.h
-c00000000530EE9D00000000000000714
-t1393486288
-s1812
+c00000000530F1E6900000000000007B4
+t1393499753
+s1972
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m
-c00000000530F02300000000000001CF8
-t1393492528
-s7416
+c00000000530F1E690000000000002769
+t1393499753
+s10089
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.xib
-c00000000530ED0570000000000004EB5
-t1393479767
-s20149
+c00000000530F1E690000000000004F6F
+t1393499753
+s20335
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.h
 c00000000530EE9D00000000000000268
@@ -1007,9 +1007,9 @@ t1393486288
 s616
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m
-c00000000530EE9D0000000000000250C
-t1393486288
-s9484
+c00000000530F1E690000000000002604
+t1393499753
+s9732
 
 N/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.xib
 c00000000530ED0570000000000001151
@@ -1037,14 +1037,14 @@ t1393479767
 s238
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m
-c00000000530ED057000000000000033D
-t1393479767
-s829
+c00000000530F2B3800000000000002AF
+t1393503032
+s687
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.xib
-c00000000530ED0570000000000000514
-t1393479767
-s1300
+c00000000530F36CE0000000000000C3B
+t1393505998
+s3131
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Welcome/WelcomeViewController.h
 c00000000530ED0570000000000000146
@@ -2221,7 +2221,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesee3f76d33fbfb841^14b376d33fbfb841^---0#1#1#--18"Check dependencies36"2E23144E-5C6D-4790-929B-28A5E4C14907-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies90f5583371bfb841^1b65593371bfb841^---0#1#1#--18"Check dependencies36"C64AFDE8-DFF3-4641-B2BB-FE445D83607E-
 
 CCompileAssetCatalog /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app /Users/macmini2/Desktop/proj2/wedingproj/wedingproj/Images.xcassets
 r0
@@ -2242,8 +2242,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Add\ Budget/AddBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175868.634373
-e415175868.746386
+s415198798.623308
+e415198801.228130
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o
@@ -2254,8 +2254,8 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.m230"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o Budget/Manage\ Budget/Add\ Budget/AddBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7d93a2bc14bfb841^f512bfbc14bfb841^---0#0#1#-19%DVTDocumentLocation2@104"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/Add%20Budget/AddBudget.m0000000000000000^3788"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o Budget/Manage\ Budget/Add\ Budget/AddBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Add\ Budget/AddBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o36"35611FE4-EA16-4B59-B0E2-05B0824441B8-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.m230"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o Budget/Manage\ Budget/Add\ Budget/AddBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0ebf9f4e6ebfb841^13bb3a516ebfb841^---0#0#1#-19%DVTDocumentLocation2@104"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/Add%20Budget/AddBudget.m0000000000000000^3788"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o Budget/Manage\ Budget/Add\ Budget/AddBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Add\ Budget/AddBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o36"EAA36A8B-22F0-43D4-9957-412E50030E66-
+b2269D56E-A928-4E69-91C7-83DB4F43D193
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o /Users/macmini2/Desktop/wedingproj/Budget/Manage\ Budget/Add\ Budget/AddBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173104.707417
@@ -2274,8 +2274,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175869.214540
-e415175869.350309
+s415198834.936727
+e415198836.631776
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o
@@ -2286,8 +2286,10 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m237"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o Event/AddEvent/AddEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf41637bd14bfb841^54e359bd14bfb841^---0#0#1#-19%DVTDocumentLocation2@96"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m0000000000000000^3828"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o Event/AddEvent/AddEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o36"3C221914-4DAC-4E6D-B300-58A54345D05B-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+d/Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.h
+d/Users/macmini2/Desktop/proj2/wedingproj/Event/Cell/Cell2.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m237"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o Event/AddEvent/AddEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere5eeef726ebfb841^59bfa1746ebfb841^---0#0#1#-19%DVTDocumentLocation2@96"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m0000000000000000^3828"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o Event/AddEvent/AddEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o36"12399BEE-5E69-4337-898E-45DF98301947-
+b2F2DE583-6611-40E2-8BD7-D008F6984DD7
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddEventViewController.o /Users/macmini2/Desktop/wedingproj/Event/AddEvent/AddEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.865163
@@ -2338,8 +2340,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175869.291932
-e415175869.444846
+s415193066.523432
+e415193067.481712
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o
@@ -2350,8 +2352,10 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m
 d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m237"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler76de4abd14bfb841^5de171bd14bfb841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m0000000000000000^3826"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o36"917CBC91-7192-4BBE-8CC3-A541FD6EF9D3-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.h
+d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/cell/Cell3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m237"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbc2086ea57bfb841^f8537beb57bfb841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m0000000000000000^3826"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o36"774457D7-8891-42F8-ACBD-9DD77E9CC4C1-
+b1C5EA1B0-7663-4713-809D-0C27C33BEF7A
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddTaskViewController.o /Users/macmini2/Desktop/wedingproj/ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.982443
@@ -2370,8 +2374,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/AllBudget/AllBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415180862.716768
-e415180862.800252
+s415199466.820767
+e415199466.909344
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o
@@ -2385,8 +2389,8 @@ d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudg
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.m228"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o Budget/Manage\ Budget/AllBudget/AllBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0ea0b73e28bfb841^83ddcc3e28bfb841^---0#0#1#-19%DVTDocumentLocation2@101"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/AllBudget/AllBudget.m0000000000000000^3784"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o Budget/Manage\ Budget/AllBudget/AllBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/AllBudget/AllBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o36"A0E78CC0-E852-438B-8951-2B3673F14A45-
-bD2651AD5-8050-46BD-A42E-94FC598F9E3E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.m228"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o Budget/Manage\ Budget/AllBudget/AllBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5340d2ea70bfb841^19cbe8ea70bfb841^---0#0#1#-19%DVTDocumentLocation2@101"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/AllBudget/AllBudget.m0000000000000000^3784"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o Budget/Manage\ Budget/AllBudget/AllBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/AllBudget/AllBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o36"ABB63C58-62C2-488E-BC1B-B463A54363A3-
+b35CD86EA-42EE-417A-B968-14BAB65D3DD1
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o /Users/macmini2/Desktop/wedingproj/Budget/Manage\ Budget/AllBudget/AllBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.463800
@@ -2442,8 +2446,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175869.446273
-e415175869.538747
+s415195316.241304
+e415195318.001072
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o
@@ -2456,8 +2460,8 @@ d/Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/CalculateBudget/CalculateBudget.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/ManageBudget.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m225"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o Budget/BudgetViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler956372bd14bfb841^e1ed89bd14bfb841^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m0000000000000000^3800"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o Budget/BudgetViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o36"312B0F58-CDD3-4F5F-AACA-7942F053E022-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m225"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o Budget/BudgetViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerefe23db460bfb841^994900b660bfb841^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m0000000000000000^3800"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o Budget/BudgetViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o36"5C517E99-81C4-4196-A938-5CEC4AD2248A-
+b357D8735-2CC0-431F-B89C-0A1C4B1A3C0F
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o /Users/macmini2/Desktop/wedingproj/Budget/BudgetViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173106.104798
@@ -2670,8 +2674,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175868.890641
-e415175869.010449
+s415194154.985331
+e415194155.223485
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o
@@ -2683,8 +2687,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudgetCC/DeleteBudgetCC.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.m237"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compileree26e4bc14bfb841^ebac02bd14bfb841^---0#0#1#-19%DVTDocumentLocation2@107"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/DeleteBudget/DeleteBudget.m0000000000000000^3808"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o36"BEA5A8A1-F00C-4AF7-AC6C-059E4E73F0CB-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.m237"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8868fc2a5cbfb841^b536392b5cbfb841^---0#0#1#-19%DVTDocumentLocation2@107"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/DeleteBudget/DeleteBudget.m0000000000000000^3808"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o36"68DBA776-8D60-436E-A5BE-37FA74EC9C26-
+b2049D969-174F-46A6-A3C1-A71C3CF3F196
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudget.o /Users/macmini2/Desktop/wedingproj/Budget/Manage\ Budget/DeleteBudget/DeleteBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.561298
@@ -2736,8 +2740,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compil
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415186682.137132
-e415186682.237239
+s415199539.353897
+e415199539.466015
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o
@@ -2749,8 +2753,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m209"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler603c23fa3ebfb841^f5bb3cfa3ebfb841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m0000000000000000^3752"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o36"8666DD1A-F542-4F70-8186-3ED4B626AFAB-
-bEAEF6C5C-60CD-4FAF-B441-4219507D47ED
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m209"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler59be5a3371bfb841^d34c773371bfb841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m0000000000000000^3752"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o36"54E78133-042E-48AF-A65F-A9315FB9D130-
+b5BE0D997-E6FF-485C-950D-BCC4ADFBEC2D
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o /Users/macmini2/Desktop/wedingproj/Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.671190
@@ -2770,8 +2774,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/EditBudget/EditBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415186386.328663
-e415186386.414090
+s415192419.492488
+e415192420.645434
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o
@@ -2782,8 +2786,8 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.m231"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o Budget/Manage\ Budget/EditBudget/EditBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler034154d23dbfb841^a3036ad23dbfb841^---0#0#1#-19%DVTDocumentLocation2@103"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/EditBudget/EditBudget.m0000000000000000^3792"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o Budget/Manage\ Budget/EditBudget/EditBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/EditBudget/EditBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o36"078C226B-F4AA-47C0-B3F7-51928425DD74-
-bFA72D186-9377-4C46-A1F3-84A73CD8DCA1
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.m231"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o Budget/Manage\ Budget/EditBudget/EditBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerde3b7e6355bfb841^683ca56455bfb841^---0#0#1#-19%DVTDocumentLocation2@103"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/EditBudget/EditBudget.m0000000000000000^3792"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o Budget/Manage\ Budget/EditBudget/EditBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/EditBudget/EditBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o36"BF4B9567-9D73-4B03-AF91-FE56062FD9AE-
+b48596B5A-68A3-49D6-BFF5-C22A93D9844B
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o /Users/macmini2/Desktop/wedingproj/Budget/Manage\ Budget/EditBudget/EditBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.428437
@@ -2802,8 +2806,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175868.869056
-e415175869.012312
+s415198798.626825
+e415198801.228689
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o
@@ -2814,8 +2818,8 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m240"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o Event/EditEvent/EditEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler2ba2debc14bfb841^bb2703bd14bfb841^---0#0#1#-19%DVTDocumentLocation2@98"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m0000000000000000^3836"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o Event/EditEvent/EditEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o36"846FEDE9-7AD7-4E9F-AF96-5C4C30439BEB-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m240"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o Event/EditEvent/EditEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler08aca04e6ebfb841^75c73a516ebfb841^---0#0#1#-19%DVTDocumentLocation2@98"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m0000000000000000^3836"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o Event/EditEvent/EditEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o36"0D984759-AFB8-4D39-8C6E-961994258AFF-
+b2269D56E-A928-4E69-91C7-83DB4F43D193
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o /Users/macmini2/Desktop/wedingproj/Event/EditEvent/EditEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.549328
@@ -2866,8 +2870,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175868.842544
-e415175868.999384
+s415193066.519519
+e415193067.498989
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o
@@ -2878,8 +2882,10 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m
 d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m240"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o ToDoList/EditTask/EditTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd0d4d7bc14bfb841^7cf3ffbc14bfb841^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m0000000000000000^3834"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o ToDoList/EditTask/EditTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o36"335A2325-CCA7-42DF-A9C2-1DB89C828398-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.h
+d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/cell/Cell3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m240"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o ToDoList/EditTask/EditTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd21885ea57bfb841^dbbe7feb57bfb841^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m0000000000000000^3834"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o ToDoList/EditTask/EditTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o36"21C62B97-6815-40BC-96E7-40730FD121F5-
+b1C5EA1B0-7663-4713-809D-0C27C33BEF7A
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o /Users/macmini2/Desktop/wedingproj/ToDoList/EditTask/EditTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.469472
@@ -2898,8 +2904,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175868.634566
-e415175868.783108
+s415198798.623335
+e415198801.228518
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o
@@ -2913,8 +2919,8 @@ d/Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Event/Cell/Cell2.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.m222"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o Event/EventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6b9ba2bc14bfb841^e679c8bc14bfb841^---0#0#1#-19%DVTDocumentLocation2@84"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.m0000000000000000^3792"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o Event/EventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o36"21787D09-E909-4F84-99D3-3D25E94E69F2-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.m222"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o Event/EventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler58c59f4e6ebfb841^7ac23a516ebfb841^---0#0#1#-19%DVTDocumentLocation2@84"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.m0000000000000000^3792"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o Event/EventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Event/EventViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o36"BE5D6442-445E-46FF-88C2-D6DD75B6C88A-
+b2269D56E-A928-4E69-91C7-83DB4F43D193
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o /Users/macmini2/Desktop/wedingproj/Event/EventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173104.708396
@@ -3126,8 +3132,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/ManageBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175869.354096
-e415175869.448670
+s415198834.938657
+e415198836.587779
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o
@@ -3140,8 +3146,8 @@ d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/ManageBudget.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/ManageBudget.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Customcell/Customcell.h
 d/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/ManageBudget.m224"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o Budget/Manage\ Budget/ManageBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler60c85abd14bfb841^dfe172bd14bfb841^---0#0#1#-19%DVTDocumentLocation2@94"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/ManageBudget.m0000000000000000^3782"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o Budget/Manage\ Budget/ManageBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/ManageBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o36"8D825F6F-4720-47B0-A3A1-705197C3319C-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/ManageBudget.m224"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o Budget/Manage\ Budget/ManageBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0473f0726ebfb841^257996746ebfb841^---0#0#1#-19%DVTDocumentLocation2@94"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/ManageBudget.m0000000000000000^3782"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o Budget/Manage\ Budget/ManageBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/ManageBudget.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o36"A6C29708-85F2-4B16-805B-0D86D69C4DA1-
+b2F2DE583-6611-40E2-8BD7-D008F6984DD7
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageBudget.o /Users/macmini2/Desktop/wedingproj/Budget/Manage\ Budget/ManageBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173106.058453
@@ -3232,8 +3238,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175869.217572
-e415175869.352115
+s415193066.523409
+e415193067.454277
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o
@@ -3247,8 +3253,8 @@ d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.h
 d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/cell/Cell3.h
 d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.h
 d/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m231"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o ToDoList/TodolistViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb2d737bd14bfb841^e82d5abd14bfb841^---0#0#1#-19%DVTDocumentLocation2@90"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m0000000000000000^3816"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o ToDoList/TodolistViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o36"4422526E-DACC-4BC9-AE44-5E20C0F0C30D-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m231"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o ToDoList/TodolistViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler182386ea57bfb841^e44b74eb57bfb841^---0#0#1#-19%DVTDocumentLocation2@90"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m0000000000000000^3816"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o ToDoList/TodolistViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o36"B4876C2A-A027-49E1-BF36-19C392A3278B-
+b1C5EA1B0-7663-4713-809D-0C27C33BEF7A
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/TodolistViewController.o /Users/macmini2/Desktop/wedingproj/ToDoList/TodolistViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173105.912696
@@ -3270,8 +3276,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415175869.452002
-e415175869.532159
+s415195318.002317
+e415195318.127240
 r1
 xCompileC
 xBuild/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o
@@ -3282,8 +3288,8 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m
 d/Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m225"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o Vendor/VendorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler55dd73bd14bfb841^d63b88bd14bfb841^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m0000000000000000^3800"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o Vendor/VendorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o36"145F058B-8601-4571-82E5-981EF4B9B70B-
-bBE9E3D89-F639-49C6-9209-C0647FF8FA4E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m225"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o Vendor/VendorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb6be00b660bfb841^cd9220b660bfb841^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m0000000000000000^3800"CompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o Vendor/VendorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-generated-files.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-own-target-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/wedingproj-project-headers.hmap -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/DerivedSources -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-gnrirztbojhjspbifkawserrwgvu/wedingproj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.d --serialize-diagnostics /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.dia -c /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o36"AD22BAB3-62ED-425E-AE51-65D5E94574AE-
+b357D8735-2CC0-431F-B89C-0A1C4B1A3C0F
 
 CCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o /Users/macmini2/Desktop/wedingproj/Vendor/VendorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415173106.157820
@@ -3374,22 +3380,34 @@ CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Budget/CalculateBudget/Calc
 r0
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib
-s415178507.571500
-e415178507.633717
+s415198839.902991
+e415198840.365406
 r1
 xCompileXIB
 x/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compiling /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib34"CompileXIB Budget/DetailBudget.xib8d5d920b1fbfb841^793ba20b1fbfb841^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib0000000000000000^758"CompileXIB Budget/DetailBudget.xib    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/DetailBudget.nib /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib36"2D324B08-0188-447A-9DC1-8A2E61555A5A-
-b2A06F22F-F4C8-46AC-8D11-0ABA91D5119C
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compiling /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib34"CompileXIB Budget/DetailBudget.xib043ae7776ebfb841^198c5d786ebfb841^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib0000000000000000^758"CompileXIB Budget/DetailBudget.xib    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/DetailBudget.nib /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.xib36"3D0354B0-28D6-4AAB-9EAC-E9FF601F9C16-
+b2F2DE583-6611-40E2-8BD7-D008F6984DD7
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Add\ Budget/AddBudget.xib
 r0
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/AllBudget/AllBudget.xib
-r0
+s415198837.633084
+e415198839.854509
+r1
+xCompileXIB
+x/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compiling /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.xib56"CompileXIB Budget/Manage\ Budget/AllBudget/AllBudget.xib1f2da2756ebfb841^7fc1da776ebfb841^---0#0#1#-19%DVTDocumentLocation2@103"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/AllBudget/AllBudget.xib0000000000000000^799"CompileXIB Budget/Manage\ Budget/AllBudget/AllBudget.xib    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AllBudget.nib /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/AllBudget/AllBudget.xib36"A4B12824-D087-4227-AB20-88E6F74DFE55-
+b2F2DE583-6611-40E2-8BD7-D008F6984DD7
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Customcell/Customcell.xib
-r0
+s415195503.454911
+e415195507.751416
+r1
+xCompileXIB
+x/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Customcell/Customcell.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compiling /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage Budget/Customcell/Customcell.xib58"CompileXIB Budget/Manage\ Budget/Customcell/Customcell.xibdf8a746f61bfb841^b35ec07361bfb841^---0#0#1#-19%DVTDocumentLocation2@105"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/Customcell/Customcell.xib0000000000000000^804"CompileXIB Budget/Manage\ Budget/Customcell/Customcell.xib    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/Customcell.nib /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Customcell/Customcell.xib36"8939ED2E-DCAB-4061-83A0-63D4CF94FF37-
+b010AFA78-818D-47BE-98F2-243AB6E6CB25
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/DeleteBudget/DeleteBudget.xib
 r0
@@ -3404,7 +3422,13 @@ CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Manag
 r0
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.xib
-r0
+s415198839.855899
+e415198840.389923
+r1
+xCompileXIB
+x/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compiling /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.xib52"CompileXIB Event/AddEvent/AddEventViewController.xib3c31db776ebfb841^52d263786ebfb841^---0#0#1#-19%DVTDocumentLocation2@98"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.xib0000000000000000^804"CompileXIB Event/AddEvent/AddEventViewController.xib    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AddEventViewController.nib /Users/macmini2/Desktop/proj2/wedingproj/Event/AddEvent/AddEventViewController.xib36"66623505-D243-43E7-ABA4-2D1BD4A06C98-
+b2F2DE583-6611-40E2-8BD7-D008F6984DD7
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Event/Cell/Cell2.xib
 r0
@@ -3449,10 +3473,22 @@ CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Login/LoginViewController.x
 r0
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.xib
-r0
+s415187747.089385
+e415187752.480938
+r1
+xCompileXIB
+x/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compiling /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.xib53"CompileXIB ToDoList/AddTask/AddTaskViewController.xibedf5162343bfb841^251f7b2843bfb841^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.xib0000000000000000^805"CompileXIB ToDoList/AddTask/AddTaskViewController.xib    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AddTaskViewController.nib /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/AddTask/AddTaskViewController.xib36"A1FE1DA2-94CF-4713-9F07-6B437A4BE1A8-
+b96F4721E-308F-4674-871A-14F31E702BC6
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.xib
-r0
+s415193067.885031
+e415193076.228919
+r1
+xCompileXIB
+x/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compiling /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.xib55"CompileXIB ToDoList/EditTask/EditTaskViewController.xib83a1e2eb57bfb841^179b3af457bfb841^---0#0#1#-19%DVTDocumentLocation2@101"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.xib0000000000000000^810"CompileXIB ToDoList/EditTask/EditTaskViewController.xib    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/EditTaskViewController.nib /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.xib36"45EFB264-8B1C-4125-8911-AA0D5E82A26E-
+b1C5EA1B0-7663-4713-809D-0C27C33BEF7A
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.xib
 r0
@@ -3467,7 +3503,13 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compili
 bEA6D8655-B73C-4E0B-A438-CD115BFB6587
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.xib
-r0
+s415198837.634475
+e415198839.901611
+r1
+xCompileXIB
+x/Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compiling /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.xib42"CompileXIB Vendor/VendorViewController.xib9083a2756ebfb841^81d0e6776ebfb841^---0#0#1#-19%DVTDocumentLocation2@88"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.xib0000000000000000^782"CompileXIB Vendor/VendorViewController.xib    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/VendorViewController.nib /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.xib36"95B25F1B-24E6-40CA-BE57-650D32E78CA2-
+b2F2DE583-6611-40E2-8BD7-D008F6984DD7
 
 CCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Welcome/WelcomeViewController.xib
 r0
@@ -3785,14 +3827,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy Bu
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CGenerateDSYMFile /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj
-s415186682.304570
-e415186682.371867
+s415199539.534188
+e415199539.606672
 r1
 xGenerateDSYMFile
 x/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM
 x/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Generate /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM136"GenerateDSYMFile Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj7d084efa3ebfb841^44335ffa3ebfb841^---0#0#1#-19%DVTDocumentLocation2@114"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM/0000000000000000^685"GenerateDSYMFile Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM36"DEC865FE-6ED1-4F13-A3F6-77887AA78BDF-
-bEAEF6C5C-60CD-4FAF-B441-4219507D47ED
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Generate /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM136"GenerateDSYMFile Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj0bd2883371bfb841^834f9b3371bfb841^---0#0#1#-19%DVTDocumentLocation2@114"file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM/0000000000000000^685"GenerateDSYMFile Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM36"54CC637A-943D-4A6D-BEF2-F424615453D6-
+b5BE0D997-E6FF-485C-950D-BCC4ADFBEC2D
 
 CGenerateDSYMFile /Users/macmini2/Desktop/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM /Users/macmini2/Desktop/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj
 s415173113.607071
@@ -3805,8 +3847,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Genera
 b1A4F55D2-4B45-478A-9311-53F4E95D1726
 
 CLd /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj normal i386
-s415186682.247750
-e415186682.287861
+s415199539.475881
+e415199539.518185
 r1
 xLd
 x/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj
@@ -3861,6 +3903,7 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/D
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
@@ -3882,7 +3925,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/D
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
 d/usr/lib/libSystem.B.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
 d/usr/lib/system/libcache.dylib
 d/usr/lib/system/libcommonCrypto.dylib
@@ -3904,8 +3946,8 @@ d/usr/lib/system/libsystem_notify.dylib
 d/usr/lib/system/libsystem_sandbox.dylib
 d/usr/lib/system/libunc.dylib
 d/usr/lib/system/libunwind.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Link /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj77"Ld Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj normal i38684813ffa3ebfb841^ddb449fa3ebfb841^---0#0#1#--1431"Ld Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj normal i386    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -filelist /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/wedingproj.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/wedingproj_dependency_info.dat -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj36"9229A138-BCCF-4DF9-BBE8-B8F3FC72DDBD-
-bEAEF6C5C-60CD-4FAF-B441-4219507D47ED
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Link /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj77"Ld Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj normal i386c4e8793371bfb841^04a9843371bfb841^---0#0#1#--1431"Ld Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj normal i386    cd /Users/macmini2/Desktop/proj2/wedingproj    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -F/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator -filelist /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/wedingproj.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/macmini2/Desktop/proj2/wedingproj/Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/wedingproj_dependency_info.dat -o /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj36"2A958959-0CC3-4A6C-A34E-5FD73AF8997E-
+b5BE0D997-E6FF-485C-950D-BCC4ADFBEC2D
 
 CLd /Users/macmini2/Desktop/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj normal i386
 s415173106.278397
