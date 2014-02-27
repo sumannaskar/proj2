@@ -16,7 +16,7 @@
 @end
 
 @implementation AddBudget
-
+@synthesize eventidpass;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

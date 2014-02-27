@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AllBudgetCC.h"
 
 @interface AllBudget : UIViewController
 {
@@ -14,6 +15,7 @@
     IBOutlet UITableView *allbudget;
     NSMutableArray *budgetname;
     NSMutableArray *budgetid;
+    AllBudgetCC *cell;
 }
 @property(nonatomic,retain)NSString *eventidpass;
 

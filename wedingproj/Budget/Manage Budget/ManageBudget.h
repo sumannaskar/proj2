@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Customcell.h"
 
 @interface ManageBudget : UIViewController
 {
@@ -15,6 +16,7 @@
     NSMutableArray *json;
     NSMutableArray *eventname;
     NSMutableArray *eventid;
+    Customcell *cell;
 }
 
 @end

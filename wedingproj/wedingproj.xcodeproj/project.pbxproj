@@ -85,6 +85,8 @@
 		7AA585E018BF09AA00E59852 /* VendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585DE18BF09AA00E59852 /* VendorViewController.xib */; };
 		7AA585E518BF09B000E59852 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585E318BF09B000E59852 /* WelcomeViewController.m */; };
 		7AA585E618BF09B000E59852 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585E418BF09B000E59852 /* WelcomeViewController.xib */; };
+		7AA585EC18BF790B00E59852 /* AllBudgetCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585EB18BF790B00E59852 /* AllBudgetCC.m */; };
+		7AA585EE18BF792300E59852 /* AllBudgetCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585ED18BF792300E59852 /* AllBudgetCC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +214,9 @@
 		7AA585E218BF09B000E59852 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		7AA585E318BF09B000E59852 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		7AA585E418BF09B000E59852 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		7AA585EA18BF790B00E59852 /* AllBudgetCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllBudgetCC.h; path = AllBudgetCC/AllBudgetCC.h; sourceTree = "<group>"; };
+		7AA585EB18BF790B00E59852 /* AllBudgetCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllBudgetCC.m; path = AllBudgetCC/AllBudgetCC.m; sourceTree = "<group>"; };
+		7AA585ED18BF792300E59852 /* AllBudgetCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllBudgetCC.xib; path = AllBudgetCC/AllBudgetCC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +384,7 @@
 		7AA5853718BF097D00E59852 /* AllBudget */ = {
 			isa = PBXGroup;
 			children = (
+				7AA585E918BF78D300E59852 /* AllBudgetCC */,
 				7AA5853818BF097D00E59852 /* AllBudget.h */,
 				7AA5853918BF097D00E59852 /* AllBudget.m */,
 				7AA5853A18BF097D00E59852 /* AllBudget.xib */,
@@ -695,6 +701,16 @@
 			name = ManageVenor;
 			sourceTree = "<group>";
 		};
+		7AA585E918BF78D300E59852 /* AllBudgetCC */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585EA18BF790B00E59852 /* AllBudgetCC.h */,
+				7AA585EB18BF790B00E59852 /* AllBudgetCC.m */,
+				7AA585ED18BF792300E59852 /* AllBudgetCC.xib */,
+			);
+			name = AllBudgetCC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -789,6 +805,7 @@
 				7AA585E618BF09B000E59852 /* WelcomeViewController.xib in Resources */,
 				7AA5855918BF097D00E59852 /* Customcell.xib in Resources */,
 				7AA585D418BF09A300E59852 /* AddTaskViewController.xib in Resources */,
+				7AA585EE18BF792300E59852 /* AllBudgetCC.xib in Resources */,
 				7AA5850318BF096E00E59852 /* InfoPlist.strings in Resources */,
 				7AA585E018BF09AA00E59852 /* VendorViewController.xib in Resources */,
 				7AA5857318BF098300E59852 /* AddEventViewController.xib in Resources */,
@@ -835,6 +852,7 @@
 				7AA5859018BF098C00E59852 /* HomeViewController.m in Sources */,
 				7AA5855618BF097D00E59852 /* AllBudget.m in Sources */,
 				7AA585D718BF09A300E59852 /* EditTaskViewController.m in Sources */,
+				7AA585EC18BF790B00E59852 /* AllBudgetCC.m in Sources */,
 				7AA5857618BF098300E59852 /* EditEventViewController.m in Sources */,
 				7AA5855A18BF097D00E59852 /* DeleteBudget.m in Sources */,
 				7AA5858618BF098700E59852 /* AddGuestViewController.m in Sources */,

@@ -41,5 +41,6 @@
 - (IBAction)cancel:(UIBarButtonItem *)sender;
 - (IBAction)donedate:(id)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
+@property(nonatomic,retain)NSString *eventidpass;
 
 @end

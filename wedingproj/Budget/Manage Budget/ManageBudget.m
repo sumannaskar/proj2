@@ -7,7 +7,7 @@
 //
 
 #import "ManageBudget.h"
-#import "Customcell.h"
+
 #import "AllBudget.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
@@ -112,7 +112,7 @@
 {
     static NSString *simpleTableIdentifier = @"SimpleTableCell";
     
-    Customcell *cell= (Customcell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    cell= (Customcell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     if (cell == nil)
     {
         UINib* nib = [UINib nibWithNibName:@"Customcell" bundle:nil];
@@ -120,17 +120,32 @@
         cell = [array objectAtIndex:0];
     }
     cell.event.text =[eventname objectAtIndex:indexPath.row];
-    cell.budget.text=@"Total budget";
-    return cell;
-}
+    
+    [cell.detail addTarget:self action:@selector(detail:) forControlEvents:UIControlEventTouchUpInside];
+    cell.detail.tag = indexPath.row;
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    AllBudget *AllBudget_ =[[AllBudget alloc]init];
-    AllBudget_.eventidpass=[eventid objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:AllBudget_ animated:YES];
+    return cell;
+    
     
 }
+-(void) detail:(UIButton*)button
+{
+    
+    AllBudget *AllBudget_ =[[AllBudget alloc]init];
+    AllBudget_.eventidpass=[eventid objectAtIndex:button.tag];
+    [self.navigationController pushViewController:AllBudget_ animated:YES];
+    
+    
+    
+}
+
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    AllBudget *AllBudget_ =[[AllBudget alloc]init];
+//    AllBudget_.eventidpass=[eventid objectAtIndex:indexPath.row];
+//    [self.navigationController pushViewController:AllBudget_ animated:YES];
+//    
+//}
 
 
 

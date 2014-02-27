@@ -80,6 +80,7 @@
         [budgetid addObject:[data valueForKey:@"budget_id"]];
         
     }
+    NSLog(@"%@",budgetid);
     [allbudget reloadData];
     
 }
@@ -94,57 +95,52 @@
     return budgetname.count;
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
- {
-     static NSString *cellidentifire;
-     
-     UITableViewCell *cell;
-     cell=[tableView dequeueReusableCellWithIdentifier:cellidentifire];
-     if(cell==nil)
-     {
-         cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellidentifire];
-         cell.textLabel.text=[budgetname objectAtIndex:indexPath.row];
-         
-         
-         return cell;
-         
-         
-     }
-     
-     
-     return cell;
-
-//[NSString stringWithFormat:@"%d",a];
-
- }
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *simpleTableIdentifier = @"SimpleTableCell";
-//    
-//    Customcell *cell= (Customcell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-//    if (cell == nil)
-//    {
-//        UINib* nib = [UINib nibWithNibName:@"Customcell" bundle:nil];
-//        NSArray* array = [nib instantiateWithOwner:self options:nil];
-//        cell = [array objectAtIndex:0];
-//    }
-//    cell.event.text =@"event";
-//    cell.budget.text=@"Total budget";
-//    return cell;
-//}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetailBudget *DetailBudget_ =[[DetailBudget alloc]init];
-    DetailBudget_.budgetidpass =[budgetid objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:DetailBudget_ animated:YES];
+    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+    
+    cell= (AllBudgetCC *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        UINib* nib = [UINib nibWithNibName:@"AllBudgetCC" bundle:nil];
+        NSArray* array = [nib instantiateWithOwner:self options:nil];
+        cell = [array objectAtIndex:0];
+    }
+    cell.budgetname.text =[budgetname objectAtIndex:indexPath.row];
+    [cell.detail addTarget:self action:@selector(detail:) forControlEvents:UIControlEventTouchUpInside];
+    cell.detail.tag = indexPath.row;
+                          
+                          
+    
+    return cell;
     
 }
+
+                          
+-(void) detail:(UIButton*)button
+{
+        
+    DetailBudget *DetailBudget_ =[[DetailBudget alloc]init];
+    DetailBudget_.budgetidpass =[budgetid objectAtIndex:button.tag];
+     NSLog(@"%@",DetailBudget_.budgetidpass);
+    [self.navigationController pushViewController:DetailBudget_ animated:YES];
+        
+        
+        
+    }
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    DetailBudget *DetailBudget_ =[[DetailBudget alloc]init];
+//    DetailBudget_.budgetidpass =[budgetid objectAtIndex:indexPath.row];
+//    [self.navigationController pushViewController:DetailBudget_ animated:YES];
+//    
+//}
 
 - (IBAction)addBudget:(id)sender
 {
     AddBudget *AddBudget_ = [[AddBudget alloc]init];
+    AddBudget_.eventidpass=eventidpass;
     [self.navigationController pushViewController:AddBudget_ animated:YES];
     
 }

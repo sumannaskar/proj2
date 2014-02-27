@@ -11,5 +11,6 @@
 @interface Customcell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *event;
 @property (strong, nonatomic) IBOutlet UILabel *budget;
+@property (strong, nonatomic) IBOutlet UIButton *detail;
 
 @end
