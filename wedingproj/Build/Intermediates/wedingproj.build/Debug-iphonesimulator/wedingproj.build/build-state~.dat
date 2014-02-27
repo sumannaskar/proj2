@@ -3,8 +3,8 @@ v6
 r1
 cCheck dependencies
 cProcessPCH /Users/macmini2/Desktop/wedingproj/Build/Intermediates/PrecompiledHeaders/wedingproj-Prefix-ehzrnxeldquwstfvmtsvlvvlxqrv/wedingproj-Prefix.pch.pch wedingproj/wedingproj-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/SelectViewController.o /Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SelectGroup/SelectViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddBudget.o /Users/macmini2/Desktop/wedingproj/Budget/Manage\ Budget/Add\ Budget/AddBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/SelectViewController.o /Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SelectGroup/SelectViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EventViewController.o /Users/macmini2/Desktop/wedingproj/Event/EventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/SendIndividuallyViewController.o /Users/macmini2/Desktop/wedingproj/Invitation/Individually/SendIndividuallyViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/Cell1.o /Users/macmini2/Desktop/wedingproj/Invitation/Individually/cell/Cell1.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -91,200 +91,25 @@ c00000000527843D100000000000001A0
 t1383613393
 s416
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-c00000000527843D500000000005838D0
-t1383613397
-s5781712
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-c00000000527843D500000000005B82A0
-t1383613397
-s5997216
-
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 c00000000527843D50000000000445870
 t1383613397
 s4479088
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
-c00000000527843D50000000000355050
-t1383613397
-s3493968
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
-c00000000527843D600000000002F6810
-t1383613398
-s3106832
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
-c00000000527843D6000000000004B000
-t1383613398
-s307200
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
 c00000000527843D8000000000088C680
 t1383613400
 s8963712
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-c00000000527843DA0000000000037620
-t1383613402
-s226848
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c00000000527843DB00000000004848F0
-t1383613403
-s4737264
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Security.framework/Security
-c00000000527843DB00000000001290B0
-t1383613403
-s1216688
-
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
 c00000000527843DD0000000001DB9910
 t1383613405
 s31168784
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-c00000000527843F200000000002B9F20
-t1383613426
-s2858784
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
-c00000000527844000000000000002338
-t1383613440
-s9016
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
-c0000000052784400000000000008D300
-t1383613440
-s578304
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
-c0000000052784400000000000038ACB0
-t1383613440
-s3714224
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
-c00000000513F5B2900000000000121D0
-t1363106601
-s74192
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
-c00000000527844010000000000013500
-t1383613441
-s79104
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
-c00000000527844010000000000033BA0
-t1383613441
-s211872
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
-c0000000052784401000000000001CFB0
-t1383613441
-s118704
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
-c0000000052784401000000000001B2B0
-t1383613441
-s111280
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
-c000000005278440100000000000632B0
-t1383613441
-s406192
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
-c00000000527844010000000000008880
-t1383613441
-s34944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
-c00000000527844010000000000015080
-t1383613441
-s86144
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
-c000000005278440100000000000230E0
-t1383613441
-s143584
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
-c0000000052784401000000000000E380
-t1383613441
-s58240
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
-c00000000527844010000000000087200
-t1383613441
-s553472
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
-c000000005278440100000000000171A0
-t1383613441
-s94624
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
-c00000000527844010000000000039C10
-t1383613441
-s236560
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
-c0000000052784401000000000000B0B0
-t1383613441
-s45232
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
-c00000000527844010000000000167FE0
-t1383613441
-s1474528
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
-c000000005278440100000000000106A0
-t1383613441
-s67232
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
-c0000000052784401000000000001CE40
-t1383613441
-s118336
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
-c00000000527844010000000000071040
-t1383613441
-s462912
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
-c00000000527844010000000000067A10
-t1383613441
-s424464
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
-c0000000052784401000000000001BAD0
-t1383613441
-s113360
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
-c00000000527844010000000000088BA0
-t1383613441
-s560032
-
 N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
 c00000000525638CE0000000000000AC9
 t1381382350
 s2761
-
-N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
-c00000000527843A60000000000005004
-t1383613350
-s20484
-
-N/Users/macmini2/Desktop/wedingproj/Budget/BudgetViewController.h
-c00000000530ED0570000000000000191
-t1393479767
-s401
 
 N/Users/macmini2/Desktop/wedingproj/Budget/BudgetViewController.m
 c00000000530ED05700000000000004A3
@@ -296,11 +121,6 @@ c00000000530ED0570000000000000CD3
 t1393479767
 s3283
 
-N/Users/macmini2/Desktop/wedingproj/Budget/CalculateBudget/CalculateBudget.h
-c00000000530ED0570000000000000264
-t1393479767
-s612
-
 N/Users/macmini2/Desktop/wedingproj/Budget/CalculateBudget/CalculateBudget.m
 c00000000530ED0570000000000000324
 t1393479767
@@ -310,11 +130,6 @@ N/Users/macmini2/Desktop/wedingproj/Budget/CalculateBudget/CalculateBudget.xib
 c00000000530ED057000000000000237F
 t1393479767
 s9087
-
-N/Users/macmini2/Desktop/wedingproj/Budget/DetailBudget.h
-c00000000530ED05700000000000002E0
-t1393479767
-s736
 
 N/Users/macmini2/Desktop/wedingproj/Budget/DetailBudget.m
 c00000000530ED05700000000000003D2
@@ -326,11 +141,6 @@ c00000000530ED0570000000000002E1A
 t1393479767
 s11802
 
-N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.h
-c00000000530ED0570000000000000476
-t1393479767
-s1142
-
 N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.m
 c00000000530ED0570000000000000A37
 t1393479767
@@ -340,11 +150,6 @@ N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/Add Budget/AddBudget.xi
 c00000000530ED057000000000000492C
 t1393479767
 s18732
-
-N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.h
-c00000000530ED0570000000000000135
-t1393479767
-s309
 
 N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/AllBudget/AllBudget.m
 c00000000530ED0570000000000000B19
@@ -356,11 +161,6 @@ c00000000530ED0570000000000000EE4
 t1393479767
 s3812
 
-N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/Customcell/Customcell.h
-c00000000530ED0570000000000000147
-t1393479767
-s327
-
 N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/Customcell/Customcell.m
 c00000000530ED0570000000000000279
 t1393479767
@@ -370,11 +170,6 @@ N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/Customcell/Customcell.x
 c00000000530ED0570000000000000C7E
 t1393479767
 s3198
-
-N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.h
-c00000000530ED05700000000000001CF
-t1393479767
-s463
 
 N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudget.m
 c00000000530ED05700000000000011A7
@@ -386,11 +181,6 @@ c00000000530ED0570000000000000D62
 t1393479767
 s3426
 
-N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudgetCC/DeleteBudgetCC.h
-c00000000530ED0570000000000000159
-t1393479767
-s345
-
 N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/DeleteBudget/DeleteBudgetCC/DeleteBudgetCC.m
 c00000000530ED0570000000000000290
 t1393479767
@@ -401,11 +191,6 @@ c00000000530ED0570000000000000B3C
 t1393479767
 s2876
 
-N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.h
-c00000000530ED05700000000000004FB
-t1393479767
-s1275
-
 N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.m
 c00000000530ED0570000000000000A37
 t1393479767
@@ -415,11 +200,6 @@ N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/EditBudget/EditBudget.x
 c00000000530ED0570000000000004AE7
 t1393479767
 s19175
-
-N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/ManageBudget.h
-c00000000530ED057000000000000012E
-t1393479767
-s302
 
 N/Users/macmini2/Desktop/wedingproj/Budget/Manage Budget/ManageBudget.m
 c00000000530ED0570000000000000740
@@ -585,8 +365,8 @@ t1393480313
 s1394
 
 N/Users/macmini2/Desktop/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM
-t1393480313
-s102
+t2
+s0
 
 N/Users/macmini2/Desktop/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/AddBudget.nib
 t1393480312
@@ -736,11 +516,6 @@ N/Users/macmini2/Desktop/wedingproj/Build/Products/Debug-iphonesimulator/wedingp
 t1393480307
 s323936
 
-N/Users/macmini2/Desktop/wedingproj/Event/AddEvent/AddEventViewController.h
-c00000000530ED05700000000000004E0
-t1393479767
-s1248
-
 N/Users/macmini2/Desktop/wedingproj/Event/AddEvent/AddEventViewController.m
 c00000000530ED05700000000000010AE
 t1393479767
@@ -750,11 +525,6 @@ N/Users/macmini2/Desktop/wedingproj/Event/AddEvent/AddEventViewController.xib
 c00000000530ED057000000000000480C
 t1393479767
 s18444
-
-N/Users/macmini2/Desktop/wedingproj/Event/Cell/Cell2.h
-c00000000530ED0570000000000000182
-t1393479767
-s386
 
 N/Users/macmini2/Desktop/wedingproj/Event/Cell/Cell2.m
 c00000000530ED0570000000000000279
@@ -766,11 +536,6 @@ c00000000530ED0570000000000000E89
 t1393479767
 s3721
 
-N/Users/macmini2/Desktop/wedingproj/Event/EditEvent/EditEventViewController.h
-c00000000530ED0570000000000000617
-t1393479767
-s1559
-
 N/Users/macmini2/Desktop/wedingproj/Event/EditEvent/EditEventViewController.m
 c00000000530ED0570000000000001220
 t1393479767
@@ -780,11 +545,6 @@ N/Users/macmini2/Desktop/wedingproj/Event/EditEvent/EditEventViewController.xib
 c00000000530ED057000000000000487A
 t1393479767
 s18554
-
-N/Users/macmini2/Desktop/wedingproj/Event/EventViewController.h
-c00000000530ED05700000000000002F7
-t1393479767
-s759
 
 N/Users/macmini2/Desktop/wedingproj/Event/EventViewController.m
 c00000000530ED0570000000000002534
@@ -796,11 +556,6 @@ c00000000530ED05700000000000010B9
 t1393479767
 s4281
 
-N/Users/macmini2/Desktop/wedingproj/Guest/AddGuest/AddGuestViewController.h
-c00000000530ED05700000000000004AF
-t1393479767
-s1199
-
 N/Users/macmini2/Desktop/wedingproj/Guest/AddGuest/AddGuestViewController.m
 c00000000530ED057000000000000153F
 t1393479767
@@ -810,11 +565,6 @@ N/Users/macmini2/Desktop/wedingproj/Guest/AddGuest/AddGuestViewController.xib
 c00000000530ED057000000000000402E
 t1393479767
 s16430
-
-N/Users/macmini2/Desktop/wedingproj/Guest/Edit/EditGuestViewController.h
-c00000000530ED057000000000000055C
-t1393479767
-s1372
 
 N/Users/macmini2/Desktop/wedingproj/Guest/Edit/EditGuestViewController.m
 c00000000530ED0570000000000001925
@@ -826,11 +576,6 @@ c00000000530ED057000000000000335C
 t1393479767
 s13148
 
-N/Users/macmini2/Desktop/wedingproj/Guest/GuestViewController.h
-c00000000530ED057000000000000029A
-t1393479767
-s666
-
 N/Users/macmini2/Desktop/wedingproj/Guest/GuestViewController.m
 c00000000530ED0570000000000002A0E
 t1393479767
@@ -840,11 +585,6 @@ N/Users/macmini2/Desktop/wedingproj/Guest/GuestViewController.xib
 c00000000530ED0570000000000000F95
 t1393479767
 s3989
-
-N/Users/macmini2/Desktop/wedingproj/Home/HomeViewController.h
-c00000000530ED05700000000000002EE
-t1393479767
-s750
 
 N/Users/macmini2/Desktop/wedingproj/Home/HomeViewController.m
 c00000000530ED05700000000000008A1
@@ -866,11 +606,6 @@ c00000000530ED0570000000000002023
 t1393479767
 s8227
 
-N/Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SelectGroup/SelectViewController.h
-c00000000530ED0570000000000000119
-t1393479767
-s281
-
 N/Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SelectGroup/SelectViewController.m
 c00000000530ED05700000000000003D6
 t1393479767
@@ -880,11 +615,6 @@ N/Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SelectGroup/SelectViewC
 c00000000530ED0570000000000000897
 t1393479767
 s2199
-
-N/Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SendInv/InvitationViewController.h
-c00000000530ED05700000000000001C6
-t1393479767
-s454
 
 N/Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SendInv/InvitationViewController.m
 c00000000530ED0570000000000001460
@@ -896,11 +626,6 @@ c00000000530ED0570000000000000CC8
 t1393479767
 s3272
 
-N/Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SendInv/cell/Cell.h
-c00000000530ED0570000000000000184
-t1393479767
-s388
-
 N/Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SendInv/cell/Cell.m
 c00000000530ED057000000000000027A
 t1393479767
@@ -910,11 +635,6 @@ N/Users/macmini2/Desktop/wedingproj/Invitation/GroupWise/SendInv/cell/Cell.xib
 c00000000530ED0570000000000000F31
 t1393479767
 s3889
-
-N/Users/macmini2/Desktop/wedingproj/Invitation/Individually/SendIndividuallyViewController.h
-c00000000530ED05700000000000001DE
-t1393479767
-s478
 
 N/Users/macmini2/Desktop/wedingproj/Invitation/Individually/SendIndividuallyViewController.m
 c00000000530ED057000000000000145E
@@ -926,11 +646,6 @@ c00000000530ED0570000000000000D81
 t1393479767
 s3457
 
-N/Users/macmini2/Desktop/wedingproj/Invitation/Individually/cell/Cell1.h
-c00000000530ED057000000000000018A
-t1393479767
-s394
-
 N/Users/macmini2/Desktop/wedingproj/Invitation/Individually/cell/Cell1.m
 c00000000530ED0570000000000000281
 t1393479767
@@ -940,11 +655,6 @@ N/Users/macmini2/Desktop/wedingproj/Invitation/Individually/cell/Cell1.xib
 c00000000530ED0570000000000000EA5
 t1393479767
 s3749
-
-N/Users/macmini2/Desktop/wedingproj/Invitation/InvViewController.h
-c00000000530ED057000000000000019F
-t1393479767
-s415
 
 N/Users/macmini2/Desktop/wedingproj/Invitation/InvViewController.m
 c00000000530ED05700000000000004CE
@@ -956,11 +666,6 @@ c00000000530ED0570000000000000D01
 t1393479767
 s3329
 
-N/Users/macmini2/Desktop/wedingproj/Login/LoginViewController.h
-c00000000530ED0570000000000000196
-t1393479767
-s406
-
 N/Users/macmini2/Desktop/wedingproj/Login/LoginViewController.m
 c00000000530ED05700000000000003FD
 t1393479767
@@ -970,11 +675,6 @@ N/Users/macmini2/Desktop/wedingproj/Login/LoginViewController.xib
 c00000000530ED0570000000000000E12
 t1393479767
 s3602
-
-N/Users/macmini2/Desktop/wedingproj/ToDoList/AddTask/AddTaskViewController.h
-c00000000530ED0570000000000000597
-t1393479767
-s1431
 
 N/Users/macmini2/Desktop/wedingproj/ToDoList/AddTask/AddTaskViewController.m
 c00000000530ED0570000000000001B21
@@ -986,11 +686,6 @@ c00000000530ED0570000000000004E98
 t1393479767
 s20120
 
-N/Users/macmini2/Desktop/wedingproj/ToDoList/EditTask/EditTaskViewController.h
-c00000000530ED05700000000000005A3
-t1393479767
-s1443
-
 N/Users/macmini2/Desktop/wedingproj/ToDoList/EditTask/EditTaskViewController.m
 c00000000530ED0570000000000001B52
 t1393479767
@@ -1000,11 +695,6 @@ N/Users/macmini2/Desktop/wedingproj/ToDoList/EditTask/EditTaskViewController.xib
 c00000000530ED0570000000000004EB5
 t1393479767
 s20149
-
-N/Users/macmini2/Desktop/wedingproj/ToDoList/TodolistViewController.h
-c00000000530ED0570000000000000223
-t1393479767
-s547
 
 N/Users/macmini2/Desktop/wedingproj/ToDoList/TodolistViewController.m
 c00000000530ED0570000000000001700
@@ -1016,11 +706,6 @@ c00000000530ED0570000000000001151
 t1393479767
 s4433
 
-N/Users/macmini2/Desktop/wedingproj/ToDoList/cell/Cell3.h
-c00000000530ED0570000000000000188
-t1393479767
-s392
-
 N/Users/macmini2/Desktop/wedingproj/ToDoList/cell/Cell3.m
 c00000000530ED057000000000000027F
 t1393479767
@@ -1030,11 +715,6 @@ N/Users/macmini2/Desktop/wedingproj/ToDoList/cell/Cell3.xib
 c00000000530ED0570000000000000EA0
 t1393479767
 s3744
-
-N/Users/macmini2/Desktop/wedingproj/Vendor/VendorViewController.h
-c00000000530ED05700000000000000EE
-t1393479767
-s238
 
 N/Users/macmini2/Desktop/wedingproj/Vendor/VendorViewController.m
 c00000000530ED057000000000000033D
@@ -1046,11 +726,6 @@ c00000000530ED0570000000000000514
 t1393479767
 s1300
 
-N/Users/macmini2/Desktop/wedingproj/Welcome/WelcomeViewController.h
-c00000000530ED0570000000000000146
-t1393479767
-s326
-
 N/Users/macmini2/Desktop/wedingproj/Welcome/WelcomeViewController.m
 c00000000530ED05700000000000003FB
 t1393479767
@@ -1060,11 +735,6 @@ N/Users/macmini2/Desktop/wedingproj/Welcome/WelcomeViewController.xib
 c00000000530ED0570000000000000A5A
 t1393479767
 s2650
-
-N/Users/macmini2/Desktop/wedingproj/wedingproj/AppDelegate.h
-c00000000530ED26F000000000000015B
-t1393480303
-s347
 
 N/Users/macmini2/Desktop/wedingproj/wedingproj/AppDelegate.m
 c00000000530ED26F0000000000000B0B
@@ -1095,111 +765,6 @@ N/Users/macmini2/Desktop/wedingproj/wedingproj/wedingproj-Prefix.pch
 c00000000530ED1EE0000000000000158
 t1393480174
 s344
-
-N/usr/lib/libSystem.B.dylib
-c00000000513F5B1D000000000000D2A0
-t1363106589
-s53920
-
-N/usr/lib/system/libcache.dylib
-c00000000513F5B290000000000013870
-t1363106601
-s79984
-
-N/usr/lib/system/libcommonCrypto.dylib
-c0000000052CAB6AA0000000000030250
-t1389016746
-s197200
-
-N/usr/lib/system/libcompiler_rt.dylib
-c00000000513F5B1D0000000000017910
-t1363106589
-s96528
-
-N/usr/lib/system/libcopyfile.dylib
-c00000000513F5B28000000000001A130
-t1363106600
-s106800
-
-N/usr/lib/system/libdnsinfo.dylib
-c0000000052CAB71A000000000000C2A0
-t1389016858
-s49824
-
-N/usr/lib/system/libkeymgr.dylib
-c00000000513F5B290000000000008CE0
-t1363106601
-s36064
-
-N/usr/lib/system/liblaunch.dylib
-c0000000052CAB720000000000001D350
-t1389016864
-s119632
-
-N/usr/lib/system/libmacho.dylib
-c00000000513F5B280000000000014F90
-t1363106600
-s85904
-
-N/usr/lib/system/libquarantine.dylib
-c0000000052CAB72A000000000000D790
-t1389016874
-s55184
-
-N/usr/lib/system/libremovefile.dylib
-c0000000052CAB72A000000000000C330
-t1389016874
-s49968
-
-N/usr/lib/system/libsystem_blocks.dylib
-c00000000513F5B29000000000000A080
-t1363106601
-s41088
-
-N/usr/lib/system/libsystem_c.dylib
-c0000000052CAB6DF00000000001F91C0
-t1389016799
-s2068928
-
-N/usr/lib/system/libsystem_dnssd.dylib
-c0000000052CAB720000000000001BC00
-t1389016864
-s113664
-
-N/usr/lib/system/libsystem_info.dylib
-c00000000513F5B1D000000000008B580
-t1363106589
-s570752
-
-N/usr/lib/system/libsystem_kernel.dylib
-c0000000052CAB6DF00000000000569B0
-t1389016799
-s354736
-
-N/usr/lib/system/libsystem_m.dylib
-c00000000513F5B1D0000000000070540
-t1363106589
-s460096
-
-N/usr/lib/system/libsystem_notify.dylib
-c00000000513F5B1D0000000000025620
-t1363106589
-s153120
-
-N/usr/lib/system/libsystem_sandbox.dylib
-c0000000052CAB705000000000000C780
-t1389016837
-s51072
-
-N/usr/lib/system/libunc.dylib
-c00000000513F5B24000000000000D430
-t1363106596
-s54320
-
-N/usr/lib/system/libunwind.dylib
-c00000000513F5B29000000000001BAA0
-t1363106601
-s113312
 
 CBuild AST from /Users/macmini2/Desktop/wedingproj/Budget/BudgetViewController.m
 r0
@@ -1302,7 +867,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies000246540dbfb841^71926a540dbfb841^---0#1#1#--18"Check dependencies36"FF7E1F16-A96E-40BD-99B9-3B8A1FBA0664-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc07ac4ef09bfb841^6551ecef09bfb841^---0#1#1#--18"Check dependencies36"47454A44-2685-47DE-B6B8-7247CD7461AC-
 
 CCompileAssetCatalog /Users/macmini2/Desktop/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app /Users/macmini2/Desktop/wedingproj/wedingproj/Images.xcassets
 s415173112.833555
