@@ -7,7 +7,8 @@
 //
 
 #import "EditTaskViewController.h"
-#define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_update&"]
+#import "TodolistViewController.h"
+#define EditTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_update&"]
 @interface EditTaskViewController ()
 
 @end
@@ -289,6 +290,25 @@
     self.datetxt.text=self.duedatestr;
     [self.datetxt resignFirstResponder];
 }
+
+- (IBAction)savechanges:(UIButton *)sender {
+    
+    
+    if (nametxt.text.length >0 && self.eventtxt.text.length >0 &&self.datetxt.text.length>0 && self.categorytxt.text.length>0&& self.vendortxt.text.length>0 && self.statustxt.text.length>0 &&informationtxt.text.length>0)
+    {
+        
+        [self EditDetails];
+        
+    }
+    else
+    {
+        UIAlertView *fillall =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Fill all the fields" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [fillall show];
+    }
+
+    
+    
+}
 - (NSString *)formatDate:(NSDate *)date
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -306,10 +326,41 @@
     self.statustxt.text=self.statusstr;
     self.vendortxt.text=self.vendorstr;
     informationtxt.text=self.infotxtstr;
-    
-    
-    
-    
 }
+-(void)EditDetails
+{
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,self.eventtxt.text,self.vendortxt.text,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
+    NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"%@",urlTextEscaped);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",EditTaskURL,urlTextEscaped]];
+    NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    NSLog(@"%@",url);
+    [theRequest setHTTPMethod:@"POST"];
+    [theRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSError *error;
+    NSURLResponse *response;
+    
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
+    EditData=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",response);
+    
+    EditTaskmessage= [NSJSONSerialization JSONObjectWithData:urlData options:kNilOptions error:&error];
+    
+    
+    if([[EditTaskmessage valueForKey:@"status" ] isEqualToString:@"Record Updated"])
+    {
+        UIAlertView *editsuccess=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Edited Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [editsuccess show];
+        TodolistViewController *ToDolistVc=[[TodolistViewController alloc] init];
+        [self.navigationController pushViewController:ToDolistVc animated:YES];
+        
+    }
+    else
+    {
+        UIAlertView *editfailed=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Task not edited, Try again" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [editfailed show];
+    }
+}
+
 
 @end

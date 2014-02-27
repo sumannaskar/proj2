@@ -42,8 +42,7 @@
     EventScroll.delegate = self;
     EventTable.scrollEnabled = NO;
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
-    [self image];
-    [EventScroll addSubview:EventTable];
+    
     
     
     dispatch_async(kBgQueue, ^{
@@ -92,6 +91,8 @@
 {
     
     NSLog(@"FetchData");
+    [self image];
+    [EventScroll addSubview:EventTable];
     [EventTable reloadData];
 }
 
@@ -194,50 +195,50 @@
     
     return cell;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    int cellheight=40;
-    if([[UIScreen mainScreen] bounds].size.height  < 600)
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 568)
-        {
-            
-            cellheight=cellheight+20;
-            
-            
-        }
-        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-            
-            //no change
-            
-        }
-        else
-        {
-            //no change
-            
-        }
-        
-        
-    }
-    else
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 1024)
-        {
-            
-            cellheight=cellheight+40;
-            
-        }
-        else
-        {
-            
-            cellheight=cellheight+80;
-        }
-    }
-    // NSLog(@"cellheight-- %d",cellheight);
-    return cellheight;
-    
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    int cellheight=40;
+//    if([[UIScreen mainScreen] bounds].size.height  < 600)
+//    {
+//        if ([[UIScreen mainScreen] bounds].size.height == 568)
+//        {
+//            
+//            cellheight=cellheight+20;
+//            
+//            
+//        }
+//        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+//        {
+//            
+//            //no change
+//            
+//        }
+//        else
+//        {
+//            //no change
+//            
+//        }
+//        
+//        
+//    }
+//    else
+//    {
+//        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+//        {
+//            
+//            cellheight=cellheight+40;
+//            
+//        }
+//        else
+//        {
+//            
+//            cellheight=cellheight+80;
+//        }
+//    }
+//    // NSLog(@"cellheight-- %d",cellheight);
+//    return cellheight;
+//    
+//}
 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer
 {
@@ -269,24 +270,25 @@
 
 -(void)image
 {
+    int tableRowheight = 50*[rawtaskList count];
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
-            int tableRowheight = 100*50;
+            
             EventTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             EventScroll.contentSize = CGSizeMake(320, tableRowheight);
         }
         else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-            int tableRowheight = 100*50;
+       {
+//            int tableRowheight = 100*50;
             EventTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             EventScroll.contentSize = CGSizeMake(320, tableRowheight);
             
         }
         else
         {
-            int tableRowheight = 100*50;
+//            int tableRowheight = 100*50;
             EventTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             EventScroll.contentSize = CGSizeMake(320, tableRowheight);
         }
@@ -296,7 +298,7 @@
     else
     {
         //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
-        int tableRowheight = 100*50;
+//        int tableRowheight = 100*50;
         EventTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
         EventScroll.contentSize = CGSizeMake(320, tableRowheight);
         
