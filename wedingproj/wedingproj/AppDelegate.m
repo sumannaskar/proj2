@@ -37,7 +37,6 @@
     navController.navigationBar.translucent = NO;
     
     [self.window makeKeyAndVisible];
-    NSLog(@"abc");
     
     return YES;
     
