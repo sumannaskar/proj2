@@ -257,7 +257,8 @@
     NSLog(@"%ld",(long)button.tag);
     EditTaskViewController *EditTaskVc=[[EditTaskViewController alloc] init];
     NSDictionary *tempdic=[rawtaskList objectAtIndex:button.tag];
-    EditTaskVc.tasknamestr=[tempdic objectForKey:@"task_name"];;
+    EditTaskVc.taskidstr=[tempdic objectForKey:@"task_id"];
+    EditTaskVc.tasknamestr=[tempdic objectForKey:@"task_name"];
     EditTaskVc.duedatestr=[tempdic objectForKey:@"due_date"];
     EditTaskVc.categorystr=[tempdic objectForKey:@"category"];
     EditTaskVc.eventnamestr=[tempdic objectForKey:@"event_id"];

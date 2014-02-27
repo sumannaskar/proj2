@@ -329,7 +329,7 @@
 }
 -(void)EditDetails
 {
-    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,self.eventtxt.text,self.vendortxt.text,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"task_id=%@&task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",self.taskidstr,nametxt.text,self.eventtxt.text,self.vendortxt.text,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
     NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",EditTaskURL,urlTextEscaped]];
