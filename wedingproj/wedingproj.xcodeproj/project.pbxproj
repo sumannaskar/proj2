@@ -320,9 +320,6 @@
 				7AA5852918BF097D00E59852 /* BudgetViewController.m */,
 				7AA5852A18BF097D00E59852 /* BudgetViewController.xib */,
 				7AA5852B18BF097D00E59852 /* CalculateBudget */,
-				7AA5852F18BF097D00E59852 /* DetailBudget.h */,
-				7AA5853018BF097D00E59852 /* DetailBudget.m */,
-				7AA5853118BF097D00E59852 /* DetailBudget.xib */,
 				7AA5853218BF097D00E59852 /* Manage Budget */,
 			);
 			path = Budget;
@@ -341,6 +338,7 @@
 		7AA5853218BF097D00E59852 /* Manage Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AA585E718BF1D7F00E59852 /* DetailBudget */,
 				7AA5853318BF097D00E59852 /* Add Budget */,
 				7AA5853718BF097D00E59852 /* AllBudget */,
 				7AA5853B18BF097D00E59852 /* Customcell */,
@@ -660,6 +658,17 @@
 				7AA585E418BF09B000E59852 /* WelcomeViewController.xib */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		7AA585E718BF1D7F00E59852 /* DetailBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5852F18BF097D00E59852 /* DetailBudget.h */,
+				7AA5853018BF097D00E59852 /* DetailBudget.m */,
+				7AA5853118BF097D00E59852 /* DetailBudget.xib */,
+			);
+			name = DetailBudget;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1023,6 +1032,7 @@
 				7AA5852318BF096E00E59852 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AA5852418BF096E00E59852 /* Build configuration list for PBXNativeTarget "wedingprojTests" */ = {
 			isa = XCConfigurationList;
@@ -1031,6 +1041,7 @@
 				7AA5852618BF096E00E59852 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

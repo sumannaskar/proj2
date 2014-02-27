@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/macmini2/Desktop/wedingproj/Guest/Edit/EditGuestViewController.m \
-  /Users/macmini2/Desktop/wedingproj/Guest/Edit/EditGuestViewController.h
+  /Users/macmini2/Desktop/proj2/wedingproj/Guest/Edit/EditGuestViewController.m \
+  /Users/macmini2/Desktop/proj2/wedingproj/Guest/Edit/EditGuestViewController.h
