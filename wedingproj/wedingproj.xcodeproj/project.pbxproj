@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AA584F918BF096E00E59852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584F818BF096E00E59852 /* Foundation.framework */; };
+		7AA584FB18BF096E00E59852 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584FA18BF096E00E59852 /* CoreGraphics.framework */; };
+		7AA584FD18BF096E00E59852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584FC18BF096E00E59852 /* UIKit.framework */; };
+		7AA5850318BF096E00E59852 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5850118BF096E00E59852 /* InfoPlist.strings */; };
+		7AA5850518BF096E00E59852 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5850418BF096E00E59852 /* main.m */; };
+		7AA5850918BF096E00E59852 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5850818BF096E00E59852 /* AppDelegate.m */; };
+		7AA5850B18BF096E00E59852 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5850A18BF096E00E59852 /* Images.xcassets */; };
+		7AA5851218BF096E00E59852 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA5851118BF096E00E59852 /* XCTest.framework */; };
+		7AA5851318BF096E00E59852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584F818BF096E00E59852 /* Foundation.framework */; };
+		7AA5851418BF096E00E59852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584FC18BF096E00E59852 /* UIKit.framework */; };
+		7AA5851C18BF096E00E59852 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5851A18BF096E00E59852 /* InfoPlist.strings */; };
+		7AA5851E18BF096E00E59852 /* wedingprojTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5851D18BF096E00E59852 /* wedingprojTests.m */; };
+		7AA5854E18BF097D00E59852 /* BudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5852918BF097D00E59852 /* BudgetViewController.m */; };
+		7AA5854F18BF097D00E59852 /* BudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5852A18BF097D00E59852 /* BudgetViewController.xib */; };
+		7AA5855018BF097D00E59852 /* CalculateBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5852D18BF097D00E59852 /* CalculateBudget.m */; };
+		7AA5855118BF097D00E59852 /* CalculateBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5852E18BF097D00E59852 /* CalculateBudget.xib */; };
+		7AA5855218BF097D00E59852 /* DetailBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5853018BF097D00E59852 /* DetailBudget.m */; };
+		7AA5855318BF097D00E59852 /* DetailBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5853118BF097D00E59852 /* DetailBudget.xib */; };
+		7AA5855418BF097D00E59852 /* AddBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5853518BF097D00E59852 /* AddBudget.m */; };
+		7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5853618BF097D00E59852 /* AddBudget.xib */; };
+		7AA5855618BF097D00E59852 /* AllBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5853918BF097D00E59852 /* AllBudget.m */; };
+		7AA5855718BF097D00E59852 /* AllBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5853A18BF097D00E59852 /* AllBudget.xib */; };
+		7AA5855818BF097D00E59852 /* Customcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5853D18BF097D00E59852 /* Customcell.m */; };
+		7AA5855918BF097D00E59852 /* Customcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5853E18BF097D00E59852 /* Customcell.xib */; };
+		7AA5855A18BF097D00E59852 /* DeleteBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5854118BF097D00E59852 /* DeleteBudget.m */; };
+		7AA5855B18BF097D00E59852 /* DeleteBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5854218BF097D00E59852 /* DeleteBudget.xib */; };
+		7AA5855C18BF097D00E59852 /* DeleteBudgetCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5854518BF097D00E59852 /* DeleteBudgetCC.m */; };
+		7AA5855D18BF097D00E59852 /* DeleteBudgetCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5854618BF097D00E59852 /* DeleteBudgetCC.xib */; };
+		7AA5855E18BF097D00E59852 /* EditBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5854918BF097D00E59852 /* EditBudget.m */; };
+		7AA5855F18BF097D00E59852 /* EditBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5854A18BF097D00E59852 /* EditBudget.xib */; };
+		7AA5856018BF097D00E59852 /* ManageBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5854C18BF097D00E59852 /* ManageBudget.m */; };
+		7AA5856118BF097D00E59852 /* ManageBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5854D18BF097D00E59852 /* ManageBudget.xib */; };
+		7AA5857218BF098300E59852 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5856518BF098300E59852 /* AddEventViewController.m */; };
+		7AA5857318BF098300E59852 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5856618BF098300E59852 /* AddEventViewController.xib */; };
+		7AA5857418BF098300E59852 /* Cell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5856918BF098300E59852 /* Cell2.m */; };
+		7AA5857518BF098300E59852 /* Cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5856A18BF098300E59852 /* Cell2.xib */; };
+		7AA5857618BF098300E59852 /* EditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5856D18BF098300E59852 /* EditEventViewController.m */; };
+		7AA5857718BF098300E59852 /* EditEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5856E18BF098300E59852 /* EditEventViewController.xib */; };
+		7AA5857818BF098300E59852 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5857018BF098300E59852 /* EventViewController.m */; };
+		7AA5857918BF098300E59852 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5857118BF098300E59852 /* EventViewController.xib */; };
+		7AA5858618BF098700E59852 /* AddGuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5857D18BF098700E59852 /* AddGuestViewController.m */; };
+		7AA5858718BF098700E59852 /* AddGuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5857E18BF098700E59852 /* AddGuestViewController.xib */; };
+		7AA5858818BF098700E59852 /* EditGuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5858118BF098700E59852 /* EditGuestViewController.m */; };
+		7AA5858918BF098700E59852 /* EditGuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5858218BF098700E59852 /* EditGuestViewController.xib */; };
+		7AA5858A18BF098700E59852 /* GuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5858418BF098700E59852 /* GuestViewController.m */; };
+		7AA5858B18BF098700E59852 /* GuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5858518BF098700E59852 /* GuestViewController.xib */; };
+		7AA5859018BF098C00E59852 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5858E18BF098C00E59852 /* HomeViewController.m */; };
+		7AA5859118BF098C00E59852 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5858F18BF098C00E59852 /* HomeViewController.xib */; };
+		7AA5859618BF099500E59852 /* index.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5859418BF099500E59852 /* index.jpg */; };
+		7AA5859718BF099500E59852 /* index2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5859518BF099500E59852 /* index2.jpg */; };
+		7AA585B118BF099900E59852 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5859C18BF099900E59852 /* SelectViewController.m */; };
+		7AA585B218BF099900E59852 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA5859D18BF099900E59852 /* SelectViewController.xib */; };
+		7AA585B318BF099900E59852 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585A118BF099900E59852 /* Cell.m */; };
+		7AA585B418BF099900E59852 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585A218BF099900E59852 /* Cell.xib */; };
+		7AA585B518BF099900E59852 /* InvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585A418BF099900E59852 /* InvitationViewController.m */; };
+		7AA585B618BF099900E59852 /* InvitationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585A518BF099900E59852 /* InvitationViewController.xib */; };
+		7AA585B718BF099900E59852 /* Cell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585A918BF099900E59852 /* Cell1.m */; };
+		7AA585B818BF099900E59852 /* Cell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585AA18BF099900E59852 /* Cell1.xib */; };
+		7AA585B918BF099900E59852 /* SendIndividuallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585AC18BF099900E59852 /* SendIndividuallyViewController.m */; };
+		7AA585BA18BF099900E59852 /* SendIndividuallyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585AD18BF099900E59852 /* SendIndividuallyViewController.xib */; };
+		7AA585BB18BF099900E59852 /* InvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585AF18BF099900E59852 /* InvViewController.m */; };
+		7AA585BC18BF099900E59852 /* InvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585B018BF099900E59852 /* InvViewController.xib */; };
+		7AA585C118BF099D00E59852 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585BF18BF099D00E59852 /* LoginViewController.m */; };
+		7AA585C218BF099D00E59852 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585C018BF099D00E59852 /* LoginViewController.xib */; };
+		7AA585D318BF09A300E59852 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585C618BF09A300E59852 /* AddTaskViewController.m */; };
+		7AA585D418BF09A300E59852 /* AddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585C718BF09A300E59852 /* AddTaskViewController.xib */; };
+		7AA585D518BF09A300E59852 /* Cell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585CA18BF09A300E59852 /* Cell3.m */; };
+		7AA585D618BF09A300E59852 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585CB18BF09A300E59852 /* Cell3.xib */; };
+		7AA585D718BF09A300E59852 /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585CE18BF09A300E59852 /* EditTaskViewController.m */; };
+		7AA585D818BF09A300E59852 /* EditTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585CF18BF09A300E59852 /* EditTaskViewController.xib */; };
+		7AA585D918BF09A300E59852 /* TodolistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585D118BF09A300E59852 /* TodolistViewController.m */; };
+		7AA585DA18BF09A300E59852 /* TodolistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585D218BF09A300E59852 /* TodolistViewController.xib */; };
+		7AA585DF18BF09AA00E59852 /* VendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585DD18BF09AA00E59852 /* VendorViewController.m */; };
+		7AA585E018BF09AA00E59852 /* VendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585DE18BF09AA00E59852 /* VendorViewController.xib */; };
+		7AA585E518BF09B000E59852 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585E318BF09B000E59852 /* WelcomeViewController.m */; };
+		7AA585E618BF09B000E59852 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585E418BF09B000E59852 /* WelcomeViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AA5851518BF096E00E59852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AA584ED18BF096E00E59852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA584F418BF096E00E59852;
+			remoteInfo = wedingproj;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AA584F518BF096E00E59852 /* wedingproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wedingproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA584F818BF096E00E59852 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7AA584FA18BF096E00E59852 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7AA584FC18BF096E00E59852 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7AA5850018BF096E00E59852 /* wedingproj-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wedingproj-Info.plist"; sourceTree = "<group>"; };
+		7AA5850218BF096E00E59852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AA5850418BF096E00E59852 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AA5850618BF096E00E59852 /* wedingproj-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wedingproj-Prefix.pch"; sourceTree = "<group>"; };
+		7AA5850718BF096E00E59852 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7AA5850818BF096E00E59852 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7AA5850A18BF096E00E59852 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7AA5851018BF096E00E59852 /* wedingprojTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wedingprojTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA5851118BF096E00E59852 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7AA5851918BF096E00E59852 /* wedingprojTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wedingprojTests-Info.plist"; sourceTree = "<group>"; };
+		7AA5851B18BF096E00E59852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AA5851D18BF096E00E59852 /* wedingprojTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wedingprojTests.m; sourceTree = "<group>"; };
+		7AA5852818BF097D00E59852 /* BudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetViewController.h; sourceTree = "<group>"; };
+		7AA5852918BF097D00E59852 /* BudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetViewController.m; sourceTree = "<group>"; };
+		7AA5852A18BF097D00E59852 /* BudgetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetViewController.xib; sourceTree = "<group>"; };
+		7AA5852C18BF097D00E59852 /* CalculateBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateBudget.h; sourceTree = "<group>"; };
+		7AA5852D18BF097D00E59852 /* CalculateBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateBudget.m; sourceTree = "<group>"; };
+		7AA5852E18BF097D00E59852 /* CalculateBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculateBudget.xib; sourceTree = "<group>"; };
+		7AA5852F18BF097D00E59852 /* DetailBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailBudget.h; sourceTree = "<group>"; };
+		7AA5853018BF097D00E59852 /* DetailBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailBudget.m; sourceTree = "<group>"; };
+		7AA5853118BF097D00E59852 /* DetailBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailBudget.xib; sourceTree = "<group>"; };
+		7AA5853418BF097D00E59852 /* AddBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBudget.h; sourceTree = "<group>"; };
+		7AA5853518BF097D00E59852 /* AddBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBudget.m; sourceTree = "<group>"; };
+		7AA5853618BF097D00E59852 /* AddBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBudget.xib; sourceTree = "<group>"; };
+		7AA5853818BF097D00E59852 /* AllBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBudget.h; sourceTree = "<group>"; };
+		7AA5853918BF097D00E59852 /* AllBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBudget.m; sourceTree = "<group>"; };
+		7AA5853A18BF097D00E59852 /* AllBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllBudget.xib; sourceTree = "<group>"; };
+		7AA5853C18BF097D00E59852 /* Customcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customcell.h; sourceTree = "<group>"; };
+		7AA5853D18BF097D00E59852 /* Customcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customcell.m; sourceTree = "<group>"; };
+		7AA5853E18BF097D00E59852 /* Customcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Customcell.xib; sourceTree = "<group>"; };
+		7AA5854018BF097D00E59852 /* DeleteBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteBudget.h; sourceTree = "<group>"; };
+		7AA5854118BF097D00E59852 /* DeleteBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteBudget.m; sourceTree = "<group>"; };
+		7AA5854218BF097D00E59852 /* DeleteBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteBudget.xib; sourceTree = "<group>"; };
+		7AA5854418BF097D00E59852 /* DeleteBudgetCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteBudgetCC.h; sourceTree = "<group>"; };
+		7AA5854518BF097D00E59852 /* DeleteBudgetCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteBudgetCC.m; sourceTree = "<group>"; };
+		7AA5854618BF097D00E59852 /* DeleteBudgetCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteBudgetCC.xib; sourceTree = "<group>"; };
+		7AA5854818BF097D00E59852 /* EditBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBudget.h; sourceTree = "<group>"; };
+		7AA5854918BF097D00E59852 /* EditBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBudget.m; sourceTree = "<group>"; };
+		7AA5854A18BF097D00E59852 /* EditBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBudget.xib; sourceTree = "<group>"; };
+		7AA5854B18BF097D00E59852 /* ManageBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageBudget.h; sourceTree = "<group>"; };
+		7AA5854C18BF097D00E59852 /* ManageBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageBudget.m; sourceTree = "<group>"; };
+		7AA5854D18BF097D00E59852 /* ManageBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManageBudget.xib; sourceTree = "<group>"; };
+		7AA5856418BF098300E59852 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
+		7AA5856518BF098300E59852 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
+		7AA5856618BF098300E59852 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
+		7AA5856818BF098300E59852 /* Cell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell2.h; sourceTree = "<group>"; };
+		7AA5856918BF098300E59852 /* Cell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell2.m; sourceTree = "<group>"; };
+		7AA5856A18BF098300E59852 /* Cell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell2.xib; sourceTree = "<group>"; };
+		7AA5856C18BF098300E59852 /* EditEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditEventViewController.h; sourceTree = "<group>"; };
+		7AA5856D18BF098300E59852 /* EditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditEventViewController.m; sourceTree = "<group>"; };
+		7AA5856E18BF098300E59852 /* EditEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditEventViewController.xib; sourceTree = "<group>"; };
+		7AA5856F18BF098300E59852 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		7AA5857018BF098300E59852 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		7AA5857118BF098300E59852 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
+		7AA5857C18BF098700E59852 /* AddGuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGuestViewController.h; sourceTree = "<group>"; };
+		7AA5857D18BF098700E59852 /* AddGuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGuestViewController.m; sourceTree = "<group>"; };
+		7AA5857E18BF098700E59852 /* AddGuestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGuestViewController.xib; sourceTree = "<group>"; };
+		7AA5858018BF098700E59852 /* EditGuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditGuestViewController.h; sourceTree = "<group>"; };
+		7AA5858118BF098700E59852 /* EditGuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditGuestViewController.m; sourceTree = "<group>"; };
+		7AA5858218BF098700E59852 /* EditGuestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditGuestViewController.xib; sourceTree = "<group>"; };
+		7AA5858318BF098700E59852 /* GuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestViewController.h; sourceTree = "<group>"; };
+		7AA5858418BF098700E59852 /* GuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestViewController.m; sourceTree = "<group>"; };
+		7AA5858518BF098700E59852 /* GuestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuestViewController.xib; sourceTree = "<group>"; };
+		7AA5858D18BF098C00E59852 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7AA5858E18BF098C00E59852 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		7AA5858F18BF098C00E59852 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		7AA5859418BF099500E59852 /* index.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = index.jpg; sourceTree = "<group>"; };
+		7AA5859518BF099500E59852 /* index2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = index2.jpg; sourceTree = "<group>"; };
+		7AA5859B18BF099900E59852 /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
+		7AA5859C18BF099900E59852 /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
+		7AA5859D18BF099900E59852 /* SelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
+		7AA585A018BF099900E59852 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		7AA585A118BF099900E59852 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		7AA585A218BF099900E59852 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		7AA585A318BF099900E59852 /* InvitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitationViewController.h; sourceTree = "<group>"; };
+		7AA585A418BF099900E59852 /* InvitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitationViewController.m; sourceTree = "<group>"; };
+		7AA585A518BF099900E59852 /* InvitationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitationViewController.xib; sourceTree = "<group>"; };
+		7AA585A818BF099900E59852 /* Cell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell1.h; sourceTree = "<group>"; };
+		7AA585A918BF099900E59852 /* Cell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell1.m; sourceTree = "<group>"; };
+		7AA585AA18BF099900E59852 /* Cell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell1.xib; sourceTree = "<group>"; };
+		7AA585AB18BF099900E59852 /* SendIndividuallyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendIndividuallyViewController.h; sourceTree = "<group>"; };
+		7AA585AC18BF099900E59852 /* SendIndividuallyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendIndividuallyViewController.m; sourceTree = "<group>"; };
+		7AA585AD18BF099900E59852 /* SendIndividuallyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendIndividuallyViewController.xib; sourceTree = "<group>"; };
+		7AA585AE18BF099900E59852 /* InvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvViewController.h; sourceTree = "<group>"; };
+		7AA585AF18BF099900E59852 /* InvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvViewController.m; sourceTree = "<group>"; };
+		7AA585B018BF099900E59852 /* InvViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvViewController.xib; sourceTree = "<group>"; };
+		7AA585BE18BF099D00E59852 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7AA585BF18BF099D00E59852 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7AA585C018BF099D00E59852 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7AA585C518BF09A300E59852 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		7AA585C618BF09A300E59852 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		7AA585C718BF09A300E59852 /* AddTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddTaskViewController.xib; sourceTree = "<group>"; };
+		7AA585C918BF09A300E59852 /* Cell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell3.h; sourceTree = "<group>"; };
+		7AA585CA18BF09A300E59852 /* Cell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell3.m; sourceTree = "<group>"; };
+		7AA585CB18BF09A300E59852 /* Cell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
+		7AA585CD18BF09A300E59852 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
+		7AA585CE18BF09A300E59852 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
+		7AA585CF18BF09A300E59852 /* EditTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditTaskViewController.xib; sourceTree = "<group>"; };
+		7AA585D018BF09A300E59852 /* TodolistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodolistViewController.h; sourceTree = "<group>"; };
+		7AA585D118BF09A300E59852 /* TodolistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodolistViewController.m; sourceTree = "<group>"; };
+		7AA585D218BF09A300E59852 /* TodolistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodolistViewController.xib; sourceTree = "<group>"; };
+		7AA585DC18BF09AA00E59852 /* VendorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorViewController.h; sourceTree = "<group>"; };
+		7AA585DD18BF09AA00E59852 /* VendorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendorViewController.m; sourceTree = "<group>"; };
+		7AA585DE18BF09AA00E59852 /* VendorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VendorViewController.xib; sourceTree = "<group>"; };
+		7AA585E218BF09B000E59852 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		7AA585E318BF09B000E59852 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		7AA585E418BF09B000E59852 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AA584F218BF096E00E59852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA584FB18BF096E00E59852 /* CoreGraphics.framework in Frameworks */,
+				7AA584FD18BF096E00E59852 /* UIKit.framework in Frameworks */,
+				7AA584F918BF096E00E59852 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA5850D18BF096E00E59852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA5851218BF096E00E59852 /* XCTest.framework in Frameworks */,
+				7AA5851418BF096E00E59852 /* UIKit.framework in Frameworks */,
+				7AA5851318BF096E00E59852 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AA584EC18BF096E00E59852 = {
+			isa = PBXGroup;
+			children = (
+				7AA585E118BF09B000E59852 /* Welcome */,
+				7AA585DB18BF09AA00E59852 /* Vendor */,
+				7AA585C318BF09A300E59852 /* ToDoList */,
+				7AA585BD18BF099D00E59852 /* Login */,
+				7AA5859818BF099900E59852 /* Invitation */,
+				7AA5859218BF099500E59852 /* Images */,
+				7AA5858C18BF098C00E59852 /* Home */,
+				7AA5857A18BF098700E59852 /* Guest */,
+				7AA5856218BF098300E59852 /* Event */,
+				7AA5852718BF097D00E59852 /* Budget */,
+				7AA584FE18BF096E00E59852 /* wedingproj */,
+				7AA5851718BF096E00E59852 /* wedingprojTests */,
+				7AA584F718BF096E00E59852 /* Frameworks */,
+				7AA584F618BF096E00E59852 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AA584F618BF096E00E59852 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AA584F518BF096E00E59852 /* wedingproj.app */,
+				7AA5851018BF096E00E59852 /* wedingprojTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AA584F718BF096E00E59852 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AA584F818BF096E00E59852 /* Foundation.framework */,
+				7AA584FA18BF096E00E59852 /* CoreGraphics.framework */,
+				7AA584FC18BF096E00E59852 /* UIKit.framework */,
+				7AA5851118BF096E00E59852 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AA584FE18BF096E00E59852 /* wedingproj */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5850718BF096E00E59852 /* AppDelegate.h */,
+				7AA5850818BF096E00E59852 /* AppDelegate.m */,
+				7AA5850A18BF096E00E59852 /* Images.xcassets */,
+				7AA584FF18BF096E00E59852 /* Supporting Files */,
+			);
+			path = wedingproj;
+			sourceTree = "<group>";
+		};
+		7AA584FF18BF096E00E59852 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5850018BF096E00E59852 /* wedingproj-Info.plist */,
+				7AA5850118BF096E00E59852 /* InfoPlist.strings */,
+				7AA5850418BF096E00E59852 /* main.m */,
+				7AA5850618BF096E00E59852 /* wedingproj-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AA5851718BF096E00E59852 /* wedingprojTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5851D18BF096E00E59852 /* wedingprojTests.m */,
+				7AA5851818BF096E00E59852 /* Supporting Files */,
+			);
+			path = wedingprojTests;
+			sourceTree = "<group>";
+		};
+		7AA5851818BF096E00E59852 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5851918BF096E00E59852 /* wedingprojTests-Info.plist */,
+				7AA5851A18BF096E00E59852 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AA5852718BF097D00E59852 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5852818BF097D00E59852 /* BudgetViewController.h */,
+				7AA5852918BF097D00E59852 /* BudgetViewController.m */,
+				7AA5852A18BF097D00E59852 /* BudgetViewController.xib */,
+				7AA5852B18BF097D00E59852 /* CalculateBudget */,
+				7AA5852F18BF097D00E59852 /* DetailBudget.h */,
+				7AA5853018BF097D00E59852 /* DetailBudget.m */,
+				7AA5853118BF097D00E59852 /* DetailBudget.xib */,
+				7AA5853218BF097D00E59852 /* Manage Budget */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		7AA5852B18BF097D00E59852 /* CalculateBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5852C18BF097D00E59852 /* CalculateBudget.h */,
+				7AA5852D18BF097D00E59852 /* CalculateBudget.m */,
+				7AA5852E18BF097D00E59852 /* CalculateBudget.xib */,
+			);
+			path = CalculateBudget;
+			sourceTree = "<group>";
+		};
+		7AA5853218BF097D00E59852 /* Manage Budget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5853318BF097D00E59852 /* Add Budget */,
+				7AA5853718BF097D00E59852 /* AllBudget */,
+				7AA5853B18BF097D00E59852 /* Customcell */,
+				7AA5853F18BF097D00E59852 /* DeleteBudget */,
+				7AA5854718BF097D00E59852 /* EditBudget */,
+				7AA5854B18BF097D00E59852 /* ManageBudget.h */,
+				7AA5854C18BF097D00E59852 /* ManageBudget.m */,
+				7AA5854D18BF097D00E59852 /* ManageBudget.xib */,
+			);
+			path = "Manage Budget";
+			sourceTree = "<group>";
+		};
+		7AA5853318BF097D00E59852 /* Add Budget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5853418BF097D00E59852 /* AddBudget.h */,
+				7AA5853518BF097D00E59852 /* AddBudget.m */,
+				7AA5853618BF097D00E59852 /* AddBudget.xib */,
+			);
+			path = "Add Budget";
+			sourceTree = "<group>";
+		};
+		7AA5853718BF097D00E59852 /* AllBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5853818BF097D00E59852 /* AllBudget.h */,
+				7AA5853918BF097D00E59852 /* AllBudget.m */,
+				7AA5853A18BF097D00E59852 /* AllBudget.xib */,
+			);
+			path = AllBudget;
+			sourceTree = "<group>";
+		};
+		7AA5853B18BF097D00E59852 /* Customcell */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5853C18BF097D00E59852 /* Customcell.h */,
+				7AA5853D18BF097D00E59852 /* Customcell.m */,
+				7AA5853E18BF097D00E59852 /* Customcell.xib */,
+			);
+			path = Customcell;
+			sourceTree = "<group>";
+		};
+		7AA5853F18BF097D00E59852 /* DeleteBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5854018BF097D00E59852 /* DeleteBudget.h */,
+				7AA5854118BF097D00E59852 /* DeleteBudget.m */,
+				7AA5854218BF097D00E59852 /* DeleteBudget.xib */,
+				7AA5854318BF097D00E59852 /* DeleteBudgetCC */,
+			);
+			path = DeleteBudget;
+			sourceTree = "<group>";
+		};
+		7AA5854318BF097D00E59852 /* DeleteBudgetCC */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5854418BF097D00E59852 /* DeleteBudgetCC.h */,
+				7AA5854518BF097D00E59852 /* DeleteBudgetCC.m */,
+				7AA5854618BF097D00E59852 /* DeleteBudgetCC.xib */,
+			);
+			path = DeleteBudgetCC;
+			sourceTree = "<group>";
+		};
+		7AA5854718BF097D00E59852 /* EditBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5854818BF097D00E59852 /* EditBudget.h */,
+				7AA5854918BF097D00E59852 /* EditBudget.m */,
+				7AA5854A18BF097D00E59852 /* EditBudget.xib */,
+			);
+			path = EditBudget;
+			sourceTree = "<group>";
+		};
+		7AA5856218BF098300E59852 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5856318BF098300E59852 /* AddEvent */,
+				7AA5856718BF098300E59852 /* Cell */,
+				7AA5856B18BF098300E59852 /* EditEvent */,
+				7AA5856F18BF098300E59852 /* EventViewController.h */,
+				7AA5857018BF098300E59852 /* EventViewController.m */,
+				7AA5857118BF098300E59852 /* EventViewController.xib */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		7AA5856318BF098300E59852 /* AddEvent */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5856418BF098300E59852 /* AddEventViewController.h */,
+				7AA5856518BF098300E59852 /* AddEventViewController.m */,
+				7AA5856618BF098300E59852 /* AddEventViewController.xib */,
+			);
+			path = AddEvent;
+			sourceTree = "<group>";
+		};
+		7AA5856718BF098300E59852 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5856818BF098300E59852 /* Cell2.h */,
+				7AA5856918BF098300E59852 /* Cell2.m */,
+				7AA5856A18BF098300E59852 /* Cell2.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7AA5856B18BF098300E59852 /* EditEvent */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5856C18BF098300E59852 /* EditEventViewController.h */,
+				7AA5856D18BF098300E59852 /* EditEventViewController.m */,
+				7AA5856E18BF098300E59852 /* EditEventViewController.xib */,
+			);
+			path = EditEvent;
+			sourceTree = "<group>";
+		};
+		7AA5857A18BF098700E59852 /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5857B18BF098700E59852 /* AddGuest */,
+				7AA5857F18BF098700E59852 /* Edit */,
+				7AA5858318BF098700E59852 /* GuestViewController.h */,
+				7AA5858418BF098700E59852 /* GuestViewController.m */,
+				7AA5858518BF098700E59852 /* GuestViewController.xib */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
+		7AA5857B18BF098700E59852 /* AddGuest */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5857C18BF098700E59852 /* AddGuestViewController.h */,
+				7AA5857D18BF098700E59852 /* AddGuestViewController.m */,
+				7AA5857E18BF098700E59852 /* AddGuestViewController.xib */,
+			);
+			path = AddGuest;
+			sourceTree = "<group>";
+		};
+		7AA5857F18BF098700E59852 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5858018BF098700E59852 /* EditGuestViewController.h */,
+				7AA5858118BF098700E59852 /* EditGuestViewController.m */,
+				7AA5858218BF098700E59852 /* EditGuestViewController.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		7AA5858C18BF098C00E59852 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5858D18BF098C00E59852 /* HomeViewController.h */,
+				7AA5858E18BF098C00E59852 /* HomeViewController.m */,
+				7AA5858F18BF098C00E59852 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7AA5859218BF099500E59852 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5859318BF099500E59852 /* checkImg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7AA5859318BF099500E59852 /* checkImg */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5859418BF099500E59852 /* index.jpg */,
+				7AA5859518BF099500E59852 /* index2.jpg */,
+			);
+			path = checkImg;
+			sourceTree = "<group>";
+		};
+		7AA5859818BF099900E59852 /* Invitation */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5859918BF099900E59852 /* GroupWise */,
+				7AA585A618BF099900E59852 /* Individually */,
+				7AA585AE18BF099900E59852 /* InvViewController.h */,
+				7AA585AF18BF099900E59852 /* InvViewController.m */,
+				7AA585B018BF099900E59852 /* InvViewController.xib */,
+			);
+			path = Invitation;
+			sourceTree = "<group>";
+		};
+		7AA5859918BF099900E59852 /* GroupWise */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5859A18BF099900E59852 /* SelectGroup */,
+				7AA5859E18BF099900E59852 /* SendInv */,
+			);
+			path = GroupWise;
+			sourceTree = "<group>";
+		};
+		7AA5859A18BF099900E59852 /* SelectGroup */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5859B18BF099900E59852 /* SelectViewController.h */,
+				7AA5859C18BF099900E59852 /* SelectViewController.m */,
+				7AA5859D18BF099900E59852 /* SelectViewController.xib */,
+			);
+			path = SelectGroup;
+			sourceTree = "<group>";
+		};
+		7AA5859E18BF099900E59852 /* SendInv */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5859F18BF099900E59852 /* cell */,
+				7AA585A318BF099900E59852 /* InvitationViewController.h */,
+				7AA585A418BF099900E59852 /* InvitationViewController.m */,
+				7AA585A518BF099900E59852 /* InvitationViewController.xib */,
+			);
+			path = SendInv;
+			sourceTree = "<group>";
+		};
+		7AA5859F18BF099900E59852 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585A018BF099900E59852 /* Cell.h */,
+				7AA585A118BF099900E59852 /* Cell.m */,
+				7AA585A218BF099900E59852 /* Cell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		7AA585A618BF099900E59852 /* Individually */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585A718BF099900E59852 /* cell */,
+				7AA585AB18BF099900E59852 /* SendIndividuallyViewController.h */,
+				7AA585AC18BF099900E59852 /* SendIndividuallyViewController.m */,
+				7AA585AD18BF099900E59852 /* SendIndividuallyViewController.xib */,
+			);
+			path = Individually;
+			sourceTree = "<group>";
+		};
+		7AA585A718BF099900E59852 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585A818BF099900E59852 /* Cell1.h */,
+				7AA585A918BF099900E59852 /* Cell1.m */,
+				7AA585AA18BF099900E59852 /* Cell1.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		7AA585BD18BF099D00E59852 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585BE18BF099D00E59852 /* LoginViewController.h */,
+				7AA585BF18BF099D00E59852 /* LoginViewController.m */,
+				7AA585C018BF099D00E59852 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7AA585C318BF09A300E59852 /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585C418BF09A300E59852 /* AddTask */,
+				7AA585C818BF09A300E59852 /* cell */,
+				7AA585CC18BF09A300E59852 /* EditTask */,
+				7AA585D018BF09A300E59852 /* TodolistViewController.h */,
+				7AA585D118BF09A300E59852 /* TodolistViewController.m */,
+				7AA585D218BF09A300E59852 /* TodolistViewController.xib */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		7AA585C418BF09A300E59852 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585C518BF09A300E59852 /* AddTaskViewController.h */,
+				7AA585C618BF09A300E59852 /* AddTaskViewController.m */,
+				7AA585C718BF09A300E59852 /* AddTaskViewController.xib */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		7AA585C818BF09A300E59852 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585C918BF09A300E59852 /* Cell3.h */,
+				7AA585CA18BF09A300E59852 /* Cell3.m */,
+				7AA585CB18BF09A300E59852 /* Cell3.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		7AA585CC18BF09A300E59852 /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585CD18BF09A300E59852 /* EditTaskViewController.h */,
+				7AA585CE18BF09A300E59852 /* EditTaskViewController.m */,
+				7AA585CF18BF09A300E59852 /* EditTaskViewController.xib */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
+		7AA585DB18BF09AA00E59852 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585DC18BF09AA00E59852 /* VendorViewController.h */,
+				7AA585DD18BF09AA00E59852 /* VendorViewController.m */,
+				7AA585DE18BF09AA00E59852 /* VendorViewController.xib */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		7AA585E118BF09B000E59852 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				7AA585E218BF09B000E59852 /* WelcomeViewController.h */,
+				7AA585E318BF09B000E59852 /* WelcomeViewController.m */,
+				7AA585E418BF09B000E59852 /* WelcomeViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AA584F418BF096E00E59852 /* wedingproj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA5852118BF096E00E59852 /* Build configuration list for PBXNativeTarget "wedingproj" */;
+			buildPhases = (
+				7AA584F118BF096E00E59852 /* Sources */,
+				7AA584F218BF096E00E59852 /* Frameworks */,
+				7AA584F318BF096E00E59852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wedingproj;
+			productName = wedingproj;
+			productReference = 7AA584F518BF096E00E59852 /* wedingproj.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AA5850F18BF096E00E59852 /* wedingprojTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA5852418BF096E00E59852 /* Build configuration list for PBXNativeTarget "wedingprojTests" */;
+			buildPhases = (
+				7AA5850C18BF096E00E59852 /* Sources */,
+				7AA5850D18BF096E00E59852 /* Frameworks */,
+				7AA5850E18BF096E00E59852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AA5851618BF096E00E59852 /* PBXTargetDependency */,
+			);
+			name = wedingprojTests;
+			productName = wedingprojTests;
+			productReference = 7AA5851018BF096E00E59852 /* wedingprojTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AA584ED18BF096E00E59852 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Suman Naskar";
+				TargetAttributes = {
+					7AA5850F18BF096E00E59852 = {
+						TestTargetID = 7AA584F418BF096E00E59852;
+					};
+				};
+			};
+			buildConfigurationList = 7AA584F018BF096E00E59852 /* Build configuration list for PBXProject "wedingproj" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7AA584EC18BF096E00E59852;
+			productRefGroup = 7AA584F618BF096E00E59852 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AA584F418BF096E00E59852 /* wedingproj */,
+				7AA5850F18BF096E00E59852 /* wedingprojTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AA584F318BF096E00E59852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA585DA18BF09A300E59852 /* TodolistViewController.xib in Resources */,
+				7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */,
+				7AA585B418BF099900E59852 /* Cell.xib in Resources */,
+				7AA5857718BF098300E59852 /* EditEventViewController.xib in Resources */,
+				7AA585D818BF09A300E59852 /* EditTaskViewController.xib in Resources */,
+				7AA585C218BF099D00E59852 /* LoginViewController.xib in Resources */,
+				7AA585B218BF099900E59852 /* SelectViewController.xib in Resources */,
+				7AA585D618BF09A300E59852 /* Cell3.xib in Resources */,
+				7AA5855D18BF097D00E59852 /* DeleteBudgetCC.xib in Resources */,
+				7AA5857518BF098300E59852 /* Cell2.xib in Resources */,
+				7AA5858B18BF098700E59852 /* GuestViewController.xib in Resources */,
+				7AA5855718BF097D00E59852 /* AllBudget.xib in Resources */,
+				7AA585BA18BF099900E59852 /* SendIndividuallyViewController.xib in Resources */,
+				7AA5858918BF098700E59852 /* EditGuestViewController.xib in Resources */,
+				7AA5859118BF098C00E59852 /* HomeViewController.xib in Resources */,
+				7AA585E618BF09B000E59852 /* WelcomeViewController.xib in Resources */,
+				7AA5855918BF097D00E59852 /* Customcell.xib in Resources */,
+				7AA585D418BF09A300E59852 /* AddTaskViewController.xib in Resources */,
+				7AA5850318BF096E00E59852 /* InfoPlist.strings in Resources */,
+				7AA585E018BF09AA00E59852 /* VendorViewController.xib in Resources */,
+				7AA5857318BF098300E59852 /* AddEventViewController.xib in Resources */,
+				7AA5858718BF098700E59852 /* AddGuestViewController.xib in Resources */,
+				7AA5855F18BF097D00E59852 /* EditBudget.xib in Resources */,
+				7AA5857918BF098300E59852 /* EventViewController.xib in Resources */,
+				7AA5855B18BF097D00E59852 /* DeleteBudget.xib in Resources */,
+				7AA585BC18BF099900E59852 /* InvViewController.xib in Resources */,
+				7AA585B618BF099900E59852 /* InvitationViewController.xib in Resources */,
+				7AA5855118BF097D00E59852 /* CalculateBudget.xib in Resources */,
+				7AA5855318BF097D00E59852 /* DetailBudget.xib in Resources */,
+				7AA5859718BF099500E59852 /* index2.jpg in Resources */,
+				7AA5856118BF097D00E59852 /* ManageBudget.xib in Resources */,
+				7AA5854F18BF097D00E59852 /* BudgetViewController.xib in Resources */,
+				7AA5850B18BF096E00E59852 /* Images.xcassets in Resources */,
+				7AA5859618BF099500E59852 /* index.jpg in Resources */,
+				7AA585B818BF099900E59852 /* Cell1.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA5850E18BF096E00E59852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA5851C18BF096E00E59852 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AA584F118BF096E00E59852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA585B118BF099900E59852 /* SelectViewController.m in Sources */,
+				7AA5855418BF097D00E59852 /* AddBudget.m in Sources */,
+				7AA5857818BF098300E59852 /* EventViewController.m in Sources */,
+				7AA585B918BF099900E59852 /* SendIndividuallyViewController.m in Sources */,
+				7AA585B718BF099900E59852 /* Cell1.m in Sources */,
+				7AA585C118BF099D00E59852 /* LoginViewController.m in Sources */,
+				7AA5855E18BF097D00E59852 /* EditBudget.m in Sources */,
+				7AA5859018BF098C00E59852 /* HomeViewController.m in Sources */,
+				7AA5855618BF097D00E59852 /* AllBudget.m in Sources */,
+				7AA585D718BF09A300E59852 /* EditTaskViewController.m in Sources */,
+				7AA5857618BF098300E59852 /* EditEventViewController.m in Sources */,
+				7AA5855A18BF097D00E59852 /* DeleteBudget.m in Sources */,
+				7AA5858618BF098700E59852 /* AddGuestViewController.m in Sources */,
+				7AA5855818BF097D00E59852 /* Customcell.m in Sources */,
+				7AA5855218BF097D00E59852 /* DetailBudget.m in Sources */,
+				7AA585B318BF099900E59852 /* Cell.m in Sources */,
+				7AA5858A18BF098700E59852 /* GuestViewController.m in Sources */,
+				7AA585E518BF09B000E59852 /* WelcomeViewController.m in Sources */,
+				7AA5858818BF098700E59852 /* EditGuestViewController.m in Sources */,
+				7AA5857418BF098300E59852 /* Cell2.m in Sources */,
+				7AA5850918BF096E00E59852 /* AppDelegate.m in Sources */,
+				7AA5857218BF098300E59852 /* AddEventViewController.m in Sources */,
+				7AA585D918BF09A300E59852 /* TodolistViewController.m in Sources */,
+				7AA5855018BF097D00E59852 /* CalculateBudget.m in Sources */,
+				7AA585D318BF09A300E59852 /* AddTaskViewController.m in Sources */,
+				7AA585D518BF09A300E59852 /* Cell3.m in Sources */,
+				7AA5850518BF096E00E59852 /* main.m in Sources */,
+				7AA5856018BF097D00E59852 /* ManageBudget.m in Sources */,
+				7AA585B518BF099900E59852 /* InvitationViewController.m in Sources */,
+				7AA5854E18BF097D00E59852 /* BudgetViewController.m in Sources */,
+				7AA585BB18BF099900E59852 /* InvViewController.m in Sources */,
+				7AA585DF18BF09AA00E59852 /* VendorViewController.m in Sources */,
+				7AA5855C18BF097D00E59852 /* DeleteBudgetCC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA5850C18BF096E00E59852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA5851E18BF096E00E59852 /* wedingprojTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AA5851618BF096E00E59852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AA584F418BF096E00E59852 /* wedingproj */;
+			targetProxy = 7AA5851518BF096E00E59852 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7AA5850118BF096E00E59852 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA5850218BF096E00E59852 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7AA5851A18BF096E00E59852 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA5851B18BF096E00E59852 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AA5851F18BF096E00E59852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7AA5852018BF096E00E59852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AA5852218BF096E00E59852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wedingproj/wedingproj-Prefix.pch";
+				INFOPLIST_FILE = "wedingproj/wedingproj-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7AA5852318BF096E00E59852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wedingproj/wedingproj-Prefix.pch";
+				INFOPLIST_FILE = "wedingproj/wedingproj-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7AA5852518BF096E00E59852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wedingproj.app/wedingproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wedingproj/wedingproj-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "wedingprojTests/wedingprojTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7AA5852618BF096E00E59852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wedingproj.app/wedingproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wedingproj/wedingproj-Prefix.pch";
+				INFOPLIST_FILE = "wedingprojTests/wedingprojTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AA584F018BF096E00E59852 /* Build configuration list for PBXProject "wedingproj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA5851F18BF096E00E59852 /* Debug */,
+				7AA5852018BF096E00E59852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA5852118BF096E00E59852 /* Build configuration list for PBXNativeTarget "wedingproj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA5852218BF096E00E59852 /* Debug */,
+				7AA5852318BF096E00E59852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7AA5852418BF096E00E59852 /* Build configuration list for PBXNativeTarget "wedingprojTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA5852518BF096E00E59852 /* Debug */,
+				7AA5852618BF096E00E59852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AA584ED18BF096E00E59852 /* Project object */;
+}
