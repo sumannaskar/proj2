@@ -124,7 +124,7 @@
 }
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
-    self.dresscodetxt.text=@"";
+    self.dresscodetxt.text=self.dresscodestr;
     
     //addressdetailsText.text=@"";
     
@@ -160,12 +160,12 @@
 {
     if (self.canceldatebtn.tag==1)
     {
-        self.datetxt.text=@"";
+        self.datetxt.text=self.startstr;
         [self.datetxt resignFirstResponder];
     }
     else
     {
-        self.dateendtxt.text=@"";
+        self.dateendtxt.text=self.endstr;
         [self.dateendtxt resignFirstResponder];
     }
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F754FB8B-C1BA-4C77-92A9-D8C5E001012C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wedingproj</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>724215B1-65F9-4CD4-91F6-D932B121D77D</key>
+		<string>https://github.com/sumannaskar/proj2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wedingproj/wedingproj.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>724215B1-65F9-4CD4-91F6-D932B121D77D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sumannaskar/proj2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>724215B1-65F9-4CD4-91F6-D932B121D77D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>724215B1-65F9-4CD4-91F6-D932B121D77D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>proj2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
