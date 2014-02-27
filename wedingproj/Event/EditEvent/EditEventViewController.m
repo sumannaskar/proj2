@@ -7,6 +7,8 @@
 //
 
 #import "EditEventViewController.h"
+#import "EventViewController.h"
+#define EditEventURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=event_update&"]
 
 @interface EditEventViewController ()
 
@@ -169,6 +171,22 @@
         [self.dateendtxt resignFirstResponder];
     }
 }
+
+- (IBAction)savechanges:(UIButton *)sender {
+    
+    if (nametxt.text.length >0 && venuetxt.text.length >0 &&self.datetxt.text.length>0 && self.dateendtxt.text.length>0&& budgettxt.text.length>0 && self.dresscodetxt.text.length>0)
+    {
+        
+        [self EditDetails];
+        
+    }
+    else
+    {
+        UIAlertView *fillall =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Fill all the fields" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [fillall show];
+    }
+
+}
 - (NSString *)formatDate:(NSDate *)date
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -185,10 +203,40 @@
     self.dresscodetxt.text=self.dresscodestr;
     venuetxt.text=self.venuestr;
     budgettxt.text=self.budgetstr;
+}
+-(void)EditDetails
+{
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"event_id=%@&event_name=%@&venue=%@&start_time=%@&end_time=%@&budget=%@&dress_code=%@&apikey=micronix_10_2014_wedsimple_proj",self.eventidstr,nametxt.text,venuetxt.text,self.datetxt.text,self.dateendtxt.text,budgettxt.text,self.dresscodetxt.text];
+    NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"%@",urlTextEscaped);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",EditEventURL,urlTextEscaped]];
+    NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    NSLog(@"%@",url);
+    [theRequest setHTTPMethod:@"POST"];
+    [theRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSError *error;
+    NSURLResponse *response;
+    
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
+    EditData=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",response);
+    
+    EditEventmessage= [NSJSONSerialization JSONObjectWithData:urlData options:kNilOptions error:&error];
     
     
-    
-    
+    if([[EditEventmessage valueForKey:@"status" ] isEqualToString:@"Record Updated"])
+    {
+        UIAlertView *addsuccess=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Edited Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [addsuccess show];
+        EventViewController *EventlistVc=[[EventViewController alloc] init];
+        [self.navigationController pushViewController:EventlistVc animated:YES];
+        
+    }
+    else
+    {
+        UIAlertView *addfailed=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Event not Edited, Try again" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [addfailed show];
+    }
 }
 
 @end

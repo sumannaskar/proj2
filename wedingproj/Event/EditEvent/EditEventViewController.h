@@ -23,6 +23,7 @@
     NSMutableArray *EditEventmessage;
     
 }
+@property (strong, nonatomic) NSString *eventidstr;
 @property (strong, nonatomic) NSString *eventnamestr;
 @property (strong, nonatomic) NSString *startstr;
 @property (strong, nonatomic) NSString *endstr;
@@ -50,6 +51,7 @@
 
 - (IBAction)donedate:(id)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
+- (IBAction)savechanges:(UIButton *)sender;
 
 
 @end

@@ -8,7 +8,7 @@
 
 #import "AddEventViewController.h"
 #import "EventViewController.h"
-#define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=event_create&"]
+#define AddEventURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=event_create&"]
 
 @interface AddEventViewController ()
 
@@ -59,7 +59,7 @@
     NSString *AddtaskData=[[NSString alloc]initWithFormat:@"event_name=%@&venue=%@&start_time=%@&end_time=%@&budget=%@&dress_code=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,venuetxt.text,self.datetxt.text,self.dateendtxt.text,budgettxt.text,self.dresscodetxt.text];
     NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddTaskURL,urlTextEscaped]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddEventURL,urlTextEscaped]];
     NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
     NSLog(@"%@",url);
     [theRequest setHTTPMethod:@"POST"];

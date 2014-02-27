@@ -260,7 +260,7 @@
     NSLog(@"%@",eventnamestr);
     EditEventViewController *EditeventVc=[[EditEventViewController alloc] init];
      NSDictionary *tempdic=[raweventList objectAtIndex:button.tag];
-    EditeventVc.eventnamestr=[tempdic objectForKey:@"event_name"];
+    EditeventVc.eventidstr=[tempdic objectForKey:@"event_id"];
     EditeventVc.eventnamestr=[tempdic objectForKey:@"event_name"];
     EditeventVc.startstr=[tempdic objectForKey:@"start_time"];
     EditeventVc.endstr=[tempdic objectForKey:@"end_time"];
