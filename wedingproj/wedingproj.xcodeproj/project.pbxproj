@@ -319,7 +319,6 @@
 				7AA5852818BF097D00E59852 /* BudgetViewController.h */,
 				7AA5852918BF097D00E59852 /* BudgetViewController.m */,
 				7AA5852A18BF097D00E59852 /* BudgetViewController.xib */,
-				7AA5853B18BF097D00E59852 /* Customcell */,
 				7AA5852B18BF097D00E59852 /* CalculateBudget */,
 				7AA5853218BF097D00E59852 /* Manage Budget */,
 			);
@@ -339,6 +338,7 @@
 		7AA5853218BF097D00E59852 /* Manage Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AA5853B18BF097D00E59852 /* Customcell */,
 				7AA5854B18BF097D00E59852 /* ManageBudget.h */,
 				7AA5854C18BF097D00E59852 /* ManageBudget.m */,
 				7AA5854D18BF097D00E59852 /* ManageBudget.xib */,
@@ -378,8 +378,7 @@
 				7AA5853D18BF097D00E59852 /* Customcell.m */,
 				7AA5853E18BF097D00E59852 /* Customcell.xib */,
 			);
-			name = Customcell;
-			path = "Manage Budget/Customcell";
+			path = Customcell;
 			sourceTree = "<group>";
 		};
 		7AA5853F18BF097D00E59852 /* DeleteBudget */ = {

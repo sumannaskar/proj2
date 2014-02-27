@@ -12,6 +12,9 @@
 {
     IBOutlet UIImageView *backgroung;
     IBOutlet UITableView *manageTable;
+    NSMutableArray *json;
+    NSMutableArray *eventname;
+    NSMutableArray *eventid;
 }
 
 @end

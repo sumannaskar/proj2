@@ -9,6 +9,9 @@
 #import "ManageBudget.h"
 #import "Customcell.h"
 #import "AllBudget.h"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
+
 
 
 @interface ManageBudget ()
@@ -29,13 +32,66 @@
 - (void)viewDidLoad
 {
     
-   // UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 524, 320, 44)];
+    
+    json =[[NSMutableArray alloc]init];
+    eventid=[[NSMutableArray alloc]init];
+    eventname=[[NSMutableArray alloc]init];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL]];
+    NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+
  
     
     
     [super viewDidLoad];
     
 }
+
+
+-(void)fetchedData:(NSData *)responseData
+{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    
+    
+    for (NSDictionary *data in json ) {
+        [eventname addObject:[data valueForKey:@"event_name"]];
+        [eventid addObject:[data valueForKey:@"event_id"]];
+        
+    }
+    [manageTable reloadData];
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -49,7 +105,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-        return 50;
+        return [eventname count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -63,7 +119,7 @@
         NSArray* array = [nib instantiateWithOwner:self options:nil];
         cell = [array objectAtIndex:0];
     }
-    cell.event.text =@"event";
+    cell.event.text =[eventname objectAtIndex:indexPath.row];
     cell.budget.text=@"Total budget";
     return cell;
 }
@@ -71,6 +127,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     AllBudget *AllBudget_ =[[AllBudget alloc]init];
+    AllBudget_.eventidpass=[eventid objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:AllBudget_ animated:YES];
     
 }

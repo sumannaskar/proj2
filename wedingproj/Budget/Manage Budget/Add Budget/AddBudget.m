@@ -144,11 +144,11 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 - (IBAction)save:(id)sender {
-    
+    //********** give event id...
     NSString *savedata =[[NSString alloc]initWithFormat:@"event_id=%@&name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",@"1",eventnametext.text,vendoridpass,paymentduedatetext.text,totalamountduetext.text,amountpaidtodatetext.text,infotext.text];
     NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     

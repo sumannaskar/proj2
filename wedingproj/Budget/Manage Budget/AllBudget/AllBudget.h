@@ -12,6 +12,9 @@
 {
     
 }
+@property(nonatomic,retain)NSString *eventidpass;
+
 - (IBAction)addBudget:(id)sender;
 - (IBAction)deleteBudget:(UIBarButtonItem *)sender;
+
 @end

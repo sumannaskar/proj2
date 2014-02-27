@@ -8,6 +8,8 @@
 
 #import "DeleteBudget.h"
 #import "DeleteBudgetCC.h"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_delete&"]
 
 @interface DeleteBudget ()
 
@@ -41,8 +43,22 @@
 {
     
     
-//    AddTaskViewController *AddeventVc=[[AddTaskViewController alloc] init];
-//    [self.navigationController pushViewController:AddeventVc animated:YES];
+    NSString *savedata =[[NSString alloc]initWithFormat:@"budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"1"];
+    NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;
+    NSLog(@"%@",url);
+    
+    NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    
+    [theRequest setHTTPMethod:@"POST"];
+    [theRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSError *error;
+    NSURLResponse *response;
+    
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
+    NSString *data=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",data);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -86,7 +102,8 @@
         [cell.checkImgv setImage:[UIImage imageNamed:[checkImage objectAtIndex:indexPath.row]]];
     }
     
-    cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    cell.EventLbl.text=@"budget name";
     
     return cell;
 }

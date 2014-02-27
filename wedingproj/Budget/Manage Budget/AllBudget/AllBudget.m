@@ -16,7 +16,7 @@
 @end
 
 @implementation AllBudget
-
+@synthesize eventidpass;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -51,8 +51,6 @@
      {
          cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellidentifire];
          cell.textLabel.text=@"budget name";
-         NSLog(@"suman");
-          NSLog(@"suman"); NSLog(@"suman");
          
          
          return cell;
