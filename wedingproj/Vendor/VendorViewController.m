@@ -7,6 +7,9 @@
 //
 
 #import "VendorViewController.h"
+#import "ManageVendor.h"
+#import "AddVendor.h"
+
 
 @interface VendorViewController ()
 
@@ -35,4 +38,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)managevendor:(id)sender {
+    ManageVendor *ManageVendor_ =[[ManageVendor alloc]init];
+    [self.navigationController pushViewController:ManageVendor_ animated:YES];
+}
+
+- (IBAction)addvendor:(id)sender {
+    
+    AddVendor *AddVendor_ =[[AddVendor alloc]init];
+    [self.navigationController pushViewController:AddVendor_ animated:YES];
+    
+}
 @end

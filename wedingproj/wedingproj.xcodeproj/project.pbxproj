@@ -87,6 +87,20 @@
 		7AA585E618BF09B000E59852 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585E418BF09B000E59852 /* WelcomeViewController.xib */; };
 		7AA585EC18BF790B00E59852 /* AllBudgetCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA585EB18BF790B00E59852 /* AllBudgetCC.m */; };
 		7AA585EE18BF792300E59852 /* AllBudgetCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA585ED18BF792300E59852 /* AllBudgetCC.xib */; };
+		7AE4D9F518C064D8009AC079 /* ManageVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4D9F318C064D8009AC079 /* ManageVendor.m */; };
+		7AE4D9F618C064D8009AC079 /* ManageVendor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE4D9F418C064D8009AC079 /* ManageVendor.xib */; };
+		7AE4D9FA18C066B2009AC079 /* ManageVendorCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4D9F918C066B2009AC079 /* ManageVendorCC.m */; };
+		7AE4D9FC18C066C8009AC079 /* ManageVendorCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE4D9FB18C066C8009AC079 /* ManageVendorCC.xib */; };
+		7AE4DA0118C06957009AC079 /* DetailVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4D9FF18C06957009AC079 /* DetailVendor.m */; };
+		7AE4DA0218C06957009AC079 /* DetailVendor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE4DA0018C06957009AC079 /* DetailVendor.xib */; };
+		7AE4DA0718C06E1B009AC079 /* EditVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4DA0518C06E1B009AC079 /* EditVendor.m */; };
+		7AE4DA0818C06E1B009AC079 /* EditVendor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE4DA0618C06E1B009AC079 /* EditVendor.xib */; };
+		7AE4DA0D18C073D8009AC079 /* AddVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4DA0B18C073D8009AC079 /* AddVendor.m */; };
+		7AE4DA0E18C073D8009AC079 /* AddVendor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE4DA0C18C073D8009AC079 /* AddVendor.xib */; };
+		7AE4DA1318C074E8009AC079 /* DeleteVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4DA1118C074E8009AC079 /* DeleteVendor.m */; };
+		7AE4DA1418C074E8009AC079 /* DeleteVendor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE4DA1218C074E8009AC079 /* DeleteVendor.xib */; };
+		7AE4DA1818C0759F009AC079 /* DeleteVendorCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4DA1718C0759F009AC079 /* DeleteVendorCC.m */; };
+		7AE4DA1A18C07616009AC079 /* DeleteVendorCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE4DA1918C07616009AC079 /* DeleteVendorCC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +231,27 @@
 		7AA585EA18BF790B00E59852 /* AllBudgetCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllBudgetCC.h; path = AllBudgetCC/AllBudgetCC.h; sourceTree = "<group>"; };
 		7AA585EB18BF790B00E59852 /* AllBudgetCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllBudgetCC.m; path = AllBudgetCC/AllBudgetCC.m; sourceTree = "<group>"; };
 		7AA585ED18BF792300E59852 /* AllBudgetCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllBudgetCC.xib; path = AllBudgetCC/AllBudgetCC.xib; sourceTree = "<group>"; };
+		7AE4D9F218C064D8009AC079 /* ManageVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManageVendor.h; path = ManageVendor/ManageVendor.h; sourceTree = "<group>"; };
+		7AE4D9F318C064D8009AC079 /* ManageVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManageVendor.m; path = ManageVendor/ManageVendor.m; sourceTree = "<group>"; };
+		7AE4D9F418C064D8009AC079 /* ManageVendor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ManageVendor.xib; path = ManageVendor/ManageVendor.xib; sourceTree = "<group>"; };
+		7AE4D9F818C066B2009AC079 /* ManageVendorCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManageVendorCC.h; path = ManageVendor/ManageVendorCC/ManageVendorCC.h; sourceTree = "<group>"; };
+		7AE4D9F918C066B2009AC079 /* ManageVendorCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManageVendorCC.m; path = ManageVendor/ManageVendorCC/ManageVendorCC.m; sourceTree = "<group>"; };
+		7AE4D9FB18C066C8009AC079 /* ManageVendorCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ManageVendorCC.xib; path = ManageVendor/ManageVendorCC/ManageVendorCC.xib; sourceTree = "<group>"; };
+		7AE4D9FE18C06957009AC079 /* DetailVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailVendor.h; path = ManageVendor/DetailVendor/DetailVendor.h; sourceTree = "<group>"; };
+		7AE4D9FF18C06957009AC079 /* DetailVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailVendor.m; path = ManageVendor/DetailVendor/DetailVendor.m; sourceTree = "<group>"; };
+		7AE4DA0018C06957009AC079 /* DetailVendor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailVendor.xib; path = ManageVendor/DetailVendor/DetailVendor.xib; sourceTree = "<group>"; };
+		7AE4DA0418C06E1B009AC079 /* EditVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditVendor.h; path = ManageVendor/EditVendor/EditVendor.h; sourceTree = "<group>"; };
+		7AE4DA0518C06E1B009AC079 /* EditVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditVendor.m; path = ManageVendor/EditVendor/EditVendor.m; sourceTree = "<group>"; };
+		7AE4DA0618C06E1B009AC079 /* EditVendor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditVendor.xib; path = ManageVendor/EditVendor/EditVendor.xib; sourceTree = "<group>"; };
+		7AE4DA0A18C073D8009AC079 /* AddVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddVendor.h; path = ManageVendor/AddVendor/AddVendor.h; sourceTree = "<group>"; };
+		7AE4DA0B18C073D8009AC079 /* AddVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddVendor.m; path = ManageVendor/AddVendor/AddVendor.m; sourceTree = "<group>"; };
+		7AE4DA0C18C073D8009AC079 /* AddVendor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddVendor.xib; path = ManageVendor/AddVendor/AddVendor.xib; sourceTree = "<group>"; };
+		7AE4DA1018C074E8009AC079 /* DeleteVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteVendor.h; path = ManageVendor/DeleteVendor/DeleteVendor.h; sourceTree = "<group>"; };
+		7AE4DA1118C074E8009AC079 /* DeleteVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteVendor.m; path = ManageVendor/DeleteVendor/DeleteVendor.m; sourceTree = "<group>"; };
+		7AE4DA1218C074E8009AC079 /* DeleteVendor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DeleteVendor.xib; path = ManageVendor/DeleteVendor/DeleteVendor.xib; sourceTree = "<group>"; };
+		7AE4DA1618C0759F009AC079 /* DeleteVendorCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteVendorCC.h; path = ManageVendor/DeleteVendor/DeleteVendorCC/DeleteVendorCC.h; sourceTree = "<group>"; };
+		7AE4DA1718C0759F009AC079 /* DeleteVendorCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteVendorCC.m; path = ManageVendor/DeleteVendor/DeleteVendorCC/DeleteVendorCC.m; sourceTree = "<group>"; };
+		7AE4DA1918C07616009AC079 /* DeleteVendorCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DeleteVendorCC.xib; path = ManageVendor/DeleteVendor/DeleteVendorCC/DeleteVendorCC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -697,6 +732,14 @@
 		7AA585E818BF647A00E59852 /* ManageVenor */ = {
 			isa = PBXGroup;
 			children = (
+				7AE4DA0F18C074C4009AC079 /* DeleteVendor */,
+				7AE4D9F218C064D8009AC079 /* ManageVendor.h */,
+				7AE4D9F318C064D8009AC079 /* ManageVendor.m */,
+				7AE4D9F418C064D8009AC079 /* ManageVendor.xib */,
+				7AE4D9F718C06651009AC079 /* ManageVendorCC */,
+				7AE4DA0918C073B2009AC079 /* AddVendor */,
+				7AE4DA0318C06DBF009AC079 /* EditVendor */,
+				7AE4D9FD18C06906009AC079 /* DetailVendor */,
 			);
 			name = ManageVenor;
 			sourceTree = "<group>";
@@ -709,6 +752,67 @@
 				7AA585ED18BF792300E59852 /* AllBudgetCC.xib */,
 			);
 			name = AllBudgetCC;
+			sourceTree = "<group>";
+		};
+		7AE4D9F718C06651009AC079 /* ManageVendorCC */ = {
+			isa = PBXGroup;
+			children = (
+				7AE4D9F818C066B2009AC079 /* ManageVendorCC.h */,
+				7AE4D9F918C066B2009AC079 /* ManageVendorCC.m */,
+				7AE4D9FB18C066C8009AC079 /* ManageVendorCC.xib */,
+			);
+			name = ManageVendorCC;
+			sourceTree = "<group>";
+		};
+		7AE4D9FD18C06906009AC079 /* DetailVendor */ = {
+			isa = PBXGroup;
+			children = (
+				7AE4D9FE18C06957009AC079 /* DetailVendor.h */,
+				7AE4D9FF18C06957009AC079 /* DetailVendor.m */,
+				7AE4DA0018C06957009AC079 /* DetailVendor.xib */,
+			);
+			name = DetailVendor;
+			sourceTree = "<group>";
+		};
+		7AE4DA0318C06DBF009AC079 /* EditVendor */ = {
+			isa = PBXGroup;
+			children = (
+				7AE4DA0418C06E1B009AC079 /* EditVendor.h */,
+				7AE4DA0518C06E1B009AC079 /* EditVendor.m */,
+				7AE4DA0618C06E1B009AC079 /* EditVendor.xib */,
+			);
+			name = EditVendor;
+			sourceTree = "<group>";
+		};
+		7AE4DA0918C073B2009AC079 /* AddVendor */ = {
+			isa = PBXGroup;
+			children = (
+				7AE4DA0A18C073D8009AC079 /* AddVendor.h */,
+				7AE4DA0B18C073D8009AC079 /* AddVendor.m */,
+				7AE4DA0C18C073D8009AC079 /* AddVendor.xib */,
+			);
+			name = AddVendor;
+			sourceTree = "<group>";
+		};
+		7AE4DA0F18C074C4009AC079 /* DeleteVendor */ = {
+			isa = PBXGroup;
+			children = (
+				7AE4DA1518C0755D009AC079 /* DeleteVendorCC */,
+				7AE4DA1018C074E8009AC079 /* DeleteVendor.h */,
+				7AE4DA1118C074E8009AC079 /* DeleteVendor.m */,
+				7AE4DA1218C074E8009AC079 /* DeleteVendor.xib */,
+			);
+			name = DeleteVendor;
+			sourceTree = "<group>";
+		};
+		7AE4DA1518C0755D009AC079 /* DeleteVendorCC */ = {
+			isa = PBXGroup;
+			children = (
+				7AE4DA1618C0759F009AC079 /* DeleteVendorCC.h */,
+				7AE4DA1718C0759F009AC079 /* DeleteVendorCC.m */,
+				7AE4DA1918C07616009AC079 /* DeleteVendorCC.xib */,
+			);
+			name = DeleteVendorCC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -793,18 +897,23 @@
 				7AA5857718BF098300E59852 /* EditEventViewController.xib in Resources */,
 				7AA585D818BF09A300E59852 /* EditTaskViewController.xib in Resources */,
 				7AA585C218BF099D00E59852 /* LoginViewController.xib in Resources */,
+				7AE4DA0E18C073D8009AC079 /* AddVendor.xib in Resources */,
 				7AA585B218BF099900E59852 /* SelectViewController.xib in Resources */,
 				7AA585D618BF09A300E59852 /* Cell3.xib in Resources */,
 				7AA5855D18BF097D00E59852 /* DeleteBudgetCC.xib in Resources */,
+				7AE4DA0218C06957009AC079 /* DetailVendor.xib in Resources */,
 				7AA5857518BF098300E59852 /* Cell2.xib in Resources */,
 				7AA5858B18BF098700E59852 /* GuestViewController.xib in Resources */,
 				7AA5855718BF097D00E59852 /* AllBudget.xib in Resources */,
 				7AA585BA18BF099900E59852 /* SendIndividuallyViewController.xib in Resources */,
 				7AA5858918BF098700E59852 /* EditGuestViewController.xib in Resources */,
+				7AE4DA0818C06E1B009AC079 /* EditVendor.xib in Resources */,
 				7AA5859118BF098C00E59852 /* HomeViewController.xib in Resources */,
 				7AA585E618BF09B000E59852 /* WelcomeViewController.xib in Resources */,
 				7AA5855918BF097D00E59852 /* Customcell.xib in Resources */,
 				7AA585D418BF09A300E59852 /* AddTaskViewController.xib in Resources */,
+				7AE4DA1A18C07616009AC079 /* DeleteVendorCC.xib in Resources */,
+				7AE4D9FC18C066C8009AC079 /* ManageVendorCC.xib in Resources */,
 				7AA585EE18BF792300E59852 /* AllBudgetCC.xib in Resources */,
 				7AA5850318BF096E00E59852 /* InfoPlist.strings in Resources */,
 				7AA585E018BF09AA00E59852 /* VendorViewController.xib in Resources */,
@@ -820,9 +929,11 @@
 				7AA5859718BF099500E59852 /* index2.jpg in Resources */,
 				7AA5856118BF097D00E59852 /* ManageBudget.xib in Resources */,
 				7AA5854F18BF097D00E59852 /* BudgetViewController.xib in Resources */,
+				7AE4D9F618C064D8009AC079 /* ManageVendor.xib in Resources */,
 				7AA5850B18BF096E00E59852 /* Images.xcassets in Resources */,
 				7AA5859618BF099500E59852 /* index.jpg in Resources */,
 				7AA585B818BF099900E59852 /* Cell1.xib in Resources */,
+				7AE4DA1418C074E8009AC079 /* DeleteVendor.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,26 +957,33 @@
 				7AA5855418BF097D00E59852 /* AddBudget.m in Sources */,
 				7AA5857818BF098300E59852 /* EventViewController.m in Sources */,
 				7AA585B918BF099900E59852 /* SendIndividuallyViewController.m in Sources */,
+				7AE4DA0D18C073D8009AC079 /* AddVendor.m in Sources */,
 				7AA585B718BF099900E59852 /* Cell1.m in Sources */,
 				7AA585C118BF099D00E59852 /* LoginViewController.m in Sources */,
 				7AA5855E18BF097D00E59852 /* EditBudget.m in Sources */,
 				7AA5859018BF098C00E59852 /* HomeViewController.m in Sources */,
 				7AA5855618BF097D00E59852 /* AllBudget.m in Sources */,
+				7AE4DA1318C074E8009AC079 /* DeleteVendor.m in Sources */,
 				7AA585D718BF09A300E59852 /* EditTaskViewController.m in Sources */,
 				7AA585EC18BF790B00E59852 /* AllBudgetCC.m in Sources */,
 				7AA5857618BF098300E59852 /* EditEventViewController.m in Sources */,
+				7AE4DA0718C06E1B009AC079 /* EditVendor.m in Sources */,
 				7AA5855A18BF097D00E59852 /* DeleteBudget.m in Sources */,
 				7AA5858618BF098700E59852 /* AddGuestViewController.m in Sources */,
 				7AA5855818BF097D00E59852 /* Customcell.m in Sources */,
+				7AE4D9F518C064D8009AC079 /* ManageVendor.m in Sources */,
 				7AA5855218BF097D00E59852 /* DetailBudget.m in Sources */,
 				7AA585B318BF099900E59852 /* Cell.m in Sources */,
 				7AA5858A18BF098700E59852 /* GuestViewController.m in Sources */,
 				7AA585E518BF09B000E59852 /* WelcomeViewController.m in Sources */,
 				7AA5858818BF098700E59852 /* EditGuestViewController.m in Sources */,
+				7AE4DA0118C06957009AC079 /* DetailVendor.m in Sources */,
+				7AE4DA1818C0759F009AC079 /* DeleteVendorCC.m in Sources */,
 				7AA5857418BF098300E59852 /* Cell2.m in Sources */,
 				7AA5850918BF096E00E59852 /* AppDelegate.m in Sources */,
 				7AA5857218BF098300E59852 /* AddEventViewController.m in Sources */,
 				7AA585D918BF09A300E59852 /* TodolistViewController.m in Sources */,
+				7AE4D9FA18C066B2009AC079 /* ManageVendorCC.m in Sources */,
 				7AA5855018BF097D00E59852 /* CalculateBudget.m in Sources */,
 				7AA585D318BF09A300E59852 /* AddTaskViewController.m in Sources */,
 				7AA585D518BF09A300E59852 /* Cell3.m in Sources */,
