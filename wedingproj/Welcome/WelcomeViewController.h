@@ -16,5 +16,7 @@
 
 
 - (IBAction)loginactn:(UIButton *)sender;
+- (IBAction)signactn:(UIButton *)sender;
+- (IBAction)featuresactn:(UIButton *)sender;
 
 @end

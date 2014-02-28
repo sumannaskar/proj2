@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "HomeViewController.h"
+#import "RegisterViewController.h"
 
 @interface LoginViewController ()
 
@@ -45,6 +46,7 @@
 
 - (IBAction)signactn:(UIButton *)sender
 {
-    
+    RegisterViewController *RegisVC =[[RegisterViewController alloc]init];
+    [self.navigationController pushViewController:RegisVC animated:YES];
 }
 @end

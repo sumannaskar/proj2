@@ -4,22 +4,21 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEventViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
             <connections>
-                <outlet property="budgettxt" destination="qI4-fN-7YC" id="aP9-ti-rGl"/>
-                <outlet property="canceldatebtn" destination="CAN-dz-BgM" id="aoL-ll-03i"/>
-                <outlet property="dateendtxt" destination="Lon-kp-f1e" id="Iuu-Gq-08p"/>
-                <outlet property="datepickerVW" destination="gXQ-EB-Wdc" id="Ap7-N1-WrG"/>
-                <outlet property="datepickerView" destination="YA4-KY-lPW" id="An8-98-Hnz"/>
-                <outlet property="datetxt" destination="UnR-pe-cig" id="3B1-in-RJW"/>
-                <outlet property="donedatebtn" destination="TII-JM-3Kx" id="Ue4-t1-xLY"/>
-                <outlet property="dresscodetxt" destination="Toe-8j-oHv" id="xRZ-A3-hh4"/>
-                <outlet property="nametxt" destination="NMO-kh-D4d" id="C2V-vd-PhG"/>
-                <outlet property="pickerVw" destination="AKd-2a-jIP" id="HkM-7j-4Hf"/>
-                <outlet property="respondingView" destination="q4h-bB-yb2" id="STP-IS-c1Z"/>
-                <outlet property="scroll" destination="V3R-jq-mc4" id="08G-Ee-N6r"/>
-                <outlet property="venuetxt" destination="pc7-G2-DoT" id="MKv-y4-NA2"/>
-                <outlet property="view" destination="1" id="qAe-pj-dXm"/>
+                <outlet property="bridenametxt" destination="Txk-1j-Tqw" id="kK5-Sw-Fq4"/>
+                <outlet property="confirmpwdtxt" destination="uvT-go-gGm" id="PVt-Rs-16n"/>
+                <outlet property="countrytxt" destination="Jzu-BT-Jw0" id="W0N-qb-CdS"/>
+                <outlet property="datepickerVW" destination="QMS-rS-SC1" id="WPP-1F-pPy"/>
+                <outlet property="datepickerView" destination="DDO-lJ-yK5" id="jKL-cM-bip"/>
+                <outlet property="datetxt" destination="9AQ-5w-IfI" id="ae9-OF-rq1"/>
+                <outlet property="emailtxt" destination="Nze-5X-8nw" id="Lf1-s5-wZS"/>
+                <outlet property="groomnametxt" destination="9lB-cn-VGu" id="5Ht-YA-LNN"/>
+                <outlet property="passwrdtxt" destination="QaB-Lc-goS" id="Oim-1o-M9S"/>
+                <outlet property="pickerVw" destination="LCU-Tw-HzJ" id="Pr9-Z3-Jo1"/>
+                <outlet property="respondingView" destination="62R-kN-Jg6" id="9sk-ey-yKu"/>
+                <outlet property="scroll" destination="Rsy-aY-L2n" id="aoD-dv-xwt"/>
+                <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -27,124 +26,140 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9J5-cr-6Tb">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="kpb-L4-S6I">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="V3R-jq-mc4">
-                    <rect key="frame" x="0.0" y="0.0" width="320.00000000000006" height="474"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Rsy-aY-L2n">
+                    <rect key="frame" x="0.0" y="5.6843418860808015e-14" width="320" height="501"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zjr-gZ-Zt3">
-                            <rect key="frame" x="20" y="318" width="74" height="53"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bride's Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wuQ-kz-8Z2">
+                            <rect key="frame" x="16" y="39" width="125.00000000000003" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dress Code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sLH-ZQ-GfF">
-                            <rect key="frame" x="20" y="243" width="95" height="53"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groom's Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dln-hc-O5Q">
+                            <rect key="frame" x="16" y="105" width="124.99999999999999" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l7I-ek-X7K">
-                            <rect key="frame" x="20" y="26" width="74" height="53"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e7h-S3-ayV">
+                            <rect key="frame" x="16" y="232" width="124.99999999999999" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AXs-0G-os4">
-                            <rect key="frame" x="20" y="99" width="74" height="53"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="65d-Ls-3Lr">
+                            <rect key="frame" x="16" y="170" width="124.99999999999999" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="74H-jT-4cd">
-                            <rect key="frame" x="20" y="168" width="84" height="53"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fri-39-Dwb">
+                            <rect key="frame" x="16" y="295" width="124.99999999999999" height="48"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget($):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yOg-rY-JcN">
-                            <rect key="frame" x="20.000000000000004" y="387" width="80.000000000000014" height="53"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ban-iq-YS2">
+                            <rect key="frame" x="16" y="375" width="124.99999999999999" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="17" id="NMO-kh-D4d">
-                            <rect key="frame" x="130" y="38" width="170.00000000000003" height="30"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sUn-kc-FFy">
+                            <rect key="frame" x="16" y="444" width="124.99999999999999" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="17" id="Txk-1j-Tqw">
+                            <rect key="frame" x="153" y="43" width="158" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Date &amp; Time" minimumFontSize="17" id="UnR-pe-cig">
-                            <rect key="frame" x="130" y="111" width="170.00000000000003" height="30"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="17" id="9lB-cn-VGu">
+                            <rect key="frame" x="153" y="109" width="158" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Date &amp; Time" minimumFontSize="17" id="Lon-kp-f1e">
-                            <rect key="frame" x="130" y="180" width="170.00000000000003" height="30"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="17" id="Nze-5X-8nw">
+                            <rect key="frame" x="153" y="170" width="158" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Choose Dress Code" minimumFontSize="17" id="Toe-8j-oHv">
-                            <rect key="frame" x="130" y="255" width="170.00000000000003" height="30"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" id="QaB-Lc-goS">
+                            <rect key="frame" x="153" y="236" width="158" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Venue" minimumFontSize="17" id="pc7-G2-DoT">
-                            <rect key="frame" x="130" y="330" width="170.00000000000003" height="30"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Re-Password" minimumFontSize="17" id="uvT-go-gGm">
+                            <rect key="frame" x="153" y="304" width="158" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Budget" minimumFontSize="17" id="qI4-fN-7YC">
-                            <rect key="frame" x="130" y="399" width="170.00000000000003" height="30"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Choose Country" minimumFontSize="17" id="Jzu-BT-Jw0">
+                            <rect key="frame" x="153" y="379" width="158" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Date" minimumFontSize="17" id="9AQ-5w-IfI">
+                            <rect key="frame" x="153" y="448" width="158" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                     </subviews>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jeL-Kc-ac9">
-                    <rect key="frame" x="64" y="494" width="192" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LgR-zF-ZvT">
+                    <rect key="frame" x="64" y="509" width="192" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Add">
+                    <state key="normal" title="Register">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="AddEventactn:" destination="-1" eventType="touchUpInside" id="2Zj-jl-DbB"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <view contentMode="scaleToFill" id="q4h-bB-yb2">
+        <view contentMode="scaleToFill" id="62R-kN-Jg6">
             <rect key="frame" x="0.0" y="0.0" width="352" height="260"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <pickerView contentMode="scaleToFill" id="AKd-2a-jIP">
+                <pickerView contentMode="scaleToFill" id="LCU-Tw-HzJ">
                     <rect key="frame" x="0.0" y="44" width="352" height="216"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 </pickerView>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="Teb-oz-LQW">
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="sT4-hL-biI">
                     <rect key="frame" x="0.0" y="0.0" width="352" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem title="Cancel" id="k4v-td-4hh">
+                        <barButtonItem title="Cancel" id="hZB-Lb-axv">
                             <connections>
-                                <action selector="cancel:" destination="-1" id="Qod-OY-jr4"/>
+                                <action selector="cancel:" destination="-1" id="svN-fq-tKc"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="c1t-UG-jOJ"/>
-                        <barButtonItem title="Done" width="71" id="Z8M-xF-2YW">
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="pXx-NX-ylp"/>
+                        <barButtonItem title="Done" width="71" id="mil-az-cXd">
                             <connections>
-                                <action selector="done:" destination="-1" id="XUE-2w-LtP"/>
+                                <action selector="done:" destination="-1" id="hfp-Ox-sZu"/>
                             </connections>
                         </barButtonItem>
                     </items>
@@ -153,18 +168,18 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <view contentMode="scaleToFill" id="YA4-KY-lPW">
+        <view contentMode="scaleToFill" id="DDO-lJ-yK5">
             <rect key="frame" x="0.0" y="0.0" width="352" height="206"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="gXQ-EB-Wdc">
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="QMS-rS-SC1">
                     <rect key="frame" x="0.0" y="44" width="352" height="162"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <date key="date" timeIntervalSinceReferenceDate="415023144.08552402">
                         <!--2014-02-25 12:12:24 +0000-->
                     </date>
                     <timeZone key="timeZone" name="America/Los_Angeles">
-                        <data key="data">
+                        <mutableData key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -182,22 +197,22 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</data>
+</mutableData>
                     </timeZone>
                 </datePicker>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="gju-rY-OMY">
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="axo-fz-RFn">
                     <rect key="frame" x="0.0" y="0.0" width="352" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem title="Cancel" id="CAN-dz-BgM">
+                        <barButtonItem title="Cancel" id="46D-fV-36v">
                             <connections>
-                                <action selector="canceldate:" destination="-1" id="NMt-dG-OVi"/>
+                                <action selector="canceldate:" destination="-1" id="Wnf-6v-Mo6"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="7kU-51-CNp"/>
-                        <barButtonItem title="Done" width="71" id="TII-JM-3Kx">
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="y1x-Ky-3yt"/>
+                        <barButtonItem title="Done" width="71" id="4kz-z8-v6a">
                             <connections>
-                                <action selector="donedate:" destination="-1" id="ga5-sl-Zed"/>
+                                <action selector="donedate:" destination="-1" id="nhk-fR-uPS"/>
                             </connections>
                         </barButtonItem>
                     </items>
