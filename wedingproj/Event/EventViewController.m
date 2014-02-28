@@ -283,7 +283,7 @@
 
 -(void)image
 {
-     int tableRowheight=50*[raweventList count];
+     long tableRowheight=50*[raweventList count];
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
        
