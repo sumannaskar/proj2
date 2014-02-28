@@ -263,6 +263,7 @@
             
              str2=[NSString stringWithFormat:@"%@%@",[Gid objectAtIndex:i],str1];
             str3=[NSString stringWithFormat:@"%@%@",str3, str2];
+        
         }
     }
     NSString *str4 = [str3 substringToIndex:[str3 length]-1];

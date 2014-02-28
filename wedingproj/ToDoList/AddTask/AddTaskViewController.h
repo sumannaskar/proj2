@@ -25,10 +25,14 @@
     IBOutlet UITextField *nametxt;
     NSString *AddData;
     NSMutableArray *AddTaskmessage;
+    
     NSMutableArray *totaleventlist;
     NSMutableArray *totaleventIdlist;
     NSString *Eventid;
-   
+    
+    NSMutableArray *totalvendorlist;
+    NSMutableArray *totalvendorIdlist;
+    NSString *Vendorid;
 }
 
 

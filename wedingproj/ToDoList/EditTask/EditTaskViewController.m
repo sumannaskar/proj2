@@ -9,6 +9,8 @@
 #import "EditTaskViewController.h"
 #import "TodolistViewController.h"
 #define EditTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_update&"]
+#define keventlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
+#define kvendorlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
 @interface EditTaskViewController ()
 
 @end
@@ -28,6 +30,37 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSError *error;
+    NSData* eventListData = [NSData dataWithContentsOfURL: keventlistURL];
+    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
+    
+    totaleventlist=[[NSMutableArray alloc ]init];
+    totaleventIdlist=[[NSMutableArray alloc ]init];
+    
+    for(int i=0;i<raweventList.count;i++)
+    {
+        NSDictionary *tempDict=[raweventList objectAtIndex:i];
+        [totaleventlist addObject:[tempDict objectForKey:@"event_name"]];
+        [totaleventIdlist addObject:[tempDict objectForKey:@"event_id"]];
+        
+    }
+    
+    //vendor data fetching
+    
+    NSData* vendorListData = [NSData dataWithContentsOfURL: kvendorlistURL];
+    NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
+    
+    totalvendorlist=[[NSMutableArray alloc ]init];
+    totalvendorIdlist=[[NSMutableArray alloc ]init];
+    
+    for(int i=0;i<rawvendorList.count;i++)
+    {
+        NSDictionary *tempDict=[rawvendorList objectAtIndex:i];
+        [totaleventlist addObject:[tempDict objectForKey:@"event_name"]];
+        [totaleventIdlist addObject:[tempDict objectForKey:@"event_id"]];
+        
+    }
+
     
     nametxt.delegate=self;
     informationtxt.delegate=self;
@@ -115,11 +148,13 @@
     }
     if (self.pickerVw.tag==2) {
         
-        return [eventarray count];
+        //return [eventarray count];
+        return [totaleventlist count];
     }
     if (self.pickerVw.tag==3) {
         
-        return [vendorarray count];
+        //return [vendorarray count];
+        return [totalvendorlist count];
     }
     if (self.pickerVw.tag ==4) {
         return [statusarray count];
@@ -141,10 +176,12 @@
     }
     
     if (self.pickerVw.tag==2) {
-        return [eventarray objectAtIndex:row];
+       // return [eventarray objectAtIndex:row];
+        return [totaleventlist objectAtIndex:row];
     }
     if (self.pickerVw.tag==3) {
-        return [vendorarray objectAtIndex:row];
+        //return [vendorarray objectAtIndex:row];
+        return [totalvendorlist objectAtIndex:row];
     }
     
     
@@ -165,11 +202,15 @@
     
     
     if (self.pickerVw.tag==2) {
-        self.eventtxt.text=[eventarray objectAtIndex:row];
+//        self.eventtxt.text=[eventarray objectAtIndex:row];
+        self.eventtxt.text=[totaleventlist objectAtIndex:row];
+        Eventid=[totaleventIdlist objectAtIndex:row];
     }
     
     if (self.pickerVw.tag==3) {
-        self.vendortxt.text=[vendorarray objectAtIndex:row];
+//        self.vendortxt.text=[vendorarray objectAtIndex:row];
+        self.vendortxt.text=[totalvendorlist objectAtIndex:row];
+        Vendorid=[totalvendorIdlist objectAtIndex:row];
     }
     if (self.pickerVw.tag==4) {
         self.statustxt.text=[statusarray objectAtIndex:row];
@@ -195,7 +236,8 @@
     if (self.donebtn.tag==2) {
         if (!(self.eventtxt.text.length>0)) {
             
-            self.eventtxt.text=[eventarray objectAtIndex:0];
+//            self.eventtxt.text=[eventarray objectAtIndex:0];
+            self.eventtxt.text=[totaleventlist objectAtIndex:0];
             
         }
         
@@ -205,7 +247,9 @@
     if (self.donebtn.tag==3) {
         if (!(self.vendortxt.text.length>0)) {
             
-            self.vendortxt.text=[vendorarray objectAtIndex:0];
+//            self.vendortxt.text=[vendorarray objectAtIndex:0];
+            self.vendortxt.text=[totalvendorlist objectAtIndex:0];
+            Vendorid=[totalvendorIdlist objectAtIndex:0];
             
         }
         

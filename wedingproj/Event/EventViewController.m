@@ -11,6 +11,7 @@
 #import "EditEventViewController.h"
 #define NIB_NAME @"Cell2"
 #define keventlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
+#define EventDeleteURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_muldel&"]
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 
@@ -74,6 +75,16 @@
             NSError *error;
             NSArray *tempArray=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
             raweventList = [[NSArray alloc]initWithArray:tempArray];
+            totaleventIdlist=[[NSMutableArray alloc ]init];
+            
+            for(int i=0;i<raweventList.count;i++)
+            {
+                NSDictionary *tempDict=[raweventList objectAtIndex:i];
+                
+                [totaleventIdlist addObject:[tempDict objectForKey:@"event_id"]];
+                
+            }
+
             
             
             [self performSelectorOnMainThread:@selector(fetchedData:) withObject:nil waitUntilDone:YES];

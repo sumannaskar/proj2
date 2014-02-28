@@ -27,6 +27,14 @@
     NSString *EditData;
     NSMutableArray *EditTaskmessage;
     
+    NSMutableArray *totaleventlist;
+    NSMutableArray *totaleventIdlist;
+    NSString *Eventid;
+    
+    NSMutableArray *totalvendorlist;
+    NSMutableArray *totalvendorIdlist;
+    NSString *Vendorid;
+    
 }
 @property (strong, nonatomic) NSString *taskidstr;
 @property (strong, nonatomic) NSString *tasknamestr;

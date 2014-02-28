@@ -21,7 +21,7 @@
     NSMutableArray *checkImage;
     BOOL isLoad;
     
-    
+    NSMutableArray *totaleventIdlist;
     
     
      NSString *eventnamestr;

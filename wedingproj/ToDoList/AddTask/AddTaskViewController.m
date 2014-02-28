@@ -10,6 +10,7 @@
 #import "TodolistViewController.h"
 #define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_create&"]
 #define keventlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
+#define kvendorlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
 
 
 @interface AddTaskViewController ()
@@ -31,20 +32,40 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //Event data fetching.....
     NSError *error;
     NSData* eventListData = [NSData dataWithContentsOfURL: keventlistURL];
-    NSArray* rawstateList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
+    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
     
     totaleventlist=[[NSMutableArray alloc ]init];
     totaleventIdlist=[[NSMutableArray alloc ]init];
     
-    for(int i=0;i<rawstateList.count;i++)
+    for(int i=0;i<raweventList.count;i++)
     {
-        NSDictionary *tempDict=[rawstateList objectAtIndex:i];
+        NSDictionary *tempDict=[raweventList objectAtIndex:i];
         [totaleventlist addObject:[tempDict objectForKey:@"event_name"]];
         [totaleventIdlist addObject:[tempDict objectForKey:@"event_id"]];
         
     }
+    
+    //vendor data fetching
+    
+    NSData* vendorListData = [NSData dataWithContentsOfURL: kvendorlistURL];
+    NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
+    
+    totalvendorlist=[[NSMutableArray alloc ]init];
+    totalvendorIdlist=[[NSMutableArray alloc ]init];
+    
+    for(int i=0;i<rawvendorList.count;i++)
+    {
+        NSDictionary *tempDict=[rawvendorList objectAtIndex:i];
+        [totaleventlist addObject:[tempDict objectForKey:@"event_name"]];
+        [totaleventIdlist addObject:[tempDict objectForKey:@"event_id"]];
+        
+    }
+
+    
 
     //NSLog(@"%@",[tempDict objectForKey:@"event_id"]);
     nametxt.delegate=self;
@@ -81,7 +102,7 @@
 
 -(void)AddDetails
 {
-    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,self.eventtxt.text,self.vendortxt.text,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,Eventid,Vendorid,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
     NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddTaskURL,urlTextEscaped]];
@@ -172,7 +193,8 @@
     }
     if (self.pickerVw.tag==3) {
         
-        return [vendorarray count];
+        //return [vendorarray count];
+        return [totalvendorlist count];
     }
     if (self.pickerVw.tag ==4) {
         return [statusarray count];
@@ -198,7 +220,8 @@
         return [totaleventlist objectAtIndex:row];
     }
     if (self.pickerVw.tag==3) {
-        return [vendorarray objectAtIndex:row];
+        //return [vendorarray objectAtIndex:row];
+        return [totalvendorlist objectAtIndex:row];
     }
     
 
@@ -227,7 +250,9 @@
     }
     
     if (self.pickerVw.tag==3) {
-        self.vendortxt.text=[vendorarray objectAtIndex:row];
+        //self.vendortxt.text=[vendorarray objectAtIndex:row];
+        self.vendortxt.text=[totalvendorlist objectAtIndex:row];
+        Vendorid=[totalvendorIdlist objectAtIndex:row];
     }
     if (self.pickerVw.tag==4) {
         self.statustxt.text=[statusarray objectAtIndex:row];
@@ -255,6 +280,7 @@
             
 //            self.eventtxt.text=[eventarray objectAtIndex:0];
              self.eventtxt.text=[totaleventlist objectAtIndex:0];
+            Eventid=[totalvendorIdlist objectAtIndex:0];
             
         }
         
@@ -264,7 +290,9 @@
     if (self.donebtn.tag==3) {
         if (!(self.vendortxt.text.length>0)) {
             
-            self.vendortxt.text=[vendorarray objectAtIndex:0];
+//            self.vendortxt.text=[vendorarray objectAtIndex:0];
+            self.vendortxt.text=[totalvendorlist objectAtIndex:0];
+            Vendorid=[totalvendorIdlist objectAtIndex:0];
             
         }
         
