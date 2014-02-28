@@ -89,6 +89,7 @@
 -(IBAction)Deletd:(UIBarButtonItem *)sender
 {
     DeleteVendor *DeleteVendor_ =[[DeleteVendor alloc]init];
+    DeleteVendor_.json =json;
     [self.navigationController pushViewController:DeleteVendor_ animated:YES];
 }
 

@@ -19,7 +19,11 @@
     NSMutableArray *checkImage;
     DeleteVendorCC *cell;
     BOOL isLoad;
+    NSMutableArray *vendorname;
+    NSMutableArray *deletearray;
+    NSString *passdeleteid;
+    
 }
-
+@property(nonatomic,retain)NSMutableArray *json;
 
 @end
