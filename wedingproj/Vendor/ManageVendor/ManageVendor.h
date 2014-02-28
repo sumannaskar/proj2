@@ -14,6 +14,9 @@
     IBOutlet UIImageView *background;
     IBOutlet UITableView *managevendortable;
     ManageVendorCC *cell;
+    NSMutableArray *json;
+    NSMutableArray *vendorname;
+    NSMutableArray *vendorid;
     
 }
 

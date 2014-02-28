@@ -28,8 +28,11 @@
     
     
     
+    
 }
 - (IBAction)edit:(id)sender;
 - (IBAction)done:(id)sender;
+@property(nonatomic,retain)NSString *vendoridpass;
+@property(nonatomic,retain)NSMutableArray *json;
 
 @end

@@ -23,8 +23,10 @@
     IBOutlet UITextField *contactnotext;
     
     IBOutlet UIButton *save;
+    
 }
 
 
 - (IBAction)save:(id)sender;
+@property(nonatomic,retain)NSMutableArray *json;
 @end

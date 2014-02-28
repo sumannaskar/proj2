@@ -14,12 +14,13 @@
 @end
 
 @implementation DetailVendor
+@synthesize vendoridpass,json;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        json =[[NSMutableArray alloc]init];
     }
     return self;
 }
@@ -27,7 +28,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    vendornametext.text=[json valueForKey:@"vendor_name"];
+    categorytext.text =[json valueForKey:@"category"];
+    emailtext.text=[json valueForKey:@"email"];
+    contactnotext.text =[json valueForKey:@"contact"];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +44,7 @@
 
 - (IBAction)edit:(id)sender {
     EditVendor *EditVendor_ =[[EditVendor alloc]init];
+    EditVendor_.json=json;
     [self.navigationController pushViewController:EditVendor_ animated:YES];
     
 }

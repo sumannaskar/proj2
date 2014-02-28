@@ -7,6 +7,8 @@
 //
 
 #import "AddVendor.h"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_create&"]
 
 @interface AddVendor ()
 
@@ -28,10 +30,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
 
 - (IBAction)save:(id)sender
 {
+    NSString *savedata =[[NSString alloc]initWithFormat:@"user_id=%@&vendor_name=%@&category=%@&email=%@&contact=%@&apikey=micronix_10_2014_wedsimple_proj",@"10",vendornametext.text,categorytext.text,emailtext.text,contactnotext.text];
+    NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;
+    
+    NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    
+    [theRequest setHTTPMethod:@"POST"];
+    [theRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSError *error;
+    NSURLResponse *response;
+    
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
+    NSString *data=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",data);
+
 }
 
 - (void)didReceiveMemoryWarning

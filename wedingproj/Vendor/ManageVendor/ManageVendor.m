@@ -9,6 +9,8 @@
 #import "ManageVendor.h"
 #import "DetailVendor.h"
 #import "DeleteVendor.h"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&user_id=10&apikey=micronix_10_2014_wedsimple_proj"]
 
 @interface ManageVendor ()
 
@@ -30,6 +32,58 @@
     [super viewDidLoad];
     UIBarButtonItem *delete =[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(Deletd:)];
     [self.navigationItem setRightBarButtonItem:delete];
+    json = [[NSMutableArray alloc]init];
+    vendorid =[[NSMutableArray alloc]init];
+    vendorname =[[NSMutableArray alloc]init];
+    
+    
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"10"]];
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+}
+
+
+-(void)fetchedData:(NSData *)responseData
+{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    
+    
+    for (NSDictionary *data in json ) {
+        [vendorname addObject:[data valueForKey:@"vendor_name"]];
+        [vendorid addObject:[data valueForKey:@"vendor_id"]];
+        
+    }
+    [managevendortable reloadData];
+    
 }
 
 -(IBAction)Deletd:(UIBarButtonItem *)sender
@@ -46,7 +100,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 45;
+    return vendorid.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -56,11 +110,11 @@
     cell= (ManageVendorCC *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     if (cell == nil)
     {
-        UINib* nib = [UINib nibWithNibName:@"Customcell" bundle:nil];
+        UINib* nib = [UINib nibWithNibName:@"ManageVendorCC" bundle:nil];
         NSArray* array = [nib instantiateWithOwner:self options:nil];
         cell = [array objectAtIndex:0];
     }
-   // cell.vendorname.text =[eventname objectAtIndex:indexPath.row];
+    cell.vendorname.text =[vendorname objectAtIndex:indexPath.row];
     
     [cell.detail addTarget:self action:@selector(detail:) forControlEvents:UIControlEventTouchUpInside];
     cell.detail.tag = indexPath.row;
@@ -74,6 +128,7 @@
     
 
     DetailVendor *DetailVendor_ =[[DetailVendor alloc]init];
+    DetailVendor_.json =[json objectAtIndex:button.tag];
     [self.navigationController pushViewController:DetailVendor_ animated:YES];
     
     
