@@ -10,7 +10,8 @@
 #import "AddEventViewController.h"
 #import "EditEventViewController.h"
 #define NIB_NAME @"Cell2"
-#define keventlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
+#define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
+#define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 #define EventDeleteURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_muldel&"]
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
@@ -45,10 +46,10 @@
 //    [self image];
 //    [EventScroll addSubview:EventTable];
     
-    
+    NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,@"12",keventlistURL2]];
     dispatch_async(kBgQueue, ^{
 //        NSURL *tempUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@%@",firstCatagoryURL,self.deviceString,secondCatagoryURL]];
-        NSData *tempcatagorydata=[NSData dataWithContentsOfURL:keventlistURL];
+        NSData *tempcatagorydata=[NSData dataWithContentsOfURL:tempeventurl];
         NSString *tempstring = [[NSString alloc] initWithData:tempcatagorydata encoding:NSUTF8StringEncoding];
         
         

@@ -264,11 +264,9 @@
     EditTaskVc.duedatestr=[tempdic objectForKey:@"due_date"];
     EditTaskVc.categorystr=[tempdic objectForKey:@"category"];
     EditTaskVc.eventnamestr=[tempdic objectForKey:@"event_name"];
-     EditTaskVc.Eventid=[tempdic objectForKey:@"event_id"];
-    NSLog(@"%@",[tempdic objectForKey:@"event_name"]);
+    EditTaskVc.Eventid=[tempdic objectForKey:@"event_id"];
     EditTaskVc.vendorstr=[tempdic objectForKey:@"vendor_name"];
-    NSLog(@"%@",[tempdic objectForKey:@"vendor_name"]);
-     EditTaskVc.Vendorid=[tempdic objectForKey:@"vendor_id"];
+    EditTaskVc.Vendorid=[tempdic objectForKey:@"vendor_id"];
     EditTaskVc.statusstr=[tempdic objectForKey:@"status"];
     EditTaskVc.infotxtstr=[tempdic objectForKey:@"info"];
 

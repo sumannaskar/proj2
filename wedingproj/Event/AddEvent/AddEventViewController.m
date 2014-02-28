@@ -56,7 +56,7 @@
 
 -(void)AddDetails
 {
-    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"event_name=%@&venue=%@&start_time=%@&end_time=%@&budget=%@&dress_code=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,venuetxt.text,self.datetxt.text,self.dateendtxt.text,budgettxt.text,self.dresscodetxt.text];
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"&user_id=%@&event_name=%@&venue=%@&start_time=%@&end_time=%@&budget=%@&dress_code=%@&apikey=micronix_10_2014_wedsimple_proj",@"12",nametxt.text,venuetxt.text,self.datetxt.text,self.dateendtxt.text,budgettxt.text,self.dresscodetxt.text];
     NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddEventURL,urlTextEscaped]];
