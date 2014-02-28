@@ -10,7 +10,8 @@
 #import "AddTaskViewController.h"
 #import "EditTaskViewController.h"
 #define NIB_NAME @"Cell3"
-#define keventlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do&apikey=micronix_10_2014_wedsimple_proj"]
+#define ktodolistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do"]
+#define ktodolistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 @interface TodolistViewController ()
 
@@ -43,11 +44,12 @@
     EventTable.scrollEnabled = NO;
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
     
-    
+    NSURL *tempurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",ktodolistURL1,@"12",ktodolistURL2]];
+    NSLog(@"%@",tempurl);
     
     dispatch_async(kBgQueue, ^{
         //        NSURL *tempUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@%@",firstCatagoryURL,self.deviceString,secondCatagoryURL]];
-        NSData *tempcatagorydata=[NSData dataWithContentsOfURL:keventlistURL];
+        NSData *tempcatagorydata=[NSData dataWithContentsOfURL:tempurl];
         NSString *tempstring = [[NSString alloc] initWithData:tempcatagorydata encoding:NSUTF8StringEncoding];
         
         
@@ -262,8 +264,11 @@
     EditTaskVc.duedatestr=[tempdic objectForKey:@"due_date"];
     EditTaskVc.categorystr=[tempdic objectForKey:@"category"];
     EditTaskVc.eventnamestr=[tempdic objectForKey:@"event_name"];
+     EditTaskVc.Eventid=[tempdic objectForKey:@"event_id"];
     NSLog(@"%@",[tempdic objectForKey:@"event_name"]);
     EditTaskVc.vendorstr=[tempdic objectForKey:@"vendor_name"];
+    NSLog(@"%@",[tempdic objectForKey:@"vendor_name"]);
+     EditTaskVc.Vendorid=[tempdic objectForKey:@"vendor_id"];
     EditTaskVc.statusstr=[tempdic objectForKey:@"status"];
     EditTaskVc.infotxtstr=[tempdic objectForKey:@"info"];
 

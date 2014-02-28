@@ -9,8 +9,10 @@
 #import "AddTaskViewController.h"
 #import "TodolistViewController.h"
 #define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_create&"]
-#define keventlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
-#define kvendorlistURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
+#define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
+#define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
+#define kvendorlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor"]
+#define kvendorlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 
 
 @interface AddTaskViewController ()
@@ -34,8 +36,9 @@
     // Do any additional setup after loading the view from its nib.
     
     //Event data fetching.....
+    NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,@"12",keventlistURL2]];
     NSError *error;
-    NSData* eventListData = [NSData dataWithContentsOfURL: keventlistURL];
+    NSData* eventListData = [NSData dataWithContentsOfURL: tempeventurl];
     NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
     
     totaleventlist=[[NSMutableArray alloc ]init];
@@ -50,8 +53,8 @@
     }
     
     //vendor data fetching
-    
-    NSData* vendorListData = [NSData dataWithContentsOfURL: kvendorlistURL];
+    NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kvendorlistURL1,@"12",kvendorlistURL2]];
+    NSData* vendorListData = [NSData dataWithContentsOfURL: tempvendorurl];
     NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
     
     totalvendorlist=[[NSMutableArray alloc ]init];
@@ -60,8 +63,8 @@
     for(int i=0;i<rawvendorList.count;i++)
     {
         NSDictionary *tempDict=[rawvendorList objectAtIndex:i];
-        [totaleventlist addObject:[tempDict objectForKey:@"event_name"]];
-        [totaleventIdlist addObject:[tempDict objectForKey:@"event_id"]];
+        [totalvendorlist addObject:[tempDict objectForKey:@"vendor_name"]];
+        [totalvendorIdlist addObject:[tempDict objectForKey:@"vendor_id"]];
         
     }
 
@@ -102,7 +105,7 @@
 
 -(void)AddDetails
 {
-    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,Eventid,Vendorid,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"user_id=%@&task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",@"12",nametxt.text,Eventid,Vendorid,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
     NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddTaskURL,urlTextEscaped]];
