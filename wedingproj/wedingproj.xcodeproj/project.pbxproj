@@ -307,6 +307,7 @@
 				7AA584F618BF096E00E59852 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		7AA584F618BF096E00E59852 /* Products */ = {
 			isa = PBXGroup;
@@ -700,10 +701,10 @@
 		7AA585DB18BF09AA00E59852 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				7AA585E818BF647A00E59852 /* ManageVenor */,
 				7AA585DC18BF09AA00E59852 /* VendorViewController.h */,
 				7AA585DD18BF09AA00E59852 /* VendorViewController.m */,
 				7AA585DE18BF09AA00E59852 /* VendorViewController.xib */,
+				7AA585E818BF647A00E59852 /* ManageVenor */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -862,6 +863,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Suman Naskar";
 				TargetAttributes = {
+					7AA584F418BF096E00E59852 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
 					7AA5850F18BF096E00E59852 = {
 						TestTargetID = 7AA584F418BF096E00E59852;
 					};
@@ -1115,7 +1123,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wedingproj/wedingproj-Prefix.pch";
 				INFOPLIST_FILE = "wedingproj/wedingproj-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1130,7 +1138,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wedingproj/wedingproj-Prefix.pch";
 				INFOPLIST_FILE = "wedingproj/wedingproj-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
