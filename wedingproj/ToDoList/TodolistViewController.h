@@ -20,6 +20,7 @@
     
     
     NSString *tasknamestr;
+    NSMutableArray *totaltaskid;
 
 }
 

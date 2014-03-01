@@ -116,6 +116,52 @@
 }
 
 - (IBAction)Delete:(UIBarButtonItem *)sender {
+    
+    BOOL uncheck=YES;
+    
+    NSLog(@"%@",checkImage);
+    for (int i=0; i<[checkImage count]; i++) {
+        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"])
+        {
+            uncheck=NO;
+            break;
+        }
+    }
+    
+    if (uncheck==NO) {
+        [self deleteevent];
+    }
+    else
+    {
+        UIAlertView *nodelete=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"At least Select one event to delete" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [nodelete show];
+
+    }
+}
+
+-(void)deleteevent
+{
+    NSError *error;
+    NSString *str1 = @"-";
+    NSString *str2;
+    NSString *str3 = @"";
+    for (int i=0; i<[totaleventIdlist count]; i++) {
+        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"]) {
+            
+            str2=[NSString stringWithFormat:@"%@%@",[totaleventIdlist objectAtIndex:i],str1];
+            str3=[NSString stringWithFormat:@"%@%@",str3, str2];
+            
+        }
+        
+    }
+    NSString *str4 = [str3 substringToIndex:[str3 length]-1];
+    NSString *deleteGuest =[[NSString alloc]initWithFormat:@"event_id=%@%@",str4,EventDeleteURL2];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",EventDeleteURL1,deleteGuest]];
+    NSData* deleteeventlistdata = [NSData dataWithContentsOfURL: url];
+    NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:deleteeventlistdata options:kNilOptions error:&error];
+    NSLog(@"%@",rawvendorList);
+    [self viewDidLoad];
+
 }
 
 - (void)didReceiveMemoryWarning

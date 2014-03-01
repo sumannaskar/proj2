@@ -12,6 +12,10 @@
 #define NIB_NAME @"Cell3"
 #define ktodolistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do"]
 #define ktodolistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
+#define ToDolistDeleteURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_delete&"]
+#define ToDolistDeleteURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
+
+
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 @interface TodolistViewController ()
 
@@ -76,6 +80,17 @@
             NSError *error;
             NSArray *tempArray=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
             rawtaskList = [[NSArray alloc]initWithArray:tempArray];
+            totaltaskid=[[NSMutableArray alloc]init];
+            
+            for(int i=0;i<rawtaskList.count;i++)
+            {
+                NSDictionary *tempDict=[rawtaskList objectAtIndex:i];
+                
+                [totaltaskid addObject:[tempDict objectForKey:@"task_id"]];
+                
+            }
+            
+
             
             
             [self performSelectorOnMainThread:@selector(fetchedData:) withObject:nil waitUntilDone:YES];
@@ -105,6 +120,27 @@
 }
 
 - (IBAction)Delete:(UIBarButtonItem *)sender {
+    
+    NSError *error;
+    NSString *str1 = @"-";
+    NSString *str2;
+    NSString *str3 = @"";
+    for (int i=0; i<[totaltaskid count]; i++) {
+        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"]) {
+            
+            str2=[NSString stringWithFormat:@"%@%@",[totaltaskid objectAtIndex:i],str1];
+            str3=[NSString stringWithFormat:@"%@%@",str3, str2];
+            
+        }
+    }
+    NSString *str4 = [str3 substringToIndex:[str3 length]-1];
+    NSString *deleteTask =[[NSString alloc]initWithFormat:@"task_id=%@%@",str4,ToDolistDeleteURL2];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",ToDolistDeleteURL1,deleteTask]];
+    NSData* deletetasklistdata = [NSData dataWithContentsOfURL: url];
+    NSArray* rawdeletetaskList = [NSJSONSerialization JSONObjectWithData:deletetasklistdata options:kNilOptions error:&error];
+    NSLog(@"%@",rawdeletetaskList);
+    [self viewDidLoad];
+
 }
 
 - (void)didReceiveMemoryWarning
