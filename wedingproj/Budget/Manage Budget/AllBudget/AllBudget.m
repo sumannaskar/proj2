@@ -10,6 +10,7 @@
 #import "DeleteBudget.h"
 #import "AddBudget.h"
 #import "DetailBudget.h"
+#import "ManageBudget.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_event&"]
 
@@ -105,7 +106,8 @@
     }
     else if (buttonIndex == 1)
     {
-        NSLog(@"OK Tapped. Hello World!");
+        ManageBudget *ManageBudget_ =[[ManageBudget alloc]init];
+        [self.navigationController pushViewController:ManageBudget_ animated:YES];
     }
 }
 

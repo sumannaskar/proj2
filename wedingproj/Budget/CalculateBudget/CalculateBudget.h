@@ -20,7 +20,7 @@
     IBOutlet UILabel *balancemaintext;
     IBOutlet UILabel *balanceallocate;
     IBOutlet UILabel *balanceallocatetest;
-    
+    NSUserDefaults *prefs;
     IBOutlet UIButton *done;
 }
 

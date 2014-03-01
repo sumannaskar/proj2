@@ -25,22 +25,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Budget/Manage Budget/AllBudget/AllBudget.m"
-            timestampString = "415358683.350937"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
-            landmarkName = "-addBudget:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Vendor/ManageVendor/ManageVendor.m"
             timestampString = "415357487.531764"
             startingColumnNumber = "9223372036854775807"
@@ -57,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Budget/Manage Budget/AllBudget/AllBudget.m"
-            timestampString = "415358597.780117"
+            filePath = "Budget/CalculateBudget/CalculateBudget.m"
+            timestampString = "415361684.922135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "-alertView:didDismissWithButtonIndex:"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-savedata"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +57,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Budget/Manage Budget/AllBudget/AllBudget.m"
-            timestampString = "415358683.350937"
+            filePath = "Budget/CalculateBudget/CalculateBudget.m"
+            timestampString = "415361686.082103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "-alertView:didDismissWithButtonIndex:"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "-savedata"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Budget/CalculateBudget/CalculateBudget.m"
+            timestampString = "415361687.050217"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-savedata"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
