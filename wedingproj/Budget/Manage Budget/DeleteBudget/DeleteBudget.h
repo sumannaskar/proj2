@@ -16,10 +16,12 @@
     IBOutlet UITableView *deletetable;
     NSMutableArray *checkImage;
     BOOL isLoad;
-    
+    NSString *passdeleteid;
+     NSMutableArray *deletearray;
+    NSMutableArray *budgetname;
     
     
     
 }
-
+@property(nonatomic,retain)NSMutableArray *json;
 @end

@@ -10,7 +10,7 @@
 
 #import "AllBudget.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&apikey=micronix_10_2014_wedsimple_proj"]
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&"]
 
 
 
@@ -37,7 +37,7 @@
     eventid=[[NSMutableArray alloc]init];
     eventname=[[NSMutableArray alloc]init];
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"10"]];
     NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];

@@ -9,7 +9,7 @@
 #import "AddBudget.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_create&"]
-#define URL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&apikey=micronix_10_2014_wedsimple_proj"]
+#define URL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
 
 @interface AddBudget ()
 
@@ -36,7 +36,7 @@
     vendorname =[[NSMutableArray alloc]init];
     vendorid =[[NSMutableArray alloc]init];
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL1]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL1,@"10"]];
     NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
@@ -148,7 +148,7 @@
 
 - (IBAction)save:(id)sender {
     //********** give event id...
-    NSString *savedata =[[NSString alloc]initWithFormat:@"event_id=%@&name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",@"1",eventnametext.text,vendoridpass,paymentduedatetext.text,totalamountduetext.text,amountpaidtodatetext.text,infotext.text];
+    NSString *savedata =[[NSString alloc]initWithFormat:@"event_id=%@&name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",eventidpass,eventnametext.text,vendoridpass,paymentduedatetext.text,totalamountduetext.text,amountpaidtodatetext.text,infotext.text];
     NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;
