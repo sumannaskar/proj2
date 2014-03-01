@@ -12,7 +12,9 @@
 #define NIB_NAME @"Cell2"
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
-#define EventDeleteURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_muldel&"]
+#define EventDeleteURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=event_delete&"]
+#define EventDeleteURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
+
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 
