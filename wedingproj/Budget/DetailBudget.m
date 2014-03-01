@@ -38,7 +38,7 @@
     
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,budgetidpass]];
-    NSLog(@"my--%@",url);
+   // NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async

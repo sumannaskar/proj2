@@ -35,7 +35,7 @@
     budgetid =[[NSMutableArray alloc]init];
     [super viewDidLoad];
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,eventidpass]];
-    NSLog(@"my--%@",url);
+  //  NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
@@ -72,6 +72,16 @@
             
             options:kNilOptions
             error:&error];
+    NSLog(@"%@",json);
+    
+    
+    if ([[json valueForKey:@"status"] isEqual:@"No record found"])
+    {
+        UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"weding" message:@"No Budget\nDo You Want To Create Budget Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
+        [createbudget show];
+    }
+    else
+    {
     
     
     for (NSDictionary *data in json ) {
@@ -81,8 +91,25 @@
     }
     NSLog(@"%@",budgetid);
     [allbudget reloadData];
-    
+    }
 }
+
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger) buttonIndex
+{
+    if (buttonIndex == 0)
+    {
+        AddBudget *AddBudget_ = [[AddBudget alloc]init];
+        AddBudget_.eventidpass=eventidpass;
+        [self.navigationController pushViewController:AddBudget_ animated:YES];
+    }
+    else if (buttonIndex == 1)
+    {
+        NSLog(@"OK Tapped. Hello World!");
+    }
+}
+
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

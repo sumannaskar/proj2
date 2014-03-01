@@ -10,7 +10,7 @@
 #import "DetailVendor.h"
 #import "DeleteVendor.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&user_id=10&apikey=micronix_10_2014_wedsimple_proj"]
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
 
 @interface ManageVendor ()
 
