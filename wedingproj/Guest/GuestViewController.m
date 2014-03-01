@@ -53,7 +53,7 @@
     [self setTableHeight];
      [InvScroll addSubview:InvTable];
     
-     NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"12"];
+     NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"11"];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
    // NSLog(@"my--%@",url);
@@ -194,7 +194,7 @@
     }
     
     cell1.guestLbl.text = [Gname objectAtIndex:indexPath.row];
-     NSLog(@"%@",[Gname objectAtIndex:indexPath.row]);
+    // NSLog(@"%@",[Gname objectAtIndex:indexPath.row]);
     
     [cell1.statusBtn addTarget:self action:@selector(InvStatus:) forControlEvents:UIControlEventTouchUpInside];
     cell1.statusBtn.tag = indexPath.row;
@@ -225,7 +225,7 @@
      EditVc.groupString = [GroupId objectAtIndex:button.tag];
      EditVc.withString = [NoOfPerson objectAtIndex:button.tag];
     
-    
+  //  NSLog(@"%@",EditVc.groupString);
     
     [self.navigationController pushViewController:EditVc animated:YES];
 }
@@ -267,7 +267,7 @@
         }
     }
     NSString *str4 = [str3 substringToIndex:[str3 length]-1];
-   // NSLog(@"%@",str4);
+    NSLog(@"%@",str4);
     
     Deletejson = [[NSDictionary alloc]init];
     

@@ -8,6 +8,12 @@
 
 #import "InvitationViewController.h"
 #define NIB_NAME @"Cell"
+
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_group&"]
+
+#define SendURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=invitation&"]
+
 @interface InvitationViewController ()
 
 @end
@@ -27,6 +33,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //NSLog(@"%@-%@",self.GroupId,self.EventId);
+    
+    Guestid = [[NSMutableArray alloc]init];
+     Guestname = [[NSMutableArray alloc]init];
+     GuestStatus = [[NSMutableArray alloc]init];
+    
+    
     isLoad = YES;
     checkImage = [[NSMutableArray alloc]init];
     InvScroll.delegate = self;
@@ -34,6 +47,66 @@
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
     [self setTableHeight];
     [InvScroll addSubview:InvTable];
+    
+    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&event_id=%@&group_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"11",self.EventId,self.GroupId];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
+     //NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+
+}
+-(void)fetchedData:(NSData *)responseData{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    // NSLog(@"%@",[json valueForKey:@"status"]);
+    
+    // [HUD hideUIBlockingIndicator];
+    //    if ([[json valueForKey:@"status"]isEqualToString:@"No record found"]) {
+    //        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+    //        [nodata show];
+    //    }
+    //    else{
+    for(NSString *loc in [json valueForKey:@"guest_id"]) {
+        [Guestid addObject:loc];
+    }
+    for(NSString *loc in [json valueForKey:@"guest_name"]) {
+        [Guestname addObject:loc];
+    }
+    for(NSString *loc in [json valueForKey:@"status"]) {
+        [GuestStatus addObject:loc];
+    }
+    //NSLog(@"%@",Guestname);
+    [self setTableHeight];
+    [InvTable reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +125,7 @@
 {
     //[InvTable setRowHeight: 100.00];
     // Return the number of rows in the section.
-    return 50;
+    return [Guestid count];
 }
 //for normal table view....
 
@@ -111,9 +184,9 @@
         [cell.checkImgv setImage:[UIImage imageNamed:[checkImage objectAtIndex:indexPath.row]]];
     }
     
-    cell.guestLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    cell.guestLbl.text = [Guestname objectAtIndex:indexPath.row];;
     
-    
+    [cell.statusBtn setTitle:[GuestStatus objectAtIndex:indexPath.row] forState:UIControlStateNormal];
     [cell.statusBtn addTarget:self action:@selector(InvStatus:) forControlEvents:UIControlEventTouchUpInside];
     cell.statusBtn.tag = indexPath.row;
     
@@ -141,7 +214,7 @@
         if([[UIScreen mainScreen] bounds].size.height  < 600)
         {
             [InvTable setRowHeight:60];
-            int tableRowheight = 60*50;
+            NSInteger tableRowheight = 60*[Guestid count];
             
             InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             InvScroll.contentSize = CGSizeMake(320, tableRowheight);
@@ -151,13 +224,73 @@
         else
         {
             [InvTable setRowHeight:90];
-            int tableRowheight = 90*50;
-            InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
+            NSInteger tableRowheight = 90*[Guestid count];
+            InvTable.frame=CGRectMake(0, 0, 768, tableRowheight*2);
             InvScroll.contentSize = CGSizeMake(768, tableRowheight);
             
             
         }
 }
 
+
+- (IBAction)SendAction:(UIButton *)sender {
+    NSString *str1 = @"-";
+    NSString *str2;
+    NSString *str3 = @"";
+    for (int i=0; i<[Guestid count]; i++) {
+        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"]) {
+            
+            str2=[NSString stringWithFormat:@"%@%@",[Guestid objectAtIndex:i],str1];
+            str3=[NSString stringWithFormat:@"%@%@",str3, str2];
+            
+        }
+    }
+    NSString *str4 = [str3 substringToIndex:[str3 length]-1];
+    //NSLog(@"%@",str4);
+    
+    InvJson = [[NSDictionary alloc]init];
+    
+    NSString *string =[[NSString alloc]initWithFormat:@"guest_id=%@&event_id=%@&apikey=micronix_10_2014_wedsimple_proj",str4,self.EventId];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",SendURL,string]];
+     NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData1:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+
+}
+-(void)fetchedData1:(NSData *)responseData{
+    NSError *error;
+    InvJson = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    NSLog(@"%@",InvJson);
+    [self viewDidLoad];
+}
 
 @end

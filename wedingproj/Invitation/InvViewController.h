@@ -13,6 +13,10 @@
     IBOutlet UIButton *individually;
     
     IBOutlet UIButton *Groupwise;
+    
+    NSMutableArray *json;
+    NSMutableArray *Gid;
+    NSMutableArray *Gname;
 }
 - (IBAction)IndividuallySend:(UIButton *)sender;
 - (IBAction)GroupwiseSend:(UIButton *)sender;

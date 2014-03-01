@@ -15,5 +15,19 @@
     Cell *cell;
     NSMutableArray *checkImage;
     BOOL isLoad;
+    
+    NSDictionary *json;
+    NSMutableArray *Guestid;
+    NSMutableArray *Guestname;
+     NSMutableArray *GuestStatus;
+    
+     NSDictionary *InvJson;
 }
+@property (strong, nonatomic) IBOutlet UIButton *sendBtn;
+
+- (IBAction)SendAction:(UIButton *)sender;
+
+@property (strong, nonatomic) NSString *GroupId;
+@property (strong, nonatomic) NSString *EventId;
+
 @end

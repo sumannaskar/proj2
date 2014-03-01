@@ -10,7 +10,7 @@
 #import "GuestViewController.h"
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&apikey=micronix_10_2014_wedsimple_proj"]
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&"]
 #define SaveURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_update&"]
 @interface EditGuestViewController ()
 
@@ -63,9 +63,10 @@
    // GroupArray=[[NSArray alloc]initWithObjects:@"Group1",@"Group2",@"Group3",@"Group4",@"Group5",@"Group6", nil];
     
      WithArray=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil];
+    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"11"];
+
     
-    
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
     //NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
@@ -104,7 +105,7 @@
             
             options:kNilOptions
             error:&error];
-    // NSLog(@"%@",[json valueForKey:@"status"]);
+    // NSLog(@"%@",json );
     
     // [HUD hideUIBlockingIndicator];
     for(NSString *loc in [json valueForKey:@"group_name"]) {

@@ -11,6 +11,8 @@
 		4B0C305E18C07D0900D500CF /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0C305C18C07D0900D500CF /* RegisterViewController.xib */; };
 		4B0C306318C09C2D00D500CF /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C306118C09C2D00D500CF /* FeatureViewController.m */; };
 		4B0C306418C09C2D00D500CF /* FeatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0C306218C09C2D00D500CF /* FeatureViewController.xib */; };
+		4B1FE48818C1BDB800C36060 /* SelectEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FE48618C1BDB800C36060 /* SelectEventViewController.m */; };
+		4B1FE48918C1BDB800C36060 /* SelectEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FE48718C1BDB800C36060 /* SelectEventViewController.xib */; };
 		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
 		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
 		7AA584F918BF096E00E59852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584F818BF096E00E59852 /* Foundation.framework */; };
@@ -124,6 +126,9 @@
 		4B0C306018C09C2D00D500CF /* FeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeatureViewController.h; path = Features/FeatureViewController.h; sourceTree = "<group>"; };
 		4B0C306118C09C2D00D500CF /* FeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeatureViewController.m; path = Features/FeatureViewController.m; sourceTree = "<group>"; };
 		4B0C306218C09C2D00D500CF /* FeatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeatureViewController.xib; path = Features/FeatureViewController.xib; sourceTree = "<group>"; };
+		4B1FE48518C1BDB800C36060 /* SelectEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectEventViewController.h; path = SelectEvent/SelectEventViewController.h; sourceTree = "<group>"; };
+		4B1FE48618C1BDB800C36060 /* SelectEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectEventViewController.m; path = SelectEvent/SelectEventViewController.m; sourceTree = "<group>"; };
+		4B1FE48718C1BDB800C36060 /* SelectEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectEventViewController.xib; path = SelectEvent/SelectEventViewController.xib; sourceTree = "<group>"; };
 		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
 		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
 		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
@@ -306,6 +311,16 @@
 				4B0C306218C09C2D00D500CF /* FeatureViewController.xib */,
 			);
 			name = Features;
+			sourceTree = "<group>";
+		};
+		4B1FE48418C1BD8800C36060 /* SelectEvent */ = {
+			isa = PBXGroup;
+			children = (
+				4B1FE48518C1BDB800C36060 /* SelectEventViewController.h */,
+				4B1FE48618C1BDB800C36060 /* SelectEventViewController.m */,
+				4B1FE48718C1BDB800C36060 /* SelectEventViewController.xib */,
+			);
+			name = SelectEvent;
 			sourceTree = "<group>";
 		};
 		4B9AF8C618BF15BA00B97DC6 /* cell */ = {
@@ -659,6 +674,7 @@
 		7AA585A618BF099900E59852 /* Individually */ = {
 			isa = PBXGroup;
 			children = (
+				4B1FE48418C1BD8800C36060 /* SelectEvent */,
 				7AA585A718BF099900E59852 /* cell */,
 				7AA585AB18BF099900E59852 /* SendIndividuallyViewController.h */,
 				7AA585AC18BF099900E59852 /* SendIndividuallyViewController.m */,
@@ -934,6 +950,7 @@
 				7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */,
 				4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */,
 				7AA585B418BF099900E59852 /* Cell.xib in Resources */,
+				4B1FE48918C1BDB800C36060 /* SelectEventViewController.xib in Resources */,
 				7AA5857718BF098300E59852 /* EditEventViewController.xib in Resources */,
 				4B0C305E18C07D0900D500CF /* RegisterViewController.xib in Resources */,
 				7AA585D818BF09A300E59852 /* EditTaskViewController.xib in Resources */,
@@ -1017,6 +1034,7 @@
 				7AE4D9F518C064D8009AC079 /* ManageVendor.m in Sources */,
 				7AA5855218BF097D00E59852 /* DetailBudget.m in Sources */,
 				7AA585B318BF099900E59852 /* Cell.m in Sources */,
+				4B1FE48818C1BDB800C36060 /* SelectEventViewController.m in Sources */,
 				7AA5858A18BF098700E59852 /* GuestViewController.m in Sources */,
 				7AA585E518BF09B000E59852 /* WelcomeViewController.m in Sources */,
 				7AA5858818BF098700E59852 /* EditGuestViewController.m in Sources */,
