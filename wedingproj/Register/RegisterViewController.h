@@ -20,6 +20,14 @@
     
     IBOutlet UIScrollView *scroll;
     
+    NSString *AddUserDataStr;
+    NSMutableArray *AddUsermessage;
+    
+    NSMutableArray *totalCountrylist;
+    NSMutableArray *totalCountryIdlist;
+    
+    NSString *countrycode;
+    
 }
 @property (strong, nonatomic) IBOutlet UITextField *countrytxt;
 @property (strong, nonatomic) IBOutlet UITextField *datetxt;
@@ -39,5 +47,8 @@
 
 - (IBAction)donedate:(UIBarButtonItem *)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
+
+
+- (IBAction)registeractn:(UIButton *)sender;
 
 @end
