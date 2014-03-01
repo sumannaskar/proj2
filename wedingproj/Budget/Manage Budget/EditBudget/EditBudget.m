@@ -51,7 +51,6 @@
     }
     else
     {
-       // vendernametext.placeholder=vendernamepass;
         vendernametext.userInteractionEnabled=YES;
         [vendernametext setInputView:respondingView];
         
