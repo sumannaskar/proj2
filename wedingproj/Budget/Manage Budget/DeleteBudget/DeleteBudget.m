@@ -9,14 +9,14 @@
 #import "DeleteBudget.h"
 #import "DeleteBudgetCC.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_delete&"]
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_muldel&"]
 
 @interface DeleteBudget ()
 
 @end
 
 @implementation DeleteBudget
-
+@synthesize json;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,21 +29,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    deletearray =[[NSMutableArray alloc]init];
+    budgetname =[[NSMutableArray alloc]init];
+    
     UIBarButtonItem *delete=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(Delete:)];
     [self.navigationItem setRightBarButtonItem:delete];
     isLoad = YES;
     checkImage = [[NSMutableArray alloc]init];
     scrolvw.delegate = self;
     deletetable.scrollEnabled = NO;
+    for (NSDictionary *data in json ) {
+        [budgetname addObject:[data valueForKey:@"name"]];
+    }
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
     [self image];
     [scrolvw addSubview:deletetable];
+    
 }
 -(IBAction)Delete:(UIBarButtonItem *)sender
 {
+   
     
-    
-    NSString *savedata =[[NSString alloc]initWithFormat:@"budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"1"];
+    NSString *savedata =[[NSString alloc]initWithFormat:@"budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",passdeleteid];
     NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;
@@ -71,7 +78,7 @@
 {
     //[EventTable setRowHeight: 100.00];
     // Return the number of rows in the section.
-    return 50;
+    return budgetname.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -103,8 +110,7 @@
     }
     
     //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    cell.EventLbl.text=@"budget name";
-    
+    cell.EventLbl.text=[[json objectAtIndex:indexPath.row] valueForKey:@"name"];
     return cell;
 }
 
@@ -118,6 +124,50 @@
     else{
         [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index2.jpg"];
     }
+    
+    
+    if ([[checkImage objectAtIndex:recognizer.view.tag]isEqualToString:@"index.jpg"]) {
+        
+        [deletearray addObject:[NSString stringWithFormat:@"%@",[[json objectAtIndex:recognizer.view.tag] valueForKey:@"budget_id"]  ]];
+        // NSLog(@"%d",recognizer.view.tag);
+        NSLog(@"%@",deletearray);
+    }
+    else
+    {
+        [deletearray removeObject:[NSString stringWithFormat:@"%@",[[json objectAtIndex:recognizer.view.tag] valueForKey:@"budget_id"]  ]];
+    }
+    
+    NSString *dash=@"-";
+    passdeleteid=@"";
+    //    int c=0;
+    //    c=([passdeleteid intValue]+1);
+    //    NSLog(@"%d",c);
+    //    passdeleteid =[NSString stringWithFormat:@"%d",c];
+    //    NSLog(@"%@",passdeleteid);
+    for (int i=0;i<deletearray.count;i++)
+    {
+        if (i==deletearray.count-1) {
+            
+            
+            
+            NSString *a=[NSString stringWithFormat:@"%d",[[deletearray objectAtIndex:i] intValue] ];
+            passdeleteid =[NSString stringWithFormat:@"%@%@",passdeleteid,a];
+            NSLog(@"%@",passdeleteid);
+        }
+        else
+        {
+            
+            NSString *a=[NSString stringWithFormat:@"%d%@",[[deletearray objectAtIndex:i] intValue],dash ] ;
+            passdeleteid =[NSString stringWithFormat:@"%@%@",passdeleteid,a];
+        }
+        
+        
+    }
+    NSLog(@"%@",deletearray);
+    NSLog(@"%@",passdeleteid);
+    
+    
+    
     [deletetable reloadData];
 }
 -(void)image

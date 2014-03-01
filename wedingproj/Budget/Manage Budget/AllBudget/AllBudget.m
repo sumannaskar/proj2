@@ -34,8 +34,8 @@
     budgetname =[[NSMutableArray alloc]init];
     budgetid =[[NSMutableArray alloc]init];
     [super viewDidLoad];
-//    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,eventidpass]];
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"4"]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,eventidpass]];
+//    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"4"]];
     NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
@@ -147,6 +147,7 @@
 - (IBAction)deleteBudget:(UIBarButtonItem *)sender
 {
     DeleteBudget *DeleteBudget_ = [[DeleteBudget alloc]init];
+    DeleteBudget_.json =json;
     [self.navigationController pushViewController:DeleteBudget_ animated:YES];
 }
 - (void)didReceiveMemoryWarning
