@@ -28,9 +28,47 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    json=[[NSMutableArray alloc]init];
     
-   /*
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&total=500&apikey=micronix_10_2014_wedsimple_proj",URL,@"10"]];
+    yourbudgettext.text =  [NSString stringWithFormat:@"%d", [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"]] ;
+    NSLog(@"%ld",(long)[[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"]);
+    
+    
+   
+    [self recievedata];
+    
+    
+}
+
+
+ -(void)fetchedData:(NSData *)responseData
+{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    
+    allocatetext.text=[json valueForKey:@"allocated_budget"];
+    balancemaintext.text=[json valueForKey:@"remaining_budget"];
+    
+}
+
+
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+-(void)recievedata
+{
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&total=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"10",yourbudgettext.text]];
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
@@ -56,35 +94,7 @@
          }
      }
      );
-*/
-    
-    
-}
 
-/*
- -(void)fetchedData:(NSData *)responseData
-{
-    NSError *error;
-    json = [NSJSONSerialization
-            JSONObjectWithData:responseData //1
-            
-            options:kNilOptions
-            error:&error];
-    
-    
-    for (NSDictionary *data in json ) {
-        [vendorname addObject:[data valueForKey:@"vendor_name"]];
-        [vendorid addObject:[data valueForKey:@"vendor_id"]];
-        
-    }
-    [managevendortable reloadData];
-    
-}
-*/
--(void)recievedata
-{
-    
-    
     
 }
 -(void)senddata
@@ -95,18 +105,23 @@
 
 -(void)retrivedata
 {
-    NSString *myString = [prefs stringForKey:@"keyToLookupString"];
+    if ([yourbudgettext.text intValue] ==[[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"]) {
+        
+    }
+    else
+    {
+        [self savedata];
+    }
 }
 
 -(void)savedata
 {
-    prefs = [NSUserDefaults standardUserDefaults];
     if (yourbudgettext.text.length > 0) {
-        [prefs setObject:yourbudgettext.text forKey:@"keyToLookupString"];
+        [[NSUserDefaults standardUserDefaults] setInteger:[yourbudgettext.text intValue] forKey:@"HighScoreSaved"];
     }
     else
     {
-        [prefs setObject:@"0" forKey:@"keyToLookupString"];
+        [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"HighScoreSaved"];
     }
 }
 
@@ -118,7 +133,16 @@
 
 - (IBAction)done:(id)sender {
     
-    [self savedata];
+    
+    [self recievedata];
+    [self retrivedata];
+    
+}
+
+- (IBAction)calculate:(id)sender {
+    
+    
+    
     
     
 }

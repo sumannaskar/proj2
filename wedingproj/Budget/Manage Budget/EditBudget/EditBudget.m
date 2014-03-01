@@ -9,7 +9,7 @@
 #import "EditBudget.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_update&"]
-#define URL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&apikey=micronix_10_2014_wedsimple_proj"]
+#define URL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
 
 
 @interface EditBudget ()
@@ -42,14 +42,16 @@
     paymentduedatetext.text=paymentduedatepass;
     eventnametext.text=eventnamepass;
     infotext.text=infopass;
-    vendernametext.text=vendernamepass;
+//    vendernametext.text=vendernamepass;
     amountpaidtodatetext.text=amountpaidtodatepass;
     totalamountduetext.text=totalamountduepass;
-    if (vendernametext.text.length > 0) {
+    if (![vendernamepass isEqual:@"select a vendor"]) {
         vendernametext.userInteractionEnabled=NO;
+        vendernametext.text=vendernamepass;
     }
     else
     {
+       // vendernametext.placeholder=vendernamepass;
         vendernametext.userInteractionEnabled=YES;
         [vendernametext setInputView:respondingView];
         
@@ -57,7 +59,7 @@
         vendorid =[[NSMutableArray alloc]init];
         
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL1]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL1,@"10"]];
         NSLog(@"my--%@",url);
         
         // [HUD showUIBlockingIndicatorWithText:@"Loading.."];

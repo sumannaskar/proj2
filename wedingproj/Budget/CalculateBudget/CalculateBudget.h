@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+long budget;
 @interface CalculateBudget : UIViewController
 
 {
@@ -18,10 +18,12 @@
     IBOutlet UILabel *allocatetext;
     IBOutlet UILabel *balancemain;
     IBOutlet UILabel *balancemaintext;
-    IBOutlet UILabel *balanceallocate;
-    IBOutlet UILabel *balanceallocatetest;
     NSUserDefaults *prefs;
     IBOutlet UIButton *done;
+    NSMutableArray *json;
+    
+    
+    
 }
 
 - (IBAction)done:(id)sender;

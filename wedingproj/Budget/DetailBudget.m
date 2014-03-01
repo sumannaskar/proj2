@@ -77,6 +77,13 @@
     
     eventnametext.text=[[json objectAtIndex:0] valueForKey:@"name"];
     vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_name"];
+    if ([[[json objectAtIndex:0] valueForKey:@"vendor_name"] isEqual:@"select a vendor"]) {
+        vendernametext.text=@"";
+    }
+    else
+    {
+        vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_name"];
+    }
     Pamentduedatetext.text=[[json objectAtIndex:0] valueForKey:@"due_date"];
     amountpaidtext.text=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
     totalamountduetext.text=[[json objectAtIndex:0] valueForKey:@"amount_due"];

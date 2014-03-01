@@ -15,6 +15,9 @@
     
     IBOutlet UIButton *addvendor;
     IBOutlet UIButton *managevendor;
+    
+    
+    
 }
 - (IBAction)managevendor:(id)sender;
 - (IBAction)addvendor:(id)sender;
