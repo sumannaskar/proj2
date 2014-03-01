@@ -41,6 +41,7 @@
      role=[[NSMutableArray alloc]init];
      email=[[NSMutableArray alloc]init];
      GroupId=[[NSMutableArray alloc]init];
+    GroupName=[[NSMutableArray alloc]init];
      NoOfPerson=[[NSMutableArray alloc]init];
     
     
@@ -115,6 +116,9 @@
         for(NSString *loc in [json valueForKey:@"group_id"]) {
             [GroupId addObject:loc];
         }
+    for(NSString *loc in [json valueForKey:@"group_name"]) {
+        [GroupName addObject:loc];
+    }
         for(NSString *loc in [json valueForKey:@"no_of_guest"]) {
             [NoOfPerson addObject:loc];
         }
@@ -222,7 +226,7 @@
      EditVc.nameString = [Gname objectAtIndex:button.tag];
      EditVc.roleString = [role objectAtIndex:button.tag];
      EditVc.emailString = [email objectAtIndex:button.tag];
-     EditVc.groupString = [GroupId objectAtIndex:button.tag];
+     EditVc.groupString = [GroupName objectAtIndex:button.tag];
      EditVc.withString = [NoOfPerson objectAtIndex:button.tag];
     
   //  NSLog(@"%@",EditVc.groupString);

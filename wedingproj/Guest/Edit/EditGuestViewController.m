@@ -39,7 +39,7 @@
      nametxt.text = self.nameString;
      self.RoleText.text = self.roleString;
      self.EmailText.text = self.emailString;
-    // self.GroupText.text = self.groupString;
+     self.GroupText.text = self.groupString;
      self.WithText.text = self.withString;
     
     nametxt.delegate=self;
@@ -113,15 +113,15 @@
         [GroupArray addObject:loc];
         
     }
-    int i=0;
-    for(NSString *loc in [json valueForKey:@"id"]) {
-            if ([loc isEqualToString:self.groupString]) {
-            self.GroupText.text = [GroupArray objectAtIndex:i];
-            self.groupString = [GroupArray objectAtIndex:i];
-            break;
-        }
-        i = i+1;
-    }
+//    int i=0;
+//    for(NSString *loc in [json valueForKey:@"id"]) {
+//            if ([loc isEqualToString:self.groupString]) {
+//            self.GroupText.text = [GroupArray objectAtIndex:i];
+//            self.groupString = [GroupArray objectAtIndex:i];
+//            break;
+//        }
+//        i = i+1;
+//    }
     
    
     [self.pickerVw reloadAllComponents];

@@ -25,6 +25,7 @@
      NSMutableArray *role;
      NSMutableArray *email;
      NSMutableArray *GroupId;
+     NSMutableArray *GroupName;
      NSMutableArray *NoOfPerson;
 }
 - (IBAction)DeleteAction:(UIBarButtonItem *)sender;
