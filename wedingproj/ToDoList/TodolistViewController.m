@@ -121,6 +121,31 @@
 
 - (IBAction)Delete:(UIBarButtonItem *)sender {
     
+    BOOL uncheck=YES;
+    
+    NSLog(@"%@",checkImage);
+    for (int i=0; i<[checkImage count]; i++) {
+        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"])
+        {
+            uncheck=NO;
+            break;
+        }
+    }
+    
+    if (uncheck==NO) {
+        [self deletetask];
+    }
+    else
+    {
+        UIAlertView *nodelete=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"At least Select one Task to delete" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [nodelete show];
+        
+    }
+
+}
+
+-(void)deletetask
+{
     NSError *error;
     NSString *str1 = @"-";
     NSString *str2;

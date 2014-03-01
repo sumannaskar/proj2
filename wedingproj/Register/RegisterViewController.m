@@ -7,6 +7,11 @@
 //
 
 #import "RegisterViewController.h"
+#define RegisterURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=user_create&"]
+#define RegisterURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
+#define CountryListURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=country&apikey=micronix_10_2014_wedsimple_proj"]
+
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 @interface RegisterViewController ()
 
@@ -27,6 +32,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //Country List Fetching
+    NSError *error;
+    NSData* CountryListData = [NSData dataWithContentsOfURL: CountryListURL];
+    NSArray* rawcountryList = [NSJSONSerialization JSONObjectWithData:CountryListData options:kNilOptions error:&error];
+    
+    totalCountrylist=[[NSMutableArray alloc ]init];
+    totalCountryIdlist=[[NSMutableArray alloc ]init];
+    
+    for(int i=0;i<rawcountryList.count;i++)
+    {
+        NSDictionary *tempDict=[rawcountryList objectAtIndex:i];
+        [totalCountrylist addObject:[tempDict objectForKey:@"name"]];
+        [totalCountryIdlist addObject:[tempDict objectForKey:@"code"]];
+        
+    }
+
+    
+    
     groomnametxt.delegate=self;
     bridenametxt.delegate=self;
     emailtxt.delegate=self;
@@ -46,6 +70,79 @@
     
     [self.datepickerVW setDate:[NSDate date]];
     
+}
+-(void)AddUserDetails
+{
+    NSString *AddUserData=[[NSString alloc]initWithFormat:@"groom_name=%@&bride_name=%@&password=%@&u_email=%@&wedding_date=%@&country=%@%@",groomnametxt,bridenametxt,passwrdtxt,emailtxt,self.datetxt,countrycode,RegisterURL2];
+    NSString* urlTextEscaped = [AddUserData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"%@",urlTextEscaped);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",RegisterURL1,urlTextEscaped]];
+    NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    NSLog(@"%@",url);
+    [theRequest setHTTPMethod:@"POST"];
+    [theRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSError *error;
+    NSURLResponse *response;
+    
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
+    AddUserDataStr=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",response);
+    
+    AddUsermessage= [NSJSONSerialization JSONObjectWithData:urlData options:kNilOptions error:&error];
+    
+    
+//    if([[AddTaskmessage valueForKey:@"status" ] isEqualToString:@"Record Created"])
+//    {
+//        UIAlertView *addsuccess=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Added Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+//        [addsuccess show];
+//        TodolistViewController *ToDolistVc=[[TodolistViewController alloc] init];
+//        [self.navigationController pushViewController:ToDolistVc animated:YES];
+//        
+//    }
+//    else
+//    {
+//        UIAlertView *addfailed=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Task not added, Try again" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+//        [addfailed show];
+//    }
+}
+
+- (IBAction)registeractn:(UIButton *)sender {
+    
+    if (groomnametxt.text.length >0 && bridenametxt.text.length >0 &&passwrdtxt.text.length>0 && confirmpwdtxt.text.length>0&& emailtxt.text.length>0 && self.datetxt.text.length>0 && self.countrytxt.text.length>0)
+    {
+        if (![passwrdtxt.text isEqualToString:confirmpwdtxt.text]) {
+            UIAlertView *passwordnotmatch =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"password doesnot match" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+            
+            [passwordnotmatch show];
+        }
+        else
+        {
+            NSString *emailRegEx = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+            NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegEx];
+            if  ([emailTest evaluateWithObject:emailtxt.text] != YES && [emailtxt.text length]!=0)
+            {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wedding Project" message:@"Please enter valid email address" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alert show];
+                
+            }
+            else{
+                //[HUD showUIBlockingIndicatorWithText:@"Loading"];
+                [self AddUserDetails];
+            }
+            
+        }
+        
+    }
+    else
+    {
+        
+        
+        UIAlertView *fillall =[[UIAlertView alloc]initWithTitle:@"Casa de Salud App" message:@"fill all the fields" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [fillall show];
+    }
+    
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,7 +168,9 @@
 //    //rowCount= [location count];
 //    rowCount=[pkarray count];
 //    return rowCount;
-    return 0;
+    NSLog(@"%d",totalCountrylist.count);
+    return [totalCountrylist count];
+    
 }
 
 
@@ -81,14 +180,15 @@
 {
     // return [location objectAtIndex:row];
    // return [pkarray objectAtIndex:row];
-    return 0;
+    return [totalCountrylist objectAtIndex:row];
 }
 
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
-   // self.dresscodetxt.text=[pkarray objectAtIndex:row];
+    self.countrytxt.text=[totalCountrylist objectAtIndex:row];
+    countrycode=[totalCountryIdlist objectAtIndex:row];
     
     
 }
@@ -96,11 +196,19 @@
 
 - (IBAction)done:(id)sender
 {
+    if (!(self.countrytxt.text.length>0)) {
+        self.countrytxt.text=[totalCountrylist objectAtIndex:0];
+        countrycode=[totalCountryIdlist objectAtIndex:0];
+        
+    }
+    
+    [self.countrytxt resignFirstResponder];
     
 }
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
-    
+    self.countrytxt.text=@"";
+    [self.countrytxt resignFirstResponder];
 }
 - (IBAction)donedate:(UIBarButtonItem *)sender
 {
@@ -114,6 +222,8 @@
     [self.datetxt resignFirstResponder];
 
 }
+
+
 
 - (NSString *)formatDate:(NSDate *)date
 {
