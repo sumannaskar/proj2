@@ -11,7 +11,7 @@
 #import "EditGuestViewController.h"
 #define NIB_NAME @"GuestCell"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_all&event_id=3&apikey=micronix_10_2014_wedsimple_proj"]
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_all&"]
 
 #define DeleteURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_muldel&"]
 
@@ -53,10 +53,10 @@
     [self setTableHeight];
      [InvScroll addSubview:InvTable];
     
+     NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"12"];
     
-    
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL]];
-    //NSLog(@"my--%@",url);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
+   // NSLog(@"my--%@",url);
     
    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async

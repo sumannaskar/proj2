@@ -246,7 +246,7 @@
 }
 
 - (IBAction)AddGuest:(UIButton *)sender {
-    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",nametxt.text,self.RoleText.text,self.EmailText.text,@"1",self.WithText.text];
+    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"user_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",@"12",nametxt.text,self.RoleText.text,self.EmailText.text,@"1",self.WithText.text];
     
     NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     //  NSLog(@"%@",urlTextEscaped);
