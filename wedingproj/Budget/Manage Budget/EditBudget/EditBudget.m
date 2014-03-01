@@ -53,7 +53,7 @@
     {
         vendernametext.userInteractionEnabled=YES;
         [vendernametext setInputView:respondingView];
-        
+        vendernametext.placeholder=vendernamepass;
         vendorname =[[NSMutableArray alloc]init];
         vendorid =[[NSMutableArray alloc]init];
         
@@ -194,7 +194,7 @@
 {
     if (!(vendernametext.text.length>0)) {
         
-    vendernametext.text=[pkarray objectAtIndex:0];
+    vendernametext.text=[vendorname objectAtIndex:0];
     }
     [vendernametext resignFirstResponder];
     

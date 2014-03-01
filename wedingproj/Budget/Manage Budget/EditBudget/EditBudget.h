@@ -29,7 +29,6 @@
     IBOutlet UIDatePicker *datepickerVW;
     IBOutlet UILabel *vendername;
     IBOutlet UITextField *vendernametext;
-    NSArray *pkarray;//delete after use
     IBOutlet UIToolbar *picekrtoolbr;
     NSMutableArray *json;
     NSMutableArray *vendorname;
