@@ -14,6 +14,7 @@ cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/EditBudget/EditBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/HomeViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Home/HomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/AllBudget/AllBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteVendor.o /Users/macmini2/Desktop/proj2/wedingproj/Vendor/ManageVendor/DeleteVendor/DeleteVendor.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditTaskViewController.o /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/EditTask/EditTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AllBudgetCC.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/AllBudget/AllBudgetCC/AllBudgetCC.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/EditEventViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Event/EditEvent/EditEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -22,10 +23,9 @@ cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/FeatureViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Features/FeatureViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/AddGuestViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Guest/AddGuest/AddGuestViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/Customcell.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Customcell/Customcell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageVendor.o /Users/macmini2/Desktop/proj2/wedingproj/Vendor/ManageVendor/ManageVendor.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/SSKeychain.o /Users/macmini2/Desktop/proj2/wedingproj/Login/SSKeychain/SSKeychain.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DetailBudget.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/ManageVendor.o /Users/macmini2/Desktop/proj2/wedingproj/Vendor/ManageVendor/ManageVendor.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteVendor.o /Users/macmini2/Desktop/proj2/wedingproj/Vendor/ManageVendor/DeleteVendor/DeleteVendor.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/Cell.o /Users/macmini2/Desktop/proj2/wedingproj/Invitation/GroupWise/SendInv/cell/Cell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/SelectEventViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Invitation/Individually/SelectEvent/SelectEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/GuestViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Guest/GuestViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -874,7 +874,7 @@ t1393851840
 s1870
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM
-t1393851238
+t1393851840
 s102
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/640.png
@@ -2275,7 +2275,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa6f00c40b5c4b841^a25d0d40b5c4b841^---0#1#1#--18"Check dependencies36"41BB974C-96CA-443C-9F10-3074396A1112-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesdeab961ab6c4b841^a511971ab6c4b841^---0#1#1#--18"Check dependencies36"10A9D0DD-B1BF-43C8-91CF-E09C5160C067-
 
 CCompileAssetCatalog /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app /Users/macmini2/Desktop/proj2/wedingproj/wedingproj/Images.xcassets
 s415368322.750688
