@@ -79,7 +79,7 @@
     
     
     for (NSDictionary *data in json ) {
-        [vendorname addObject:[data valueForKey:@"vendor_name"]];
+        [vendorname addObject:[data valueForKey:@"name"]];
         [vendorid addObject:[data valueForKey:@"vendor_id"]];
         
     }
