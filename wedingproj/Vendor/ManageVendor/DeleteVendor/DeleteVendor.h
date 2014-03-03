@@ -22,6 +22,7 @@
     NSMutableArray *vendorname;
     NSMutableArray *deletearray;
     NSString *passdeleteid;
+    NSMutableArray *status;
     
 }
 @property(nonatomic,retain)NSMutableArray *json;

@@ -67,8 +67,15 @@
     NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
     NSString *data=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
     NSLog(@"%@",data);
+    status =[[NSMutableArray alloc]init];
+   
+    status = [NSJSONSerialization
+            JSONObjectWithData:urlData //1
+            
+            options:kNilOptions
+            error:&error];
     
-    if ([[data valueForKey:@"status" ] isEqual:@"Unable to delete. vendor assigned to Budget or TO-DO list."] ) {
+    if ([[status valueForKey:@"status" ] isEqual:@"Unable to delete. vendor assigned to Budget or TO-DO list."] ) {
         UIAlertView *nodelete =[[UIAlertView alloc]initWithTitle:@"weading" message:@"Unable to delete\nvendor assigned to Budget or TO-DO list." delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
         
         [nodelete show];
