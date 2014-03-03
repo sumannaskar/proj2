@@ -7,6 +7,8 @@
 //
 
 #import "CalculateBudget.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_cal&"]
 
@@ -68,7 +70,7 @@
 -(void)recievedata
 {
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&total=%@&apikey=micronix_10_2014_wedsimple_proj",URL,@"10",yourbudgettext.text]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&total=%@&apikey=micronix_10_2014_wedsimple_proj",URL,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],yourbudgettext.text]];
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async

@@ -9,6 +9,8 @@
 #import "TodolistViewController.h"
 #import "AddTaskViewController.h"
 #import "EditTaskViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define NIB_NAME @"Cell3"
 #define ktodolistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do"]
 #define ktodolistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
@@ -48,7 +50,7 @@
     EventTable.scrollEnabled = NO;
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
     
-    NSURL *tempurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",ktodolistURL1,@"12",ktodolistURL2]];
+    NSURL *tempurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",ktodolistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],ktodolistURL2]];
     NSLog(@"%@",tempurl);
     
     dispatch_async(kBgQueue, ^{
@@ -244,7 +246,9 @@
     }
     
     //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+     NSLog(@"%@",rawtaskList);
     NSDictionary *tempdic=[rawtaskList objectAtIndex:indexPath.row];
+    NSLog(@"%@",[tempdic objectForKey:@"task_name"]);
     tasknamestr=[tempdic objectForKey:@"task_name"];
     
     

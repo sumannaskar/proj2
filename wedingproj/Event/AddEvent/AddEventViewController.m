@@ -8,6 +8,8 @@
 
 #import "AddEventViewController.h"
 #import "EventViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define AddEventURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=event_create&"]
 
 @interface AddEventViewController ()
@@ -50,13 +52,13 @@
     
     [self.datepickerVW setDate:[NSDate date]];
     
-    pkarray=[[NSArray alloc]initWithObjects:@"Formal",@"Casual", nil];
+    pkarray=[[NSArray alloc]initWithObjects:@"Unspecified",@"Formal",@"Casual",@"Black Tie",@"White Tie",@"Cocktail", nil];
     
 }
 
 -(void)AddDetails
 {
-    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"&user_id=%@&event_name=%@&venue=%@&start_time=%@&end_time=%@&budget=%@&dress_code=%@&apikey=micronix_10_2014_wedsimple_proj",@"11",nametxt.text,venuetxt.text,self.datetxt.text,self.dateendtxt.text,budgettxt.text,self.dresscodetxt.text];
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"&user_id=%@&event_name=%@&venue=%@&start_time=%@&end_time=%@&budget=%@&dress_code=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],nametxt.text,venuetxt.text,self.datetxt.text,self.dateendtxt.text,budgettxt.text,self.dresscodetxt.text];
     NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddEventURL,urlTextEscaped]];

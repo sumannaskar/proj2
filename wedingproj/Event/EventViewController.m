@@ -9,6 +9,8 @@
 #import "EventViewController.h"
 #import "AddEventViewController.h"
 #import "EditEventViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define NIB_NAME @"Cell2"
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
@@ -33,6 +35,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -48,7 +51,7 @@
 //    [self image];
 //    [EventScroll addSubview:EventTable];
     
-    NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,@"11",keventlistURL2]];
+    NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],keventlistURL2]];
     dispatch_async(kBgQueue, ^{
 //        NSURL *tempUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@%@",firstCatagoryURL,self.deviceString,secondCatagoryURL]];
         NSData *tempcatagorydata=[NSData dataWithContentsOfURL:tempeventurl];
