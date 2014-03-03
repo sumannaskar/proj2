@@ -95,7 +95,7 @@
             options:kNilOptions
             error:&error];
     
-    for(NSString *loc in [json valueForKey:@"id"]) {
+    for(NSString *loc in [json valueForKey:@"group_id"]) {
         [Gid addObject:loc];
     }
     for(NSString *loc in [json valueForKey:@"group_name"]) {
