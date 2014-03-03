@@ -8,6 +8,8 @@
 
 #import "AddGuestViewController.h"
 #import "GuestViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_create&"]
 
@@ -246,7 +248,7 @@
 }
 
 - (IBAction)AddGuest:(UIButton *)sender {
-    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"user_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",@"12",nametxt.text,self.RoleText.text,self.EmailText.text,@"1",self.WithText.text];
+    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"user_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],nametxt.text,self.RoleText.text,self.EmailText.text,@"1",self.WithText.text];
     
     NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     //  NSLog(@"%@",urlTextEscaped);

@@ -8,6 +8,8 @@
 
 #import "EditTaskViewController.h"
 #import "TodolistViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define EditTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_update&"]
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
@@ -34,7 +36,7 @@
     // Do any additional setup after loading the view from its nib.
     NSLog(@"%@",self.Vendorid);
      NSLog(@"%@",self.Eventid);
-    NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,@"12",keventlistURL2]];
+    NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],keventlistURL2]];
     NSError *error;
     NSData* eventListData = [NSData dataWithContentsOfURL: tempeventurl];
     NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
@@ -51,7 +53,7 @@
     }
     
     //vendor data fetching
-    NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kvendorlistURL1,@"12",kvendorlistURL2]];
+    NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kvendorlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],kvendorlistURL2]];
     NSData* vendorListData = [NSData dataWithContentsOfURL: tempvendorurl];
     NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
     

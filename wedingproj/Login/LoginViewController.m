@@ -72,7 +72,7 @@
     AddLoginmessage= [NSJSONSerialization JSONObjectWithData:urlData options:kNilOptions error:&error];
     NSLog(@"%@",AddLoginmessage);
     
-    if([[AddLoginmessage valueForKey:@"user_id"] isEqualToString:@""]||[[AddLoginmessage valueForKey:@"status"] isEqualToString:@"Username Password Incorrect."])
+    if([[AddLoginmessage valueForKey:@"user_id"] isEqualToString:@""])
     {
         
         UIAlertView *loginfail =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:[NSString stringWithFormat:@"%@ \n or\n try registration",[AddLoginmessage valueForKey:@"status" ]] delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];

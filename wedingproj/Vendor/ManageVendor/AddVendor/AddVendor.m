@@ -7,6 +7,8 @@
 //
 
 #import "AddVendor.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_create&"]
 
@@ -39,7 +41,7 @@
 
 - (IBAction)save:(id)sender
 {
-    NSString *savedata =[[NSString alloc]initWithFormat:@"user_id=%@&vendor_name=%@&category=%@&email=%@&contact=%@&apikey=micronix_10_2014_wedsimple_proj",@"10",vendornametext.text,categorytext.text,emailtext.text,contactnotext.text];
+    NSString *savedata =[[NSString alloc]initWithFormat:@"user_id=%@&vendor_name=%@&category=%@&email=%@&contact=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],vendornametext.text,categorytext.text,emailtext.text,contactnotext.text];
     NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;

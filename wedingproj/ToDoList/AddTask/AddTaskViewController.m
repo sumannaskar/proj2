@@ -8,6 +8,8 @@
 
 #import "AddTaskViewController.h"
 #import "TodolistViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_create&"]
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
@@ -36,7 +38,7 @@
     // Do any additional setup after loading the view from its nib.
     
     //Event data fetching.....
-    NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,@"12",keventlistURL2]];
+    NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],keventlistURL2]];
     NSError *error;
     NSData* eventListData = [NSData dataWithContentsOfURL: tempeventurl];
     NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
@@ -53,7 +55,7 @@
     }
     
     //vendor data fetching
-    NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kvendorlistURL1,@"12",kvendorlistURL2]];
+    NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kvendorlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],kvendorlistURL2]];
     NSData* vendorListData = [NSData dataWithContentsOfURL: tempvendorurl];
     NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
     
@@ -105,7 +107,7 @@
 
 -(void)AddDetails
 {
-    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"user_id=%@&task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",@"12",nametxt.text,Eventid,Vendorid,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"user_id=%@&task_name=%@&event_id=%@&vendor_id=%@&due_date=%@&category=%@&status=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],nametxt.text,Eventid,Vendorid,self.datetxt.text,self.categorytxt.text,self.statustxt.text,informationtxt.text];
     NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddTaskURL,urlTextEscaped]];
