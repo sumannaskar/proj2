@@ -7,6 +7,8 @@
 //
 
 #import "SendIndividuallyViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_event&"]
 
@@ -49,7 +51,7 @@
     [InvScroll addSubview:InvTable];
     
     
-    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&event_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"11",self.eventId];
+    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&event_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],self.eventId];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
      //NSLog(@"my--%@",url);

@@ -7,6 +7,8 @@
 //
 
 #import "InvitationViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define NIB_NAME @"Cell"
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
@@ -48,7 +50,7 @@
     [self setTableHeight];
     [InvScroll addSubview:InvTable];
     
-    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&event_id=%@&group_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"11",self.EventId,self.GroupId];
+    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&event_id=%@&group_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],self.EventId,self.GroupId];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
      //NSLog(@"my--%@",url);
