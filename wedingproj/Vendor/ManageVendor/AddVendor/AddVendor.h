@@ -23,6 +23,7 @@
     IBOutlet UITextField *contactnotext;
     
     IBOutlet UIButton *save;
+    NSMutableArray *responce;
 }
 
 

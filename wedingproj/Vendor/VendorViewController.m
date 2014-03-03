@@ -9,6 +9,7 @@
 #import "VendorViewController.h"
 #import "ManageVendor.h"
 #import "AddVendor.h"
+#import "HomeViewController.h"
 
 
 @interface VendorViewController ()
@@ -29,9 +30,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIBarButtonItem *back =[[UIBarButtonItem alloc]initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+    [self.navigationItem setLeftBarButtonItem:back];
    
 }
-
+-(IBAction)back:(UIBarButtonItem *)sender
+{
+    HomeViewController *home =[[HomeViewController alloc]init];
+    [self.navigationController pushViewController:home animated:YES];
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

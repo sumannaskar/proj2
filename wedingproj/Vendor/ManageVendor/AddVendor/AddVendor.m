@@ -9,6 +9,7 @@
 #import "AddVendor.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
+#import "VendorViewController.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_create&"]
 
@@ -56,6 +57,27 @@
     NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
     NSString *data=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
     NSLog(@"%@",data);
+    responce=[[NSMutableArray alloc]init];
+    responce = [NSJSONSerialization
+            JSONObjectWithData:urlData //1
+            
+            options:kNilOptions
+            error:&error];
+
+    
+    if ([[responce valueForKey:@"status"] isEqual:@"Record Created"]) {
+        UIAlertView *createvendor =[[UIAlertView alloc]initWithTitle:@"weding" message:@"vendor create" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [createvendor show];
+        VendorViewController *VendorViewController_ =[[VendorViewController alloc]init];
+        [self.navigationController pushViewController:VendorViewController_ animated:YES];
+        
+    }
+    else
+    {
+        UIAlertView *createvendor =[[UIAlertView alloc]initWithTitle:@"weding" message:@"unable to vendor create" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [createvendor show];
+
+    }
 
 }
 

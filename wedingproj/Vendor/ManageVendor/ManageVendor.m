@@ -11,6 +11,7 @@
 #import "DeleteVendor.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
+#import "VendorViewController.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
 
@@ -32,7 +33,10 @@
 {
     [super viewDidLoad];
     UIBarButtonItem *delete =[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(Deletd:)];
+    UIBarButtonItem *back =[[UIBarButtonItem alloc]initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
     [self.navigationItem setRightBarButtonItem:delete];
+    [self.navigationItem setLeftBarButtonItem:back];
+
     json = [[NSMutableArray alloc]init];
     vendorid =[[NSMutableArray alloc]init];
     vendorname =[[NSMutableArray alloc]init];
@@ -84,6 +88,12 @@
         
     }
     [managevendortable reloadData];
+    
+}
+-(IBAction)back:(UIBarButtonItem *)sender
+{
+    VendorViewController *m =[[VendorViewController alloc]init];
+    [self.navigationController pushViewController:m animated:NO];
     
 }
 

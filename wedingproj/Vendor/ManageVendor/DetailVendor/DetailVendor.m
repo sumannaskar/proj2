@@ -8,6 +8,7 @@
 
 #import "DetailVendor.h"
 #import "EditVendor.h"
+#import "ManageVendor.h"
 
 @interface DetailVendor ()
 
@@ -50,5 +51,10 @@
 }
 
 - (IBAction)done:(id)sender {
+    
+    ManageVendor *ManageVendor_ =[[ManageVendor alloc]init];
+    [self.navigationController pushViewController:ManageVendor_ animated:YES];
+    
+    
 }
 @end

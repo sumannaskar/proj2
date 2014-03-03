@@ -7,6 +7,7 @@
 //
 
 #import "EditVendor.h"
+#import "ManageVendor.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_update&"]
 
@@ -62,6 +63,31 @@
     NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
     NSString *data=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
     NSLog(@"%@",data);
+    responce =[[NSMutableArray alloc]init];
+    
+    responce=[[NSMutableArray alloc]init];
+    responce = [NSJSONSerialization
+                JSONObjectWithData:urlData //1
+                
+                options:kNilOptions
+                error:&error];
+    
+    
+    if ([[responce valueForKey:@"status"] isEqual:@"Record Updated"]) {
+        UIAlertView *createvendor =[[UIAlertView alloc]initWithTitle:@"weding" message:@"vendor edit sucessfully" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [createvendor show];
+        ManageVendor *ManageVendor_ =[[ManageVendor alloc]init];
+        [self.navigationController pushViewController:ManageVendor_ animated:YES];
+        
+    }
+    else
+    {
+        UIAlertView *createvendor =[[UIAlertView alloc]initWithTitle:@"weding" message:@"unable to vendor edit" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [createvendor show];
+        
+    }
+
+    
 }
 
 - (void)didReceiveMemoryWarning
