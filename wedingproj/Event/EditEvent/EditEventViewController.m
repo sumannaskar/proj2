@@ -50,7 +50,7 @@
     
     [self.datepickerVW setDate:[NSDate date]];
     
-    pkarray=[[NSArray alloc]initWithObjects:@"Formal",@"Casual", nil];
+    pkarray=[[NSArray alloc]initWithObjects:@"Unspecified",@"Formal",@"Casual",@"Black Tie",@"White Tie",@"Cocktail", nil];
     [self alreadyinrecord];
     
 }
