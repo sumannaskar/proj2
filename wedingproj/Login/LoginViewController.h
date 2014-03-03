@@ -8,13 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController<UITextFieldDelegate>
 {
     
     IBOutlet UIButton *loginbtn;
     
+    IBOutlet UITextField *username;
     
+    IBOutlet UITextField *password;
     IBOutlet UIButton *signupbtn;
+    
+    
+    NSString *AddLoginDataStr;
+    NSMutableArray *AddLoginmessage;
+
 }
 
 - (IBAction)loginactn:(UIButton *)sender;
