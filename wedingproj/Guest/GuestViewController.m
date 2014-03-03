@@ -319,6 +319,7 @@
             options:kNilOptions
             error:&error];
     NSLog(@"%@",Deletejson);
+     NSLog(@"%@",Deletejson);
 }
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
     AddGuestViewController *AddguestVc=[[AddGuestViewController alloc] init];
