@@ -31,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"Register");
     // Do any additional setup after loading the view from its nib.
     
     //Country List Fetching
