@@ -9,7 +9,8 @@
 #import "InvViewController.h"
 #import "SelectEventViewController.h"
 #import "SelectViewController.h"
-
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define GroupURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&"]
 
@@ -53,7 +54,7 @@
     Gid = [[NSMutableArray alloc]init];
     Gname = [[NSMutableArray alloc]init];
     
-    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"11"];
+    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",GroupURL,string]];
     // NSLog(@"my--%@",url);
