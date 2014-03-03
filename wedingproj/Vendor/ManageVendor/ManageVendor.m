@@ -40,7 +40,7 @@
     
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,[SSKeychain passwordForService:@"LoginViewController" account:@"User"]]];
-    
+    NSLog(@"%@",url);
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
     (kBgQueue, ^
@@ -79,7 +79,7 @@
     
     
     for (NSDictionary *data in json ) {
-        [vendorname addObject:[data valueForKey:@"name"]];
+        [vendorname addObject:[data valueForKey:@"vendor_name"]];
         [vendorid addObject:[data valueForKey:@"vendor_id"]];
         
     }
