@@ -7,6 +7,7 @@
 //
 
 #import "RegisterViewController.h"
+#import "LoginViewController.h"
 #define RegisterURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=user_create&"]
 #define RegisterURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 #define CountryListURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=country&apikey=micronix_10_2014_wedsimple_proj"]
@@ -74,7 +75,7 @@
 }
 -(void)AddUserDetails
 {
-    NSString *AddUserData=[[NSString alloc]initWithFormat:@"groom_name=%@&bride_name=%@&password=%@&u_email=%@&wedding_date=%@&country=%@%@",groomnametxt,bridenametxt,passwrdtxt,emailtxt,self.datetxt,countrycode,RegisterURL2];
+    NSString *AddUserData=[[NSString alloc]initWithFormat:@"groom_name=%@&bride_name=%@&password=%@&u_email=%@&wedding_date=%@&country=%@%@",groomnametxt.text,bridenametxt.text,passwrdtxt.text,emailtxt.text,self.datetxt.text,countrycode,RegisterURL2];
     NSString* urlTextEscaped = [AddUserData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",RegisterURL1,urlTextEscaped]];
@@ -92,19 +93,23 @@
     AddUsermessage= [NSJSONSerialization JSONObjectWithData:urlData options:kNilOptions error:&error];
     
     
-//    if([[AddTaskmessage valueForKey:@"status" ] isEqualToString:@"Record Created"])
-//    {
-//        UIAlertView *addsuccess=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Added Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-//        [addsuccess show];
-//        TodolistViewController *ToDolistVc=[[TodolistViewController alloc] init];
-//        [self.navigationController pushViewController:ToDolistVc animated:YES];
-//        
-//    }
-//    else
-//    {
-//        UIAlertView *addfailed=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Task not added, Try again" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-//        [addfailed show];
-//    }
+    if([[AddUsermessage valueForKey:@"status" ] isEqualToString:@"email already registered"])
+    {
+        UIAlertView *addfail=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Email ID already Registered" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [addfail show];
+        
+        
+    }
+    else
+    {
+        NSLog(@"%@",[AddUsermessage valueForKey:@"status" ]);
+        UIAlertView *addsucess =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:[NSString stringWithFormat:@"%@ and login ",[AddUsermessage valueForKey:@"status" ]] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+        [addsucess show];
+        LoginViewController *LoginVC =[[LoginViewController alloc]init];
+       
+        [self.navigationController pushViewController:LoginVC animated:YES];
+        
+    }
 }
 
 - (IBAction)registeractn:(UIButton *)sender {

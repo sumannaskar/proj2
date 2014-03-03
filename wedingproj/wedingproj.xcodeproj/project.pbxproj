@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4576A3CC18C46F6A00BEDCE6 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */; };
+		4576A3CD18C46F6A00BEDCE6 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */; };
 		4B0C305D18C07D0900D500CF /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C305B18C07D0900D500CF /* RegisterViewController.m */; };
 		4B0C305E18C07D0900D500CF /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0C305C18C07D0900D500CF /* RegisterViewController.xib */; };
 		4B0C306318C09C2D00D500CF /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C306118C09C2D00D500CF /* FeatureViewController.m */; };
@@ -120,6 +122,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4576A3C818C46F6A00BEDCE6 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
+		4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
+		4576A3CA18C46F6A00BEDCE6 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
+		4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
 		4B0C305A18C07D0900D500CF /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Register/RegisterViewController.h; sourceTree = "<group>"; };
 		4B0C305B18C07D0900D500CF /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Register/RegisterViewController.m; sourceTree = "<group>"; };
 		4B0C305C18C07D0900D500CF /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegisterViewController.xib; path = Register/RegisterViewController.xib; sourceTree = "<group>"; };
@@ -293,6 +299,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4576A3C718C46EF800BEDCE6 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				4576A3C818C46F6A00BEDCE6 /* SSKeychain.h */,
+				4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */,
+				4576A3CA18C46F6A00BEDCE6 /* SSKeychainQuery.h */,
+				4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */,
+			);
+			name = SSKeychain;
+			sourceTree = "<group>";
+		};
 		4B0C305918C07CC300D500CF /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -696,6 +713,7 @@
 		7AA585BD18BF099D00E59852 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4576A3C718C46EF800BEDCE6 /* SSKeychain */,
 				7AA585BE18BF099D00E59852 /* LoginViewController.h */,
 				7AA585BF18BF099D00E59852 /* LoginViewController.m */,
 				7AA585C018BF099D00E59852 /* LoginViewController.xib */,
@@ -1032,6 +1050,7 @@
 				7AA5858618BF098700E59852 /* AddGuestViewController.m in Sources */,
 				7AA5855818BF097D00E59852 /* Customcell.m in Sources */,
 				7AE4D9F518C064D8009AC079 /* ManageVendor.m in Sources */,
+				4576A3CC18C46F6A00BEDCE6 /* SSKeychain.m in Sources */,
 				7AA5855218BF097D00E59852 /* DetailBudget.m in Sources */,
 				7AA585B318BF099900E59852 /* Cell.m in Sources */,
 				4B1FE48818C1BDB800C36060 /* SelectEventViewController.m in Sources */,
@@ -1046,6 +1065,7 @@
 				7AA585D918BF09A300E59852 /* TodolistViewController.m in Sources */,
 				7AE4D9FA18C066B2009AC079 /* ManageVendorCC.m in Sources */,
 				7AA5855018BF097D00E59852 /* CalculateBudget.m in Sources */,
+				4576A3CD18C46F6A00BEDCE6 /* SSKeychainQuery.m in Sources */,
 				4B0C305D18C07D0900D500CF /* RegisterViewController.m in Sources */,
 				7AA585D318BF09A300E59852 /* AddTaskViewController.m in Sources */,
 				7AA585D518BF09A300E59852 /* Cell3.m in Sources */,
