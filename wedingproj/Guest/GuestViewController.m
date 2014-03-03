@@ -9,6 +9,8 @@
 #import "GuestViewController.h"
 #import "AddGuestViewController.h"
 #import "EditGuestViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
 #define NIB_NAME @"GuestCell"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_all&"]
@@ -54,10 +56,10 @@
     [self setTableHeight];
      [InvScroll addSubview:InvTable];
     
-     NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",@"11"];
+     NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
-   // NSLog(@"my--%@",url);
+    NSLog(@"my--%@",url);
     
    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
