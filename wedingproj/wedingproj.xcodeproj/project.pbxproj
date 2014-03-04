@@ -13,6 +13,8 @@
 		4576A3D118C4766300BEDCE6 /* 640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4576A3CF18C4766300BEDCE6 /* 640.png */; };
 		459DD4A318C60D6600D26BFF /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A118C60D6600D26BFF /* DescriptionViewController.m */; };
 		459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */; };
+		459DD4A918C6126200D26BFF /* ReferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A718C6126200D26BFF /* ReferViewController.m */; };
+		459DD4AA18C6126200D26BFF /* ReferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459DD4A818C6126200D26BFF /* ReferViewController.xib */; };
 		4B0C305D18C07D0900D500CF /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C305B18C07D0900D500CF /* RegisterViewController.m */; };
 		4B0C305E18C07D0900D500CF /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0C305C18C07D0900D500CF /* RegisterViewController.xib */; };
 		4B0C306318C09C2D00D500CF /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C306118C09C2D00D500CF /* FeatureViewController.m */; };
@@ -135,6 +137,9 @@
 		459DD4A018C60D6600D26BFF /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DescriptionViewController.h; path = Description/DescriptionViewController.h; sourceTree = "<group>"; };
 		459DD4A118C60D6600D26BFF /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DescriptionViewController.m; path = Description/DescriptionViewController.m; sourceTree = "<group>"; };
 		459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DescriptionViewController.xib; path = Description/DescriptionViewController.xib; sourceTree = "<group>"; };
+		459DD4A618C6126200D26BFF /* ReferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReferViewController.h; path = "Refer A Friend/ReferViewController.h"; sourceTree = "<group>"; };
+		459DD4A718C6126200D26BFF /* ReferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReferViewController.m; path = "Refer A Friend/ReferViewController.m"; sourceTree = "<group>"; };
+		459DD4A818C6126200D26BFF /* ReferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReferViewController.xib; path = "Refer A Friend/ReferViewController.xib"; sourceTree = "<group>"; };
 		4B0C305A18C07D0900D500CF /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Register/RegisterViewController.h; sourceTree = "<group>"; };
 		4B0C305B18C07D0900D500CF /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Register/RegisterViewController.m; sourceTree = "<group>"; };
 		4B0C305C18C07D0900D500CF /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegisterViewController.xib; path = Register/RegisterViewController.xib; sourceTree = "<group>"; };
@@ -329,6 +334,16 @@
 			name = Description;
 			sourceTree = "<group>";
 		};
+		459DD4A518C6123800D26BFF /* Refer A Friend */ = {
+			isa = PBXGroup;
+			children = (
+				459DD4A618C6126200D26BFF /* ReferViewController.h */,
+				459DD4A718C6126200D26BFF /* ReferViewController.m */,
+				459DD4A818C6126200D26BFF /* ReferViewController.xib */,
+			);
+			name = "Refer A Friend";
+			sourceTree = "<group>";
+		};
 		4B0C305918C07CC300D500CF /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +388,7 @@
 		7AA584EC18BF096E00E59852 = {
 			isa = PBXGroup;
 			children = (
+				459DD4A518C6123800D26BFF /* Refer A Friend */,
 				4576A3CE18C4766300BEDCE6 /* 640_v2.png */,
 				4576A3CF18C4766300BEDCE6 /* 640.png */,
 				4B0C305F18C09C0700D500CF /* Features */,
@@ -990,6 +1006,7 @@
 				7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */,
 				4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */,
 				7AA585B418BF099900E59852 /* Cell.xib in Resources */,
+				459DD4AA18C6126200D26BFF /* ReferViewController.xib in Resources */,
 				4B1FE48918C1BDB800C36060 /* SelectEventViewController.xib in Resources */,
 				7AA5857718BF098300E59852 /* EditEventViewController.xib in Resources */,
 				4B0C305E18C07D0900D500CF /* RegisterViewController.xib in Resources */,
@@ -1082,6 +1099,7 @@
 				7AA5858A18BF098700E59852 /* GuestViewController.m in Sources */,
 				7AA585E518BF09B000E59852 /* WelcomeViewController.m in Sources */,
 				7AA5858818BF098700E59852 /* EditGuestViewController.m in Sources */,
+				459DD4A918C6126200D26BFF /* ReferViewController.m in Sources */,
 				7AE4DA0118C06957009AC079 /* DetailVendor.m in Sources */,
 				7AE4DA1818C0759F009AC079 /* DeleteVendorCC.m in Sources */,
 				7AA5857418BF098300E59852 /* Cell2.m in Sources */,

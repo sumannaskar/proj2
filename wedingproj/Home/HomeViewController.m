@@ -16,6 +16,7 @@
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #import "WelcomeViewController.h"
+#import "ReferViewController.h"
 
 @interface HomeViewController ()
 
@@ -106,5 +107,11 @@
 {
     VendorViewController *VendorVC =[[VendorViewController alloc]init];
     [self.navigationController pushViewController:VendorVC animated:YES];
+}
+
+- (IBAction)referactn:(UIButton *)sender {
+    ReferViewController *ReferVC =[[ReferViewController alloc]init];
+    [self.navigationController pushViewController:ReferVC animated:YES];
+
 }
 @end
