@@ -39,6 +39,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    json = [[NSDictionary alloc]init];
+
     // Do any additional setup after loading the view from its nib.
     NSLog(@"Eventviewcontroller");
    
@@ -80,8 +83,14 @@
         else
         {
             NSError *error;
-            NSArray *tempArray=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
-            raweventList = [[NSArray alloc]initWithArray:tempArray];
+            json=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
+                       raweventList = [[NSArray alloc]init];
+            if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
+                NSLog(@"Alert");
+            }
+            else
+            {
+                raweventList = [json valueForKey:@"data"];
             totaleventIdlist=[[NSMutableArray alloc ]init];
             
             for(int i=0;i<raweventList.count;i++)
@@ -99,10 +108,9 @@
             
         }
         
-        
+        }
         
     });
-
     
 }
 - (void)fetchedData:(NSData *)responseData

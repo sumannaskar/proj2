@@ -45,6 +45,7 @@
      GroupId=[[NSMutableArray alloc]init];
     GroupName=[[NSMutableArray alloc]init];
      NoOfPerson=[[NSMutableArray alloc]init];
+     Jsondata=[[NSMutableArray alloc]init];
     
     
     
@@ -98,36 +99,43 @@
    // NSLog(@"%@",[json valueForKey:@"status"]);
         
        // [HUD hideUIBlockingIndicator];
-//    if ([[json valueForKey:@"status"]isEqualToString:@"No record found"]) {
-//        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
-//        [nodata show];
-//    }
-//    else{
-        for(NSString *loc in [json valueForKey:@"guest_id"]) {
-            [Gid addObject:loc];
-        }
-        for(NSString *loc in [json valueForKey:@"name"]) {
-            [Gname addObject:loc];
-        }
-        for(NSString *loc in [json valueForKey:@"role"]) {
-            [role addObject:loc];
-        }
-        for(NSString *loc in [json valueForKey:@"email"]) {
-            [email addObject:loc];
-        }
-        for(NSString *loc in [json valueForKey:@"group_id"]) {
-            [GroupId addObject:loc];
-        }
-    for(NSString *loc in [json valueForKey:@"group_name"]) {
-        [GroupName addObject:loc];
+    if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
     }
-        for(NSString *loc in [json valueForKey:@"no_of_guest"]) {
-            [NoOfPerson addObject:loc];
+    else{
+        Jsondata = [json valueForKey:@"data"];
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [Gid addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"guest_id"]];
         }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [Gname addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"name"]];
+           
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [role addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"role"]];
+            
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [email addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"email"]];
+           
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [GroupId addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"group_id"]];
+           
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [GroupName addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"group_name"]];
+            
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [NoOfPerson addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"no_of_guest"]];
+    
+        }
+    }
     [self setTableHeight];
     [InvTable reloadData];
-   // }
-        
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

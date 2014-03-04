@@ -18,6 +18,7 @@
     BOOL isLoad;
     
      NSDictionary *json;
+    NSMutableArray *Jsondata;
     NSDictionary *Deletejson;
     
      NSMutableArray *Gid;

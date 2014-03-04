@@ -12,7 +12,7 @@
 
 @interface EventViewController : UIViewController<UIScrollViewDelegate,UIGestureRecognizerDelegate>
 {
-    
+    NSDictionary *json;
     NSArray *raweventList;
 
     IBOutlet UITableView *EventTable;
