@@ -48,8 +48,8 @@ cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/InvitationViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Invitation/GroupWise/SendInv/InvitationViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/BudgetViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/BudgetViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/InvViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Invitation/InvViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudgetCC.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/DeleteBudget/DeleteBudgetCC/DeleteBudgetCC.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/VendorViewController.o /Users/macmini2/Desktop/proj2/wedingproj/Vendor/VendorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/wedingproj.build/Debug-iphonesimulator/wedingproj.build/Objects-normal/i386/DeleteBudgetCC.o /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/DeleteBudget/DeleteBudgetCC/DeleteBudgetCC.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/wedingproj normal i386
 cCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/ToDoList/TodolistViewController.xib
 cCompileXIB /Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage\ Budget/Add\ Budget/AddBudget.xib
@@ -874,7 +874,7 @@ t1393855739
 s1870
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app.dSYM
-t1393855692
+t1393855740
 s102
 
 N/Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app/640.png
@@ -2275,7 +2275,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesabcb897bc4c4b841^0e318a7bc4c4b841^---0#1#1#--18"Check dependencies36"6C8AC135-33DB-4693-B6BA-EEE729710E35-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesab21617ab9c5b841^82e66f7ab9c5b841^---0#1#1#--18"Check dependencies36"71276AE9-52DE-4BE8-9A0E-D497DCB68621-
 
 CCompileAssetCatalog /Users/macmini2/Desktop/proj2/wedingproj/Build/Products/Debug-iphonesimulator/wedingproj.app /Users/macmini2/Desktop/proj2/wedingproj/wedingproj/Images.xcassets
 s415368322.750688
