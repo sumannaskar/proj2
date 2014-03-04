@@ -25,7 +25,7 @@
     
     IBOutlet UIButton *vendorbtn;
 }
-
+@property (strong, nonatomic) UIBarButtonItem *logoutButton;
 
 
 - (IBAction)guestactn:(UIButton *)sender;

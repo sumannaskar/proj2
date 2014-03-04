@@ -87,8 +87,8 @@
             json=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
                        raweventList = [[NSArray alloc]init];
             if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
-                NSLog(@"Alert");
-            }
+                UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Event Found\nDo You Want To Create a new Event Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
+                [createbudget show];            }
             else
             {
                 raweventList = [json valueForKey:@"data"];
@@ -114,6 +114,15 @@
     });
     
 }
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger) buttonIndex
+{
+    if (buttonIndex == 0)
+    {
+        AddEventViewController *AddeventVc=[[AddEventViewController alloc] init];
+        [self.navigationController pushViewController:AddeventVc animated:YES];
+    }
+}
+
 - (void)fetchedData:(NSData *)responseData
 {
     

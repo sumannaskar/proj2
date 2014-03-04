@@ -122,11 +122,11 @@
         AddTaskViewController *AddTaskVC = [[AddTaskViewController alloc]init];
         [self.navigationController pushViewController:AddTaskVC animated:YES];
     }
-    else if (buttonIndex == 1)
-    {
-//        ManageBudget *ManageBudget_ =[[ManageBudget alloc]init];
-//        [self.navigationController pushViewController:ManageBudget_ animated:YES];
-    }
+//    else if (buttonIndex == 1)
+//    {
+////        ManageBudget *ManageBudget_ =[[ManageBudget alloc]init];
+////        [self.navigationController pushViewController:ManageBudget_ animated:YES];
+//    }
 }
 - (void)fetchedData:(NSData *)responseData
 {

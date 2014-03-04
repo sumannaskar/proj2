@@ -13,7 +13,9 @@
 #import "TodolistViewController.h"
 #import "BudgetViewController.h"
 #import "VendorViewController.h"
-
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
+#import "WelcomeViewController.h"
 
 @interface HomeViewController ()
 
@@ -33,8 +35,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.logoutButton=[[UIBarButtonItem alloc]initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(LogOut:)];
+    [self.navigationItem setRightBarButtonItem:self.logoutButton];
+       // Do any additional setup after loading the view from its nib.
 }
+-(IBAction)LogOut:(UIBarButtonItem *)sender
+{
+    //show confirmation message to user
+    UIAlertView* alert1 = [[UIAlertView alloc] initWithTitle:@"Confirmation"
+                                                     message:@"Do you want to log out?"
+                                                    delegate:self
+                                           cancelButtonTitle:@"No"
+                                           otherButtonTitles:@"Yes", nil];
+    [alert1 show];
+}
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != 0)  // 0 == the cancel button
+    {
+        [SSKeychain deletePasswordForService:@"LogIn" account:@"User" error:nil];
+        //[SSKeychain deletePasswordForService:@"LogIn" account:@"Password" error:nil];
+        
+        WelcomeViewController *welcomeVC = [[WelcomeViewController alloc]init];
+        [self.navigationController pushViewController:welcomeVC animated:YES];
+        
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
