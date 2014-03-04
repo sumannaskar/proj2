@@ -33,7 +33,7 @@
     deletearray =[[NSMutableArray alloc]init];
     
     for (NSDictionary *data in json ) {
-        [vendorname addObject:[data valueForKey:@"vendor_name"]];
+        [vendorname addObject:[[json valueForKey:@"data" ] valueForKey:@"vendor_name"]];
     }
     
     UIBarButtonItem *delete=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(Delete:)];
@@ -75,7 +75,7 @@
             options:kNilOptions
             error:&error];
     
-    if ([[status valueForKey:@"status" ] isEqual:@"Unable to delete. vendor assigned to Budget or TO-DO list."] ) {
+    if ([[status valueForKey:@"status" ] isEqual:@"Unable to delete. One or more vendor are assigned to Budget or TO-DO list."] ) {
         UIAlertView *nodelete =[[UIAlertView alloc]initWithTitle:@"weading" message:@"Unable to delete\nvendor assigned to Budget or TO-DO list." delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
         
         [nodelete show];
@@ -125,7 +125,7 @@
     }
     
     //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    cell.VendorLbl.text=[[json objectAtIndex:indexPath.row] valueForKey:@"vendor_name"];
+    cell.VendorLbl.text=[[[json valueForKey:@"data" ] objectAtIndex:indexPath.row] valueForKey:@"vendor_name"];
     
     return cell;
 }
@@ -144,13 +144,13 @@
     
     if ([[checkImage objectAtIndex:recognizer.view.tag]isEqualToString:@"index.jpg"]) {
         
-        [deletearray addObject:[NSString stringWithFormat:@"%@",[[json objectAtIndex:recognizer.view.tag] valueForKey:@"vendor_id"]  ]];
+        [deletearray addObject:[NSString stringWithFormat:@"%@",[[[json valueForKey:@"data" ] objectAtIndex:recognizer.view.tag] valueForKey:@"vendor_id"]  ]];
         // NSLog(@"%d",recognizer.view.tag);
         NSLog(@"%@",deletearray);
     }
     else
     {
-        [deletearray removeObject:[NSString stringWithFormat:@"%@",[[json objectAtIndex:recognizer.view.tag] valueForKey:@"vendor_id"]  ]];
+        [deletearray removeObject:[NSString stringWithFormat:@"%@",[[[json valueForKey:@"data" ] objectAtIndex:recognizer.view.tag] valueForKey:@"vendor_id"]  ]];
     }
     
     NSString *dash=@"-";

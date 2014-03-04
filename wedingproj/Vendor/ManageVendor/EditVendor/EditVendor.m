@@ -31,10 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    vendornametext.text=[[json valueForKey:@"data" ] valueForKey:@"vendor_name"];
-    categorytext.text =[[json valueForKey:@"data" ] valueForKey:@"category"];
-    emailtext.text=[[json valueForKey:@"data" ] valueForKey:@"email"];
-    contactnotext.text =[[json valueForKey:@"data" ] valueForKey:@"contact"];
+    vendornametext.text=[[[json valueForKey:@"data" ] valueForKey:@"data" ] valueForKey:@"vendor_name"];
+    categorytext.text =[[[json valueForKey:@"data" ] valueForKey:@"data" ] valueForKey:@"category"];
+    emailtext.text=[[[json valueForKey:@"data" ] valueForKey:@"data" ] valueForKey:@"email"];
+    contactnotext.text =[[[json valueForKey:@"data" ] valueForKey:@"data" ] valueForKey:@"contact"];
 }
 
 
@@ -48,7 +48,7 @@
 }
 - (IBAction)save:(id)sender
 {
-    NSString *savedata =[[NSString alloc]initWithFormat:@"vendor_id=%@&vendor_name=%@&category=%@&email=%@&contact=%@&apikey=micronix_10_2014_wedsimple_proj",[json valueForKey:@"vendor_id"],vendornametext.text,categorytext.text,emailtext.text,contactnotext.text];
+    NSString *savedata =[[NSString alloc]initWithFormat:@"vendor_id=%@&vendor_name=%@&category=%@&email=%@&contact=%@&apikey=micronix_10_2014_wedsimple_proj",[[json valueForKey:@"data" ] valueForKey:@"vendor_id"],vendornametext.text,categorytext.text,emailtext.text,contactnotext.text];
     NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;

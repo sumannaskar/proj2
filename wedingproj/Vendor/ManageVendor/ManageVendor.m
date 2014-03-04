@@ -140,7 +140,7 @@
     
 
     DetailVendor *DetailVendor_ =[[DetailVendor alloc]init];
-    DetailVendor_.json =[json objectAtIndex:button.tag];
+    DetailVendor_.json =[[json valueForKey:@"data" ] objectAtIndex:button.tag];
     [self.navigationController pushViewController:DetailVendor_ animated:YES];
     
     

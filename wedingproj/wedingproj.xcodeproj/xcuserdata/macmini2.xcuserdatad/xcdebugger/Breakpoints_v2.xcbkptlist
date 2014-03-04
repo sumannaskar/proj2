@@ -201,22 +201,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Vendor/ManageVendor/AddVendor/AddVendor.m"
-            timestampString = "415546520.023302"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-save:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Vendor/ManageVendor/DeleteVendor/DeleteVendor.m"
             timestampString = "415623885.030235"
             startingColumnNumber = "9223372036854775807"
@@ -249,7 +233,7 @@
                   symbolName = "-[DeleteBudget viewDidLoad]"
                   moduleName = "wedingproj"
                   urlString = "file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/DeleteBudget/DeleteBudget.m"
-                  timestampString = "415627697.160591"
+                  timestampString = "415628921.698797"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -263,7 +247,7 @@
                   symbolName = "-[DeleteBudget viewDidLoad]"
                   moduleName = "wedingproj"
                   urlString = "file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/DeleteBudget/DeleteBudget.m"
-                  timestampString = "415627697.160972"
+                  timestampString = "415628921.69903"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
