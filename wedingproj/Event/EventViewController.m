@@ -9,6 +9,7 @@
 #import "EventViewController.h"
 #import "AddEventViewController.h"
 #import "EditEventViewController.h"
+#import "AllBudget.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #define NIB_NAME @"Cell2"
@@ -347,6 +348,10 @@
 -(void) Category:(UIButton*)button
 {
     NSLog(@"%ld",(long)button.tag);
+    AllBudget *AllcatVc=[[AllBudget alloc] init];
+    NSDictionary *tempdic=[raweventList objectAtIndex:button.tag];
+    AllcatVc.eventidpass=[tempdic objectForKey:@"event_id"];
+    [self.navigationController pushViewController:AllcatVc animated:YES];
 }
 -(void)image
 {

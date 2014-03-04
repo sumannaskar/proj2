@@ -11,7 +11,7 @@
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&"]
+#define GroupURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&"]
 #define SaveURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_update&"]
 @interface EditGuestViewController ()
 
@@ -33,6 +33,7 @@
     [super viewDidLoad];
     NSLog(@"%@",self.GidString);
     // Do any additional setup after loading the view from its nib.
+    jsondata = [[NSDictionary alloc]init];
     json = [[NSMutableArray alloc]init];
     GroupArray = [[NSMutableArray alloc]init];
      UpdateArray = [[NSMutableArray alloc]init];
@@ -64,10 +65,9 @@
    // GroupArray=[[NSArray alloc]initWithObjects:@"Group1",@"Group2",@"Group3",@"Group4",@"Group5",@"Group6", nil];
     
      WithArray=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil];
-    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
-
+    NSString *str =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",GroupURL,str]];
     //NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
@@ -101,17 +101,18 @@
 -(void)fetchedData:(NSData *)responseData
 {
     NSError *error;
-    json = [NSJSONSerialization
-            JSONObjectWithData:responseData //1
-            
-            options:kNilOptions
-            error:&error];
-    // NSLog(@"%@",json );
+    jsondata = [NSJSONSerialization
+                JSONObjectWithData:responseData //1
+                
+                options:kNilOptions
+                error:&error];
+    // NSLog(@"%@",[json valueForKey:@"status"]);
     
     // [HUD hideUIBlockingIndicator];
-    for(NSString *loc in [json valueForKey:@"group_name"]) {
+    json = [jsondata valueForKey:@"data"];
+    for(int i=0;i<json.count;i++) {
         
-        [GroupArray addObject:loc];
+        [GroupArray addObject:[[json objectAtIndex:i ] valueForKey:@"group_name"]];
         
     }
 //    int i=0;

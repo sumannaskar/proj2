@@ -13,7 +13,7 @@
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_create&"]
 
-#define GroupURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&apikey=micronix_10_2014_wedsimple_proj"]
+#define GroupURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&"]
 @interface AddGuestViewController ()
 
 @end
@@ -50,6 +50,7 @@
     
     scroll.contentSize=CGSizeMake(320, 500);
     
+    jsondata = [[NSDictionary alloc]init];
       json = [[NSMutableArray alloc]init];
     GroupArray = [[NSMutableArray alloc]init];
     AddArray = [[NSMutableArray alloc]init];
@@ -58,7 +59,9 @@
     
     WithArray=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil];
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",GroupURL]];
+    NSString *str =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",GroupURL,str]];
     //NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
@@ -92,7 +95,7 @@
 -(void)fetchedData1:(NSData *)responseData
 {
     NSError *error;
-    json = [NSJSONSerialization
+    jsondata = [NSJSONSerialization
             JSONObjectWithData:responseData //1
             
             options:kNilOptions
@@ -100,13 +103,14 @@
     // NSLog(@"%@",[json valueForKey:@"status"]);
     
     // [HUD hideUIBlockingIndicator];
-    for(NSString *loc in [json valueForKey:@"group_name"]) {
+    json = [jsondata valueForKey:@"data"];
+    for(int i=0;i<json.count;i++) {
         
-        [GroupArray addObject:loc];
+        [GroupArray addObject:[[json objectAtIndex:i ] valueForKey:@"group_name"]];
         
     }
     [self.pickerVw reloadAllComponents];
-    // NSLog(@"%@",GroupArray);
+     NSLog(@"%@",GroupArray);
 }
 
 - (void)didReceiveMemoryWarning

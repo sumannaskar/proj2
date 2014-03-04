@@ -20,6 +20,7 @@
     IBOutlet UITextField *nametxt;
     
     NSMutableArray *AddArray;
+    NSDictionary *jsondata;
      NSMutableArray *json;
     
 }
