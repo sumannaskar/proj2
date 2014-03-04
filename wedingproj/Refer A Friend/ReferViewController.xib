@@ -7,6 +7,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReferViewController">
             <connections>
+                <outlet property="backgoundImgview" destination="246-XD-F2R" id="YO5-Sz-iFd"/>
+                <outlet property="commntstxtV" destination="eia-L5-8WI" id="cxh-Pf-5A2"/>
+                <outlet property="emailtxt" destination="ckb-HR-i4V" id="Jd6-me-kbm"/>
+                <outlet property="nametxt" destination="r9k-oM-e3R" id="LQe-ea-B1b"/>
+                <outlet property="referencebtn" destination="GMs-ni-Mok" id="CQs-eR-iT1"/>
+                <outlet property="scroll" destination="0Er-Mq-DOG" id="MXL-9h-OfE"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -81,6 +87,9 @@
                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="referencehit:" destination="-1" eventType="touchUpInside" id="MOY-KY-w4K"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
