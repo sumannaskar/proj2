@@ -17,6 +17,8 @@
     BOOL isLoad;
     
     NSDictionary *json;
+    NSMutableArray *jsondata;
+    
     NSMutableArray *Gid;
     NSMutableArray *Gname;
     NSMutableArray *GuestStatus;

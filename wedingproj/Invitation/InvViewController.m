@@ -49,7 +49,7 @@
 }
 
 - (IBAction)GroupwiseSend:(UIButton *)sender {
-    
+    jsondata = [[NSDictionary alloc]init];
     json = [[NSMutableArray alloc]init];
     Gid = [[NSMutableArray alloc]init];
     Gname = [[NSMutableArray alloc]init];
@@ -89,18 +89,28 @@
 }
 -(void)fetchedData:(NSData *)responseData{
     NSError *error;
-    json = [NSJSONSerialization
+    jsondata = [NSJSONSerialization
             JSONObjectWithData:responseData //1
             
             options:kNilOptions
             error:&error];
-    
-    for(NSString *loc in [json valueForKey:@"group_id"]) {
-        [Gid addObject:loc];
+    if ([[jsondata valueForKey:@"availability"]isEqualToString:@"no"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No group found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
     }
-    for(NSString *loc in [json valueForKey:@"group_name"]) {
-        [Gname addObject:loc];
-    }
+    else{
+        json = [jsondata valueForKey:@"data"];
+        for(int i=0;i<json.count;i++) {
+            
+            [Gid addObject:[[json objectAtIndex:i ] valueForKey:@"group_id"]];
+            
+        }
+        for(int i=0;i<json.count;i++) {
+            
+            [Gname addObject:[[json objectAtIndex:i ] valueForKey:@"group_name"]];
+            
+        }
+        
     SelectViewController *SelectVC =[[SelectViewController alloc]init];
     
     SelectVC.GId = Gid;
@@ -108,6 +118,7 @@
    // NSLog(@"%@")
     
     [self.navigationController pushViewController:SelectVC animated:YES];
+    }
 }
 
 @end

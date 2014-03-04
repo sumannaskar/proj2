@@ -36,7 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //NSLog(@"%@-%@",self.GroupId,self.EventId);
-    
+     json = [[NSDictionary alloc]init];
+    jsondata = [[NSMutableArray alloc]init];
     Guestid = [[NSMutableArray alloc]init];
      Guestname = [[NSMutableArray alloc]init];
      GuestStatus = [[NSMutableArray alloc]init];
@@ -97,18 +98,31 @@
     //        [nodata show];
     //    }
     //    else{
-    for(NSString *loc in [json valueForKey:@"guest_id"]) {
-        [Guestid addObject:loc];
+    if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
     }
-    for(NSString *loc in [json valueForKey:@"guest_name"]) {
-        [Guestname addObject:loc];
+    else{
+        jsondata = [json valueForKey:@"data"];
+        for(int i=0;i<jsondata.count;i++) {
+            
+            [Guestid addObject:[[jsondata objectAtIndex:i ] valueForKey:@"guest_id"]];
+            
+        }
+        for(int i=0;i<jsondata.count;i++) {
+            
+            [Guestname addObject:[[jsondata objectAtIndex:i ] valueForKey:@"guest_name"]];
+            
+        }
+        for(int i=0;i<jsondata.count;i++) {
+            
+            [GuestStatus addObject:[[jsondata objectAtIndex:i ] valueForKey:@"status"]];
+            
+        }
+        [self setTableHeight];
+        [InvTable reloadData];
     }
-    for(NSString *loc in [json valueForKey:@"status"]) {
-        [GuestStatus addObject:loc];
-    }
-    //NSLog(@"%@",Guestname);
-    [self setTableHeight];
-    [InvTable reloadData];
+
 }
 
 - (void)didReceiveMemoryWarning

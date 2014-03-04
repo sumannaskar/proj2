@@ -10,6 +10,7 @@
 
 @interface SelectEventViewController : UIViewController
 {
+    NSDictionary *jsondata;
     NSMutableArray *json;
     NSMutableArray *eventName;
     NSMutableArray *eventId;

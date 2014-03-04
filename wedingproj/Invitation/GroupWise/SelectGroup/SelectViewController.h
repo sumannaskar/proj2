@@ -10,6 +10,7 @@
 
 @interface SelectViewController : UIViewController<UITextFieldDelegate>
 {
+    NSDictionary *jsondata;
     NSMutableArray *json;
     NSMutableArray *eventName;
     NSMutableArray *eventId;

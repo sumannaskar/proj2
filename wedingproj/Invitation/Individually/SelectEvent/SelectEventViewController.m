@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    jsondata = [[NSDictionary alloc]init];
     json = [[NSMutableArray alloc]init];
      eventId = [[NSMutableArray alloc]init];
      eventName = [[NSMutableArray alloc]init];
@@ -74,21 +74,27 @@
 }
 -(void)fetchedData:(NSData *)responseData{
     NSError *error;
-    json = [NSJSONSerialization
+    jsondata = [NSJSONSerialization
             JSONObjectWithData:responseData //1
             
             options:kNilOptions
             error:&error];
+    if ([[jsondata valueForKey:@"availability"]isEqualToString:@"no"]) {
+        NSLog(@"Alert..");
+    }
+    else{
+        json = [jsondata valueForKey:@"data"];
+        for(int i=0;i<json.count;i++) {
+        [eventId addObject:[[json objectAtIndex:i ] valueForKey:@"event_id"]];
+    }
+    for(int i=0;i<json.count;i++) {
+        [eventName addObject:[[json objectAtIndex:i ] valueForKey:@"event_name"]];
+    }
+    for(int i=0;i<json.count;i++) {
+        [eventDesc addObject:[[json objectAtIndex:i ] valueForKey:@"venue"]];
+    }
     
-    for(NSString *loc in [json valueForKey:@"event_id"]) {
-        [eventId addObject:loc];
-    }
-    for(NSString *loc in [json valueForKey:@"event_name"]) {
-        [eventName addObject:loc];
-    }
-    for(NSString *loc in [json valueForKey:@"venue"]) {
-        [eventDesc addObject:loc];
-    }
+  }
 }
 
 - (void)didReceiveMemoryWarning

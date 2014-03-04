@@ -36,6 +36,7 @@
     //NSLog(@"%@",self.eventId);
     
     json=[[NSDictionary alloc]init];
+    jsondata=[[NSMutableArray alloc]init];
     
     Gid=[[NSMutableArray alloc]init];
     Gname=[[NSMutableArray alloc]init];
@@ -54,7 +55,7 @@
     NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&event_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],self.eventId];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
-     //NSLog(@"my--%@",url);
+     NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
@@ -93,22 +94,30 @@ json = [NSJSONSerialization
 // NSLog(@"%@",[json valueForKey:@"status"]);
 
 // [HUD hideUIBlockingIndicator];
-//    if ([[json valueForKey:@"status"]isEqualToString:@"No record found"]) {
-//        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
-//        [nodata show];
-//    }
-//    else{
-for(NSString *loc in [json valueForKey:@"guest_id"]) {
-    [Gid addObject:loc];
-}
-for(NSString *loc in [json valueForKey:@"guest_name"]) {
-    [Gname addObject:loc];
-}
-    for(NSString *loc in [json valueForKey:@"status"]) {
-        [GuestStatus addObject:loc];
+    if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
     }
+    else{
+    jsondata = [json valueForKey:@"data"];
+    for(int i=0;i<jsondata.count;i++) {
+        
+        [Gid addObject:[[jsondata objectAtIndex:i ] valueForKey:@"guest_id"]];
+        
+    }
+        for(int i=0;i<jsondata.count;i++) {
+            
+            [Gname addObject:[[jsondata objectAtIndex:i ] valueForKey:@"guest_name"]];
+            
+        }
+        for(int i=0;i<jsondata.count;i++) {
+            
+            [GuestStatus addObject:[[jsondata objectAtIndex:i ] valueForKey:@"status"]];
+            
+        }
 [self setTableHeight];
 [InvTable reloadData];
+    }
 }
 - (void)didReceiveMemoryWarning
 {

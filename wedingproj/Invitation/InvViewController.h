@@ -14,6 +14,7 @@
     
     IBOutlet UIButton *Groupwise;
     
+    NSDictionary *jsondata;
     NSMutableArray *json;
     NSMutableArray *Gid;
     NSMutableArray *Gname;
