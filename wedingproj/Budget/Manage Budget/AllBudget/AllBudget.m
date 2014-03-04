@@ -37,12 +37,7 @@
     budgetid =[[NSMutableArray alloc]init];
     [super viewDidLoad];
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,eventidpass]];
-<<<<<<< HEAD
-  NSLog(@"my--%@",url);
-=======
-    NSLog(@"my--%@",url);
->>>>>>> FETCH_HEAD
-    
+   
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
     (kBgQueue, ^
@@ -81,11 +76,11 @@
     NSLog(@"%@",json);
     
     
-<<<<<<< HEAD
-    if ([[json valueForKey:@"availability"] isEqual:@"no"])
-=======
+
+   
+
     if ([[jsondata valueForKey:@"availability"] isEqual:@"no"])
->>>>>>> FETCH_HEAD
+
     {
         UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"weding" message:@"No Budget\nDo You Want To Create Budget Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
         [createbudget show];
@@ -93,14 +88,14 @@
     else
     {
     
-<<<<<<< HEAD
+
     
     for (NSDictionary *data in [json valueForKey:@"data"] ) {
         [budgetname addObject:[data valueForKey:@"name"]];
         [budgetid addObject:[data valueForKey:@"budget_id"]];
         
     }
-=======
+
         json=[jsondata valueForKey:@"data"];
 //    for (NSDictionary *data in json ) {
 //        [budgetname addObject:[data valueForKey:@"name"]];
@@ -111,7 +106,7 @@
             [budgetname addObject:[[json objectAtIndex:i ] valueForKey:@"name"]];
             [budgetid addObject:[[json objectAtIndex:i ] valueForKey:@"budget_id"]];
         }
->>>>>>> FETCH_HEAD
+
     NSLog(@"%@",budgetid);
     [allbudget reloadData];
     }
