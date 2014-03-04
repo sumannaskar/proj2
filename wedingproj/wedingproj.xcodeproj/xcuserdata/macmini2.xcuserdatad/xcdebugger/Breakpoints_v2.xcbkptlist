@@ -170,38 +170,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Vendor/ManageVendor/DeleteVendor/DeleteVendor.m"
-            timestampString = "415544640.824187"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "-Delete:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Vendor/ManageVendor/DeleteVendor/DeleteVendor.m"
-            timestampString = "415544640.824187"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "-Delete:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Vendor/ManageVendor/DeleteVendor/DeleteVendor.m"
             timestampString = "415623885.030235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
