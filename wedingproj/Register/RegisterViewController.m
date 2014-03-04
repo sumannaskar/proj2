@@ -174,7 +174,7 @@
 //    //rowCount= [location count];
 //    rowCount=[pkarray count];
 //    return rowCount;
-    NSLog(@"%d",totalCountrylist.count);
+    NSLog(@"%lu",(unsigned long)totalCountrylist.count);
     //return [totalCountrylist count];
     return 200;
     

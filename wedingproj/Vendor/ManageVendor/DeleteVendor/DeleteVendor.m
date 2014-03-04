@@ -193,32 +193,17 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        if ([[UIScreen mainScreen] bounds].size.height == 568)
-        {
-            int tableRowheight = 50*vendorname.count;
+       
+            NSInteger tableRowheight = 50*vendorname.count;
             deletetable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             scrolvw.contentSize = CGSizeMake(320, tableRowheight);
-        }
-        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-            int tableRowheight = 50*vendorname.count;
-            deletetable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-            scrolvw.contentSize = CGSizeMake(320, tableRowheight);
-            
-        }
-        else
-        {
-            int tableRowheight = 50*vendorname.count;
-            deletetable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
-            scrolvw.contentSize = CGSizeMake(320, tableRowheight);
-        }
         
         
     }
     else
     {
         //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
-        int tableRowheight = 50*vendorname.count;
+        NSInteger tableRowheight = 50*vendorname.count;
         deletetable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
         scrolvw.contentSize = CGSizeMake(320, tableRowheight);
         

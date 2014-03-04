@@ -32,7 +32,7 @@
     [super viewDidLoad];
     json=[[NSMutableArray alloc]init];
     
-    yourbudgettext.text =  [NSString stringWithFormat:@"%d", [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"]] ;
+    yourbudgettext.text =  [NSString stringWithFormat:@"%ld", (long)[[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"]] ;
     NSLog(@"%ld",(long)[[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"]);
     
     
