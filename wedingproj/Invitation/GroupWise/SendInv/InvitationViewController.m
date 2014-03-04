@@ -211,6 +211,8 @@
 - (void)handleTap:(UITapGestureRecognizer *)recognizer
 {
    // NSLog(@"%d",recognizer.view.tag);
+    if ([[GuestStatus objectAtIndex:recognizer.view.tag]isEqualToString:@"not sent"])
+    {
     isLoad = NO;
     if ([[checkImage objectAtIndex:recognizer.view.tag]isEqualToString:@"index2.jpg"] ) {
         [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index.jpg"];
@@ -219,6 +221,7 @@
         [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index2.jpg"];
     }
     [InvTable reloadData];
+    }
 }
 -(void) InvStatus:(UIButton*)button
 {

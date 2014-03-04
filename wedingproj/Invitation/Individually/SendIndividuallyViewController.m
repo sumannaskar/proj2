@@ -201,15 +201,18 @@ json = [NSJSONSerialization
 }
 - (void)handleTap:(UITapGestureRecognizer *)recognizer
 {
-    // NSLog(@"%d",recognizer.view.tag);
-    isLoad = NO;
-    if ([[checkImage objectAtIndex:recognizer.view.tag]isEqualToString:@"index2.jpg"] ) {
-        [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index.jpg"];
+    // NSLog(@"%@",[GuestStatus objectAtIndex:recognizer.view.tag]);
+    if ([[GuestStatus objectAtIndex:recognizer.view.tag]isEqualToString:@"not sent"]) {
+        isLoad = NO;
+        if ([[checkImage objectAtIndex:recognizer.view.tag]isEqualToString:@"index2.jpg"] ) {
+            [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index.jpg"];
+        }
+        else{
+            [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index2.jpg"];
+        }
+        [InvTable reloadData];
+
     }
-    else{
-        [checkImage replaceObjectAtIndex:recognizer.view.tag withObject:@"index2.jpg"];
-    }
-    [InvTable reloadData];
 }
 -(void) InvStatus:(UIButton*)button
 {
