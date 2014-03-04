@@ -54,7 +54,7 @@
 {
     if (buttonIndex != 0)  // 0 == the cancel button
     {
-        [SSKeychain deletePasswordForService:@"LogIn" account:@"User" error:nil];
+        [SSKeychain deletePasswordForService:@"LoginViewController" account:@"User" error:nil];
         //[SSKeychain deletePasswordForService:@"LogIn" account:@"Password" error:nil];
         
         WelcomeViewController *welcomeVC = [[WelcomeViewController alloc]init];
