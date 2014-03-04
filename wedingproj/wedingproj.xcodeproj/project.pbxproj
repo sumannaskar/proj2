@@ -11,6 +11,8 @@
 		4576A3CD18C46F6A00BEDCE6 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */; };
 		4576A3D018C4766300BEDCE6 /* 640_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4576A3CE18C4766300BEDCE6 /* 640_v2.png */; };
 		4576A3D118C4766300BEDCE6 /* 640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4576A3CF18C4766300BEDCE6 /* 640.png */; };
+		459DD4A318C60D6600D26BFF /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A118C60D6600D26BFF /* DescriptionViewController.m */; };
+		459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */; };
 		4B0C305D18C07D0900D500CF /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C305B18C07D0900D500CF /* RegisterViewController.m */; };
 		4B0C305E18C07D0900D500CF /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0C305C18C07D0900D500CF /* RegisterViewController.xib */; };
 		4B0C306318C09C2D00D500CF /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C306118C09C2D00D500CF /* FeatureViewController.m */; };
@@ -130,6 +132,9 @@
 		4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
 		4576A3CE18C4766300BEDCE6 /* 640_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640_v2.png; sourceTree = "<group>"; };
 		4576A3CF18C4766300BEDCE6 /* 640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640.png; sourceTree = "<group>"; };
+		459DD4A018C60D6600D26BFF /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DescriptionViewController.h; path = Description/DescriptionViewController.h; sourceTree = "<group>"; };
+		459DD4A118C60D6600D26BFF /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DescriptionViewController.m; path = Description/DescriptionViewController.m; sourceTree = "<group>"; };
+		459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DescriptionViewController.xib; path = Description/DescriptionViewController.xib; sourceTree = "<group>"; };
 		4B0C305A18C07D0900D500CF /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Register/RegisterViewController.h; sourceTree = "<group>"; };
 		4B0C305B18C07D0900D500CF /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Register/RegisterViewController.m; sourceTree = "<group>"; };
 		4B0C305C18C07D0900D500CF /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegisterViewController.xib; path = Register/RegisterViewController.xib; sourceTree = "<group>"; };
@@ -314,6 +319,16 @@
 			name = SSKeychain;
 			sourceTree = "<group>";
 		};
+		459DD49F18C60D4200D26BFF /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				459DD4A018C60D6600D26BFF /* DescriptionViewController.h */,
+				459DD4A118C60D6600D26BFF /* DescriptionViewController.m */,
+				459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */,
+			);
+			name = Description;
+			sourceTree = "<group>";
+		};
 		4B0C305918C07CC300D500CF /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +342,7 @@
 		4B0C305F18C09C0700D500CF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				459DD49F18C60D4200D26BFF /* Description */,
 				4B0C306018C09C2D00D500CF /* FeatureViewController.h */,
 				4B0C306118C09C2D00D500CF /* FeatureViewController.m */,
 				4B0C306218C09C2D00D500CF /* FeatureViewController.xib */,
@@ -983,6 +999,7 @@
 				7AA585B218BF099900E59852 /* SelectViewController.xib in Resources */,
 				7AA585D618BF09A300E59852 /* Cell3.xib in Resources */,
 				7AA5855D18BF097D00E59852 /* DeleteBudgetCC.xib in Resources */,
+				459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */,
 				7AE4DA0218C06957009AC079 /* DetailVendor.xib in Resources */,
 				7AA5857518BF098300E59852 /* Cell2.xib in Resources */,
 				7AA5858B18BF098700E59852 /* GuestViewController.xib in Resources */,
@@ -1078,6 +1095,7 @@
 				7AA585D318BF09A300E59852 /* AddTaskViewController.m in Sources */,
 				7AA585D518BF09A300E59852 /* Cell3.m in Sources */,
 				7AA5850518BF096E00E59852 /* main.m in Sources */,
+				459DD4A318C60D6600D26BFF /* DescriptionViewController.m in Sources */,
 				7AA5856018BF097D00E59852 /* ManageBudget.m in Sources */,
 				7AA585B518BF099900E59852 /* InvitationViewController.m in Sources */,
 				7AA5854E18BF097D00E59852 /* BudgetViewController.m in Sources */,

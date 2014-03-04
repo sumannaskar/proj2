@@ -26,6 +26,9 @@
                     <state key="normal" title="Events">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="eventactn:" destination="-1" eventType="touchUpInside" id="fKs-uW-XMZ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="emF-UW-YwA">
                     <rect key="frame" x="191" y="265" width="102" height="68"/>
@@ -34,6 +37,9 @@
                     <state key="normal" title="To Do List">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="todolistactn:" destination="-1" eventType="touchUpInside" id="k1y-0p-31t"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ggb-GC-D3A">
                     <rect key="frame" x="35" y="426" width="102" height="68"/>
@@ -42,6 +48,9 @@
                     <state key="normal" title="Budgets">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="budgetactn:" destination="-1" eventType="touchUpInside" id="tTV-CG-xYG"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nyp-uP-g7i">
                     <rect key="frame" x="191" y="426" width="102" height="68"/>
@@ -50,6 +59,9 @@
                     <state key="normal" title="Vendors">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="vendoractn:" destination="-1" eventType="touchUpInside" id="akd-eV-4Ey"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DD0-iX-lLa">
                     <rect key="frame" x="35" y="79" width="102" height="68"/>
@@ -58,6 +70,9 @@
                     <state key="normal" title="Guest List">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="guestlistactn:" destination="-1" eventType="touchUpInside" id="NvF-hh-nK3"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bhh-Og-DUz">
                     <rect key="frame" x="191" y="79" width="102" height="68"/>
@@ -66,6 +81,9 @@
                     <state key="normal" title="Invitations">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="invitationactn:" destination="-1" eventType="touchUpInside" id="8x8-bJ-Wh5"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
