@@ -39,27 +39,43 @@
     NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],keventlistURL2]];
     NSError *error;
     NSData* eventListData = [NSData dataWithContentsOfURL: tempeventurl];
-    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
-    
-    totaleventlist=[[NSMutableArray alloc ]init];
+    NSDictionary* raweventListDic = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
+    NSArray *raweventList=[[NSArray alloc]init];
+//    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
+        totaleventlist=[[NSMutableArray alloc ]init];
     totaleventIdlist=[[NSMutableArray alloc ]init];
-    
+    if ([[raweventListDic valueForKey:@"availability"]isEqualToString:@"no"])
+    {
+        NSLog(@"Alert");
+    }
+    else
+    {
+        raweventList = [raweventListDic valueForKey:@"data"];
     for(int i=0;i<raweventList.count;i++)
     {
+        
         NSDictionary *tempDict=[raweventList objectAtIndex:i];
         [totaleventlist addObject:[tempDict objectForKey:@"event_name"]];
         [totaleventIdlist addObject:[tempDict objectForKey:@"event_id"]];
         
     }
-    
+    }
     //vendor data fetching
     NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kvendorlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],kvendorlistURL2]];
     NSData* vendorListData = [NSData dataWithContentsOfURL: tempvendorurl];
-    NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
+    NSDictionary* vendorListDic = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
+    //NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
     
     totalvendorlist=[[NSMutableArray alloc ]init];
     totalvendorIdlist=[[NSMutableArray alloc ]init];
-    
+    NSArray* rawvendorList=[[NSArray alloc]init];
+    if ([[vendorListDic valueForKey:@"availability"]isEqualToString:@"no"])
+    {
+        NSLog(@"Alert");
+    }
+    else
+    {
+        rawvendorList = [vendorListDic valueForKey:@"data"];
     for(int i=0;i<rawvendorList.count;i++)
     {
         NSDictionary *tempDict=[rawvendorList objectAtIndex:i];
@@ -68,7 +84,7 @@
         
     }
 
-    
+    }
     nametxt.delegate=self;
     informationtxt.delegate=self;
     self.datetxt.delegate=self;

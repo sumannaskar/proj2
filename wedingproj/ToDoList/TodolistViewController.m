@@ -80,8 +80,16 @@
         else
         {
             NSError *error;
-            NSArray *tempArray=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
-            rawtaskList = [[NSArray alloc]initWithArray:tempArray];
+            json=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
+            rawtaskList = [[NSArray alloc]init];
+            if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
+                NSLog(@"Alert");
+            }
+            else
+            {
+                rawtaskList = [json valueForKey:@"data"];
+//            NSArray *tempArray=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
+//            rawtaskList = [[NSArray alloc]initWithArray:tempArray];
             totaltaskid=[[NSMutableArray alloc]init];
             
             for(int i=0;i<rawtaskList.count;i++)
@@ -100,7 +108,7 @@
             
         }
         
-        
+        }
         
     });
 

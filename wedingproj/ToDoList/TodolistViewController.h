@@ -10,7 +10,7 @@
 #import "Cell3.h"
 @interface TodolistViewController : UIViewController<UIScrollViewDelegate,UIGestureRecognizerDelegate>
 {
-    
+    NSDictionary *json;
     NSArray *rawtaskList;
     IBOutlet UITableView *EventTable;
     IBOutlet UIScrollView *EventScroll;
