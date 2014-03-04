@@ -11,6 +11,7 @@
 
 @interface AllBudget : UIViewController
 {
+    NSDictionary *jsondata;
     NSMutableArray *json;
     IBOutlet UITableView *allbudget;
     NSMutableArray *budgetname;

@@ -9,6 +9,7 @@
 #import "EventViewController.h"
 #import "AddEventViewController.h"
 #import "EditEventViewController.h"
+#import "AllBudget.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #define NIB_NAME @"Cell2"
@@ -39,6 +40,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    json = [[NSDictionary alloc]init];
+
     // Do any additional setup after loading the view from its nib.
     NSLog(@"Eventviewcontroller");
    
@@ -80,8 +84,14 @@
         else
         {
             NSError *error;
-            NSArray *tempArray=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
-            raweventList = [[NSArray alloc]initWithArray:tempArray];
+            json=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
+                       raweventList = [[NSArray alloc]init];
+            if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
+                NSLog(@"Alert");
+            }
+            else
+            {
+                raweventList = [json valueForKey:@"data"];
             totaleventIdlist=[[NSMutableArray alloc ]init];
             
             for(int i=0;i<raweventList.count;i++)
@@ -99,10 +109,9 @@
             
         }
         
-        
+        }
         
     });
-
     
 }
 - (void)fetchedData:(NSData *)responseData
@@ -253,10 +262,13 @@
     
         //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     cell.EventLbl.text=eventnamestr;
-    NSLog(@"%@",eventnamestr);
+   // NSLog(@"%@",eventnamestr);
     
     [cell.editBtn addTarget:self action:@selector(Edit:) forControlEvents:UIControlEventTouchUpInside];
     cell.editBtn.tag = indexPath.row;
+    
+    [cell.categoryBtn addTarget:self action:@selector(Category:) forControlEvents:UIControlEventTouchUpInside];
+    cell.categoryBtn.tag = indexPath.row;
     
     return cell;
 }
@@ -333,7 +345,14 @@
     EditeventVc.budgetstr=[tempdic objectForKey:@"budget"];
     [self.navigationController pushViewController:EditeventVc animated:YES];
 }
-
+-(void) Category:(UIButton*)button
+{
+    NSLog(@"%ld",(long)button.tag);
+    AllBudget *AllcatVc=[[AllBudget alloc] init];
+    NSDictionary *tempdic=[raweventList objectAtIndex:button.tag];
+    AllcatVc.eventidpass=[tempdic objectForKey:@"event_id"];
+    [self.navigationController pushViewController:AllcatVc animated:YES];
+}
 -(void)image
 {
      long tableRowheight=50*[raweventList count];

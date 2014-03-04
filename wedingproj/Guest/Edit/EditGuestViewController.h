@@ -13,6 +13,7 @@
     
     NSArray *CompletedArray;
     NSArray *WithArray;
+    NSDictionary *jsondata;
     NSMutableArray *json;
      NSMutableArray *GroupArray;
     

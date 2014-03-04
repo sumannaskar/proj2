@@ -12,5 +12,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *checkImgv;
 @property (strong, nonatomic) IBOutlet UILabel *EventLbl;
 @property (strong, nonatomic) IBOutlet UIButton *editBtn;
+@property (strong, nonatomic) IBOutlet UIButton *categoryBtn;
 
 @end
