@@ -38,7 +38,7 @@
     
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@budget_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,budgetidpass]];
-   // NSLog(@"my--%@",url);
+    NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
@@ -75,20 +75,29 @@
             options:kNilOptions
             error:&error];
     
-    eventnametext.text=[[json objectAtIndex:0] valueForKey:@"name"];
-    vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_name"];
-    if ([[[json objectAtIndex:0] valueForKey:@"vendor_name"] isEqual:@"select a vendor"]) {
+    eventnametext.text=[[[json valueForKey:
+                         @"data" ] objectAtIndex:0] valueForKey:@"name"];
+    vendernametext.text=[[[json valueForKey:
+                          @"data" ] objectAtIndex:0] valueForKey:@"vendor_name"];
+    if ([[[[json valueForKey:
+           @"data" ] objectAtIndex:0] valueForKey:@"vendor_name"] isEqual:@"select a vendor"]) {
         vendernametext.text=@"";
     }
     else
     {
-        vendernametext.text=[[json objectAtIndex:0] valueForKey:@"vendor_name"];
+        vendernametext.text=[[[json valueForKey:
+                               @"data" ] objectAtIndex:0] valueForKey:@"vendor_name"];
     }
-    Pamentduedatetext.text=[[json objectAtIndex:0] valueForKey:@"due_date"];
-    amountpaidtext.text=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
-    totalamountduetext.text=[[json objectAtIndex:0] valueForKey:@"amount_due"];
-    infotext.text=[[json objectAtIndex:0] valueForKey:@"info"];
-    vendorid =[[json objectAtIndex:0] valueForKey:@"vendor_id"];
+    Pamentduedatetext.text=[[[json valueForKey:
+                              @"data" ] objectAtIndex:0] valueForKey:@"due_date"];
+    amountpaidtext.text=[[[json valueForKey:
+                           @"data" ] objectAtIndex:0] valueForKey:@"amount_paid"];
+    totalamountduetext.text=[[[json valueForKey:
+                               @"data" ] objectAtIndex:0] valueForKey:@"amount_due"];
+    infotext.text=[[[json valueForKey:
+                     @"data" ] objectAtIndex:0] valueForKey:@"info"];
+    vendorid =[[[json valueForKey:
+                 @"data" ] objectAtIndex:0] valueForKey:@"vendor_id"];
     
 
 }
@@ -106,15 +115,24 @@
 - (IBAction)edit:(id)sender {
     
     EditBudget *EditBudget_=[[EditBudget alloc]init];
-    EditBudget_.eventnamepass =[[json objectAtIndex:0] valueForKey:@"name"];
-    EditBudget_.vendernamepass=[[json objectAtIndex:0] valueForKey:@"vendor_name"];
-    EditBudget_.vendoridpass=[[json objectAtIndex:0] valueForKey:@"vendor_id"];
-    EditBudget_.paymentduedatepass =[[json objectAtIndex:0] valueForKey:@"due_date"];
-    EditBudget_.amountpaidtodatepass=[[json objectAtIndex:0] valueForKey:@"amount_paid"];
-    EditBudget_.totalamountduepass =[[json objectAtIndex:0] valueForKey:@"amount_due"];
-    EditBudget_.infopass =[[json objectAtIndex:0] valueForKey:@"info"];
-    EditBudget_.eventidpass=[[json objectAtIndex:0] valueForKey:@"event_id"];
-    EditBudget_.budgetidpass=[[json objectAtIndex:0] valueForKey:@"budget_id"];
+    EditBudget_.eventnamepass =[[[json valueForKey:
+                                  @"data" ] objectAtIndex:0] valueForKey:@"name"];
+    EditBudget_.vendernamepass=[[[json valueForKey:
+                                  @"data" ] objectAtIndex:0] valueForKey:@"vendor_name"];
+    EditBudget_.vendoridpass=[[[json valueForKey:
+                                @"data" ] objectAtIndex:0] valueForKey:@"vendor_id"];
+    EditBudget_.paymentduedatepass =[[[json valueForKey:
+                                       @"data" ] objectAtIndex:0] valueForKey:@"due_date"];
+    EditBudget_.amountpaidtodatepass=[[[json valueForKey:
+                                        @"data" ] objectAtIndex:0] valueForKey:@"amount_paid"];
+    EditBudget_.totalamountduepass =[[[json valueForKey:
+                                       @"data" ] objectAtIndex:0] valueForKey:@"amount_due"];
+    EditBudget_.infopass =[[[json valueForKey:
+                             @"data" ] objectAtIndex:0] valueForKey:@"info"];
+    EditBudget_.eventidpass=[[[json valueForKey:
+                               @"data" ] objectAtIndex:0] valueForKey:@"event_id"];
+    EditBudget_.budgetidpass=[[[json valueForKey:
+                                @"data" ] objectAtIndex:0] valueForKey:@"budget_id"];
     
     
     [self.navigationController pushViewController:EditBudget_ animated:YES];

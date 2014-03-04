@@ -233,22 +233,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Budget/Manage Budget/Add Budget/AddBudget.m"
-            timestampString = "415624740.78148"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Budget/Manage Budget/DeleteBudget/DeleteBudget.m"
             timestampString = "415625107.069823"
             startingColumnNumber = "9223372036854775807"
@@ -265,7 +249,7 @@
                   symbolName = "-[DeleteBudget viewDidLoad]"
                   moduleName = "wedingproj"
                   urlString = "file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/DeleteBudget/DeleteBudget.m"
-                  timestampString = "415625204.301711"
+                  timestampString = "415627697.160591"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -279,7 +263,7 @@
                   symbolName = "-[DeleteBudget viewDidLoad]"
                   moduleName = "wedingproj"
                   urlString = "file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/DeleteBudget/DeleteBudget.m"
-                  timestampString = "415625204.301995"
+                  timestampString = "415627697.160972"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -287,6 +271,54 @@
                   offsetFromSymbolStart = "1171">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Budget/Manage Budget/DeleteBudget/DeleteBudget.m"
+            timestampString = "415625684.635872"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-Delete:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Budget/Manage Budget/DeleteBudget/DeleteBudget.m"
+            timestampString = "415625688.178035"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-numberOfSectionsInTableView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Budget/DetailBudget.m"
+            timestampString = "415625907.342744"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
