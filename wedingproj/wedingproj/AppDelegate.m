@@ -8,12 +8,42 @@
 
 #import "AppDelegate.h"
 #import "WelcomeViewController.h"
-
+#import "HomeViewController.h"
+#import "SSKeychain.h"
 @implementation AppDelegate
 @synthesize navController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    NSString *user = [SSKeychain passwordForService:@"LoginViewController" account:@"User"];
+    // NSString *pass = [SSKeychain passwordForService:@"LogIn" account:@"Password"];
+   // NSLog(@"%@", user);
+if (user!=NULL) {
+    HomeViewController *welcomeVC=[[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    
+    navController=[[UINavigationController alloc]initWithRootViewController:welcomeVC];
+    
+    // [navigation setViewControllers:myControllers];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    
+    
+    self.window.rootViewController = navController;
+    
+    [navController.view addSubview:welcomeVC.view];
+    
+    // [self splashCode:CarbrokerVC];
+    
+    
+    [navController setNavigationBarHidden:NO animated:NO];
+    [navController setToolbarHidden:YES];
+    navController.navigationBar.translucent = NO;
+    
+    [self.window makeKeyAndVisible];
+}
+else{
     
     WelcomeViewController *welcomeVC=[[WelcomeViewController alloc] initWithNibName:@"WelcomeViewController" bundle:nil];
     
@@ -38,8 +68,8 @@
     
     [self.window makeKeyAndVisible];
     
+}
     return YES;
-    
     
 }
 
