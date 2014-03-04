@@ -253,10 +253,13 @@
     
         //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     cell.EventLbl.text=eventnamestr;
-    NSLog(@"%@",eventnamestr);
+   // NSLog(@"%@",eventnamestr);
     
     [cell.editBtn addTarget:self action:@selector(Edit:) forControlEvents:UIControlEventTouchUpInside];
     cell.editBtn.tag = indexPath.row;
+    
+    [cell.categoryBtn addTarget:self action:@selector(Category:) forControlEvents:UIControlEventTouchUpInside];
+    cell.categoryBtn.tag = indexPath.row;
     
     return cell;
 }
@@ -333,7 +336,10 @@
     EditeventVc.budgetstr=[tempdic objectForKey:@"budget"];
     [self.navigationController pushViewController:EditeventVc animated:YES];
 }
-
+-(void) Category:(UIButton*)button
+{
+    NSLog(@"%ld",(long)button.tag);
+}
 -(void)image
 {
      long tableRowheight=50*[raweventList count];
