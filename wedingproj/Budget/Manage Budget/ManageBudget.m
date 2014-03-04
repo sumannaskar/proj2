@@ -84,7 +84,7 @@
             error:&error];
     
     
-    for (NSDictionary *data in json ) {
+    for (NSDictionary *data in [json valueForKey:@"data"] ) {
         [eventname addObject:[data valueForKey:@"event_name"]];
         [eventid addObject:[data valueForKey:@"event_id"]];
         

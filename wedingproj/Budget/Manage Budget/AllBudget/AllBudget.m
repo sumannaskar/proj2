@@ -36,7 +36,7 @@
     budgetid =[[NSMutableArray alloc]init];
     [super viewDidLoad];
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL,eventidpass]];
-  //  NSLog(@"my--%@",url);
+  NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
@@ -76,7 +76,7 @@
     NSLog(@"%@",json);
     
     
-    if ([[json valueForKey:@"status"] isEqual:@"No record found"])
+    if ([[json valueForKey:@"availability"] isEqual:@"no"])
     {
         UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"weding" message:@"No Budget\nDo You Want To Create Budget Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
         [createbudget show];
@@ -85,7 +85,7 @@
     {
     
     
-    for (NSDictionary *data in json ) {
+    for (NSDictionary *data in [json valueForKey:@"data"] ) {
         [budgetname addObject:[data valueForKey:@"name"]];
         [budgetid addObject:[data valueForKey:@"budget_id"]];
         

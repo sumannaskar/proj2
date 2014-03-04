@@ -38,7 +38,7 @@
     checkImage = [[NSMutableArray alloc]init];
     scrolvw.delegate = self;
     deletetable.scrollEnabled = NO;
-    for (NSDictionary *data in json ) {
+    for (NSDictionary *data in [json valueForKey:@"data"]) {
         [budgetname addObject:[data valueForKey:@"name"]];
     }
     //InvScroll.frame=CGRectMake(0, 0, 320, 480);
@@ -110,7 +110,7 @@
     }
     
     //cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    cell.EventLbl.text=[[json objectAtIndex:indexPath.row] valueForKey:@"name"];
+    cell.EventLbl.text=[[[json valueForKey:@"data" ]objectAtIndex:indexPath.row] valueForKey:@"name"];
     return cell;
 }
 
@@ -128,13 +128,13 @@
     
     if ([[checkImage objectAtIndex:recognizer.view.tag]isEqualToString:@"index.jpg"]) {
         
-        [deletearray addObject:[NSString stringWithFormat:@"%@",[[json objectAtIndex:recognizer.view.tag] valueForKey:@"budget_id"]  ]];
+        [deletearray addObject:[NSString stringWithFormat:@"%@",[[[json valueForKey:@"data" ] objectAtIndex:recognizer.view.tag] valueForKey:@"budget_id"]  ]];
         // NSLog(@"%d",recognizer.view.tag);
         NSLog(@"%@",deletearray);
     }
     else
     {
-        [deletearray removeObject:[NSString stringWithFormat:@"%@",[[json objectAtIndex:recognizer.view.tag] valueForKey:@"budget_id"]  ]];
+        [deletearray removeObject:[NSString stringWithFormat:@"%@",[[[json valueForKey:@"data" ] objectAtIndex:recognizer.view.tag] valueForKey:@"budget_id"]  ]];
     }
     
     NSString *dash=@"-";
