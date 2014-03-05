@@ -8,6 +8,9 @@
 
 #import "RSVPViewController.h"
 #import "DestailsRSVPViewController.h"
+#define kRSVPURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
+#define kRSVPURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
+
 
 @interface RSVPViewController ()
 
