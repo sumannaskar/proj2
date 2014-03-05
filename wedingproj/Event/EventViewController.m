@@ -87,8 +87,9 @@
             json=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
                        raweventList = [[NSArray alloc]init];
             if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
-                UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Event Found\nDo You Want To Create a new Event Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
-                [createbudget show];            }
+                
+               [self performSelectorOnMainThread:@selector(Alert) withObject:nil waitUntilDone:YES];
+            }
             else
             {
                 raweventList = [json valueForKey:@"data"];
@@ -113,6 +114,11 @@
         
     });
     
+}
+-(void)Alert
+{
+    UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Event Found\nDo You Want To Create a new Event Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
+    [createbudget show];
 }
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger) buttonIndex
 {

@@ -83,8 +83,10 @@
             json=[NSJSONSerialization JSONObjectWithData:tempcatagorydata options:kNilOptions error:&error];
             rawtaskList = [[NSArray alloc]init];
             if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
-                UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Task Found\nDo You Want To Create a new Task Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
-                [createbudget show];
+                
+//                UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Task Found\nDo You Want To Create a new Task Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
+//                [createbudget show];
+                [self performSelectorOnMainThread:@selector(Alert) withObject:nil waitUntilDone:YES];
                
             }
             else
@@ -111,8 +113,10 @@
         }
         
         }
+       
         
     });
+     [EventTable reloadData];
 
 }
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger) buttonIndex
@@ -127,6 +131,13 @@
 ////        ManageBudget *ManageBudget_ =[[ManageBudget alloc]init];
 ////        [self.navigationController pushViewController:ManageBudget_ animated:YES];
 //    }
+}
+- (void)Alert
+{
+    UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Task Found\nDo You Want To Create a new Task Now? " delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
+    [createbudget show];
+    [EventScroll addSubview:EventTable];
+    [EventTable reloadData];
 }
 - (void)fetchedData:(NSData *)responseData
 {
