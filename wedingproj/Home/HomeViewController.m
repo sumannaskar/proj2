@@ -17,7 +17,7 @@
 #import "SSKeychainQuery.h"
 #import "WelcomeViewController.h"
 #import "ReferViewController.h"
-#import "RSVPViewController.h"
+#import "SelectEventRsvpViewController.h"
 @interface HomeViewController ()
 
 @end
@@ -110,7 +110,7 @@
 }
 
 - (IBAction)RSVPactn:(UIButton *)sender {
-    RSVPViewController *rsvpVC=[[RSVPViewController alloc]init];
+    SelectEventRsvpViewController *rsvpVC=[[SelectEventRsvpViewController alloc]init];
     [self.navigationController pushViewController:rsvpVC animated:YES];
     
 }

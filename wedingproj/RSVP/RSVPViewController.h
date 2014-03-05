@@ -11,7 +11,7 @@
 @interface RSVPViewController : UIViewController
 
 
-
+@property (strong, nonatomic) NSString *eventID;
 - (IBAction)Detailsactn:(UIButton *)sender;
 
 @end

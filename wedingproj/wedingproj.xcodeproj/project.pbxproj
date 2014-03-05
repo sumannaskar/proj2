@@ -11,6 +11,8 @@
 		45678BF918C70CB500254941 /* RSVPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45678BF718C70CB500254941 /* RSVPViewController.xib */; };
 		45678BFE18C70ED700254941 /* DestailsRSVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45678BFC18C70ED700254941 /* DestailsRSVPViewController.m */; };
 		45678BFF18C70ED700254941 /* DestailsRSVPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45678BFD18C70ED700254941 /* DestailsRSVPViewController.xib */; };
+		45678C0418C721C600254941 /* SelectEventRsvpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45678C0218C721C600254941 /* SelectEventRsvpViewController.m */; };
+		45678C0518C721C600254941 /* SelectEventRsvpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45678C0318C721C600254941 /* SelectEventRsvpViewController.xib */; };
 		4576A3CC18C46F6A00BEDCE6 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */; };
 		4576A3CD18C46F6A00BEDCE6 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */; };
 		4576A3D018C4766300BEDCE6 /* 640_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4576A3CE18C4766300BEDCE6 /* 640_v2.png */; };
@@ -138,6 +140,9 @@
 		45678BFB18C70ED700254941 /* DestailsRSVPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DestailsRSVPViewController.h; path = RSVP/Details/DestailsRSVPViewController.h; sourceTree = "<group>"; };
 		45678BFC18C70ED700254941 /* DestailsRSVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DestailsRSVPViewController.m; path = RSVP/Details/DestailsRSVPViewController.m; sourceTree = "<group>"; };
 		45678BFD18C70ED700254941 /* DestailsRSVPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DestailsRSVPViewController.xib; path = RSVP/Details/DestailsRSVPViewController.xib; sourceTree = "<group>"; };
+		45678C0118C721C600254941 /* SelectEventRsvpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectEventRsvpViewController.h; path = RSVP/SelectEvent/SelectEventRsvpViewController.h; sourceTree = "<group>"; };
+		45678C0218C721C600254941 /* SelectEventRsvpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectEventRsvpViewController.m; path = RSVP/SelectEvent/SelectEventRsvpViewController.m; sourceTree = "<group>"; };
+		45678C0318C721C600254941 /* SelectEventRsvpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectEventRsvpViewController.xib; path = RSVP/SelectEvent/SelectEventRsvpViewController.xib; sourceTree = "<group>"; };
 		4576A3C818C46F6A00BEDCE6 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
 		4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
 		4576A3CA18C46F6A00BEDCE6 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
@@ -326,6 +331,7 @@
 		45678BF418C70C8400254941 /* RSVP */ = {
 			isa = PBXGroup;
 			children = (
+				45678C0018C7212000254941 /* Select Event */,
 				45678BFA18C70E9C00254941 /* Details */,
 				45678BF518C70CB500254941 /* RSVPViewController.h */,
 				45678BF618C70CB500254941 /* RSVPViewController.m */,
@@ -342,6 +348,16 @@
 				45678BFD18C70ED700254941 /* DestailsRSVPViewController.xib */,
 			);
 			name = Details;
+			sourceTree = "<group>";
+		};
+		45678C0018C7212000254941 /* Select Event */ = {
+			isa = PBXGroup;
+			children = (
+				45678C0118C721C600254941 /* SelectEventRsvpViewController.h */,
+				45678C0218C721C600254941 /* SelectEventRsvpViewController.m */,
+				45678C0318C721C600254941 /* SelectEventRsvpViewController.xib */,
+			);
+			name = "Select Event";
 			sourceTree = "<group>";
 		};
 		4576A3C718C46EF800BEDCE6 /* SSKeychain */ = {
@@ -1070,6 +1086,7 @@
 				4576A3D018C4766300BEDCE6 /* 640_v2.png in Resources */,
 				7AA5858718BF098700E59852 /* AddGuestViewController.xib in Resources */,
 				7AA5855F18BF097D00E59852 /* EditBudget.xib in Resources */,
+				45678C0518C721C600254941 /* SelectEventRsvpViewController.xib in Resources */,
 				7AA5857918BF098300E59852 /* EventViewController.xib in Resources */,
 				7AA5855B18BF097D00E59852 /* DeleteBudget.xib in Resources */,
 				7AA585BC18BF099900E59852 /* InvViewController.xib in Resources */,
@@ -1139,6 +1156,7 @@
 				7AE4DA0118C06957009AC079 /* DetailVendor.m in Sources */,
 				7AE4DA1818C0759F009AC079 /* DeleteVendorCC.m in Sources */,
 				7AA5857418BF098300E59852 /* Cell2.m in Sources */,
+				45678C0418C721C600254941 /* SelectEventRsvpViewController.m in Sources */,
 				7AA5850918BF096E00E59852 /* AppDelegate.m in Sources */,
 				7AA5857218BF098300E59852 /* AddEventViewController.m in Sources */,
 				7AA585D918BF09A300E59852 /* TodolistViewController.m in Sources */,

@@ -1,0 +1,162 @@
+//
+//  SelectEventRsvpViewController.m
+//  wedingproj
+//
+//  Created by Micronix on 05/03/14.
+//  Copyright (c) 2014 Suman Naskar. All rights reserved.
+//
+
+#import "SelectEventRsvpViewController.h"
+#import "RSVPViewController.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events&"]
+@interface SelectEventRsvpViewController ()
+
+@end
+
+@implementation SelectEventRsvpViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    jsondata = [[NSDictionary alloc]init];
+    json = [[NSMutableArray alloc]init];
+    eventId = [[NSMutableArray alloc]init];
+    eventName = [[NSMutableArray alloc]init];
+    eventDesc = [[NSMutableArray alloc]init];
+    
+    self.PickerView.showsSelectionIndicator=YES;
+    [self.SelectEvent setInputView:self.respondView];
+    
+    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
+    // NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+    
+}
+-(void)fetchedData:(NSData *)responseData{
+    NSError *error;
+    jsondata = [NSJSONSerialization
+                JSONObjectWithData:responseData //1
+                
+                options:kNilOptions
+                error:&error];
+    if ([[jsondata valueForKey:@"availability"]isEqualToString:@"no"]) {
+        NSLog(@"Alert..");
+    }
+    else{
+        json = [jsondata valueForKey:@"data"];
+        for(int i=0;i<json.count;i++) {
+            [eventId addObject:[[json objectAtIndex:i ] valueForKey:@"event_id"]];
+        }
+        for(int i=0;i<json.count;i++) {
+            [eventName addObject:[[json objectAtIndex:i ] valueForKey:@"event_name"]];
+        }
+        for(int i=0;i<json.count;i++) {
+            [eventDesc addObject:[[json objectAtIndex:i ] valueForKey:@"venue"]];
+        }
+        
+    }
+    NSLog(@"%@",eventName);
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)ProcedAction:(UIButton *)sender {
+    RSVPViewController *rsvpVC =[[RSVPViewController alloc]init];
+    rsvpVC.eventID = selectEventId;
+    [self.navigationController pushViewController:rsvpVC animated:YES];
+}
+- (IBAction)cancelAction:(UIBarButtonItem *)sender {
+    self.SelectEvent.text=@"";
+    self.EventDescription.text=@"";
+    selectEventId=@"";
+    [self.SelectEvent resignFirstResponder];
+}
+
+- (IBAction)DoneAction:(UIBarButtonItem *)sender {
+    if (!(self.SelectEvent.text.length>0)) {
+        //        mytxtfield.text=[stateList objectAtIndex:0];
+        //        self.stateName=[stateList objectAtIndex:0];
+        
+        self.SelectEvent.text=[eventName objectAtIndex:0];
+        self.EventDescription.text=[eventDesc objectAtIndex:0];
+        selectEventId = [eventId objectAtIndex:0];
+    }
+    
+    [self.SelectEvent resignFirstResponder];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+
+
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [eventId count];
+}
+
+
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+
+{
+    return [eventName objectAtIndex:row];
+    NSLog(@"%@",[eventName objectAtIndex:row]);
+}
+
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    
+    self.SelectEvent.text=[eventName objectAtIndex:row];
+    self.EventDescription.text = [eventDesc objectAtIndex:row];
+    selectEventId = [eventId objectAtIndex:row];
+}
+
+@end
