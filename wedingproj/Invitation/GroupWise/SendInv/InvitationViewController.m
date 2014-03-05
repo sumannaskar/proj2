@@ -44,6 +44,8 @@
     
     
     isLoad = YES;
+    isCheck = NO;
+    
     checkImage = [[NSMutableArray alloc]init];
     InvScroll.delegate = self;
     InvTable.scrollEnabled = NO;
@@ -253,6 +255,17 @@
 
 
 - (IBAction)SendAction:(UIButton *)sender {
+    for (int i=0; i<[checkImage count]; i++)
+    {
+        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"])
+        {
+            isCheck = YES;
+            break;
+        }
+        
+    }
+    if (isCheck == YES)
+    {
     NSString *str1 = @"-";
     NSString *str2;
     NSString *str3 = @"";
@@ -299,6 +312,12 @@
          }
      }
      );
+    }
+    else{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"Select atleast one" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+
 
 }
 -(void)fetchedData1:(NSData *)responseData{

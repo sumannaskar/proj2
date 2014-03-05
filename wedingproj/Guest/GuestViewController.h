@@ -16,6 +16,7 @@
     GuestCell *cell1;
     NSMutableArray *checkImage;
     BOOL isLoad;
+    BOOL isCheck;
     
      NSDictionary *json;
     NSMutableArray *Jsondata;

@@ -50,6 +50,8 @@
     
     
     isLoad = YES;
+    isCheck = NO;
+    
     checkImage = [[NSMutableArray alloc]init];
     InvScroll.delegate = self;
     InvTable.scrollEnabled = NO;
@@ -269,53 +271,70 @@
 }
 - (IBAction)DeleteAction:(UIBarButtonItem *)sender {
     
-    NSString *str1 = @"-";
-    NSString *str2;
-     NSString *str3 = @"";
-    for (int i=0; i<[Gid count]; i++) {
-        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"]) {
-            
-             str2=[NSString stringWithFormat:@"%@%@",[Gid objectAtIndex:i],str1];
-            str3=[NSString stringWithFormat:@"%@%@",str3, str2];
-        
+    for (int i=0; i<[checkImage count]; i++)
+    {
+        if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"])
+        {
+            isCheck = YES;
+            break;
         }
+        
     }
-    NSString *str4 = [str3 substringToIndex:[str3 length]-1];
-    NSLog(@"%@",str4);
     
-    Deletejson = [[NSDictionary alloc]init];
-    
-    NSString *deleteGuest =[[NSString alloc]initWithFormat:@"guest_id=%@&apikey=micronix_10_2014_wedsimple_proj",str4];
-    
-    //NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    //  NSLog(@"%@",urlTextEscaped);
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",DeleteURL,deleteGuest]];
-    //NSLog(@"my--%@",url);
-    
-    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
-    dispatch_async
-    (kBgQueue, ^
-     {
-         NSData* data = [NSData dataWithContentsOfURL:url];
-         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-         
-         
-         if (data.length<1 || [tempstring isEqualToString:@"null"])
+    if (isCheck == YES) {
+        NSString *str1 = @"-";
+        NSString *str2;
+        NSString *str3 = @"";
+        for (int i=0; i<[Gid count]; i++) {
+            if ([[checkImage objectAtIndex:i]isEqualToString:@"index.jpg"]) {
+                
+                str2=[NSString stringWithFormat:@"%@%@",[Gid objectAtIndex:i],str1];
+                str3=[NSString stringWithFormat:@"%@%@",str3, str2];
+                
+            }
+        }
+        NSString *str4 = [str3 substringToIndex:[str3 length]-1];
+        //NSLog(@"%@",str4);
+        
+        Deletejson = [[NSDictionary alloc]init];
+        
+        NSString *deleteGuest =[[NSString alloc]initWithFormat:@"guest_id=%@&apikey=micronix_10_2014_wedsimple_proj",str4];
+        
+        //NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        //  NSLog(@"%@",urlTextEscaped);
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",DeleteURL,deleteGuest]];
+        //NSLog(@"my--%@",url);
+        
+        // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+        dispatch_async
+        (kBgQueue, ^
          {
+             NSData* data = [NSData dataWithContentsOfURL:url];
+             NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
              
              
-             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             if (data.length<1 || [tempstring isEqualToString:@"null"])
+             {
+                 
+                 
+                 //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+                 
+             }
              
+             else
+             {
+                 [self performSelectorOnMainThread:@selector(fetchedData1:)
+                                        withObject:data waitUntilDone:YES];
+                 
+             }
          }
-         
-         else
-         {
-             [self performSelectorOnMainThread:@selector(fetchedData1:)
-                                    withObject:data waitUntilDone:YES];
-             
-         }
-     }
-     );
+         );
+
+    }
+    else{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"Select atleast one" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [alert show];
+    }
     
 }
 -(void)fetchedData1:(NSData *)responseData

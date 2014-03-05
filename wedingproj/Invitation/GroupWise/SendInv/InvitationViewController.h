@@ -15,6 +15,7 @@
     Cell *cell;
     NSMutableArray *checkImage;
     BOOL isLoad;
+    BOOL isCheck;
     
     NSDictionary *json;
     NSMutableArray *jsondata;
