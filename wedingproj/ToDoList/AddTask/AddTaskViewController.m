@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    self.vendortxt.userInteractionEnabled=NO;
     //Event data fetching.....
     NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],keventlistURL2]];
     NSError *error;
@@ -217,6 +217,7 @@
     if (self.pickerVw.tag==3) {
         
         //return [vendorarray count];
+        NSLog(@"%@",test);
         return [totalvendorlist count];
     }
     if (self.pickerVw.tag ==4) {
@@ -235,14 +236,21 @@
     
    
     if (self.pickerVw.tag==1) {
+        
+        test=[pkarray objectAtIndex:row];
+        NSLog(@"%@",test);
         return [pkarray objectAtIndex:row];
     }
 
     if (self.pickerVw.tag==2) {
 //       return [eventarray objectAtIndex:row];
+       
+
         return [totaleventlist objectAtIndex:row];
     }
     if (self.pickerVw.tag==3) {
+        
+        NSLog(@"%@",test);
         //return [vendorarray objectAtIndex:row];
         return [totalvendorlist objectAtIndex:row];
     }
@@ -293,7 +301,7 @@
             self.categorytxt.text=[pkarray objectAtIndex:0];
             
         }
-        
+        self.vendortxt.userInteractionEnabled=YES;
         [self.categorytxt resignFirstResponder];
         
     }

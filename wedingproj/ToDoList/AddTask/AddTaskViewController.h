@@ -33,6 +33,8 @@
     NSMutableArray *totalvendorlist;
     NSMutableArray *totalvendorIdlist;
     NSString *Vendorid;
+    
+    NSString *test;
 }
 
 
