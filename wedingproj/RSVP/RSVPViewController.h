@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface RSVPViewController : UIViewController
+{
+   NSDictionary *rawrsvplistdic;
+    
+    IBOutlet UILabel *notsureresltlbl;
+    IBOutlet UILabel *invitationsentresult;
+    IBOutlet UILabel *acceptedresultlbl;
+    IBOutlet UILabel *rejectedresltlbl;
+}
 
 
 @property (strong, nonatomic) NSString *eventID;

@@ -8,9 +8,9 @@
 
 #import "RSVPViewController.h"
 #import "DestailsRSVPViewController.h"
-#define kRSVPURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
+#define kRSVPURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=RSVP_check&"]
 #define kRSVPURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
-
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 @interface RSVPViewController ()
 
@@ -31,12 +31,33 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSURL *tempurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@%@",kRSVPURL1,self.eventID,kRSVPURL2]];
+    NSLog(@"%@",tempurl);
+    dispatch_async(kBgQueue, ^{
+        
+        NSError *error;
+        NSData* RsvpData = [NSData dataWithContentsOfURL: tempurl];
+        rawrsvplistdic = [NSJSONSerialization JSONObjectWithData:RsvpData options:kNilOptions error:&error];
+        [self performSelectorOnMainThread:@selector(fetchedData:) withObject:nil waitUntilDone:YES];
+        
+    });
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    
+}
+- (void)fetchedData:(NSData *)responseData
+{
+   
+    invitationsentresult.text=[rawrsvplistdic objectForKey:@"Invitation sent"];
+    acceptedresultlbl.text=[rawrsvplistdic objectForKey:@"Accepted"];
+    rejectedresltlbl.text=[rawrsvplistdic objectForKey:@"Rejected"];
+    notsureresltlbl.text=[rawrsvplistdic objectForKey:@"Not Sure"];
+
 }
 
 - (IBAction)Detailsactn:(UIButton *)sender {

@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSVPViewController">
             <connections>
+                <outlet property="acceptedresultlbl" destination="BMV-M0-GIo" id="izO-Gh-ToU"/>
+                <outlet property="invitationsentresult" destination="0hu-gV-O9s" id="oxx-gh-ZOK"/>
+                <outlet property="notsureresltlbl" destination="QxG-iM-O3z" id="yfM-5Z-NN8"/>
+                <outlet property="rejectedresltlbl" destination="QxG-iM-O3z" id="UDV-Oo-JIr"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
