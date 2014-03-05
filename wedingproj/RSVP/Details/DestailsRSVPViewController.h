@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DestailsRSVPViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITableView *rsvpTable;
+@property (strong, nonatomic) IBOutlet UIImageView *backImgv;
 
 @end
