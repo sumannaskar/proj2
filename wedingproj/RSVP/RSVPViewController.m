@@ -63,6 +63,7 @@
 - (IBAction)Detailsactn:(UIButton *)sender {
     
     DestailsRSVPViewController *detailsrsvVC=[[DestailsRSVPViewController alloc]init];
+    detailsrsvVC.eventId = self.eventID;
     [self.navigationController pushViewController:detailsrsvVC animated:YES];
 }
 @end
