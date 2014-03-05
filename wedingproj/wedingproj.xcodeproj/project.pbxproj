@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45678BF818C70CB500254941 /* RSVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45678BF618C70CB500254941 /* RSVPViewController.m */; };
+		45678BF918C70CB500254941 /* RSVPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45678BF718C70CB500254941 /* RSVPViewController.xib */; };
+		45678BFE18C70ED700254941 /* DestailsRSVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45678BFC18C70ED700254941 /* DestailsRSVPViewController.m */; };
+		45678BFF18C70ED700254941 /* DestailsRSVPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45678BFD18C70ED700254941 /* DestailsRSVPViewController.xib */; };
 		4576A3CC18C46F6A00BEDCE6 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */; };
 		4576A3CD18C46F6A00BEDCE6 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */; };
 		4576A3D018C4766300BEDCE6 /* 640_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4576A3CE18C4766300BEDCE6 /* 640_v2.png */; };
@@ -128,6 +132,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45678BF518C70CB500254941 /* RSVPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSVPViewController.h; path = RSVP/RSVPViewController.h; sourceTree = "<group>"; };
+		45678BF618C70CB500254941 /* RSVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSVPViewController.m; path = RSVP/RSVPViewController.m; sourceTree = "<group>"; };
+		45678BF718C70CB500254941 /* RSVPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RSVPViewController.xib; path = RSVP/RSVPViewController.xib; sourceTree = "<group>"; };
+		45678BFB18C70ED700254941 /* DestailsRSVPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DestailsRSVPViewController.h; path = RSVP/Details/DestailsRSVPViewController.h; sourceTree = "<group>"; };
+		45678BFC18C70ED700254941 /* DestailsRSVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DestailsRSVPViewController.m; path = RSVP/Details/DestailsRSVPViewController.m; sourceTree = "<group>"; };
+		45678BFD18C70ED700254941 /* DestailsRSVPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DestailsRSVPViewController.xib; path = RSVP/Details/DestailsRSVPViewController.xib; sourceTree = "<group>"; };
 		4576A3C818C46F6A00BEDCE6 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
 		4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
 		4576A3CA18C46F6A00BEDCE6 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
@@ -313,6 +323,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45678BF418C70C8400254941 /* RSVP */ = {
+			isa = PBXGroup;
+			children = (
+				45678BFA18C70E9C00254941 /* Details */,
+				45678BF518C70CB500254941 /* RSVPViewController.h */,
+				45678BF618C70CB500254941 /* RSVPViewController.m */,
+				45678BF718C70CB500254941 /* RSVPViewController.xib */,
+			);
+			name = RSVP;
+			sourceTree = "<group>";
+		};
+		45678BFA18C70E9C00254941 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				45678BFB18C70ED700254941 /* DestailsRSVPViewController.h */,
+				45678BFC18C70ED700254941 /* DestailsRSVPViewController.m */,
+				45678BFD18C70ED700254941 /* DestailsRSVPViewController.xib */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
 		4576A3C718C46EF800BEDCE6 /* SSKeychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +419,7 @@
 		7AA584EC18BF096E00E59852 = {
 			isa = PBXGroup;
 			children = (
+				45678BF418C70C8400254941 /* RSVP */,
 				459DD4A518C6123800D26BFF /* Refer A Friend */,
 				4576A3CE18C4766300BEDCE6 /* 640_v2.png */,
 				4576A3CF18C4766300BEDCE6 /* 640.png */,
@@ -1032,6 +1064,7 @@
 				7AE4D9FC18C066C8009AC079 /* ManageVendorCC.xib in Resources */,
 				7AA585EE18BF792300E59852 /* AllBudgetCC.xib in Resources */,
 				7AA5850318BF096E00E59852 /* InfoPlist.strings in Resources */,
+				45678BFF18C70ED700254941 /* DestailsRSVPViewController.xib in Resources */,
 				7AA585E018BF09AA00E59852 /* VendorViewController.xib in Resources */,
 				7AA5857318BF098300E59852 /* AddEventViewController.xib in Resources */,
 				4576A3D018C4766300BEDCE6 /* 640_v2.png in Resources */,
@@ -1043,6 +1076,7 @@
 				7AA585B618BF099900E59852 /* InvitationViewController.xib in Resources */,
 				4576A3D118C4766300BEDCE6 /* 640.png in Resources */,
 				4B0C306418C09C2D00D500CF /* FeatureViewController.xib in Resources */,
+				45678BF918C70CB500254941 /* RSVPViewController.xib in Resources */,
 				7AA5855118BF097D00E59852 /* CalculateBudget.xib in Resources */,
 				7AA5855318BF097D00E59852 /* DetailBudget.xib in Resources */,
 				7AA5859718BF099500E59852 /* index2.jpg in Resources */,
@@ -1092,6 +1126,7 @@
 				7AA5858618BF098700E59852 /* AddGuestViewController.m in Sources */,
 				7AA5855818BF097D00E59852 /* Customcell.m in Sources */,
 				7AE4D9F518C064D8009AC079 /* ManageVendor.m in Sources */,
+				45678BFE18C70ED700254941 /* DestailsRSVPViewController.m in Sources */,
 				4576A3CC18C46F6A00BEDCE6 /* SSKeychain.m in Sources */,
 				7AA5855218BF097D00E59852 /* DetailBudget.m in Sources */,
 				7AA585B318BF099900E59852 /* Cell.m in Sources */,
@@ -1100,6 +1135,7 @@
 				7AA585E518BF09B000E59852 /* WelcomeViewController.m in Sources */,
 				7AA5858818BF098700E59852 /* EditGuestViewController.m in Sources */,
 				459DD4A918C6126200D26BFF /* ReferViewController.m in Sources */,
+				45678BF818C70CB500254941 /* RSVPViewController.m in Sources */,
 				7AE4DA0118C06957009AC079 /* DetailVendor.m in Sources */,
 				7AE4DA1818C0759F009AC079 /* DeleteVendorCC.m in Sources */,
 				7AA5857418BF098300E59852 /* Cell2.m in Sources */,

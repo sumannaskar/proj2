@@ -17,7 +17,7 @@
 #import "SSKeychainQuery.h"
 #import "WelcomeViewController.h"
 #import "ReferViewController.h"
-
+#import "RSVPViewController.h"
 @interface HomeViewController ()
 
 @end
@@ -107,6 +107,12 @@
 {
     VendorViewController *VendorVC =[[VendorViewController alloc]init];
     [self.navigationController pushViewController:VendorVC animated:YES];
+}
+
+- (IBAction)RSVPactn:(UIButton *)sender {
+    RSVPViewController *rsvpVC=[[RSVPViewController alloc]init];
+    [self.navigationController pushViewController:rsvpVC animated:YES];
+    
 }
 
 - (IBAction)referactn:(UIButton *)sender {

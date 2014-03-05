@@ -11,6 +11,7 @@
                 <outlet property="eventbtn" destination="N4H-S9-0Kt" id="nQb-4B-5hA"/>
                 <outlet property="guestbtn" destination="k7P-Ho-Bfm" id="N6J-nn-CXV"/>
                 <outlet property="invitationbtn" destination="P0a-RV-sHI" id="K0a-BS-7A6"/>
+                <outlet property="rsvpbtn" destination="FxO-E7-IDI" id="4xb-m7-H7f"/>
                 <outlet property="todolistbtn" destination="SAf-GZ-NQT" id="XM3-Yr-68H"/>
                 <outlet property="vendorbtn" destination="7ia-HB-bR4" id="29B-rU-kll"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -26,7 +27,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N4H-S9-0Kt">
-                    <rect key="frame" x="35" y="250" width="102" height="68"/>
+                    <rect key="frame" x="35" y="174" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Events">
@@ -37,7 +38,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SAf-GZ-NQT">
-                    <rect key="frame" x="191" y="250" width="102" height="68"/>
+                    <rect key="frame" x="191" y="174" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="To Do List">
@@ -48,7 +49,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Nv-AF-nWQ">
-                    <rect key="frame" x="35" y="413" width="102" height="68"/>
+                    <rect key="frame" x="35" y="309" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Budgets">
@@ -59,7 +60,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7ia-HB-bR4">
-                    <rect key="frame" x="191" y="413" width="102" height="68"/>
+                    <rect key="frame" x="191" y="309" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Vendors">
@@ -70,7 +71,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k7P-Ho-Bfm">
-                    <rect key="frame" x="35" y="73" width="102" height="68"/>
+                    <rect key="frame" x="35" y="50" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Guest List">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,7 +81,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P0a-RV-sHI">
-                    <rect key="frame" x="191" y="73" width="102" height="68"/>
+                    <rect key="frame" x="191" y="50" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Invitations">
@@ -98,6 +99,16 @@
                     </state>
                     <connections>
                         <action selector="referactn:" destination="-1" eventType="touchUpInside" id="Och-fc-Ts7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FxO-E7-IDI">
+                    <rect key="frame" x="109" y="390" width="102" height="68"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="RSVP Status">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="RSVPactn:" destination="-1" eventType="touchUpInside" id="OR9-ZP-oyQ"/>
                     </connections>
                 </button>
             </subviews>

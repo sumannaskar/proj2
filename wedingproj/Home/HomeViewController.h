@@ -24,6 +24,8 @@
     IBOutlet UIButton *budgetbtn;
     
     IBOutlet UIButton *vendorbtn;
+    
+    IBOutlet UIButton *rsvpbtn;
 }
 @property (strong, nonatomic) UIBarButtonItem *logoutButton;
 
@@ -36,6 +38,7 @@
 - (IBAction)vendoractn:(UIButton *)sender;
 
 
+- (IBAction)RSVPactn:(UIButton *)sender;
 
 - (IBAction)referactn:(UIButton *)sender;
 
