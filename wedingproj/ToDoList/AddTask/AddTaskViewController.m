@@ -11,9 +11,11 @@
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_create&"]
+#define kcategorylistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_cat"]
+#define kcategorylistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
-#define kvendorlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor"]
+#define kvendorlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_category&"]
 #define kvendorlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 
 
@@ -37,9 +39,36 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.vendortxt.userInteractionEnabled=NO;
+    //Vendor-category Fetching....
+    NSURL *tempcategoryurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kcategorylistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],kcategorylistURL2]];
+    NSError *error;
+    NSData* categoryListData = [NSData dataWithContentsOfURL: tempcategoryurl];
+    NSDictionary* rawecategoryListDic = [NSJSONSerialization JSONObjectWithData:categoryListData options:kNilOptions error:&error];
+    NSArray *rawcategoryList=[[NSArray alloc]init];
+    //    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
+    totalcategorylist=[[NSMutableArray alloc ]init];
+    
+    if ([[rawecategoryListDic valueForKey:@"availability"]isEqualToString:@"no"])
+    {
+        NSLog(@"Alert");
+    }
+    else
+    {
+        rawcategoryList = [rawecategoryListDic valueForKey:@"data"];
+        for(int i=0;i<rawcategoryList.count;i++)
+        {
+            
+            NSDictionary *tempDict=[rawcategoryList objectAtIndex:i];
+            [totalcategorylist addObject:[tempDict objectForKey:@"category"]];
+            
+        }
+    }
+
+    
+    
     //Event data fetching.....
     NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],keventlistURL2]];
-    NSError *error;
+    //NSError *error;
     NSData* eventListData = [NSData dataWithContentsOfURL: tempeventurl];
     NSDictionary* raweventListDic = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
     NSArray *raweventList=[[NSArray alloc]init];
@@ -62,32 +91,6 @@
             
         }
     }
-    //vendor data fetching
-    NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kvendorlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],kvendorlistURL2]];
-    NSData* vendorListData = [NSData dataWithContentsOfURL: tempvendorurl];
-    NSDictionary* vendorListDic = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
-    //NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
-    
-    totalvendorlist=[[NSMutableArray alloc ]init];
-    totalvendorIdlist=[[NSMutableArray alloc ]init];
-    NSArray* rawvendorList=[[NSArray alloc]init];
-    if ([[vendorListDic valueForKey:@"availability"]isEqualToString:@"no"])
-    {
-        NSLog(@"Alert");
-    }
-    else
-    {
-        rawvendorList = [vendorListDic valueForKey:@"data"];
-        for(int i=0;i<rawvendorList.count;i++)
-        {
-            NSDictionary *tempDict=[rawvendorList objectAtIndex:i];
-            [totalvendorlist addObject:[tempDict objectForKey:@"vendor_name"]];
-            [totalvendorIdlist addObject:[tempDict objectForKey:@"vendor_id"]];
-            
-        }
-        
-    }
-
     
 
     //NSLog(@"%@",[tempDict objectForKey:@"event_id"]);
@@ -206,7 +209,8 @@
        
     if (self.pickerVw.tag==1) {
         
-        return [pkarray count];
+       // return [pkarray count];
+        return [totalcategorylist count];
     }
     if (self.pickerVw.tag==2) {
         
@@ -217,7 +221,36 @@
     if (self.pickerVw.tag==3) {
         
         //return [vendorarray count];
-        NSLog(@"%@",test);
+        NSLog(@"%@",categoryName);
+        //vendor data fetching
+        NSError *error;
+        NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@category=%@%@",kvendorlistURL1,categoryName,kvendorlistURL2]];
+        NSData* vendorListData = [NSData dataWithContentsOfURL: tempvendorurl];
+        NSDictionary* vendorListDic = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
+        //NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
+        
+        totalvendorlist=[[NSMutableArray alloc ]init];
+        totalvendorIdlist=[[NSMutableArray alloc ]init];
+        NSArray* rawvendorList=[[NSArray alloc]init];
+        if ([[vendorListDic valueForKey:@"availability"]isEqualToString:@"no"])
+        {
+            NSLog(@"Alert");
+        }
+        else
+        {
+            rawvendorList = [vendorListDic valueForKey:@"data"];
+            for(int i=0;i<rawvendorList.count;i++)
+            {
+                NSDictionary *tempDict=[rawvendorList objectAtIndex:i];
+                [totalvendorlist addObject:[tempDict objectForKey:@"vendor_name"]];
+                [totalvendorIdlist addObject:[tempDict objectForKey:@"vendor_id"]];
+                
+            }
+            
+        }
+        
+
+        
         return [totalvendorlist count];
     }
     if (self.pickerVw.tag ==4) {
@@ -237,9 +270,10 @@
    
     if (self.pickerVw.tag==1) {
         
-        test=[pkarray objectAtIndex:row];
-        NSLog(@"%@",test);
-        return [pkarray objectAtIndex:row];
+        categoryName=[totalcategorylist objectAtIndex:row];
+        NSLog(@"%@",categoryName);
+        //return [pkarray objectAtIndex:row];
+        return [totalcategorylist objectAtIndex:row];
     }
 
     if (self.pickerVw.tag==2) {
@@ -250,7 +284,7 @@
     }
     if (self.pickerVw.tag==3) {
         
-        NSLog(@"%@",test);
+        NSLog(@"%@",categoryName);
         //return [vendorarray objectAtIndex:row];
         return [totalvendorlist objectAtIndex:row];
     }
@@ -267,7 +301,7 @@
 {
 
     if (self.pickerVw.tag==1) {
-        self.categorytxt.text=[pkarray objectAtIndex:row];
+        self.categorytxt.text=[totalcategorylist objectAtIndex:row];
        
     }
     
@@ -298,7 +332,7 @@
     if (self.donebtn.tag==1) {
         if (!(self.categorytxt.text.length>0)) {
             
-            self.categorytxt.text=[pkarray objectAtIndex:0];
+            self.categorytxt.text=[totalcategorylist objectAtIndex:0];
             
         }
         self.vendortxt.userInteractionEnabled=YES;

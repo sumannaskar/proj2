@@ -33,6 +33,11 @@
     NSMutableArray *totalvendorlist;
     NSMutableArray *totalvendorIdlist;
     
+    NSString *categoryName;
+    
+    
+    NSMutableArray *totalcategorylist;
+    
 }
 @property (strong, nonatomic) NSString *taskidstr;
 @property (strong, nonatomic) NSString *tasknamestr;

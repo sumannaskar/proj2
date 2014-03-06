@@ -11,6 +11,7 @@
 @interface AddTaskViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate,UITextViewDelegate>
 {
     
+    
     NSArray *pkarray;
     NSArray *eventarray;
     NSArray *vendorarray;
@@ -34,7 +35,10 @@
     NSMutableArray *totalvendorIdlist;
     NSString *Vendorid;
     
-    NSString *test;
+    NSString *categoryName;
+    
+    
+    NSMutableArray *totalcategorylist;
 }
 
 
