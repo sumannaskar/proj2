@@ -13,6 +13,7 @@
     
     IBOutlet UIButton *guestbtn;
     
+    IBOutlet UIButton *groupbtn;
     
     IBOutlet UIButton *invitationbtn;
     
@@ -26,6 +27,7 @@
     IBOutlet UIButton *vendorbtn;
     
     IBOutlet UIButton *rsvpbtn;
+    
 }
 @property (strong, nonatomic) UIBarButtonItem *logoutButton;
 
@@ -37,6 +39,7 @@
 - (IBAction)budgetactn:(UIButton *)sender;
 - (IBAction)vendoractn:(UIButton *)sender;
 
+- (IBAction)GroupAction:(id)sender;
 
 - (IBAction)RSVPactn:(UIButton *)sender;
 

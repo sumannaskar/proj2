@@ -27,6 +27,8 @@
 		4B0C306418C09C2D00D500CF /* FeatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0C306218C09C2D00D500CF /* FeatureViewController.xib */; };
 		4B1FE48818C1BDB800C36060 /* SelectEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FE48618C1BDB800C36060 /* SelectEventViewController.m */; };
 		4B1FE48918C1BDB800C36060 /* SelectEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FE48718C1BDB800C36060 /* SelectEventViewController.xib */; };
+		4B344E8218C855000037B961 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E8018C855000037B961 /* GroupViewController.m */; };
+		4B344E8318C855000037B961 /* GroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E8118C855000037B961 /* GroupViewController.xib */; };
 		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
 		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
 		7AA584F918BF096E00E59852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584F818BF096E00E59852 /* Foundation.framework */; };
@@ -164,6 +166,9 @@
 		4B1FE48518C1BDB800C36060 /* SelectEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectEventViewController.h; path = SelectEvent/SelectEventViewController.h; sourceTree = "<group>"; };
 		4B1FE48618C1BDB800C36060 /* SelectEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectEventViewController.m; path = SelectEvent/SelectEventViewController.m; sourceTree = "<group>"; };
 		4B1FE48718C1BDB800C36060 /* SelectEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectEventViewController.xib; path = SelectEvent/SelectEventViewController.xib; sourceTree = "<group>"; };
+		4B344E7F18C855000037B961 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupViewController.h; path = Group/GroupViewController.h; sourceTree = "<group>"; };
+		4B344E8018C855000037B961 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupViewController.m; path = Group/GroupViewController.m; sourceTree = "<group>"; };
+		4B344E8118C855000037B961 /* GroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupViewController.xib; path = Group/GroupViewController.xib; sourceTree = "<group>"; };
 		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
 		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
 		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
@@ -422,6 +427,16 @@
 			name = SelectEvent;
 			sourceTree = "<group>";
 		};
+		4B344E7E18C854C80037B961 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				4B344E7F18C855000037B961 /* GroupViewController.h */,
+				4B344E8018C855000037B961 /* GroupViewController.m */,
+				4B344E8118C855000037B961 /* GroupViewController.xib */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
 		4B9AF8C618BF15BA00B97DC6 /* cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +450,7 @@
 		7AA584EC18BF096E00E59852 = {
 			isa = PBXGroup;
 			children = (
+				4B344E7E18C854C80037B961 /* Group */,
 				45678BF418C70C8400254941 /* RSVP */,
 				459DD4A518C6123800D26BFF /* Refer A Friend */,
 				4576A3CE18C4766300BEDCE6 /* 640_v2.png */,
@@ -1104,6 +1120,7 @@
 				7AA5859618BF099500E59852 /* index.jpg in Resources */,
 				7AA585B818BF099900E59852 /* Cell1.xib in Resources */,
 				7AE4DA1418C074E8009AC079 /* DeleteVendor.xib in Resources */,
+				4B344E8318C855000037B961 /* GroupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,6 +1171,7 @@
 				459DD4A918C6126200D26BFF /* ReferViewController.m in Sources */,
 				45678BF818C70CB500254941 /* RSVPViewController.m in Sources */,
 				7AE4DA0118C06957009AC079 /* DetailVendor.m in Sources */,
+				4B344E8218C855000037B961 /* GroupViewController.m in Sources */,
 				7AE4DA1818C0759F009AC079 /* DeleteVendorCC.m in Sources */,
 				7AA5857418BF098300E59852 /* Cell2.m in Sources */,
 				45678C0418C721C600254941 /* SelectEventRsvpViewController.m in Sources */,

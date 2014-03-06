@@ -18,6 +18,8 @@
 #import "WelcomeViewController.h"
 #import "ReferViewController.h"
 #import "SelectEventRsvpViewController.h"
+#import "GroupViewController.h"
+
 @interface HomeViewController ()
 
 @end
@@ -40,6 +42,7 @@
     self.logoutButton=[[UIBarButtonItem alloc]initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(LogOut:)];
     [self.navigationItem setRightBarButtonItem:self.logoutButton];
        // Do any additional setup after loading the view from its nib.
+    
 }
 -(IBAction)LogOut:(UIBarButtonItem *)sender
 {
@@ -107,6 +110,12 @@
 {
     VendorViewController *VendorVC =[[VendorViewController alloc]init];
     [self.navigationController pushViewController:VendorVC animated:YES];
+}
+
+- (IBAction)GroupAction:(id)sender {
+    GroupViewController *GroupVC =[[GroupViewController alloc]init];
+    [self.navigationController pushViewController:GroupVC animated:YES];
+    
 }
 
 - (IBAction)RSVPactn:(UIButton *)sender {
