@@ -174,7 +174,8 @@
     
     if (self.pickerVw.tag==1) {
         
-        return [pkarray count];
+        //return [pkarray count];
+        return [totalcategorylist count];
     }
     if (self.pickerVw.tag==2) {
         
@@ -233,7 +234,10 @@
     
     
     if (self.pickerVw.tag==1) {
-        return [pkarray objectAtIndex:row];
+        //return [pkarray objectAtIndex:row];
+        categoryName=[totalcategorylist objectAtIndex:row];
+        NSLog(@"%@",categoryName);
+        return [totalcategorylist objectAtIndex:row];
     }
     
     if (self.pickerVw.tag==2) {
@@ -257,7 +261,8 @@
 {
     
     if (self.pickerVw.tag==1) {
-        self.categorytxt.text=[pkarray objectAtIndex:row];
+        //self.categorytxt.text=[pkarray objectAtIndex:row];
+        self.categorytxt.text=[totalcategorylist objectAtIndex:row];
         
     }
     
@@ -289,6 +294,7 @@
             self.categorytxt.text=[pkarray objectAtIndex:0];
             
         }
+        self.vendortxt.text=@"";
         self.vendortxt.userInteractionEnabled=YES;
         [self.categorytxt resignFirstResponder];
         
@@ -337,6 +343,7 @@
     if (self.cancelbtn.tag==1) {
         
         self.categorytxt.text=self.categorystr;
+        self.vendortxt.text=self.vendorstr;
         [self.categorytxt resignFirstResponder];
         
     }
