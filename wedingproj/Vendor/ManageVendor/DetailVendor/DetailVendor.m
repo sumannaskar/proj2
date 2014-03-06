@@ -29,10 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    vendornametext.text=[[json valueForKey:@"data" ] valueForKey:@"vendor_name"];
-    categorytext.text =[[json valueForKey:@"data" ] valueForKey:@"category"];
-    emailtext.text=[[json valueForKey:@"data" ] valueForKey:@"email"];
-    contactnotext.text =[[json valueForKey:@"data" ] valueForKey:@"contact"];
+    NSLog(@"%@",json);
+    vendornametext.text=[json valueForKey:@"vendor_name"];
+    categorytext.text =[json valueForKey:@"category"];
+    emailtext.text=[json  valueForKey:@"email"];
+    contactnotext.text =[json  valueForKey:@"contact"];
     
     
 }
