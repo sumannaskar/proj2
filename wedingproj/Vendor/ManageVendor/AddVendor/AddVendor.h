@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddVendor : UIViewController
+@interface AddVendor : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
 {
     IBOutlet UILabel *vendorname;
     IBOutlet UITextField *vendornametext;
@@ -24,9 +24,16 @@
     
     IBOutlet UIButton *save;
     NSMutableArray *responce;
+    
+    NSMutableArray *totalcategorylist;
 }
 
 
 - (IBAction)save:(id)sender;
+@property (retain, nonatomic) IBOutlet UIView *respondingView;
+- (IBAction)done:(id)sender;
+- (IBAction)cancel:(UIBarButtonItem *)sender;
+@property (retain, nonatomic) IBOutlet UIPickerView *pickerVw;
+
 
 @end

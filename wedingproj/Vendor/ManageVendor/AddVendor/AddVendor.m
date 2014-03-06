@@ -12,6 +12,8 @@
 #import "VendorViewController.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_create&"]
+#define kcategorylistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_cat"]
+#define kcategorylistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 
 @interface AddVendor ()
 
@@ -32,6 +34,38 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.pickerVw.dataSource=self;
+    self.pickerVw.delegate=self;
+    self.pickerVw.showsSelectionIndicator=YES;
+    [categorytext setInputView:self.respondingView];
+    
+    
+    //Vendor-category Fetching....
+    NSURL *tempcategoryurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kcategorylistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],kcategorylistURL2]];
+    NSError *error;
+    NSData* categoryListData = [NSData dataWithContentsOfURL: tempcategoryurl];
+    NSDictionary* rawecategoryListDic = [NSJSONSerialization JSONObjectWithData:categoryListData options:kNilOptions error:&error];
+    NSArray *rawcategoryList=[[NSArray alloc]init];
+    //    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
+    totalcategorylist=[[NSMutableArray alloc ]init];
+    
+    if ([[rawecategoryListDic valueForKey:@"availability"]isEqualToString:@"no"])
+    {
+        NSLog(@"Alert");
+    }
+    else
+    {
+        rawcategoryList = [rawecategoryListDic valueForKey:@"data"];
+        for(int i=0;i<rawcategoryList.count;i++)
+        {
+            
+            NSDictionary *tempDict=[rawcategoryList objectAtIndex:i];
+            [totalcategorylist addObject:[tempDict objectForKey:@"category"]];
+            
+        }
+    }
+
+
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
@@ -79,6 +113,66 @@
 
     }
 
+}
+#pragma mark -
+#pragma mark - picker view delegates
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+
+
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    NSInteger rowCount;
+    //rowCount= [location count];
+    rowCount=[totalcategorylist count];
+    return rowCount;
+}
+
+
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+
+{
+    // return [location objectAtIndex:row];
+    return [totalcategorylist objectAtIndex:row];
+}
+
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    
+    categorytext.text=[totalcategorylist objectAtIndex:row];
+    
+    
+}
+
+- (IBAction)done:(id)sender
+{
+    
+    if (!(categorytext.text.length>0)) {
+        //        mytxtfield.text=[stateList objectAtIndex:0];
+        //        self.stateName=[stateList objectAtIndex:0];
+        
+        categorytext.text=[totalcategorylist objectAtIndex:0];
+        //        addressdetailsText.text=[address objectAtIndex:0];
+        //        loactionName=[location objectAtIndex:0];
+    }
+    
+    [categorytext resignFirstResponder];
+}
+- (IBAction)cancel:(UIBarButtonItem *)sender
+{
+    categorytext.text=@"";
+    
+    //addressdetailsText.text=@"";
+    
+    
+    [categorytext resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning

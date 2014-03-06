@@ -37,18 +37,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.vendortxt.userInteractionEnabled=NO;
+    
     //Vendor-category Fetching....
     NSURL *tempcategoryurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kcategorylistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],kcategorylistURL2]];
     NSError *error;
     NSData* categoryListData = [NSData dataWithContentsOfURL: tempcategoryurl];
     NSDictionary* rawecategoryListDic = [NSJSONSerialization JSONObjectWithData:categoryListData options:kNilOptions error:&error];
     NSArray *rawcategoryList=[[NSArray alloc]init];
-    //    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
     totalcategorylist=[[NSMutableArray alloc ]init];
     
     if ([[rawecategoryListDic valueForKey:@"availability"]isEqualToString:@"no"])
     {
-        NSLog(@"Alert");
+        UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Category Found " delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [createbudget show];
     }
     else
     {
@@ -68,16 +69,17 @@
     NSLog(@"%@",self.Vendorid);
      NSLog(@"%@",self.Eventid);
     NSURL *tempeventurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",keventlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],keventlistURL2]];
-    //NSError *error;
+    
     NSData* eventListData = [NSData dataWithContentsOfURL: tempeventurl];
     NSDictionary* raweventListDic = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
     NSArray *raweventList=[[NSArray alloc]init];
-//    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
+
         totaleventlist=[[NSMutableArray alloc ]init];
     totaleventIdlist=[[NSMutableArray alloc ]init];
     if ([[raweventListDic valueForKey:@"availability"]isEqualToString:@"no"])
     {
-        NSLog(@"Alert");
+        UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Event Found" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [createbudget show];
     }
     else
     {
@@ -191,14 +193,15 @@
         NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@category=%@%@",kvendorlistURL1,categoryName,kvendorlistURL2]];
         NSData* vendorListData = [NSData dataWithContentsOfURL: tempvendorurl];
         NSDictionary* vendorListDic = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
-        //NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
+        
         
         totalvendorlist=[[NSMutableArray alloc ]init];
         totalvendorIdlist=[[NSMutableArray alloc ]init];
         NSArray* rawvendorList=[[NSArray alloc]init];
         if ([[vendorListDic valueForKey:@"availability"]isEqualToString:@"no"])
         {
-            NSLog(@"Alert");
+            UIAlertView *createbudget =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No Vendor Found" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [createbudget show];
         }
         else
         {
