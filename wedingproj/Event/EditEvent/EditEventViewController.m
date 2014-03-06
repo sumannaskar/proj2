@@ -8,6 +8,7 @@
 
 #import "EditEventViewController.h"
 #import "EventViewController.h"
+#import "BudgetListViewController.h"
 #define EditEventURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=event_update&"]
 
 @interface EditEventViewController ()
@@ -29,6 +30,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Show Budget"
+                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(BudgetButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+    
+    
     NSLog(@"%@",self.venuestr);
     nametxt.delegate=self;
     budgettxt.delegate=self;
@@ -53,6 +59,11 @@
     pkarray=[[NSArray alloc]initWithObjects:@"Unspecified",@"Formal",@"Casual",@"Black Tie",@"White Tie",@"Cocktail", nil];
     [self alreadyinrecord];
     
+}
+-(void)BudgetButtonTapped:(UIButton *)button
+{
+    BudgetListViewController *BudgetVc=[[BudgetListViewController alloc] init];
+    [self.navigationController pushViewController:BudgetVc animated:YES];
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     

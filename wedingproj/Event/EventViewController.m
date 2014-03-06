@@ -282,9 +282,6 @@
     [cell.editBtn addTarget:self action:@selector(Edit:) forControlEvents:UIControlEventTouchUpInside];
     cell.editBtn.tag = indexPath.row;
     
-    [cell.categoryBtn addTarget:self action:@selector(Category:) forControlEvents:UIControlEventTouchUpInside];
-    cell.categoryBtn.tag = indexPath.row;
-    
     return cell;
 }
 
@@ -359,14 +356,6 @@
     EditeventVc.venuestr=[tempdic objectForKey:@"venue"];
     EditeventVc.budgetstr=[tempdic objectForKey:@"budget"];
     [self.navigationController pushViewController:EditeventVc animated:YES];
-}
--(void) Category:(UIButton*)button
-{
-    NSLog(@"%ld",(long)button.tag);
-    AllBudget *AllcatVc=[[AllBudget alloc] init];
-    NSDictionary *tempdic=[raweventList objectAtIndex:button.tag];
-    AllcatVc.eventidpass=[tempdic objectForKey:@"event_id"];
-    [self.navigationController pushViewController:AllcatVc animated:YES];
 }
 -(void)image
 {

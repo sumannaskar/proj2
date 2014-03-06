@@ -12,6 +12,7 @@
 {
     
     NSMutableArray *GroupArray;
+     NSMutableArray *GroupIdArray;
     NSArray *CompletedArray;
     NSArray *WithArray;
     
@@ -38,6 +39,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *GroupText;
 @property (strong, nonatomic) IBOutlet UITextField *WithText;
 @property (strong, nonatomic) IBOutlet UIButton *Add;
+
+@property (strong, nonatomic) NSString *groupIdstring;
 - (IBAction)AddGuest:(UIButton *)sender;
 
 @end

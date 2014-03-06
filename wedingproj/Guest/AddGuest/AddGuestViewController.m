@@ -53,6 +53,7 @@
     jsondata = [[NSDictionary alloc]init];
       json = [[NSMutableArray alloc]init];
     GroupArray = [[NSMutableArray alloc]init];
+    GroupIdArray = [[NSMutableArray alloc]init];
     AddArray = [[NSMutableArray alloc]init];
     
    // CompletedArray=[[NSArray alloc]initWithObjects:@"YES",@"NO", nil];
@@ -109,8 +110,14 @@
         [GroupArray addObject:[[json objectAtIndex:i ] valueForKey:@"group_name"]];
         
     }
+    for(int i=0;i<json.count;i++) {
+        
+        [GroupIdArray addObject:[[json objectAtIndex:i ] valueForKey:@"group_id"]];
+        
+    }
+
     [self.pickerVw reloadAllComponents];
-     NSLog(@"%@",GroupArray);
+     //NSLog(@"%@",GroupArray);
 }
 
 - (void)didReceiveMemoryWarning
@@ -185,6 +192,7 @@
     
     if (self.pickerVw.tag==1) {
         self.GroupText.text=[GroupArray objectAtIndex:row];
+        self.groupIdstring=[GroupIdArray objectAtIndex:row];
     }
     if (self.pickerVw.tag==3) {
         self.WithText.text=[WithArray objectAtIndex:row];
@@ -199,6 +207,7 @@
         if (!(self.GroupText.text.length>0)) {
             
             self.GroupText.text=[GroupArray objectAtIndex:0];
+            self.groupIdstring=[GroupIdArray objectAtIndex:0];
             
         }
         
@@ -225,6 +234,7 @@
     if (self.cancelbtn.tag==1) {
         
         self.GroupText.text=@"";
+        self.groupIdstring=@"";
         [self.GroupText resignFirstResponder];
         
     }
@@ -252,7 +262,7 @@
 }
 
 - (IBAction)AddGuest:(UIButton *)sender {
-    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"user_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],nametxt.text,self.RoleText.text,self.EmailText.text,@"1",self.WithText.text];
+    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"user_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],nametxt.text,self.RoleText.text,self.EmailText.text,self.groupIdstring,self.WithText.text];
     
     NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     //  NSLog(@"%@",urlTextEscaped);

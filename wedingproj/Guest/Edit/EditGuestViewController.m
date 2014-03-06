@@ -36,6 +36,7 @@
     jsondata = [[NSDictionary alloc]init];
     json = [[NSMutableArray alloc]init];
     GroupArray = [[NSMutableArray alloc]init];
+     GroupIdArray = [[NSMutableArray alloc]init];
      UpdateArray = [[NSMutableArray alloc]init];
     
      nametxt.text = self.nameString;
@@ -115,17 +116,11 @@
         [GroupArray addObject:[[json objectAtIndex:i ] valueForKey:@"group_name"]];
         
     }
-//    int i=0;
-//    for(NSString *loc in [json valueForKey:@"id"]) {
-//            if ([loc isEqualToString:self.groupString]) {
-//            self.GroupText.text = [GroupArray objectAtIndex:i];
-//            self.groupString = [GroupArray objectAtIndex:i];
-//            break;
-//        }
-//        i = i+1;
-//    }
-    
-   
+    for(int i=0;i<json.count;i++) {
+        
+        [GroupIdArray addObject:[[json objectAtIndex:i ] valueForKey:@"group_id"]];
+        
+    }
     [self.pickerVw reloadAllComponents];
     // NSLog(@"%@",GroupArray);
 }
@@ -203,6 +198,7 @@
     
     if (self.pickerVw.tag==1) {
         self.GroupText.text=[GroupArray objectAtIndex:row];
+         self.GroupIdString=[GroupIdArray objectAtIndex:row];
         
     }
     
@@ -220,6 +216,7 @@
         if (!(self.GroupText.text.length>0)) {
             
             self.GroupText.text=[GroupArray objectAtIndex:0];
+            self.GroupIdString=[GroupIdArray objectAtIndex:0];
             
         }
         
@@ -245,6 +242,15 @@
     if (self.cancelbtn.tag==1) {
         
         self.GroupText.text=self.groupString;
+        
+        for (int i=0; i<GroupArray.count; i++) {
+            if ([[GroupArray objectAtIndex:i]isEqualToString:self.groupString]) {
+                self.GroupIdString = [GroupIdArray objectAtIndex:i];
+                break;
+            }
+        }
+        
+        
         [self.GroupText resignFirstResponder];
         
     }
@@ -271,7 +277,7 @@
     
 //     NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"guest_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",self.GidString,nametxt.text,self.RoleText.text,self.EmailText.text,self.GroupText.text,self.WithText.text];
     
-    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"guest_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",self.GidString,nametxt.text,self.RoleText.text,self.EmailText.text,@"1",self.WithText.text];
+    NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"guest_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",self.GidString,nametxt.text,self.RoleText.text,self.EmailText.text,self.GroupIdString,self.WithText.text];
     
     NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
   //  NSLog(@"%@",urlTextEscaped);

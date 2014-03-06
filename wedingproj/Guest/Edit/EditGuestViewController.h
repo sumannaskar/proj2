@@ -16,6 +16,7 @@
     NSDictionary *jsondata;
     NSMutableArray *json;
      NSMutableArray *GroupArray;
+    NSMutableArray *GroupIdArray;
     
     IBOutlet UIScrollView *scroll;
     
@@ -45,6 +46,9 @@
 @property (strong, nonatomic) NSString *emailString;
 @property (strong, nonatomic) NSString *groupString;
 @property (strong, nonatomic) NSString *withString;
+
+@property (strong, nonatomic) NSString *GroupIdString;
+
 
 @property (strong, nonatomic) IBOutlet UIButton *save;
 

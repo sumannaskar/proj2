@@ -241,7 +241,7 @@
      EditVc.groupString = [GroupName objectAtIndex:button.tag];
      EditVc.withString = [NoOfPerson objectAtIndex:button.tag];
     
-  //  NSLog(@"%@",EditVc.groupString);
+    //NSLog(@"%@",EditVc.withString);
     
     [self.navigationController pushViewController:EditVc animated:YES];
 }

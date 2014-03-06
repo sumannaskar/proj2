@@ -29,6 +29,10 @@
 		4B1FE48918C1BDB800C36060 /* SelectEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FE48718C1BDB800C36060 /* SelectEventViewController.xib */; };
 		4B344E8218C855000037B961 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E8018C855000037B961 /* GroupViewController.m */; };
 		4B344E8318C855000037B961 /* GroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E8118C855000037B961 /* GroupViewController.xib */; };
+		4B344E8E18C8AF010037B961 /* BudgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E8C18C8AF010037B961 /* BudgetListViewController.m */; };
+		4B344E8F18C8AF010037B961 /* BudgetListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E8D18C8AF010037B961 /* BudgetListViewController.xib */; };
+		4B344E9318C8AFAD0037B961 /* BudgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E9218C8AFAD0037B961 /* BudgetCell.m */; };
+		4B344E9518C8AFC30037B961 /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E9418C8AFC30037B961 /* BudgetCell.xib */; };
 		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
 		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
 		7AA584F918BF096E00E59852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584F818BF096E00E59852 /* Foundation.framework */; };
@@ -169,6 +173,12 @@
 		4B344E7F18C855000037B961 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupViewController.h; path = Group/GroupViewController.h; sourceTree = "<group>"; };
 		4B344E8018C855000037B961 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupViewController.m; path = Group/GroupViewController.m; sourceTree = "<group>"; };
 		4B344E8118C855000037B961 /* GroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupViewController.xib; path = Group/GroupViewController.xib; sourceTree = "<group>"; };
+		4B344E8B18C8AF010037B961 /* BudgetListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BudgetListViewController.h; path = BudgetList/BudgetListViewController.h; sourceTree = "<group>"; };
+		4B344E8C18C8AF010037B961 /* BudgetListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BudgetListViewController.m; path = BudgetList/BudgetListViewController.m; sourceTree = "<group>"; };
+		4B344E8D18C8AF010037B961 /* BudgetListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BudgetListViewController.xib; path = BudgetList/BudgetListViewController.xib; sourceTree = "<group>"; };
+		4B344E9118C8AFAD0037B961 /* BudgetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BudgetCell.h; path = BudgetList/BudgetCell/BudgetCell.h; sourceTree = "<group>"; };
+		4B344E9218C8AFAD0037B961 /* BudgetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BudgetCell.m; path = BudgetList/BudgetCell/BudgetCell.m; sourceTree = "<group>"; };
+		4B344E9418C8AFC30037B961 /* BudgetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BudgetCell.xib; path = BudgetList/BudgetCell/BudgetCell.xib; sourceTree = "<group>"; };
 		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
 		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
 		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
@@ -437,6 +447,27 @@
 			name = Group;
 			sourceTree = "<group>";
 		};
+		4B344E8A18C8AEC90037B961 /* BudgetList */ = {
+			isa = PBXGroup;
+			children = (
+				4B344E9018C8AF7F0037B961 /* BudgetCell */,
+				4B344E8B18C8AF010037B961 /* BudgetListViewController.h */,
+				4B344E8C18C8AF010037B961 /* BudgetListViewController.m */,
+				4B344E8D18C8AF010037B961 /* BudgetListViewController.xib */,
+			);
+			name = BudgetList;
+			sourceTree = "<group>";
+		};
+		4B344E9018C8AF7F0037B961 /* BudgetCell */ = {
+			isa = PBXGroup;
+			children = (
+				4B344E9118C8AFAD0037B961 /* BudgetCell.h */,
+				4B344E9218C8AFAD0037B961 /* BudgetCell.m */,
+				4B344E9418C8AFC30037B961 /* BudgetCell.xib */,
+			);
+			name = BudgetCell;
+			sourceTree = "<group>";
+		};
 		4B9AF8C618BF15BA00B97DC6 /* cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,6 +669,7 @@
 		7AA5856218BF098300E59852 /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				4B344E8A18C8AEC90037B961 /* BudgetList */,
 				7AA5856318BF098300E59852 /* AddEvent */,
 				7AA5856718BF098300E59852 /* Cell */,
 				7AA5856B18BF098300E59852 /* EditEvent */,
@@ -1109,6 +1141,8 @@
 				7AA585B618BF099900E59852 /* InvitationViewController.xib in Resources */,
 				4576A3D118C4766300BEDCE6 /* 640.png in Resources */,
 				4B0C306418C09C2D00D500CF /* FeatureViewController.xib in Resources */,
+				4B344E8F18C8AF010037B961 /* BudgetListViewController.xib in Resources */,
+				4B344E9518C8AFC30037B961 /* BudgetCell.xib in Resources */,
 				45678BF918C70CB500254941 /* RSVPViewController.xib in Resources */,
 				7AA5855118BF097D00E59852 /* CalculateBudget.xib in Resources */,
 				7AA5855318BF097D00E59852 /* DetailBudget.xib in Resources */,
@@ -1140,6 +1174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */,
+				4B344E8E18C8AF010037B961 /* BudgetListViewController.m in Sources */,
 				7AA585B118BF099900E59852 /* SelectViewController.m in Sources */,
 				7AA5855418BF097D00E59852 /* AddBudget.m in Sources */,
 				7AA5857818BF098300E59852 /* EventViewController.m in Sources */,
@@ -1180,6 +1215,7 @@
 				7AA585D918BF09A300E59852 /* TodolistViewController.m in Sources */,
 				7AE4D9FA18C066B2009AC079 /* ManageVendorCC.m in Sources */,
 				7AA5855018BF097D00E59852 /* CalculateBudget.m in Sources */,
+				4B344E9318C8AFAD0037B961 /* BudgetCell.m in Sources */,
 				4576A3CD18C46F6A00BEDCE6 /* SSKeychainQuery.m in Sources */,
 				4B0C305D18C07D0900D500CF /* RegisterViewController.m in Sources */,
 				7AA585D318BF09A300E59852 /* AddTaskViewController.m in Sources */,
