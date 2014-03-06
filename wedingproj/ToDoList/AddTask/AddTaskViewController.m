@@ -335,7 +335,9 @@
             self.categorytxt.text=[totalcategorylist objectAtIndex:0];
             
         }
+        
         self.vendortxt.userInteractionEnabled=YES;
+        self.vendortxt.text=@"";
         [self.categorytxt resignFirstResponder];
         
     }
@@ -383,6 +385,8 @@
     if (self.cancelbtn.tag==1) {
         
         self.categorytxt.text=@"";
+        self.vendortxt.text=@"";
+        self.vendortxt.userInteractionEnabled=NO;
         [self.categorytxt resignFirstResponder];
         
     }
