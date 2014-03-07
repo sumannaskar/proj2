@@ -34,7 +34,6 @@
     // Do any additional setup after loading the view from its nib.
     
     nametxt.delegate=self;
-    budgettxt.delegate=self;
     venuetxt.delegate=self;
     self.datetxt.delegate=self;
      self.dateendtxt.delegate=self;
@@ -59,7 +58,7 @@
 
 -(void)AddDetails
 {
-    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"&user_id=%@&event_name=%@&venue=%@&start_time=%@&end_time=%@&budget=%@&dress_code=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],nametxt.text,venuetxt.text,self.datetxt.text,self.dateendtxt.text,budgettxt.text,self.dresscodetxt.text];
+    NSString *AddtaskData=[[NSString alloc]initWithFormat:@"&user_id=%@&event_name=%@&venue=%@&start_time=%@&end_time=%@&budget=%@&dress_code=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],nametxt.text,venuetxt.text,self.datetxt.text,self.dateendtxt.text,@"0",self.dresscodetxt.text];
     NSString* urlTextEscaped = [AddtaskData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddEventURL,urlTextEscaped]];
@@ -229,7 +228,7 @@
 
 - (IBAction)AddEventactn:(UIButton *)sender {
     
-    if (nametxt.text.length >0 && venuetxt.text.length >0 &&self.datetxt.text.length>0 && self.dateendtxt.text.length>0&& budgettxt.text.length>0 && self.dresscodetxt.text.length>0)
+    if (nametxt.text.length >0 && venuetxt.text.length >0 &&self.datetxt.text.length>0 && self.dateendtxt.text.length>0 && self.dresscodetxt.text.length>0)
     {
         
         [self AddDetails];

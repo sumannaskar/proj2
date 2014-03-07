@@ -10,6 +10,7 @@
 
 @interface AddBudgetViewController : UIViewController
 {
+    IBOutlet UIScrollView *scroll;
     IBOutlet UITextField *NameText;
     
     IBOutlet UITextField *AmntText;

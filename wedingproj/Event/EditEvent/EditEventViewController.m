@@ -37,7 +37,6 @@
     
     NSLog(@"%@",self.venuestr);
     nametxt.delegate=self;
-    budgettxt.delegate=self;
     venuetxt.delegate=self;
     self.datetxt.delegate=self;
     self.dateendtxt.delegate=self;
@@ -46,7 +45,7 @@
     self.dateendtxt.tag=2;
     
     
-    scroll.contentSize=CGSizeMake(320, 500);
+    scroll.contentSize=CGSizeMake(320, 550);
     self.pickerVw.dataSource=self;
     self.pickerVw.delegate=self;
     self.pickerVw.showsSelectionIndicator=YES;
@@ -185,7 +184,7 @@
 
 - (IBAction)savechanges:(UIButton *)sender {
     
-    if (nametxt.text.length >0 && venuetxt.text.length >0 &&self.datetxt.text.length>0 && self.dateendtxt.text.length>0&& budgettxt.text.length>0 && self.dresscodetxt.text.length>0)
+    if (nametxt.text.length >0 && venuetxt.text.length >0 &&self.datetxt.text.length>0 && self.dateendtxt.text.length>0&& self.dresscodetxt.text.length>0)
     {
         
         [self EditDetails];

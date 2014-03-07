@@ -10,6 +10,7 @@
 
 @interface EditBudgetViewController : UIViewController
 {
+    IBOutlet UIScrollView *scroll;
     IBOutlet UITextField *NameText;
     
     IBOutlet UITextField *AmntText;

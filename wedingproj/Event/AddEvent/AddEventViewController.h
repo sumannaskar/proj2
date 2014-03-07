@@ -17,8 +17,6 @@
     IBOutlet UITextField *venuetxt;
     IBOutlet UITextField *nametxt;
     
-    IBOutlet UITextField *budgettxt;
-    
     NSString *AddData;
     NSMutableArray *AddEventmessage;
     
