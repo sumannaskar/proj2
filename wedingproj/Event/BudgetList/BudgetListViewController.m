@@ -8,6 +8,8 @@
 
 #import "BudgetListViewController.h"
 #define NIB_NAME @"BudgetCell"
+#import "EditBudgetViewController.h"
+#import "AddBudgetViewController.h"
 
 @interface BudgetListViewController ()
 
@@ -136,6 +138,8 @@
 -(void) Edit:(UIButton*)button
 {
     NSLog(@"%ld",(long)button.tag);
+    EditBudgetViewController *EditBudgettVc=[[EditBudgetViewController alloc] init];
+    [self.navigationController pushViewController:EditBudgettVc animated:YES];
 }
 -(void)setTableHeight
 {
@@ -162,7 +166,8 @@
 }
 
 - (IBAction)Add:(UIBarButtonItem *)sender {
-    NSLog(@"Add");
+    AddBudgetViewController *AddBudgettVc=[[AddBudgetViewController alloc] init];
+    [self.navigationController pushViewController:AddBudgettVc animated:YES];
 }
 
 - (IBAction)Delete:(UIBarButtonItem *)sender {

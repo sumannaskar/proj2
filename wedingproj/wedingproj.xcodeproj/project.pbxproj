@@ -35,6 +35,10 @@
 		4B344E9518C8AFC30037B961 /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E9418C8AFC30037B961 /* BudgetCell.xib */; };
 		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
 		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
+		4BFAEDB618C9B270006AA867 /* EditBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAEDB418C9B270006AA867 /* EditBudgetViewController.m */; };
+		4BFAEDB718C9B270006AA867 /* EditBudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAEDB518C9B270006AA867 /* EditBudgetViewController.xib */; };
+		4BFAEDBC18C9B688006AA867 /* AddBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAEDBA18C9B688006AA867 /* AddBudgetViewController.m */; };
+		4BFAEDBD18C9B688006AA867 /* AddBudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAEDBB18C9B688006AA867 /* AddBudgetViewController.xib */; };
 		7AA584F918BF096E00E59852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584F818BF096E00E59852 /* Foundation.framework */; };
 		7AA584FB18BF096E00E59852 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584FA18BF096E00E59852 /* CoreGraphics.framework */; };
 		7AA584FD18BF096E00E59852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA584FC18BF096E00E59852 /* UIKit.framework */; };
@@ -182,6 +186,12 @@
 		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
 		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
 		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
+		4BFAEDB318C9B270006AA867 /* EditBudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBudgetViewController.h; path = BudgetList/EditBudget/EditBudgetViewController.h; sourceTree = "<group>"; };
+		4BFAEDB418C9B270006AA867 /* EditBudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditBudgetViewController.m; path = BudgetList/EditBudget/EditBudgetViewController.m; sourceTree = "<group>"; };
+		4BFAEDB518C9B270006AA867 /* EditBudgetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditBudgetViewController.xib; path = BudgetList/EditBudget/EditBudgetViewController.xib; sourceTree = "<group>"; };
+		4BFAEDB918C9B688006AA867 /* AddBudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddBudgetViewController.h; path = BudgetList/AddBudget/AddBudgetViewController.h; sourceTree = "<group>"; };
+		4BFAEDBA18C9B688006AA867 /* AddBudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddBudgetViewController.m; path = BudgetList/AddBudget/AddBudgetViewController.m; sourceTree = "<group>"; };
+		4BFAEDBB18C9B688006AA867 /* AddBudgetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddBudgetViewController.xib; path = BudgetList/AddBudget/AddBudgetViewController.xib; sourceTree = "<group>"; };
 		7AA584F518BF096E00E59852 /* wedingproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wedingproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA584F818BF096E00E59852 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AA584FA18BF096E00E59852 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -450,6 +460,8 @@
 		4B344E8A18C8AEC90037B961 /* BudgetList */ = {
 			isa = PBXGroup;
 			children = (
+				4BFAEDB818C9B657006AA867 /* AddBudget */,
+				4BFAEDB218C9B225006AA867 /* EditBudget */,
 				4B344E9018C8AF7F0037B961 /* BudgetCell */,
 				4B344E8B18C8AF010037B961 /* BudgetListViewController.h */,
 				4B344E8C18C8AF010037B961 /* BudgetListViewController.m */,
@@ -478,14 +490,34 @@
 			name = cell;
 			sourceTree = "<group>";
 		};
+		4BFAEDB218C9B225006AA867 /* EditBudget */ = {
+			isa = PBXGroup;
+			children = (
+				4BFAEDB318C9B270006AA867 /* EditBudgetViewController.h */,
+				4BFAEDB418C9B270006AA867 /* EditBudgetViewController.m */,
+				4BFAEDB518C9B270006AA867 /* EditBudgetViewController.xib */,
+			);
+			name = EditBudget;
+			sourceTree = "<group>";
+		};
+		4BFAEDB818C9B657006AA867 /* AddBudget */ = {
+			isa = PBXGroup;
+			children = (
+				4BFAEDB918C9B688006AA867 /* AddBudgetViewController.h */,
+				4BFAEDBA18C9B688006AA867 /* AddBudgetViewController.m */,
+				4BFAEDBB18C9B688006AA867 /* AddBudgetViewController.xib */,
+			);
+			name = AddBudget;
+			sourceTree = "<group>";
+		};
 		7AA584EC18BF096E00E59852 = {
 			isa = PBXGroup;
 			children = (
+				4576A3CE18C4766300BEDCE6 /* 640_v2.png */,
+				4576A3CF18C4766300BEDCE6 /* 640.png */,
 				4B344E7E18C854C80037B961 /* Group */,
 				45678BF418C70C8400254941 /* RSVP */,
 				459DD4A518C6123800D26BFF /* Refer A Friend */,
-				4576A3CE18C4766300BEDCE6 /* 640_v2.png */,
-				4576A3CF18C4766300BEDCE6 /* 640.png */,
 				4B0C305F18C09C0700D500CF /* Features */,
 				4B0C305918C07CC300D500CF /* Register */,
 				7AA585E118BF09B000E59852 /* Welcome */,
@@ -1101,8 +1133,10 @@
 				7AA585DA18BF09A300E59852 /* TodolistViewController.xib in Resources */,
 				7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */,
 				4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */,
+				4BFAEDB718C9B270006AA867 /* EditBudgetViewController.xib in Resources */,
 				7AA585B418BF099900E59852 /* Cell.xib in Resources */,
 				459DD4AA18C6126200D26BFF /* ReferViewController.xib in Resources */,
+				4BFAEDBD18C9B688006AA867 /* AddBudgetViewController.xib in Resources */,
 				4B1FE48918C1BDB800C36060 /* SelectEventViewController.xib in Resources */,
 				7AA5857718BF098300E59852 /* EditEventViewController.xib in Resources */,
 				4B0C305E18C07D0900D500CF /* RegisterViewController.xib in Resources */,
@@ -1178,6 +1212,7 @@
 				7AA585B118BF099900E59852 /* SelectViewController.m in Sources */,
 				7AA5855418BF097D00E59852 /* AddBudget.m in Sources */,
 				7AA5857818BF098300E59852 /* EventViewController.m in Sources */,
+				4BFAEDB618C9B270006AA867 /* EditBudgetViewController.m in Sources */,
 				7AA585B918BF099900E59852 /* SendIndividuallyViewController.m in Sources */,
 				7AE4DA0D18C073D8009AC079 /* AddVendor.m in Sources */,
 				7AA585B718BF099900E59852 /* Cell1.m in Sources */,
@@ -1207,6 +1242,7 @@
 				45678BF818C70CB500254941 /* RSVPViewController.m in Sources */,
 				7AE4DA0118C06957009AC079 /* DetailVendor.m in Sources */,
 				4B344E8218C855000037B961 /* GroupViewController.m in Sources */,
+				4BFAEDBC18C9B688006AA867 /* AddBudgetViewController.m in Sources */,
 				7AE4DA1818C0759F009AC079 /* DeleteVendorCC.m in Sources */,
 				7AA5857418BF098300E59852 /* Cell2.m in Sources */,
 				45678C0418C721C600254941 /* SelectEventRsvpViewController.m in Sources */,

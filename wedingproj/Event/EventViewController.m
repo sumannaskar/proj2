@@ -15,7 +15,7 @@
 #define NIB_NAME @"Cell2"
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
-#define EventDeleteURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=event_delete&"]
+#define EventDeleteURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=event_muldel&"]
 #define EventDeleteURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
@@ -185,6 +185,7 @@
     NSString *str4 = [str3 substringToIndex:[str3 length]-1];
     NSString *deleteGuest =[[NSString alloc]initWithFormat:@"event_id=%@%@",str4,EventDeleteURL2];
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",EventDeleteURL1,deleteGuest]];
+   // NSLog(@"%@",url);
     NSData* deleteeventlistdata = [NSData dataWithContentsOfURL: url];
     NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:deleteeventlistdata options:kNilOptions error:&error];
     NSLog(@"%@",rawvendorList);

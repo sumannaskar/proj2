@@ -7,6 +7,7 @@
 //
 
 #import "AddEventViewController.h"
+#import "AddBudgetViewController.h"
 #import "EventViewController.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
@@ -78,16 +79,33 @@
     
     if([[AddEventmessage valueForKey:@"status" ] isEqualToString:@"Record Created"])
     {
-        UIAlertView *addsuccess=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Added Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        UIAlertView *addsuccess=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Added Successfully\nDo you want to create budget?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+        addsuccess.tag = 10;
         [addsuccess show];
-        EventViewController *EventlistVc=[[EventViewController alloc] init];
-        [self.navigationController pushViewController:EventlistVc animated:YES];
+//        EventViewController *EventlistVc=[[EventViewController alloc] init];
+//        [self.navigationController pushViewController:EventlistVc animated:YES];
         
     }
     else
     {
         UIAlertView *addfailed=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Task not added, Try again" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [addfailed show];
+    }
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    //NSLog(@"%ld",(long)buttonIndex);
+    if (alertView.tag==10) {
+        if (buttonIndex == 0) {
+            EventViewController *EventlistVc=[[EventViewController alloc] init];
+            [self.navigationController pushViewController:EventlistVc animated:YES];
+        }
+        if (buttonIndex == 1)
+        {
+            AddBudgetViewController *AddBudgetVc=[[AddBudgetViewController alloc] init];
+            [self.navigationController pushViewController:AddBudgetVc animated:YES];
+        }
+
     }
 }
 
