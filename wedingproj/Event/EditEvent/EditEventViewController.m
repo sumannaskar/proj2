@@ -28,6 +28,7 @@
 
 - (void)viewDidLoad
 {
+    //NSLog(@"%@",self.eventidstr);
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Show Budget"
@@ -62,6 +63,7 @@
 -(void)BudgetButtonTapped:(UIButton *)button
 {
     BudgetListViewController *BudgetVc=[[BudgetListViewController alloc] init];
+    BudgetVc.eventidstr = self.eventidstr;
     [self.navigationController pushViewController:BudgetVc animated:YES];
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

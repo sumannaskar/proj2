@@ -390,8 +390,8 @@
     {
         //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
        
-        EventTable.frame=CGRectMake(0, 0, 320,tableRowheight*2);
-        EventScroll.contentSize = CGSizeMake(320,tableRowheight);
+        EventTable.frame=CGRectMake(0, 0, 768,tableRowheight*2);
+        EventScroll.contentSize = CGSizeMake(768,tableRowheight);
         
         
     }

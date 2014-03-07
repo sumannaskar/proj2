@@ -19,9 +19,18 @@
     BudgetCell *cell;
     NSMutableArray *checkImage;
     BOOL isLoad;
+    BOOL isCheck;
     
+    NSDictionary *json;
+    NSMutableArray *jsondata;
+    NSMutableArray *CatId;
+    NSMutableArray *CatName;
+     NSMutableArray *CatBudget;
+     NSMutableArray *CatDesc;
+    
+     NSDictionary *Deletejson;
 }
 - (IBAction)Add:(UIBarButtonItem *)sender;
 - (IBAction)Delete:(UIBarButtonItem *)sender;
-
+@property (strong, nonatomic) NSString *eventidstr;
 @end

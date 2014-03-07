@@ -136,7 +136,7 @@
          cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellidentifire];
          cell.textLabel.text=[guestName objectAtIndex:indexPath.row];
          
-         UILabel *status = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 72, 37)];
+         UILabel *status = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 120, 37)];
          status.text = [guestResponse objectAtIndex:indexPath.row];
          
          cell.accessoryType = UITableViewCellAccessoryNone;

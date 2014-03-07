@@ -101,8 +101,9 @@
         }
         if (buttonIndex == 1)
         {
-            AddBudgetViewController *AddBudgetVc=[[AddBudgetViewController alloc] init];
-            [self.navigationController pushViewController:AddBudgetVc animated:YES];
+//            AddBudgetViewController *AddBudgetVc=[[AddBudgetViewController alloc] init];
+//            AddBudgetVc.eventidstr = self.eventidstr;
+//            [self.navigationController pushViewController:AddBudgetVc animated:YES];
         }
 
     }
@@ -114,7 +115,14 @@
     
     return YES;
 }
-
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+            } else {
+        NSLog(@"Other pressed");
+    }
+    return YES;
+}
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     if (textField.tag==1) {
