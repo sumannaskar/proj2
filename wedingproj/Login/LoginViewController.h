@@ -18,6 +18,7 @@
     IBOutlet UITextField *password;
     IBOutlet UIButton *signupbtn;
     
+    IBOutlet UIImageView *backgroundimgV;
     
     NSString *AddLoginDataStr;
     NSMutableArray *AddLoginmessage;

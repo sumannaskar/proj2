@@ -34,7 +34,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    [self image];
     username.delegate=self;
     password.delegate=self;
     
@@ -114,4 +114,47 @@
     RegisterViewController *RegisVC =[[RegisterViewController alloc]init];
     [self.navigationController pushViewController:RegisVC animated:YES];
 }
+
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [loginbtn setBackgroundImage:[UIImage imageNamed:@"login-button-320.png"] forState:UIControlStateNormal];
+        [signupbtn setBackgroundImage:[UIImage imageNamed:@"sign-up-320.png"] forState:UIControlStateNormal];
+        
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"login-640.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"login-320.jpg"]];
+            
+        }
+        else
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"login-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"login-768.jpg"]];
+            [loginbtn setBackgroundImage:[UIImage imageNamed:@"login-button.png"] forState:UIControlStateNormal];
+            [signupbtn setBackgroundImage:[UIImage imageNamed:@"sign-up.png"] forState:UIControlStateNormal];
+            
+        }
+        
+    }
+}
+
 @end
