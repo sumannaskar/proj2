@@ -51,7 +51,8 @@
     
     if ([[rawecategoryListDic valueForKey:@"availability"]isEqualToString:@"no"])
     {
-        NSLog(@"Alert");
+        UIAlertView *createvendor =[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"No records found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [createvendor show];
     }
     else
     {
@@ -154,24 +155,15 @@
 - (IBAction)done:(id)sender
 {
     
-    if (!(categorytext.text.length>0)) {
-        //        mytxtfield.text=[stateList objectAtIndex:0];
-        //        self.stateName=[stateList objectAtIndex:0];
-        
+    if (!(categorytext.text.length>0))
+    {
         categorytext.text=[totalcategorylist objectAtIndex:0];
-        //        addressdetailsText.text=[address objectAtIndex:0];
-        //        loactionName=[location objectAtIndex:0];
     }
-    
     [categorytext resignFirstResponder];
 }
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
     categorytext.text=@"";
-    
-    //addressdetailsText.text=@"";
-    
-    
     [categorytext resignFirstResponder];
 }
 

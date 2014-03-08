@@ -37,6 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"Sourabh");
     // Do any additional setup after loading the view from its nib.
     self.vendortxt.userInteractionEnabled=NO;
     //Vendor-category Fetching....
