@@ -15,8 +15,6 @@
 		45678C0518C721C600254941 /* SelectEventRsvpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45678C0318C721C600254941 /* SelectEventRsvpViewController.xib */; };
 		4576A3CC18C46F6A00BEDCE6 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */; };
 		4576A3CD18C46F6A00BEDCE6 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */; };
-		4576A3D018C4766300BEDCE6 /* 640_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4576A3CE18C4766300BEDCE6 /* 640_v2.png */; };
-		4576A3D118C4766300BEDCE6 /* 640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4576A3CF18C4766300BEDCE6 /* 640.png */; };
 		459DD4A318C60D6600D26BFF /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A118C60D6600D26BFF /* DescriptionViewController.m */; };
 		459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */; };
 		459DD4A918C6126200D26BFF /* ReferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A718C6126200D26BFF /* ReferViewController.m */; };
@@ -205,8 +203,6 @@
 		4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
 		4576A3CA18C46F6A00BEDCE6 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
 		4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
-		4576A3CE18C4766300BEDCE6 /* 640_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640_v2.png; sourceTree = "<group>"; };
-		4576A3CF18C4766300BEDCE6 /* 640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640.png; sourceTree = "<group>"; };
 		459DD4A018C60D6600D26BFF /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DescriptionViewController.h; path = Description/DescriptionViewController.h; sourceTree = "<group>"; };
 		459DD4A118C60D6600D26BFF /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DescriptionViewController.m; path = Description/DescriptionViewController.m; sourceTree = "<group>"; };
 		459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DescriptionViewController.xib; path = Description/DescriptionViewController.xib; sourceTree = "<group>"; };
@@ -689,8 +685,6 @@
 			isa = PBXGroup;
 			children = (
 				4B2CD1F718CAF34000B623C7 /* All Images */,
-				4576A3CE18C4766300BEDCE6 /* 640_v2.png */,
-				4576A3CF18C4766300BEDCE6 /* 640.png */,
 				4B344E7E18C854C80037B961 /* Group */,
 				45678BF418C70C8400254941 /* RSVP */,
 				459DD4A518C6123800D26BFF /* Refer A Friend */,
@@ -1378,7 +1372,6 @@
 				4B2CD23E18CAF34000B623C7 /* individually-320.png in Resources */,
 				7AA5857318BF098300E59852 /* AddEventViewController.xib in Resources */,
 				4B2CD25518CAF34000B623C7 /* invitations-320.png in Resources */,
-				4576A3D018C4766300BEDCE6 /* 640_v2.png in Resources */,
 				7AA5858718BF098700E59852 /* AddGuestViewController.xib in Resources */,
 				4B2CD24018CAF34000B623C7 /* invitations.png in Resources */,
 				7AA5855F18BF097D00E59852 /* EditBudget.xib in Resources */,
@@ -1390,7 +1383,6 @@
 				7AA585BC18BF099900E59852 /* InvViewController.xib in Resources */,
 				7AA585B618BF099900E59852 /* InvitationViewController.xib in Resources */,
 				4B2CD23618CAF34000B623C7 /* budgets.png in Resources */,
-				4576A3D118C4766300BEDCE6 /* 640.png in Resources */,
 				4B2CD24318CAF34000B623C7 /* manage-budget.png in Resources */,
 				4B2CD24718CAF34000B623C7 /* send.png in Resources */,
 				4B0C306418C09C2D00D500CF /* FeatureViewController.xib in Resources */,

@@ -12,6 +12,15 @@
 {
     
     IBOutlet UIButton *loginbtn;
+    
+    IBOutlet UIButton *signupbtn;
+    
+    IBOutlet UIButton *featuresbtn;
+    
+    IBOutlet UIButton *helpbtn;
+    IBOutlet UIButton *aboutusbtn;
+    IBOutlet UIButton *insbtn;
+    IBOutlet UIImageView *backgroundimgV;
 }
 
 
