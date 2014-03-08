@@ -138,30 +138,7 @@
     //return 50;
     return [CatName count];
 }
-//for normal table view....
 
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-// {
-//
-//     static NSString *cellidentifire;
-//     UITableViewCell *cell;
-//     cell=[tableView dequeueReusableCellWithIdentifier:cellidentifire];
-//     if(cell==nil)
-//     {
-//         cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellidentifire];
-//         cell.textLabel.text=[NSString stringWithFormat:@"%d",a];
-//         NSLog(@"%d",a);
-//         a=a+1;
-//         cell.accessoryType=UITableViewCellStyleDefault;
-//         //[cell setSelectionStyle:UITableViewCellSelectionStyleGray];
-//         return cell;
-//     }
-//     return cell;
-//
-////[NSString stringWithFormat:@"%d",a];
-//
-// }
 
 //for customize cell......
 

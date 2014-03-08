@@ -163,10 +163,6 @@
         
         
     }
-    NSLog(@"%@",deletearray);
-    NSLog(@"%@",passdeleteid);
-    
-    
     
     [deletetable reloadData];
 }
