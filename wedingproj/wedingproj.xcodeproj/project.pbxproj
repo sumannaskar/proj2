@@ -27,6 +27,54 @@
 		4B0C306418C09C2D00D500CF /* FeatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0C306218C09C2D00D500CF /* FeatureViewController.xib */; };
 		4B1FE48818C1BDB800C36060 /* SelectEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FE48618C1BDB800C36060 /* SelectEventViewController.m */; };
 		4B1FE48918C1BDB800C36060 /* SelectEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FE48718C1BDB800C36060 /* SelectEventViewController.xib */; };
+		4B2CD22B18CAF34000B623C7 /* 320-480.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD1F918CAF34000B623C7 /* 320-480.jpg */; };
+		4B2CD22C18CAF34000B623C7 /* 640-1136.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD1FA18CAF34000B623C7 /* 640-1136.jpg */; };
+		4B2CD22D18CAF34000B623C7 /* 768-1004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD1FB18CAF34000B623C7 /* 768-1004.jpg */; };
+		4B2CD22E18CAF34000B623C7 /* login-320.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD1FC18CAF34000B623C7 /* login-320.jpg */; };
+		4B2CD22F18CAF34000B623C7 /* login-640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD1FD18CAF34000B623C7 /* login-640.jpg */; };
+		4B2CD23018CAF34000B623C7 /* login-768.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD1FE18CAF34000B623C7 /* login-768.jpg */; };
+		4B2CD23118CAF34000B623C7 /* normal-background-320.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD1FF18CAF34000B623C7 /* normal-background-320.jpg */; };
+		4B2CD23218CAF34000B623C7 /* about-us.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20118CAF34000B623C7 /* about-us.png */; };
+		4B2CD23318CAF34000B623C7 /* add-event.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20218CAF34000B623C7 /* add-event.png */; };
+		4B2CD23418CAF34000B623C7 /* add-guest.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20318CAF34000B623C7 /* add-guest.png */; };
+		4B2CD23518CAF34000B623C7 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20418CAF34000B623C7 /* add.png */; };
+		4B2CD23618CAF34000B623C7 /* budgets.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20518CAF34000B623C7 /* budgets.png */; };
+		4B2CD23718CAF34000B623C7 /* calculate-budgets.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20618CAF34000B623C7 /* calculate-budgets.png */; };
+		4B2CD23818CAF34000B623C7 /* do-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20718CAF34000B623C7 /* do-list.png */; };
+		4B2CD23918CAF34000B623C7 /* events.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20818CAF34000B623C7 /* events.png */; };
+		4B2CD23A18CAF34000B623C7 /* feature.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20918CAF34000B623C7 /* feature.png */; };
+		4B2CD23B18CAF34000B623C7 /* groupwise-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20A18CAF34000B623C7 /* groupwise-320.png */; };
+		4B2CD23C18CAF34000B623C7 /* guest-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20B18CAF34000B623C7 /* guest-list.png */; };
+		4B2CD23D18CAF34000B623C7 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20C18CAF34000B623C7 /* help.png */; };
+		4B2CD23E18CAF34000B623C7 /* individually-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20D18CAF34000B623C7 /* individually-320.png */; };
+		4B2CD23F18CAF34000B623C7 /* instruction.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20E18CAF34000B623C7 /* instruction.png */; };
+		4B2CD24018CAF34000B623C7 /* invitations.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD20F18CAF34000B623C7 /* invitations.png */; };
+		4B2CD24118CAF34000B623C7 /* login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21018CAF34000B623C7 /* login-button.png */; };
+		4B2CD24218CAF34000B623C7 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21118CAF34000B623C7 /* login.png */; };
+		4B2CD24318CAF34000B623C7 /* manage-budget.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21218CAF34000B623C7 /* manage-budget.png */; };
+		4B2CD24418CAF34000B623C7 /* proceed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21318CAF34000B623C7 /* proceed.png */; };
+		4B2CD24518CAF34000B623C7 /* save-changes.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21418CAF34000B623C7 /* save-changes.png */; };
+		4B2CD24618CAF34000B623C7 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21518CAF34000B623C7 /* save.png */; };
+		4B2CD24718CAF34000B623C7 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21618CAF34000B623C7 /* send.png */; };
+		4B2CD24818CAF34000B623C7 /* sign-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21718CAF34000B623C7 /* sign-up.png */; };
+		4B2CD24918CAF34000B623C7 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21818CAF34000B623C7 /* status.png */; };
+		4B2CD24A18CAF34000B623C7 /* vendors.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21918CAF34000B623C7 /* vendors.png */; };
+		4B2CD24B18CAF34000B623C7 /* about-us-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21B18CAF34000B623C7 /* about-us-320.png */; };
+		4B2CD24C18CAF34000B623C7 /* budgets-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21C18CAF34000B623C7 /* budgets-320.png */; };
+		4B2CD24D18CAF34000B623C7 /* do-list-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21D18CAF34000B623C7 /* do-list-320.png */; };
+		4B2CD24E18CAF34000B623C7 /* events-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21E18CAF34000B623C7 /* events-320.png */; };
+		4B2CD24F18CAF34000B623C7 /* feature-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21F18CAF34000B623C7 /* feature-320.png */; };
+		4B2CD25018CAF34000B623C7 /* group-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22018CAF34000B623C7 /* group-320.png */; };
+		4B2CD25118CAF34000B623C7 /* guest-list-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22118CAF34000B623C7 /* guest-list-320.png */; };
+		4B2CD25218CAF34000B623C7 /* help-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22218CAF34000B623C7 /* help-320.png */; };
+		4B2CD25318CAF34000B623C7 /* input-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22318CAF34000B623C7 /* input-320.png */; };
+		4B2CD25418CAF34000B623C7 /* instruction-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22418CAF34000B623C7 /* instruction-320.png */; };
+		4B2CD25518CAF34000B623C7 /* invitations-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22518CAF34000B623C7 /* invitations-320.png */; };
+		4B2CD25618CAF34000B623C7 /* login-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22618CAF34000B623C7 /* login-320.png */; };
+		4B2CD25718CAF34000B623C7 /* login-button-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22718CAF34000B623C7 /* login-button-320.png */; };
+		4B2CD25818CAF34000B623C7 /* sign-up-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22818CAF34000B623C7 /* sign-up-320.png */; };
+		4B2CD25918CAF34000B623C7 /* status-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22918CAF34000B623C7 /* status-320.png */; };
+		4B2CD25A18CAF34000B623C7 /* vendors-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22A18CAF34000B623C7 /* vendors-320.png */; };
 		4B344E8218C855000037B961 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E8018C855000037B961 /* GroupViewController.m */; };
 		4B344E8318C855000037B961 /* GroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E8118C855000037B961 /* GroupViewController.xib */; };
 		4B344E8E18C8AF010037B961 /* BudgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E8C18C8AF010037B961 /* BudgetListViewController.m */; };
@@ -174,6 +222,54 @@
 		4B1FE48518C1BDB800C36060 /* SelectEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectEventViewController.h; path = SelectEvent/SelectEventViewController.h; sourceTree = "<group>"; };
 		4B1FE48618C1BDB800C36060 /* SelectEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectEventViewController.m; path = SelectEvent/SelectEventViewController.m; sourceTree = "<group>"; };
 		4B1FE48718C1BDB800C36060 /* SelectEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectEventViewController.xib; path = SelectEvent/SelectEventViewController.xib; sourceTree = "<group>"; };
+		4B2CD1F918CAF34000B623C7 /* 320-480.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "320-480.jpg"; sourceTree = "<group>"; };
+		4B2CD1FA18CAF34000B623C7 /* 640-1136.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "640-1136.jpg"; sourceTree = "<group>"; };
+		4B2CD1FB18CAF34000B623C7 /* 768-1004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "768-1004.jpg"; sourceTree = "<group>"; };
+		4B2CD1FC18CAF34000B623C7 /* login-320.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-320.jpg"; sourceTree = "<group>"; };
+		4B2CD1FD18CAF34000B623C7 /* login-640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-640.jpg"; sourceTree = "<group>"; };
+		4B2CD1FE18CAF34000B623C7 /* login-768.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-768.jpg"; sourceTree = "<group>"; };
+		4B2CD1FF18CAF34000B623C7 /* normal-background-320.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "normal-background-320.jpg"; sourceTree = "<group>"; };
+		4B2CD20118CAF34000B623C7 /* about-us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-us.png"; sourceTree = "<group>"; };
+		4B2CD20218CAF34000B623C7 /* add-event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-event.png"; sourceTree = "<group>"; };
+		4B2CD20318CAF34000B623C7 /* add-guest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-guest.png"; sourceTree = "<group>"; };
+		4B2CD20418CAF34000B623C7 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		4B2CD20518CAF34000B623C7 /* budgets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budgets.png; sourceTree = "<group>"; };
+		4B2CD20618CAF34000B623C7 /* calculate-budgets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculate-budgets.png"; sourceTree = "<group>"; };
+		4B2CD20718CAF34000B623C7 /* do-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "do-list.png"; sourceTree = "<group>"; };
+		4B2CD20818CAF34000B623C7 /* events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = events.png; sourceTree = "<group>"; };
+		4B2CD20918CAF34000B623C7 /* feature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feature.png; sourceTree = "<group>"; };
+		4B2CD20A18CAF34000B623C7 /* groupwise-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "groupwise-320.png"; sourceTree = "<group>"; };
+		4B2CD20B18CAF34000B623C7 /* guest-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guest-list.png"; sourceTree = "<group>"; };
+		4B2CD20C18CAF34000B623C7 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		4B2CD20D18CAF34000B623C7 /* individually-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "individually-320.png"; sourceTree = "<group>"; };
+		4B2CD20E18CAF34000B623C7 /* instruction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instruction.png; sourceTree = "<group>"; };
+		4B2CD20F18CAF34000B623C7 /* invitations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invitations.png; sourceTree = "<group>"; };
+		4B2CD21018CAF34000B623C7 /* login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button.png"; sourceTree = "<group>"; };
+		4B2CD21118CAF34000B623C7 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		4B2CD21218CAF34000B623C7 /* manage-budget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "manage-budget.png"; sourceTree = "<group>"; };
+		4B2CD21318CAF34000B623C7 /* proceed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proceed.png; sourceTree = "<group>"; };
+		4B2CD21418CAF34000B623C7 /* save-changes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save-changes.png"; sourceTree = "<group>"; };
+		4B2CD21518CAF34000B623C7 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		4B2CD21618CAF34000B623C7 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		4B2CD21718CAF34000B623C7 /* sign-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up.png"; sourceTree = "<group>"; };
+		4B2CD21818CAF34000B623C7 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
+		4B2CD21918CAF34000B623C7 /* vendors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendors.png; sourceTree = "<group>"; };
+		4B2CD21B18CAF34000B623C7 /* about-us-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-us-320.png"; sourceTree = "<group>"; };
+		4B2CD21C18CAF34000B623C7 /* budgets-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "budgets-320.png"; sourceTree = "<group>"; };
+		4B2CD21D18CAF34000B623C7 /* do-list-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "do-list-320.png"; sourceTree = "<group>"; };
+		4B2CD21E18CAF34000B623C7 /* events-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "events-320.png"; sourceTree = "<group>"; };
+		4B2CD21F18CAF34000B623C7 /* feature-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feature-320.png"; sourceTree = "<group>"; };
+		4B2CD22018CAF34000B623C7 /* group-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-320.png"; sourceTree = "<group>"; };
+		4B2CD22118CAF34000B623C7 /* guest-list-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guest-list-320.png"; sourceTree = "<group>"; };
+		4B2CD22218CAF34000B623C7 /* help-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-320.png"; sourceTree = "<group>"; };
+		4B2CD22318CAF34000B623C7 /* input-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-320.png"; sourceTree = "<group>"; };
+		4B2CD22418CAF34000B623C7 /* instruction-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instruction-320.png"; sourceTree = "<group>"; };
+		4B2CD22518CAF34000B623C7 /* invitations-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invitations-320.png"; sourceTree = "<group>"; };
+		4B2CD22618CAF34000B623C7 /* login-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-320.png"; sourceTree = "<group>"; };
+		4B2CD22718CAF34000B623C7 /* login-button-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-320.png"; sourceTree = "<group>"; };
+		4B2CD22818CAF34000B623C7 /* sign-up-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up-320.png"; sourceTree = "<group>"; };
+		4B2CD22918CAF34000B623C7 /* status-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-320.png"; sourceTree = "<group>"; };
+		4B2CD22A18CAF34000B623C7 /* vendors-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vendors-320.png"; sourceTree = "<group>"; };
 		4B344E7F18C855000037B961 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupViewController.h; path = Group/GroupViewController.h; sourceTree = "<group>"; };
 		4B344E8018C855000037B961 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupViewController.m; path = Group/GroupViewController.m; sourceTree = "<group>"; };
 		4B344E8118C855000037B961 /* GroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupViewController.xib; path = Group/GroupViewController.xib; sourceTree = "<group>"; };
@@ -447,6 +543,85 @@
 			name = SelectEvent;
 			sourceTree = "<group>";
 		};
+		4B2CD1F718CAF34000B623C7 /* All Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B2CD1F818CAF34000B623C7 /* Background */,
+				4B2CD20018CAF34000B623C7 /* iPad */,
+				4B2CD21A18CAF34000B623C7 /* iPhone */,
+			);
+			path = "All Images";
+			sourceTree = "<group>";
+		};
+		4B2CD1F818CAF34000B623C7 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				4B2CD1F918CAF34000B623C7 /* 320-480.jpg */,
+				4B2CD1FA18CAF34000B623C7 /* 640-1136.jpg */,
+				4B2CD1FB18CAF34000B623C7 /* 768-1004.jpg */,
+				4B2CD1FC18CAF34000B623C7 /* login-320.jpg */,
+				4B2CD1FD18CAF34000B623C7 /* login-640.jpg */,
+				4B2CD1FE18CAF34000B623C7 /* login-768.jpg */,
+				4B2CD1FF18CAF34000B623C7 /* normal-background-320.jpg */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		4B2CD20018CAF34000B623C7 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4B2CD20118CAF34000B623C7 /* about-us.png */,
+				4B2CD20218CAF34000B623C7 /* add-event.png */,
+				4B2CD20318CAF34000B623C7 /* add-guest.png */,
+				4B2CD20418CAF34000B623C7 /* add.png */,
+				4B2CD20518CAF34000B623C7 /* budgets.png */,
+				4B2CD20618CAF34000B623C7 /* calculate-budgets.png */,
+				4B2CD20718CAF34000B623C7 /* do-list.png */,
+				4B2CD20818CAF34000B623C7 /* events.png */,
+				4B2CD20918CAF34000B623C7 /* feature.png */,
+				4B2CD20A18CAF34000B623C7 /* groupwise-320.png */,
+				4B2CD20B18CAF34000B623C7 /* guest-list.png */,
+				4B2CD20C18CAF34000B623C7 /* help.png */,
+				4B2CD20D18CAF34000B623C7 /* individually-320.png */,
+				4B2CD20E18CAF34000B623C7 /* instruction.png */,
+				4B2CD20F18CAF34000B623C7 /* invitations.png */,
+				4B2CD21018CAF34000B623C7 /* login-button.png */,
+				4B2CD21118CAF34000B623C7 /* login.png */,
+				4B2CD21218CAF34000B623C7 /* manage-budget.png */,
+				4B2CD21318CAF34000B623C7 /* proceed.png */,
+				4B2CD21418CAF34000B623C7 /* save-changes.png */,
+				4B2CD21518CAF34000B623C7 /* save.png */,
+				4B2CD21618CAF34000B623C7 /* send.png */,
+				4B2CD21718CAF34000B623C7 /* sign-up.png */,
+				4B2CD21818CAF34000B623C7 /* status.png */,
+				4B2CD21918CAF34000B623C7 /* vendors.png */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		4B2CD21A18CAF34000B623C7 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4B2CD21B18CAF34000B623C7 /* about-us-320.png */,
+				4B2CD21C18CAF34000B623C7 /* budgets-320.png */,
+				4B2CD21D18CAF34000B623C7 /* do-list-320.png */,
+				4B2CD21E18CAF34000B623C7 /* events-320.png */,
+				4B2CD21F18CAF34000B623C7 /* feature-320.png */,
+				4B2CD22018CAF34000B623C7 /* group-320.png */,
+				4B2CD22118CAF34000B623C7 /* guest-list-320.png */,
+				4B2CD22218CAF34000B623C7 /* help-320.png */,
+				4B2CD22318CAF34000B623C7 /* input-320.png */,
+				4B2CD22418CAF34000B623C7 /* instruction-320.png */,
+				4B2CD22518CAF34000B623C7 /* invitations-320.png */,
+				4B2CD22618CAF34000B623C7 /* login-320.png */,
+				4B2CD22718CAF34000B623C7 /* login-button-320.png */,
+				4B2CD22818CAF34000B623C7 /* sign-up-320.png */,
+				4B2CD22918CAF34000B623C7 /* status-320.png */,
+				4B2CD22A18CAF34000B623C7 /* vendors-320.png */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
 		4B344E7E18C854C80037B961 /* Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +688,7 @@
 		7AA584EC18BF096E00E59852 = {
 			isa = PBXGroup;
 			children = (
+				4B2CD1F718CAF34000B623C7 /* All Images */,
 				4576A3CE18C4766300BEDCE6 /* 640_v2.png */,
 				4576A3CF18C4766300BEDCE6 /* 640.png */,
 				4B344E7E18C854C80037B961 /* Group */,
@@ -1131,49 +1307,92 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA585DA18BF09A300E59852 /* TodolistViewController.xib in Resources */,
+				4B2CD25A18CAF34000B623C7 /* vendors-320.png in Resources */,
 				7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */,
+				4B2CD24E18CAF34000B623C7 /* events-320.png in Resources */,
 				4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */,
+				4B2CD23B18CAF34000B623C7 /* groupwise-320.png in Resources */,
+				4B2CD23F18CAF34000B623C7 /* instruction.png in Resources */,
 				4BFAEDB718C9B270006AA867 /* EditBudgetViewController.xib in Resources */,
+				4B2CD22D18CAF34000B623C7 /* 768-1004.jpg in Resources */,
 				7AA585B418BF099900E59852 /* Cell.xib in Resources */,
 				459DD4AA18C6126200D26BFF /* ReferViewController.xib in Resources */,
 				4BFAEDBD18C9B688006AA867 /* AddBudgetViewController.xib in Resources */,
 				4B1FE48918C1BDB800C36060 /* SelectEventViewController.xib in Resources */,
 				7AA5857718BF098300E59852 /* EditEventViewController.xib in Resources */,
 				4B0C305E18C07D0900D500CF /* RegisterViewController.xib in Resources */,
+				4B2CD24118CAF34000B623C7 /* login-button.png in Resources */,
 				7AA585D818BF09A300E59852 /* EditTaskViewController.xib in Resources */,
+				4B2CD24F18CAF34000B623C7 /* feature-320.png in Resources */,
 				7AA585C218BF099D00E59852 /* LoginViewController.xib in Resources */,
+				4B2CD25218CAF34000B623C7 /* help-320.png in Resources */,
+				4B2CD25718CAF34000B623C7 /* login-button-320.png in Resources */,
 				7AE4DA0E18C073D8009AC079 /* AddVendor.xib in Resources */,
 				7AA585B218BF099900E59852 /* SelectViewController.xib in Resources */,
 				7AA585D618BF09A300E59852 /* Cell3.xib in Resources */,
+				4B2CD25318CAF34000B623C7 /* input-320.png in Resources */,
 				7AA5855D18BF097D00E59852 /* DeleteBudgetCC.xib in Resources */,
 				459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */,
+				4B2CD22C18CAF34000B623C7 /* 640-1136.jpg in Resources */,
+				4B2CD23D18CAF34000B623C7 /* help.png in Resources */,
 				7AE4DA0218C06957009AC079 /* DetailVendor.xib in Resources */,
+				4B2CD24A18CAF34000B623C7 /* vendors.png in Resources */,
+				4B2CD24B18CAF34000B623C7 /* about-us-320.png in Resources */,
 				7AA5857518BF098300E59852 /* Cell2.xib in Resources */,
+				4B2CD24418CAF34000B623C7 /* proceed.png in Resources */,
 				7AA5858B18BF098700E59852 /* GuestViewController.xib in Resources */,
+				4B2CD23118CAF34000B623C7 /* normal-background-320.jpg in Resources */,
+				4B2CD25118CAF34000B623C7 /* guest-list-320.png in Resources */,
 				7AA5855718BF097D00E59852 /* AllBudget.xib in Resources */,
+				4B2CD25918CAF34000B623C7 /* status-320.png in Resources */,
 				7AA585BA18BF099900E59852 /* SendIndividuallyViewController.xib in Resources */,
 				7AA5858918BF098700E59852 /* EditGuestViewController.xib in Resources */,
+				4B2CD23018CAF34000B623C7 /* login-768.jpg in Resources */,
+				4B2CD23C18CAF34000B623C7 /* guest-list.png in Resources */,
 				7AE4DA0818C06E1B009AC079 /* EditVendor.xib in Resources */,
+				4B2CD25018CAF34000B623C7 /* group-320.png in Resources */,
+				4B2CD25618CAF34000B623C7 /* login-320.png in Resources */,
+				4B2CD23318CAF34000B623C7 /* add-event.png in Resources */,
 				7AA5859118BF098C00E59852 /* HomeViewController.xib in Resources */,
 				7AA585E618BF09B000E59852 /* WelcomeViewController.xib in Resources */,
+				4B2CD25418CAF34000B623C7 /* instruction-320.png in Resources */,
+				4B2CD22F18CAF34000B623C7 /* login-640.jpg in Resources */,
+				4B2CD24618CAF34000B623C7 /* save.png in Resources */,
 				7AA5855918BF097D00E59852 /* Customcell.xib in Resources */,
 				7AA585D418BF09A300E59852 /* AddTaskViewController.xib in Resources */,
 				7AE4DA1A18C07616009AC079 /* DeleteVendorCC.xib in Resources */,
+				4B2CD24218CAF34000B623C7 /* login.png in Resources */,
+				4B2CD24518CAF34000B623C7 /* save-changes.png in Resources */,
+				4B2CD23418CAF34000B623C7 /* add-guest.png in Resources */,
+				4B2CD23818CAF34000B623C7 /* do-list.png in Resources */,
 				7AE4D9FC18C066C8009AC079 /* ManageVendorCC.xib in Resources */,
 				7AA585EE18BF792300E59852 /* AllBudgetCC.xib in Resources */,
 				7AA5850318BF096E00E59852 /* InfoPlist.strings in Resources */,
+				4B2CD22B18CAF34000B623C7 /* 320-480.jpg in Resources */,
+				4B2CD25818CAF34000B623C7 /* sign-up-320.png in Resources */,
+				4B2CD24C18CAF34000B623C7 /* budgets-320.png in Resources */,
 				45678BFF18C70ED700254941 /* DestailsRSVPViewController.xib in Resources */,
+				4B2CD24818CAF34000B623C7 /* sign-up.png in Resources */,
+				4B2CD22E18CAF34000B623C7 /* login-320.jpg in Resources */,
 				7AA585E018BF09AA00E59852 /* VendorViewController.xib in Resources */,
+				4B2CD23E18CAF34000B623C7 /* individually-320.png in Resources */,
 				7AA5857318BF098300E59852 /* AddEventViewController.xib in Resources */,
+				4B2CD25518CAF34000B623C7 /* invitations-320.png in Resources */,
 				4576A3D018C4766300BEDCE6 /* 640_v2.png in Resources */,
 				7AA5858718BF098700E59852 /* AddGuestViewController.xib in Resources */,
+				4B2CD24018CAF34000B623C7 /* invitations.png in Resources */,
 				7AA5855F18BF097D00E59852 /* EditBudget.xib in Resources */,
 				45678C0518C721C600254941 /* SelectEventRsvpViewController.xib in Resources */,
+				4B2CD23218CAF34000B623C7 /* about-us.png in Resources */,
+				4B2CD23718CAF34000B623C7 /* calculate-budgets.png in Resources */,
 				7AA5857918BF098300E59852 /* EventViewController.xib in Resources */,
 				7AA5855B18BF097D00E59852 /* DeleteBudget.xib in Resources */,
 				7AA585BC18BF099900E59852 /* InvViewController.xib in Resources */,
 				7AA585B618BF099900E59852 /* InvitationViewController.xib in Resources */,
+				4B2CD23618CAF34000B623C7 /* budgets.png in Resources */,
 				4576A3D118C4766300BEDCE6 /* 640.png in Resources */,
+				4B2CD24318CAF34000B623C7 /* manage-budget.png in Resources */,
+				4B2CD24718CAF34000B623C7 /* send.png in Resources */,
 				4B0C306418C09C2D00D500CF /* FeatureViewController.xib in Resources */,
 				4B344E8F18C8AF010037B961 /* BudgetListViewController.xib in Resources */,
 				4B344E9518C8AFC30037B961 /* BudgetCell.xib in Resources */,
@@ -1183,12 +1402,17 @@
 				7AA5859718BF099500E59852 /* index2.jpg in Resources */,
 				7AA5856118BF097D00E59852 /* ManageBudget.xib in Resources */,
 				7AA5854F18BF097D00E59852 /* BudgetViewController.xib in Resources */,
+				4B2CD23518CAF34000B623C7 /* add.png in Resources */,
 				7AE4D9F618C064D8009AC079 /* ManageVendor.xib in Resources */,
+				4B2CD23A18CAF34000B623C7 /* feature.png in Resources */,
+				4B2CD23918CAF34000B623C7 /* events.png in Resources */,
 				7AA5850B18BF096E00E59852 /* Images.xcassets in Resources */,
+				4B2CD24D18CAF34000B623C7 /* do-list-320.png in Resources */,
 				7AA5859618BF099500E59852 /* index.jpg in Resources */,
 				7AA585B818BF099900E59852 /* Cell1.xib in Resources */,
 				7AE4DA1418C074E8009AC079 /* DeleteVendor.xib in Resources */,
 				4B344E8318C855000037B961 /* GroupViewController.xib in Resources */,
+				4B2CD24918CAF34000B623C7 /* status.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
