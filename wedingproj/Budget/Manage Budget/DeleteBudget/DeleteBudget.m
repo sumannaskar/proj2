@@ -161,7 +161,7 @@
             passdeleteid =[NSString stringWithFormat:@"%@%@",passdeleteid,a];
         }
         
-        
+        NSLog(@"asd");
     }
     
     [deletetable reloadData];
