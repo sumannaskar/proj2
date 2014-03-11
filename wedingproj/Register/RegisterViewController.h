@@ -17,7 +17,9 @@
     
     IBOutlet UITextField *emailtxt;
     IBOutlet UITextField *confirmpwdtxt;
+    IBOutlet UIImageView *backgroundimgV;
     
+    IBOutlet UIButton *registerbtn;
     IBOutlet UIScrollView *scroll;
     
     NSString *AddUserDataStr;

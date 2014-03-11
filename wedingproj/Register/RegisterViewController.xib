@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
             <connections>
+                <outlet property="backgroundimgV" destination="kpb-L4-S6I" id="8Ym-Ae-4cz"/>
                 <outlet property="bridenametxt" destination="Txk-1j-Tqw" id="kK5-Sw-Fq4"/>
                 <outlet property="confirmpwdtxt" destination="uvT-go-gGm" id="PVt-Rs-16n"/>
                 <outlet property="countrytxt" destination="Jzu-BT-Jw0" id="W0N-qb-CdS"/>
@@ -17,6 +18,7 @@
                 <outlet property="groomnametxt" destination="9lB-cn-VGu" id="5Ht-YA-LNN"/>
                 <outlet property="passwrdtxt" destination="QaB-Lc-goS" id="Oim-1o-M9S"/>
                 <outlet property="pickerVw" destination="LCU-Tw-HzJ" id="Pr9-Z3-Jo1"/>
+                <outlet property="registerbtn" destination="LgR-zF-ZvT" id="IRw-S5-vsP"/>
                 <outlet property="respondingView" destination="62R-kN-Jg6" id="9sk-ey-yKu"/>
                 <outlet property="scroll" destination="Rsy-aY-L2n" id="aoD-dv-xwt"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -128,10 +130,11 @@
                         </textField>
                     </subviews>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LgR-zF-ZvT">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LgR-zF-ZvT">
                     <rect key="frame" x="64" y="509" width="192" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Register">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>

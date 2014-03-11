@@ -32,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"Register");
+    [self image];
     // Do any additional setup after loading the view from its nib.
     
     //Country List Fetching
@@ -240,5 +240,47 @@
     NSString *formattedDate = [dateFormatter stringFromDate:date];
     return formattedDate;
 }
+
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [registerbtn setBackgroundImage:[UIImage imageNamed:@"login-320.png"] forState:UIControlStateNormal];
+        
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"768-1004.jpg"]];
+            [registerbtn setBackgroundImage:[UIImage imageNamed:@"normal-background-320.jpg"] forState:UIControlStateNormal];
+            
+        }
+        
+    }
+}
+
+
 
 @end
