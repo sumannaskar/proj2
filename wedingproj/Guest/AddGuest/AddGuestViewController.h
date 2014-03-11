@@ -24,6 +24,8 @@
     NSDictionary *jsondata;
      NSMutableArray *json;
     
+    IBOutlet UIImageView *backgroundimgV;
+    
 }
 
 @property (retain, nonatomic) IBOutlet UIView *respondingView;

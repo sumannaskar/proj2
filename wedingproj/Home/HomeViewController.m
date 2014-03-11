@@ -39,6 +39,7 @@
 {
     [super viewDidLoad];
     [self image];
+    
     self.navigationItem.hidesBackButton = YES;
     self.logoutButton=[[UIBarButtonItem alloc]initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(LogOut:)];
     [self.navigationItem setRightBarButtonItem:self.logoutButton];

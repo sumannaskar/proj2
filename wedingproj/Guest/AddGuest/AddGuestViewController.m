@@ -33,6 +33,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self image];
     nametxt.delegate=self;
     self.RoleText.delegate=self;
     self.EmailText.delegate=self;
@@ -307,4 +308,44 @@
                    error:&error];
     // NSLog(@"%@",UpdateArray);
 }
+
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+       [self.Add setBackgroundImage:[UIImage imageNamed:@"add-guest.png"] forState:UIControlStateNormal];
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            [self.Add setBackgroundImage:[UIImage imageNamed:@"add-guest.png"] forState:UIControlStateNormal];
+            
+        }
+        
+    }
+}
+
 @end
