@@ -19,6 +19,7 @@
 #import "ReferViewController.h"
 #import "SelectEventRsvpViewController.h"
 #import "GroupViewController.h"
+#import "VendorListViewController.h"
 
 @interface HomeViewController ()
 
@@ -110,7 +111,10 @@
 }
 - (IBAction)vendoractn:(UIButton *)sender
 {
-    VendorViewController *VendorVC =[[VendorViewController alloc]init];
+//    VendorViewController *VendorVC =[[VendorViewController alloc]init];
+//    [self.navigationController pushViewController:VendorVC animated:YES];
+    
+    VendorListViewController *VendorVC =[[VendorListViewController alloc]init];
     [self.navigationController pushViewController:VendorVC animated:YES];
 }
 
