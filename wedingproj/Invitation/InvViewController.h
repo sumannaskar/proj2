@@ -18,6 +18,9 @@
     NSMutableArray *json;
     NSMutableArray *Gid;
     NSMutableArray *Gname;
+    
+    
+    IBOutlet UIImageView *backgroundimgV;
 }
 - (IBAction)IndividuallySend:(UIButton *)sender;
 - (IBAction)GroupwiseSend:(UIButton *)sender;

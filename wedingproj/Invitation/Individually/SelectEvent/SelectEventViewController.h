@@ -16,6 +16,9 @@
     NSMutableArray *eventId;
      NSMutableArray *eventDesc;
     NSString *selectEventId;
+    
+    IBOutlet UIImageView *backgroundimgV;
+    
 }
 @property (strong, nonatomic) IBOutlet UITextField *SelectEvent;
 @property (strong, nonatomic) IBOutlet UITextView *EventDescription;

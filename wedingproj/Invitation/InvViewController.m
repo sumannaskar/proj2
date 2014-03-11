@@ -33,6 +33,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self image];
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,5 +121,46 @@
     [self.navigationController pushViewController:SelectVC animated:YES];
     }
 }
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [individually setBackgroundImage:[UIImage imageNamed:@"individually-320"] forState:UIControlStateNormal];
+        [Groupwise setBackgroundImage:[UIImage imageNamed:@"groupwise-320.png"] forState:UIControlStateNormal];
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            [individually setBackgroundImage:[UIImage imageNamed:@"individually-320"] forState:UIControlStateNormal];
+            [Groupwise setBackgroundImage:[UIImage imageNamed:@"groupwise-320.png"] forState:UIControlStateNormal];
+            
+        }
+        
+    }
+}
+
 
 @end

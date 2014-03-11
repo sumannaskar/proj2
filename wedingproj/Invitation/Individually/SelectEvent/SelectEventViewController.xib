@@ -11,6 +11,7 @@
                 <outlet property="PickerView" destination="yIk-iG-xTi" id="yEd-b1-Cbr"/>
                 <outlet property="Proced" destination="e3f-Z7-OkS" id="F06-X6-5f3"/>
                 <outlet property="SelectEvent" destination="3jN-fJ-f5p" id="qcW-2B-Yzh"/>
+                <outlet property="backgroundimgV" destination="TLd-Ny-GTW" id="dVH-p5-20N"/>
                 <outlet property="respondView" destination="T0P-SX-Y22" id="0iD-BJ-aMs"/>
                 <outlet property="view" destination="1" id="qG1-hj-S6W"/>
             </connections>
@@ -44,14 +45,9 @@
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e3f-Z7-OkS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e3f-Z7-OkS">
                     <rect key="frame" x="80" y="475" width="161" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Proceed">
-                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
                     <connections>
                         <action selector="ProcedAction:" destination="-1" eventType="touchUpInside" id="qwI-Wb-YIw"/>
                     </connections>

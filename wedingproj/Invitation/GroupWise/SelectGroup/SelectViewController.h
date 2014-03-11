@@ -17,6 +17,9 @@
     NSMutableArray *eventDesc;
     NSString *selectEventId;
      NSString *selectGroupId;
+    
+    IBOutlet UIImageView *backgroundimgV;
+    
 }
 - (IBAction)SelectGroup:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *SelectGroup;
