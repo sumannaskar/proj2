@@ -20,7 +20,14 @@ BOOL isCheck;
     
     
     NSDictionary *json;
-    NSMutableArray *jsondata;
+     NSMutableArray *Jsondata;
+    
+    NSMutableArray *Vid;
+     NSMutableArray *Vname;
+     NSMutableArray *Vcatagory;
+     NSMutableArray *Vcontact;
+     NSMutableArray *Vemail;
+    
     
 }
 - (IBAction)DeleteAction:(UIBarButtonItem *)sender;

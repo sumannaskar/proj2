@@ -7,6 +7,7 @@
 //
 
 #import "VendorListViewController.h"
+#import "AddVendorViewController.h"
 #import "SSKeychain.h"
 #define NIB_NAME @"VendorCell"
 
@@ -45,7 +46,13 @@
     [InvScroll addSubview:InvTable];
     
     json = [[NSDictionary alloc]init];
-    jsondata = [[NSMutableArray alloc]init];
+    Jsondata = [[NSMutableArray alloc]init];
+    
+    Vid = [[NSMutableArray alloc]init];
+    Vname = [[NSMutableArray alloc]init];
+    Vcatagory = [[NSMutableArray alloc]init];
+    Vcontact = [[NSMutableArray alloc]init];
+    Vemail = [[NSMutableArray alloc]init];
     
     NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&category_name=lightings&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
     
@@ -86,43 +93,35 @@
             
             options:kNilOptions
             error:&error];
-     NSLog(@"%@",[json valueForKey:@"status"]);
+     NSLog(@"%@",[json valueForKey:@"availability"]);
     
     // [HUD hideUIBlockingIndicator];
-//    if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
-//        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
-//        [nodata show];
-//    }
-//    else{
-////        Jsondata = [json valueForKey:@"data"];
-////        for(int i=0;i<Jsondata.count;i++ ) {
-////            [Gid addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"guest_id"]];
-////        }
-////        for(int i=0;i<Jsondata.count;i++ ) {
-////            [Gname addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"name"]];
-////            
-////        }
-////        for(int i=0;i<Jsondata.count;i++ ) {
-////            [role addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"role"]];
-////            
-////        }
-////        for(int i=0;i<Jsondata.count;i++ ) {
-////            [email addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"email"]];
-////            
-////        }
-////        for(int i=0;i<Jsondata.count;i++ ) {
-////            [GroupId addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"group_id"]];
-////            
-////        }
-////        for(int i=0;i<Jsondata.count;i++ ) {
-////            [GroupName addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"group_name"]];
-////            
-////        }
-////        for(int i=0;i<Jsondata.count;i++ ) {
-////            [NoOfPerson addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"no_of_guest"]];
-//        
-//        }
-//    }
+    if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
+    }
+    else{
+        Jsondata = [json valueForKey:@"data"];
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [Vid addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"vendor_id"]];
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [Vname addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"vendor_name"]];
+            
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [Vcatagory addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"category_name"]];
+            
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [Vcontact addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"contact"]];
+            
+        }
+        for(int i=0;i<Jsondata.count;i++ ) {
+            [Vemail addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"email"]];
+            
+        }
+    }
     [self setTableHeight];
     [InvTable reloadData];
     
@@ -135,7 +134,7 @@
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
         [InvTable setRowHeight:55];
-        NSInteger tableRowheight = 60*10;
+        NSInteger tableRowheight = 60*[Vid count];
         
         InvTable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
         InvScroll.contentSize = CGSizeMake(320, tableRowheight);
@@ -145,7 +144,7 @@
     else
     {
         [InvTable setRowHeight:85];
-        NSInteger tableRowheight = 90*10;
+        NSInteger tableRowheight = 90*[Vid count];
         InvTable.frame=CGRectMake(0, 0, 768, tableRowheight*2);
         InvScroll.contentSize = CGSizeMake(768, tableRowheight);
         
@@ -170,7 +169,7 @@
     //[InvTable setRowHeight: 50.00];
     // Return the number of rows in the section.
     // NSLog(@"%d",[Gname count]);
-    return 10;
+    return [Vid count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -200,10 +199,10 @@
         [cell.checkImgv setImage:[UIImage imageNamed:[checkImage objectAtIndex:indexPath.row]]];
     }
     
-//    cell.guestLbl.text = [Gname objectAtIndex:indexPath.row];
+    cell.guestLbl.text = [Vname objectAtIndex:indexPath.row];
     // NSLog(@"%@",[Gname objectAtIndex:indexPath.row]);
     
-    cell.guestLbl.text = @"Vendor";
+    //cell.guestLbl.text = @"Vendor";
     
     [cell.statusBtn addTarget:self action:@selector(InvStatus:) forControlEvents:UIControlEventTouchUpInside];
     cell.statusBtn.tag = indexPath.row;
@@ -239,9 +238,8 @@
 //    [self.navigationController pushViewController:EditVc animated:YES];
 }
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
-    NSLog(@"Add");
-//    AddGuestViewController *AddguestVc=[[AddGuestViewController alloc] init];
-//    [self.navigationController pushViewController:AddguestVc animated:YES];
+    AddVendorViewController *AddVc=[[AddVendorViewController alloc] init];
+    [self.navigationController pushViewController:AddVc animated:YES];
 }
 - (IBAction)DeleteAction:(UIBarButtonItem *)sender {
     

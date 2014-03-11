@@ -87,6 +87,8 @@
 		4B5B6C0B18CEF8ED00529396 /* VendorListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C0918CEF8ED00529396 /* VendorListViewController.xib */; };
 		4B5B6C0F18CEFAB600529396 /* VendorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B6C0E18CEFAB600529396 /* VendorCell.m */; };
 		4B5B6C1118CEFAD200529396 /* VendorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1018CEFAD200529396 /* VendorCell.xib */; };
+		4B5B6C1A18CF17EE00529396 /* AddVendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1818CF17EE00529396 /* AddVendorViewController.m */; };
+		4B5B6C1B18CF17EE00529396 /* AddVendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1918CF17EE00529396 /* AddVendorViewController.xib */; };
 		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
 		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
 		4BFAEDB618C9B270006AA867 /* EditBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAEDB418C9B270006AA867 /* EditBudgetViewController.m */; };
@@ -295,6 +297,9 @@
 		4B5B6C0D18CEFAB600529396 /* VendorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VendorCell.h; path = VendorList/VendorCell/VendorCell.h; sourceTree = "<group>"; };
 		4B5B6C0E18CEFAB600529396 /* VendorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VendorCell.m; path = VendorList/VendorCell/VendorCell.m; sourceTree = "<group>"; };
 		4B5B6C1018CEFAD200529396 /* VendorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VendorCell.xib; path = VendorList/VendorCell/VendorCell.xib; sourceTree = "<group>"; };
+		4B5B6C1718CF17EE00529396 /* AddVendorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddVendorViewController.h; path = VendorList/AddVendor/AddVendorViewController.h; sourceTree = "<group>"; };
+		4B5B6C1818CF17EE00529396 /* AddVendorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddVendorViewController.m; path = VendorList/AddVendor/AddVendorViewController.m; sourceTree = "<group>"; };
+		4B5B6C1918CF17EE00529396 /* AddVendorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddVendorViewController.xib; path = VendorList/AddVendor/AddVendorViewController.xib; sourceTree = "<group>"; };
 		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
 		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
 		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
@@ -687,6 +692,7 @@
 		4B5B6C0618CEF89300529396 /* VendorList */ = {
 			isa = PBXGroup;
 			children = (
+				4B5B6C1218CF175D00529396 /* AddVendor */,
 				4B5B6C0C18CEFA8700529396 /* VendorCell */,
 				4B5B6C0718CEF8ED00529396 /* VendorListViewController.h */,
 				4B5B6C0818CEF8ED00529396 /* VendorListViewController.m */,
@@ -703,6 +709,16 @@
 				4B5B6C1018CEFAD200529396 /* VendorCell.xib */,
 			);
 			name = VendorCell;
+			sourceTree = "<group>";
+		};
+		4B5B6C1218CF175D00529396 /* AddVendor */ = {
+			isa = PBXGroup;
+			children = (
+				4B5B6C1718CF17EE00529396 /* AddVendorViewController.h */,
+				4B5B6C1818CF17EE00529396 /* AddVendorViewController.m */,
+				4B5B6C1918CF17EE00529396 /* AddVendorViewController.xib */,
+			);
+			name = AddVendor;
 			sourceTree = "<group>";
 		};
 		4B9AF8C618BF15BA00B97DC6 /* cell */ = {
@@ -1464,6 +1480,7 @@
 				7AA585B818BF099900E59852 /* Cell1.xib in Resources */,
 				7AE4DA1418C074E8009AC079 /* DeleteVendor.xib in Resources */,
 				4B344E8318C855000037B961 /* GroupViewController.xib in Resources */,
+				4B5B6C1B18CF17EE00529396 /* AddVendorViewController.xib in Resources */,
 				4B2CD24918CAF34000B623C7 /* status.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1495,6 +1512,7 @@
 				7AA585B718BF099900E59852 /* Cell1.m in Sources */,
 				7AA585C118BF099D00E59852 /* LoginViewController.m in Sources */,
 				7AA5855E18BF097D00E59852 /* EditBudget.m in Sources */,
+				4B5B6C1A18CF17EE00529396 /* AddVendorViewController.m in Sources */,
 				7AA5859018BF098C00E59852 /* HomeViewController.m in Sources */,
 				7AA5855618BF097D00E59852 /* AllBudget.m in Sources */,
 				4B5B6C0218CEF68100529396 /* NPHelpViewController.m in Sources */,
