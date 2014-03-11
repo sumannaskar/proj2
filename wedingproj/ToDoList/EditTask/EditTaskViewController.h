@@ -38,6 +38,10 @@
     
     NSMutableArray *totalcategorylist;
     
+    IBOutlet UIImageView *backgroundimgV;
+    
+    IBOutlet UIButton *savebtn;
+    
 }
 @property (strong, nonatomic) NSString *taskidstr;
 @property (strong, nonatomic) NSString *tasknamestr;

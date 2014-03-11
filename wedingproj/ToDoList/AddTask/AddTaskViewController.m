@@ -11,7 +11,7 @@
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #define AddTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_create&"]
-#define kcategorylistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_cat"]
+#define kcategorylistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=category_user"]
 #define kcategorylistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
@@ -37,15 +37,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"Sourabh");
+    [self image];
     // Do any additional setup after loading the view from its nib.
     self.vendortxt.userInteractionEnabled=NO;
     //Vendor-category Fetching....
     NSURL *tempcategoryurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@&user_id=%@%@",kcategorylistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],kcategorylistURL2]];
+    NSLog(@"%@",tempcategoryurl);
     NSError *error;
     NSData* categoryListData = [NSData dataWithContentsOfURL: tempcategoryurl];
     NSDictionary* rawecategoryListDic = [NSJSONSerialization JSONObjectWithData:categoryListData options:kNilOptions error:&error];
-    NSArray *rawcategoryList=[[NSArray alloc]init];
+   // NSArray *rawcategoryList=[[NSArray alloc]init];
     //    NSArray* raweventList = [NSJSONSerialization JSONObjectWithData:eventListData options:kNilOptions error:&error];
     totalcategorylist=[[NSMutableArray alloc ]init];
     
@@ -55,14 +56,15 @@
     }
     else
     {
-        rawcategoryList = [rawecategoryListDic valueForKey:@"data"];
-        for(int i=0;i<rawcategoryList.count;i++)
-        {
-            
-            NSDictionary *tempDict=[rawcategoryList objectAtIndex:i];
-            [totalcategorylist addObject:[tempDict objectForKey:@"category"]];
-            
-        }
+        totalcategorylist = [rawecategoryListDic valueForKey:@"data"];
+       // NSLog(@"%@",rawcategoryList);
+//        for(int i=0;i<rawcategoryList.count;i++)
+//        {
+//            
+//            NSDictionary *tempDict=[rawcategoryList objectAtIndex:i];
+//            [totalcategorylist addObject:[tempDict objectForKey:@"category"]];
+//            
+//        }
     }
 
     
@@ -491,5 +493,47 @@
     NSString *formattedDate = [dateFormatter stringFromDate:date];
     return formattedDate;
 }
+
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [Addtaskbtn setBackgroundImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
+        
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+             [Addtaskbtn setBackgroundImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
+            
+        }
+        
+    }
+}
+
+
 
 @end

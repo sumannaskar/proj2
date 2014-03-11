@@ -39,6 +39,11 @@
     
     
     NSMutableArray *totalcategorylist;
+    
+    
+    IBOutlet UIImageView *backgroundimgV;
+    
+    IBOutlet UIButton *Addtaskbtn;
 }
 
 
