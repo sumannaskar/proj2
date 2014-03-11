@@ -8,11 +8,12 @@
 
 #import "VendorListViewController.h"
 #import "AddVendorViewController.h"
+#import "EditVendorViewController.h"
 #import "SSKeychain.h"
 #define NIB_NAME @"VendorCell"
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_all&"]
 
 #define DeleteURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_muldel&"]
 
@@ -54,7 +55,7 @@
     Vcontact = [[NSMutableArray alloc]init];
     Vemail = [[NSMutableArray alloc]init];
     
-    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&category_name=lightings&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
+    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
     NSLog(@"my--%@",url);
@@ -224,18 +225,17 @@
 -(void) InvStatus:(UIButton*)button
 {
     NSLog(@"%ld",(long)button.tag);
-//    EditGuestViewController *EditVc=[[EditGuestViewController alloc] init];
-//    
-//    EditVc.GidString = [Gid objectAtIndex:button.tag];
-//    EditVc.nameString = [Gname objectAtIndex:button.tag];
-//    EditVc.roleString = [role objectAtIndex:button.tag];
-//    EditVc.emailString = [email objectAtIndex:button.tag];
-//    EditVc.groupString = [GroupName objectAtIndex:button.tag];
-//    EditVc.withString = [NoOfPerson objectAtIndex:button.tag];
-//    
-//    //NSLog(@"%@",EditVc.withString);
-//    
-//    [self.navigationController pushViewController:EditVc animated:YES];
+    EditVendorViewController *EditVc=[[EditVendorViewController alloc] init];
+    
+    EditVc.Vid = [Vid objectAtIndex:button.tag];
+    EditVc.Vname = [Vname objectAtIndex:button.tag];
+    EditVc.Vcat = [Vcatagory objectAtIndex:button.tag];
+    EditVc.Vemail = [Vemail objectAtIndex:button.tag];
+    EditVc.Vcontact = [Vcontact objectAtIndex:button.tag];
+    
+    //NSLog(@"%@",EditVc.withString);
+    
+    [self.navigationController pushViewController:EditVc animated:YES];
 }
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
     AddVendorViewController *AddVc=[[AddVendorViewController alloc] init];
