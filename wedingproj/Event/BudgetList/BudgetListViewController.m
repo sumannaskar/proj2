@@ -11,7 +11,7 @@
 #import "EditBudgetViewController.h"
 #import "AddBudgetViewController.h"
 #define DeleteCat [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=category_muldel&"]
-#define catlist [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=category&"]
+#define catlist [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=category_event&"]
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 @interface BudgetListViewController ()
@@ -31,7 +31,7 @@
 
 - (void)viewDidLoad
 {
-//    NSLog(@"%@",self.eventidstr);
+    //NSLog(@"%@",self.eventidstr);
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     isLoad = YES;
@@ -114,6 +114,7 @@
             
         }
     }
+    NSLog(@"%@",CatId);
     [self setTableHeight];
     [BudgetTable reloadData];
     
@@ -267,7 +268,7 @@
         NSString *str4 = [str3 substringToIndex:[str3 length]-1];
         NSString *deleteGuest =[[NSString alloc]initWithFormat:@"category_id=%@&apikey=micronix_10_2014_wedsimple_proj",str4];
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",DeleteCat,deleteGuest]];
-        // NSLog(@"%@",url);
+         NSLog(@"%@",url);
         NSData* deleteeventlistdata = [NSData dataWithContentsOfURL: url];
         Deletejson = [NSJSONSerialization JSONObjectWithData:deleteeventlistdata options:kNilOptions error:&error];
         // NSLog(@"%@",Deletejson);
