@@ -17,6 +17,8 @@
     
     IBOutlet UITextView *DescTextView;
     NSDictionary *json;
+    
+    
 }
 @property (strong, nonatomic) IBOutlet UIImageView *BackImgv;
 @property (strong, nonatomic) IBOutlet UIButton *SaveBtn;
