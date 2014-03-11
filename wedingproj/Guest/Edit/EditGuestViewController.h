@@ -25,6 +25,9 @@
     
     NSMutableArray *UpdateArray;
      NSString *savedata;
+    
+    IBOutlet UIImageView *backgroundimgV;
+    
 }
 
 @property (retain, nonatomic) IBOutlet UIView *respondingView;
