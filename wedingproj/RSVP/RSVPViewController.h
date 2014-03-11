@@ -16,6 +16,12 @@
     IBOutlet UILabel *invitationsentresult;
     IBOutlet UILabel *acceptedresultlbl;
     IBOutlet UILabel *rejectedresltlbl;
+    
+    IBOutlet UIImageView *backgroundimgV;
+    
+    
+    IBOutlet UIButton *morebtn;
+    
 }
 
 

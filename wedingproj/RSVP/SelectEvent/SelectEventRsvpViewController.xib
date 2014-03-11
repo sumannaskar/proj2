@@ -11,6 +11,7 @@
                 <outlet property="PickerView" destination="Eep-yG-ODm" id="ULh-V6-Q2c"/>
                 <outlet property="Proced" destination="75Q-wE-GWY" id="aCb-4t-Vek"/>
                 <outlet property="SelectEvent" destination="nak-cv-u7W" id="Jod-n7-S5D"/>
+                <outlet property="backgroundimgV" destination="yHO-Hg-Sq4" id="Ndt-Ns-oge"/>
                 <outlet property="respondView" destination="xXR-j3-50Y" id="K06-T3-6f2"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -48,10 +49,6 @@
                     <rect key="frame" x="79" y="495" width="161" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Proceed">
-                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
                     <connections>
                         <action selector="ProcedAction:" destination="-1" eventType="touchUpInside" id="hnw-Qt-Fxx"/>
                     </connections>

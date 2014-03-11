@@ -31,6 +31,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self image];
     NSURL *tempurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@event_id=%@%@",kRSVPURL1,self.eventID,kRSVPURL2]];
     NSLog(@"%@",tempurl);
     dispatch_async(kBgQueue, ^{
@@ -66,4 +67,43 @@
     detailsrsvVC.eventId = self.eventID;
     [self.navigationController pushViewController:detailsrsvVC animated:YES];
 }
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [morebtn setBackgroundImage:[UIImage imageNamed:@"send_y-iphone.png"] forState:UIControlStateNormal];
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            [morebtn setBackgroundImage:[UIImage imageNamed:@"send_y-iphone.png"] forState:UIControlStateNormal];
+            
+        }
+        
+    }
+}
+
 @end
