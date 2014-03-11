@@ -31,6 +31,7 @@
     //NSLog(@"%@",self.eventidstr);
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self image];
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Show Budget"
                                                                     style:UIBarButtonItemStylePlain target:self action:@selector(BudgetButtonTapped:)];
     self.navigationItem.rightBarButtonItem = rightButton;
@@ -248,6 +249,44 @@
     {
         UIAlertView *addfailed=[[UIAlertView alloc]initWithTitle:@"Wedding Project" message:@"Event not Edited, Try again" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [addfailed show];
+    }
+}
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [savebtn setBackgroundImage:[UIImage imageNamed:@"save.png"] forState:UIControlStateNormal];
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            [savebtn setBackgroundImage:[UIImage imageNamed:@"save.png"] forState:UIControlStateNormal];
+            
+        }
+        
     }
 }
 

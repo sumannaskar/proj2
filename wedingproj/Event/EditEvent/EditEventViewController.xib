@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditEventViewController">
             <connections>
+                <outlet property="backgroundimgV" destination="XmG-cJ-XQG" id="CNM-fH-UC5"/>
                 <outlet property="budgettxt" destination="sI3-Bc-GPT" id="c0I-9Z-xGH"/>
                 <outlet property="canceldatebtn" destination="PHL-jh-qcG" id="ElS-hc-Fk6"/>
                 <outlet property="dateendtxt" destination="eer-9a-Pfs" id="47A-vx-WJH"/>
@@ -18,6 +19,7 @@
                 <outlet property="nametxt" destination="4u0-8I-GCQ" id="Ghn-Bw-EM1"/>
                 <outlet property="pickerVw" destination="FKL-EU-9ED" id="5Rr-Wm-PD3"/>
                 <outlet property="respondingView" destination="Npn-xF-PgM" id="h4E-vf-9Kb"/>
+                <outlet property="savebtn" destination="dec-Rz-His" id="SDw-aj-8Uu"/>
                 <outlet property="scroll" destination="EC9-Eh-gFX" id="0sd-fc-DY2"/>
                 <outlet property="venuetxt" destination="VuY-5h-b3O" id="2xq-60-Rdi"/>
                 <outlet property="view" destination="EPO-Jr-Nab" id="ITm-pX-exC"/>
@@ -72,37 +74,37 @@
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="17" id="4u0-8I-GCQ">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" background="input-320.png" id="4u0-8I-GCQ">
                             <rect key="frame" x="130" y="38" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Date &amp; Time" minimumFontSize="17" id="lDo-Lq-poc">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Date &amp; Time" minimumFontSize="17" background="input-320.png" id="lDo-Lq-poc">
                             <rect key="frame" x="130" y="111" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Date &amp; Time" minimumFontSize="17" id="eer-9a-Pfs">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Date &amp; Time" minimumFontSize="17" background="input-320.png" id="eer-9a-Pfs">
                             <rect key="frame" x="130" y="180" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Choose Dress Code" minimumFontSize="17" id="MAP-Z9-dXR">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose Dress Code" minimumFontSize="17" background="input-320.png" id="MAP-Z9-dXR">
                             <rect key="frame" x="130" y="255" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Venue" minimumFontSize="17" id="VuY-5h-b3O">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Venue" minimumFontSize="17" background="input-320.png" id="VuY-5h-b3O">
                             <rect key="frame" x="130" y="330" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Budget" minimumFontSize="17" id="sI3-Bc-GPT">
+                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Budget" minimumFontSize="17" background="input-320.png" id="sI3-Bc-GPT">
                             <rect key="frame" x="130" y="399" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -110,11 +112,11 @@
                         </textField>
                     </subviews>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dec-Rz-His">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dec-Rz-His">
                     <rect key="frame" x="64" y="494" width="192" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Save">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -209,4 +211,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="input-320.png" width="249" height="27"/>
+    </resources>
 </document>

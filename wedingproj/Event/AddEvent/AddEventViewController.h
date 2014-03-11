@@ -20,6 +20,10 @@
     NSString *AddData;
     NSMutableArray *AddEventmessage;
     
+    IBOutlet UIImageView *backgroundimgV;
+    
+    IBOutlet UIButton *addeventbtn;
+    
 }
 
 @property (strong, nonatomic) IBOutlet UITextField *dresscodetxt;

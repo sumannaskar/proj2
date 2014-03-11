@@ -21,7 +21,9 @@
     
     NSString *EditData;
     NSMutableArray *EditEventmessage;
+    IBOutlet UIButton *savebtn;
     
+    IBOutlet UIImageView *backgroundimgV;
 }
 @property (strong, nonatomic) NSString *eventidstr;
 @property (strong, nonatomic) NSString *eventnamestr;
