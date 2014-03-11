@@ -89,6 +89,8 @@
 		4B5B6C1118CEFAD200529396 /* VendorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1018CEFAD200529396 /* VendorCell.xib */; };
 		4B5B6C1A18CF17EE00529396 /* AddVendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1818CF17EE00529396 /* AddVendorViewController.m */; };
 		4B5B6C1B18CF17EE00529396 /* AddVendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1918CF17EE00529396 /* AddVendorViewController.xib */; };
+		4B5B6C2018CF38FA00529396 /* EditVendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1E18CF38FA00529396 /* EditVendorViewController.m */; };
+		4B5B6C2118CF38FA00529396 /* EditVendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1F18CF38FA00529396 /* EditVendorViewController.xib */; };
 		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
 		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
 		4BFAEDB618C9B270006AA867 /* EditBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAEDB418C9B270006AA867 /* EditBudgetViewController.m */; };
@@ -300,6 +302,9 @@
 		4B5B6C1718CF17EE00529396 /* AddVendorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddVendorViewController.h; path = VendorList/AddVendor/AddVendorViewController.h; sourceTree = "<group>"; };
 		4B5B6C1818CF17EE00529396 /* AddVendorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddVendorViewController.m; path = VendorList/AddVendor/AddVendorViewController.m; sourceTree = "<group>"; };
 		4B5B6C1918CF17EE00529396 /* AddVendorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddVendorViewController.xib; path = VendorList/AddVendor/AddVendorViewController.xib; sourceTree = "<group>"; };
+		4B5B6C1D18CF38FA00529396 /* EditVendorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditVendorViewController.h; path = VendorList/EditVendor/EditVendorViewController.h; sourceTree = "<group>"; };
+		4B5B6C1E18CF38FA00529396 /* EditVendorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditVendorViewController.m; path = VendorList/EditVendor/EditVendorViewController.m; sourceTree = "<group>"; };
+		4B5B6C1F18CF38FA00529396 /* EditVendorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditVendorViewController.xib; path = VendorList/EditVendor/EditVendorViewController.xib; sourceTree = "<group>"; };
 		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
 		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
 		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
@@ -692,6 +697,7 @@
 		4B5B6C0618CEF89300529396 /* VendorList */ = {
 			isa = PBXGroup;
 			children = (
+				4B5B6C1C18CF38C900529396 /* EditVendor */,
 				4B5B6C1218CF175D00529396 /* AddVendor */,
 				4B5B6C0C18CEFA8700529396 /* VendorCell */,
 				4B5B6C0718CEF8ED00529396 /* VendorListViewController.h */,
@@ -719,6 +725,16 @@
 				4B5B6C1918CF17EE00529396 /* AddVendorViewController.xib */,
 			);
 			name = AddVendor;
+			sourceTree = "<group>";
+		};
+		4B5B6C1C18CF38C900529396 /* EditVendor */ = {
+			isa = PBXGroup;
+			children = (
+				4B5B6C1D18CF38FA00529396 /* EditVendorViewController.h */,
+				4B5B6C1E18CF38FA00529396 /* EditVendorViewController.m */,
+				4B5B6C1F18CF38FA00529396 /* EditVendorViewController.xib */,
+			);
+			name = EditVendor;
 			sourceTree = "<group>";
 		};
 		4B9AF8C618BF15BA00B97DC6 /* cell */ = {
@@ -1375,6 +1391,7 @@
 				7AA585DA18BF09A300E59852 /* TodolistViewController.xib in Resources */,
 				4B2CD25A18CAF34000B623C7 /* vendors-320.png in Resources */,
 				7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */,
+				4B5B6C2118CF38FA00529396 /* EditVendorViewController.xib in Resources */,
 				4B2CD24E18CAF34000B623C7 /* events-320.png in Resources */,
 				4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */,
 				4B2CD23B18CAF34000B623C7 /* groupwise-320.png in Resources */,
@@ -1505,6 +1522,7 @@
 				7AA585B118BF099900E59852 /* SelectViewController.m in Sources */,
 				7AA5855418BF097D00E59852 /* AddBudget.m in Sources */,
 				7AA5857818BF098300E59852 /* EventViewController.m in Sources */,
+				4B5B6C2018CF38FA00529396 /* EditVendorViewController.m in Sources */,
 				4BFAEDB618C9B270006AA867 /* EditBudgetViewController.m in Sources */,
 				4B5B6C0A18CEF8ED00529396 /* VendorListViewController.m in Sources */,
 				7AA585B918BF099900E59852 /* SendIndividuallyViewController.m in Sources */,

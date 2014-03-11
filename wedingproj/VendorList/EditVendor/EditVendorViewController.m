@@ -1,24 +1,22 @@
 //
-//  AddVendorViewController.m
+//  EditVendorViewController.m
 //  wedingproj
 //
 //  Created by Micronixtraining on 3/11/14.
 //  Copyright (c) 2014 Suman Naskar. All rights reserved.
 //
 
-#import "AddVendorViewController.h"
+#import "EditVendorViewController.h"
 #import "SSKeychain.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=category_user&"]
 
-#define AddVendorURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_create&"]
-
-
-@interface AddVendorViewController ()
+#define SaveURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_update&"]
+@interface EditVendorViewController ()
 
 @end
 
-@implementation AddVendorViewController
+@implementation EditVendorViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +31,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"%@",self.Vname);
+    vendornametext.text = self.Vname;
+     categorytext.text = self.Vcat;
+     contactnotext.text = self.Vcontact;
+     emailtext.text = self.Vemail;
+    
+    json = [[NSDictionary alloc]init];
+    Jsondata = [[NSMutableArray alloc]init];
+    
     //Scroll.contentSize = CGSizeMake(320, 400);
     
     self.pickerVw.showsSelectionIndicator=YES;
@@ -41,16 +48,6 @@
     categorytext.delegate = self;
     emailtext.delegate = self;
     contactnotext.delegate = self;
-    
-    
-    json = [[NSDictionary alloc]init];
-    Jsondata = [[NSMutableArray alloc]init];
-//
-//    Vid = [[NSMutableArray alloc]init];
-//    Vname = [[NSMutableArray alloc]init];
-//    Vcatagory = [[NSMutableArray alloc]init];
-//    Vcontact = [[NSMutableArray alloc]init];
-//    Vemail = [[NSMutableArray alloc]init];
     
     NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
     
@@ -83,6 +80,7 @@
      }
      );
 
+
 }
 -(void)fetchedData:(NSData *)responseData
 {
@@ -102,11 +100,14 @@
         // NSLog(@"%@",[Jsondata objectAtIndex:1]);
     }
 }
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     [textField resignFirstResponder];
@@ -116,11 +117,13 @@
 
 - (IBAction)save:(id)sender
 {
-    NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&vendor_name=%@&category_name=%@&email=%@&contact=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],vendornametext.text,categorytext.text,emailtext.text,contactnotext.text];
-     NSString* urlTextEscaped = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    savejson = [[NSDictionary alloc]init];
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",AddVendorURL,urlTextEscaped]];
-    NSLog(@"add--%@",url);
+    NSString *string =[[NSString alloc]initWithFormat:@"vendor_id=%@&user_id=%@&vendor_name=%@&category_name=%@&email=%@&contact=%@&apikey=micronix_10_2014_wedsimple_proj",self.Vid,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],vendornametext.text,categorytext.text,emailtext.text,contactnotext.text];
+    NSString* urlTextEscaped = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",SaveURL,urlTextEscaped]];
+    NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
@@ -148,28 +151,27 @@
      }
      );
 
+
 }
 -(void)fetchedData1:(NSData *)responseData
 {
-    addjson = [[NSDictionary alloc]init];
-    
     NSError *error;
-    addjson = [NSJSONSerialization
+    savejson = [NSJSONSerialization
             JSONObjectWithData:responseData //1
             
             options:kNilOptions
             error:&error];
-    NSLog(@"%@",[addjson valueForKey:@"status"]);
-    if ([[addjson valueForKey:@"status"]isEqualToString:@"Record Created"]) {
-        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"Record Created" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+    //NSLog(@"%@",[json valueForKey:@"availability"]);
+    if ([[savejson valueForKey:@"status"]isEqualToString:@"Record Updated"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"Record Updated" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
         [nodata show];
     }
     else{
-        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"Fail to create" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"Fail to update" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
         [nodata show];
     }
-}
 
+}
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
     return 1;
@@ -199,7 +201,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
-//    categorytext.text=[totalcategorylist objectAtIndex:row];
+    //    categorytext.text=[totalcategorylist objectAtIndex:row];
     categorytext.text=[Jsondata objectAtIndex:row];
     
 }
@@ -207,7 +209,7 @@
 //- (IBAction)done:(id)sender
 //{
 //    categorytext.text=@"row";
-//    
+//
 ////    if (!(categorytext.text.length>0))
 ////    {
 ////        categorytext.text=[totalcategorylist objectAtIndex:0];
@@ -233,4 +235,5 @@
     }
     [categorytext resignFirstResponder];
 }
+
 @end

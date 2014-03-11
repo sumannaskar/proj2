@@ -31,6 +31,8 @@ IBOutlet UIButton *save;
     
     NSDictionary *json;
     NSMutableArray *Jsondata;
+    
+    NSDictionary *addjson;
 }
 - (IBAction)save:(id)sender;
 @property (retain, nonatomic) IBOutlet UIView *respondingView;
