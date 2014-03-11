@@ -15,7 +15,7 @@
 #define kcategorylistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
-#define kvendorlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_category&"]
+#define kvendorlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
 #define kvendorlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 
 
@@ -227,7 +227,8 @@
         NSLog(@"%@",categoryName);
         //vendor data fetching
         NSError *error;
-        NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@category=%@%@",kvendorlistURL1,categoryName,kvendorlistURL2]];
+        NSURL *tempvendorurl=[NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&category_name=%@%@",kvendorlistURL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"],categoryName,kvendorlistURL2]];
+        NSLog(@"%@",tempvendorurl);
         NSData* vendorListData = [NSData dataWithContentsOfURL: tempvendorurl];
         NSDictionary* vendorListDic = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];
         //NSArray* rawvendorList = [NSJSONSerialization JSONObjectWithData:vendorListData options:kNilOptions error:&error];

@@ -13,7 +13,7 @@
 #define EditTaskURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=to_do_update&"]
 #define keventlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=events"]
 #define keventlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
-#define kcategorylistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_cat"]
+#define kcategorylistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=category_user"]
 #define kcategorylistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
 #define kvendorlistURL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor_category&"]
 #define kvendorlistURL2 [NSURL URLWithString:@"&apikey=micronix_10_2014_wedsimple_proj"]
@@ -43,7 +43,7 @@
     NSError *error;
     NSData* categoryListData = [NSData dataWithContentsOfURL: tempcategoryurl];
     NSDictionary* rawecategoryListDic = [NSJSONSerialization JSONObjectWithData:categoryListData options:kNilOptions error:&error];
-    NSArray *rawcategoryList=[[NSArray alloc]init];
+   // NSArray *rawcategoryList=[[NSArray alloc]init];
     totalcategorylist=[[NSMutableArray alloc ]init];
     
     if ([[rawecategoryListDic valueForKey:@"availability"]isEqualToString:@"no"])
@@ -53,14 +53,14 @@
     }
     else
     {
-        rawcategoryList = [rawecategoryListDic valueForKey:@"data"];
-        for(int i=0;i<rawcategoryList.count;i++)
-        {
-            
-            NSDictionary *tempDict=[rawcategoryList objectAtIndex:i];
-            [totalcategorylist addObject:[tempDict objectForKey:@"category"]];
-            
-        }
+        totalcategorylist = [rawecategoryListDic valueForKey:@"data"];
+//        for(int i=0;i<rawcategoryList.count;i++)
+//        {
+//            
+//            NSDictionary *tempDict=[rawcategoryList objectAtIndex:i];
+//            [totalcategorylist addObject:[tempDict objectForKey:@"category"]];
+//            
+//        }
     }
     
 
