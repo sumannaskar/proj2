@@ -38,6 +38,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self image];
     self.navigationItem.hidesBackButton = YES;
     self.logoutButton=[[UIBarButtonItem alloc]initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(LogOut:)];
     [self.navigationItem setRightBarButtonItem:self.logoutButton];
@@ -129,4 +130,57 @@
     [self.navigationController pushViewController:ReferVC animated:YES];
 
 }
+
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [guestbtn setBackgroundImage:[UIImage imageNamed:@"guest-list-320.png"] forState:UIControlStateNormal];
+        [eventbtn setBackgroundImage:[UIImage imageNamed:@"events-320.png"] forState:UIControlStateNormal];
+        [invitationbtn setBackgroundImage:[UIImage imageNamed:@"invitations-320.png"] forState:UIControlStateNormal];
+        [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"status-320.png"] forState:UIControlStateNormal];
+        [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors-320.png"] forState:UIControlStateNormal];
+        [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets-320.png"] forState:UIControlStateNormal];
+        [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-320.png"] forState:UIControlStateNormal];
+        [todolistbtn setBackgroundImage:[UIImage imageNamed:@"do-list-320.png"] forState:UIControlStateNormal];
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"640-1136.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"320-480.jpg"]];
+            
+        }
+        else
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"320-480.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [backgroundimgV setImage:[UIImage imageNamed:@"768-1004.jpg"]];
+            [guestbtn setBackgroundImage:[UIImage imageNamed:@"guest-list.png"] forState:UIControlStateNormal];
+            [eventbtn setBackgroundImage:[UIImage imageNamed:@"events.png"] forState:UIControlStateNormal];
+            [invitationbtn setBackgroundImage:[UIImage imageNamed:@"invitations.png"] forState:UIControlStateNormal];
+            [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"status.png"] forState:UIControlStateNormal];
+            [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors.png"] forState:UIControlStateNormal];
+            [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets.png"] forState:UIControlStateNormal];
+            [groupbtn setBackgroundImage:[UIImage imageNamed:@"group.png"] forState:UIControlStateNormal];
+            [todolistbtn setBackgroundImage:[UIImage imageNamed:@"do-list.png"] forState:UIControlStateNormal];
+        }
+        
+    }
+}
+
 @end

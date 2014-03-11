@@ -28,6 +28,8 @@
     
     IBOutlet UIButton *rsvpbtn;
     
+    IBOutlet UIImageView *backgroundimgV;
+    
 }
 @property (strong, nonatomic) UIBarButtonItem *logoutButton;
 
