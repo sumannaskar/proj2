@@ -176,7 +176,7 @@
             [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"status.png"] forState:UIControlStateNormal];
             [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors.png"] forState:UIControlStateNormal];
             [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets.png"] forState:UIControlStateNormal];
-            [groupbtn setBackgroundImage:[UIImage imageNamed:@"group.png"] forState:UIControlStateNormal];
+            [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-320.png"] forState:UIControlStateNormal];
             [todolistbtn setBackgroundImage:[UIImage imageNamed:@"do-list.png"] forState:UIControlStateNormal];
         }
         
