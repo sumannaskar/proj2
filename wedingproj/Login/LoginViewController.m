@@ -122,7 +122,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [loginbtn setBackgroundImage:[UIImage imageNamed:@"login-button-320.png"] forState:UIControlStateNormal];
+        [loginbtn setBackgroundImage:[UIImage imageNamed:@"login-bt_320_iphone.png"] forState:UIControlStateNormal];
         [signupbtn setBackgroundImage:[UIImage imageNamed:@"sign-up-320.png"] forState:UIControlStateNormal];
         
         
@@ -149,7 +149,7 @@
         if ([[UIScreen mainScreen] bounds].size.height == 1024)
         {
             [backgroundimgV setImage:[UIImage imageNamed:@"login-768.jpg"]];
-            [loginbtn setBackgroundImage:[UIImage imageNamed:@"login-button.png"] forState:UIControlStateNormal];
+            [loginbtn setBackgroundImage:[UIImage imageNamed:@"login-bt_768.png"] forState:UIControlStateNormal];
             [signupbtn setBackgroundImage:[UIImage imageNamed:@"sign-up.png"] forState:UIControlStateNormal];
             
         }
