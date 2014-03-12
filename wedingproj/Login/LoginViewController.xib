@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="backgroundimgV" destination="bcc-5u-h5k" id="Ui5-I2-cqi"/>
                 <outlet property="loginbtn" destination="vFH-Da-P8h" id="z3D-XE-6Ak"/>
+                <outlet property="logoimgv" destination="kkG-xe-sUZ" id="n6b-Dc-Zue"/>
                 <outlet property="password" destination="lwf-ve-feJ" id="T1J-Bx-ck7"/>
                 <outlet property="signupbtn" destination="x8h-eb-RBP" id="OhS-DN-mrh"/>
                 <outlet property="username" destination="GIp-o8-Cpe" id="mjA-Uj-M8j"/>
@@ -23,6 +24,10 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bcc-5u-h5k">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="kkG-xe-sUZ">
+                    <rect key="frame" x="31" y="20" width="259" height="197"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vFH-Da-P8h">
                     <rect key="frame" x="64" y="421" width="192" height="45"/>
@@ -47,25 +52,25 @@
                     </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R2S-0h-Ibv">
-                    <rect key="frame" x="13" y="225" width="87" height="38"/>
+                    <rect key="frame" x="13" y="234" width="87" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aEg-SH-7sf">
-                    <rect key="frame" x="13" y="296" width="87" height="38"/>
+                    <rect key="frame" x="13" y="305" width="87" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Email id" minimumFontSize="17" id="GIp-o8-Cpe">
-                    <rect key="frame" x="108" y="229" width="198" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email id" minimumFontSize="17" id="GIp-o8-Cpe">
+                    <rect key="frame" x="108" y="238" width="198" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" id="lwf-ve-feJ">
-                    <rect key="frame" x="108" y="300" width="198" height="30"/>
+                    <rect key="frame" x="108" y="309" width="198" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
