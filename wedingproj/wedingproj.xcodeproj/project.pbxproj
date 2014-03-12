@@ -21,29 +21,29 @@
 		452B0FF618D08E970036ACC6 /* rsvp.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FE818D08E970036ACC6 /* rsvp.png */; };
 		452B0FF718D08E970036ACC6 /* sign-up-768.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FE918D08E970036ACC6 /* sign-up-768.png */; };
 		452B0FF818D08E970036ACC6 /* to-do-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FEA18D08E970036ACC6 /* to-do-list.png */; };
-		452B101018D08EA30036ACC6 /* add-budgest.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FF918D08EA30036ACC6 /* add-budgest.png */; };
-		452B101118D08EA30036ACC6 /* add-event.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFA18D08EA30036ACC6 /* add-event.png */; };
-		452B101218D08EA30036ACC6 /* add-guest.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFB18D08EA30036ACC6 /* add-guest.png */; };
-		452B101318D08EA30036ACC6 /* add-task.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFC18D08EA30036ACC6 /* add-task.png */; };
-		452B101418D08EA30036ACC6 /* add-vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFD18D08EA30036ACC6 /* add-vendor.png */; };
-		452B101518D08EA30036ACC6 /* budgets.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFE18D08EA30036ACC6 /* budgets.png */; };
-		452B101618D08EA30036ACC6 /* calculate-bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFF18D08EA30036ACC6 /* calculate-bt.png */; };
-		452B101718D08EA30036ACC6 /* events.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100018D08EA30036ACC6 /* events.png */; };
-		452B101818D08EA30036ACC6 /* groupwise-bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100118D08EA30036ACC6 /* groupwise-bt.png */; };
-		452B101918D08EA30036ACC6 /* guest-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100218D08EA30036ACC6 /* guest-list.png */; };
-		452B101A18D08EA30036ACC6 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100318D08EA30036ACC6 /* img.png */; };
-		452B101B18D08EA30036ACC6 /* individually-bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100418D08EA30036ACC6 /* individually-bt.png */; };
-		452B101C18D08EA30036ACC6 /* invitation.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100518D08EA30036ACC6 /* invitation.png */; };
-		452B101D18D08EA30036ACC6 /* login-bt_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100618D08EA30036ACC6 /* login-bt_320.png */; };
-		452B101E18D08EA30036ACC6 /* manage-bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100718D08EA30036ACC6 /* manage-bt.png */; };
-		452B101F18D08EA30036ACC6 /* proceed.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100818D08EA30036ACC6 /* proceed.png */; };
-		452B102018D08EA30036ACC6 /* registration-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100918D08EA30036ACC6 /* registration-320.png */; };
-		452B102118D08EA30036ACC6 /* rsvp.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100A18D08EA30036ACC6 /* rsvp.png */; };
-		452B102218D08EA30036ACC6 /* save-chenages.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100B18D08EA30036ACC6 /* save-chenages.png */; };
-		452B102318D08EA30036ACC6 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100C18D08EA30036ACC6 /* save.png */; };
-		452B102418D08EA30036ACC6 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100D18D08EA30036ACC6 /* send.png */; };
-		452B102518D08EA30036ACC6 /* to-do-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100E18D08EA30036ACC6 /* to-do-list.png */; };
-		452B102618D08EA30036ACC6 /* vendors.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100F18D08EA30036ACC6 /* vendors.png */; };
+		452B101018D08EA30036ACC6 /* add-budgest_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FF918D08EA30036ACC6 /* add-budgest_iphone.png */; };
+		452B101118D08EA30036ACC6 /* add-event_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFA18D08EA30036ACC6 /* add-event_iphone.png */; };
+		452B101218D08EA30036ACC6 /* add-guest_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFB18D08EA30036ACC6 /* add-guest_iphone.png */; };
+		452B101318D08EA30036ACC6 /* add-task_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFC18D08EA30036ACC6 /* add-task_iphone.png */; };
+		452B101418D08EA30036ACC6 /* add-vendor_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFD18D08EA30036ACC6 /* add-vendor_iphone.png */; };
+		452B101518D08EA30036ACC6 /* budgets_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFE18D08EA30036ACC6 /* budgets_iphone.png */; };
+		452B101618D08EA30036ACC6 /* calculate-bt_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B0FFF18D08EA30036ACC6 /* calculate-bt_iphone.png */; };
+		452B101718D08EA30036ACC6 /* events_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100018D08EA30036ACC6 /* events_iphone.png */; };
+		452B101818D08EA30036ACC6 /* groupwise-bt_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100118D08EA30036ACC6 /* groupwise-bt_iphone.png */; };
+		452B101918D08EA30036ACC6 /* guest-list_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100218D08EA30036ACC6 /* guest-list_iphone.png */; };
+		452B101A18D08EA30036ACC6 /* img_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100318D08EA30036ACC6 /* img_iphone.png */; };
+		452B101B18D08EA30036ACC6 /* individually-bt_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100418D08EA30036ACC6 /* individually-bt_iphone.png */; };
+		452B101C18D08EA30036ACC6 /* invitation_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100518D08EA30036ACC6 /* invitation_iphone.png */; };
+		452B101D18D08EA30036ACC6 /* login-bt_320_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100618D08EA30036ACC6 /* login-bt_320_iphone.png */; };
+		452B101E18D08EA30036ACC6 /* manage-bt_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100718D08EA30036ACC6 /* manage-bt_iphone.png */; };
+		452B101F18D08EA30036ACC6 /* proceed_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100818D08EA30036ACC6 /* proceed_iphone.png */; };
+		452B102018D08EA30036ACC6 /* registration-320_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100918D08EA30036ACC6 /* registration-320_iphone.png */; };
+		452B102118D08EA30036ACC6 /* rsvp_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100A18D08EA30036ACC6 /* rsvp_iphone.png */; };
+		452B102218D08EA30036ACC6 /* save-chenages_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100B18D08EA30036ACC6 /* save-chenages_iphone.png */; };
+		452B102318D08EA30036ACC6 /* save_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100C18D08EA30036ACC6 /* save_iphone.png */; };
+		452B102418D08EA30036ACC6 /* send_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100D18D08EA30036ACC6 /* send_iphone.png */; };
+		452B102518D08EA30036ACC6 /* to-do-list_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100E18D08EA30036ACC6 /* to-do-list_iphone.png */; };
+		452B102618D08EA30036ACC6 /* vendors_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 452B100F18D08EA30036ACC6 /* vendors_iphone.png */; };
 		45678BF818C70CB500254941 /* RSVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45678BF618C70CB500254941 /* RSVPViewController.m */; };
 		45678BF918C70CB500254941 /* RSVPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45678BF718C70CB500254941 /* RSVPViewController.xib */; };
 		45678BFE18C70ED700254941 /* DestailsRSVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45678BFC18C70ED700254941 /* DestailsRSVPViewController.m */; };
@@ -95,21 +95,14 @@
 		4B2CD24918CAF34000B623C7 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21818CAF34000B623C7 /* status.png */; };
 		4B2CD24A18CAF34000B623C7 /* vendors.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21918CAF34000B623C7 /* vendors.png */; };
 		4B2CD24B18CAF34000B623C7 /* about-us-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21B18CAF34000B623C7 /* about-us-320.png */; };
-		4B2CD24C18CAF34000B623C7 /* budgets-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21C18CAF34000B623C7 /* budgets-320.png */; };
-		4B2CD24D18CAF34000B623C7 /* do-list-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21D18CAF34000B623C7 /* do-list-320.png */; };
-		4B2CD24E18CAF34000B623C7 /* events-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21E18CAF34000B623C7 /* events-320.png */; };
 		4B2CD24F18CAF34000B623C7 /* feature-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21F18CAF34000B623C7 /* feature-320.png */; };
 		4B2CD25018CAF34000B623C7 /* group-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22018CAF34000B623C7 /* group-320.png */; };
-		4B2CD25118CAF34000B623C7 /* guest-list-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22118CAF34000B623C7 /* guest-list-320.png */; };
 		4B2CD25218CAF34000B623C7 /* help-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22218CAF34000B623C7 /* help-320.png */; };
 		4B2CD25318CAF34000B623C7 /* input-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22318CAF34000B623C7 /* input-320.png */; };
 		4B2CD25418CAF34000B623C7 /* instruction-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22418CAF34000B623C7 /* instruction-320.png */; };
-		4B2CD25518CAF34000B623C7 /* invitations-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22518CAF34000B623C7 /* invitations-320.png */; };
 		4B2CD25618CAF34000B623C7 /* login-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22618CAF34000B623C7 /* login-320.png */; };
 		4B2CD25718CAF34000B623C7 /* login-button-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22718CAF34000B623C7 /* login-button-320.png */; };
 		4B2CD25818CAF34000B623C7 /* sign-up-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22818CAF34000B623C7 /* sign-up-320.png */; };
-		4B2CD25918CAF34000B623C7 /* status-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22918CAF34000B623C7 /* status-320.png */; };
-		4B2CD25A18CAF34000B623C7 /* vendors-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22A18CAF34000B623C7 /* vendors-320.png */; };
 		4B344E8218C855000037B961 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E8018C855000037B961 /* GroupViewController.m */; };
 		4B344E8318C855000037B961 /* GroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E8118C855000037B961 /* GroupViewController.xib */; };
 		4B344E8E18C8AF010037B961 /* BudgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E8C18C8AF010037B961 /* BudgetListViewController.m */; };
@@ -255,29 +248,29 @@
 		452B0FE818D08E970036ACC6 /* rsvp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsvp.png; sourceTree = "<group>"; };
 		452B0FE918D08E970036ACC6 /* sign-up-768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up-768.png"; sourceTree = "<group>"; };
 		452B0FEA18D08E970036ACC6 /* to-do-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "to-do-list.png"; sourceTree = "<group>"; };
-		452B0FF918D08EA30036ACC6 /* add-budgest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-budgest.png"; sourceTree = "<group>"; };
-		452B0FFA18D08EA30036ACC6 /* add-event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-event.png"; sourceTree = "<group>"; };
-		452B0FFB18D08EA30036ACC6 /* add-guest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-guest.png"; sourceTree = "<group>"; };
-		452B0FFC18D08EA30036ACC6 /* add-task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-task.png"; sourceTree = "<group>"; };
-		452B0FFD18D08EA30036ACC6 /* add-vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-vendor.png"; sourceTree = "<group>"; };
-		452B0FFE18D08EA30036ACC6 /* budgets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budgets.png; sourceTree = "<group>"; };
-		452B0FFF18D08EA30036ACC6 /* calculate-bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculate-bt.png"; sourceTree = "<group>"; };
-		452B100018D08EA30036ACC6 /* events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = events.png; sourceTree = "<group>"; };
-		452B100118D08EA30036ACC6 /* groupwise-bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "groupwise-bt.png"; sourceTree = "<group>"; };
-		452B100218D08EA30036ACC6 /* guest-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guest-list.png"; sourceTree = "<group>"; };
-		452B100318D08EA30036ACC6 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
-		452B100418D08EA30036ACC6 /* individually-bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "individually-bt.png"; sourceTree = "<group>"; };
-		452B100518D08EA30036ACC6 /* invitation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invitation.png; sourceTree = "<group>"; };
-		452B100618D08EA30036ACC6 /* login-bt_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-bt_320.png"; sourceTree = "<group>"; };
-		452B100718D08EA30036ACC6 /* manage-bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "manage-bt.png"; sourceTree = "<group>"; };
-		452B100818D08EA30036ACC6 /* proceed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proceed.png; sourceTree = "<group>"; };
-		452B100918D08EA30036ACC6 /* registration-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registration-320.png"; sourceTree = "<group>"; };
-		452B100A18D08EA30036ACC6 /* rsvp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsvp.png; sourceTree = "<group>"; };
-		452B100B18D08EA30036ACC6 /* save-chenages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save-chenages.png"; sourceTree = "<group>"; };
-		452B100C18D08EA30036ACC6 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
-		452B100D18D08EA30036ACC6 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
-		452B100E18D08EA30036ACC6 /* to-do-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "to-do-list.png"; sourceTree = "<group>"; };
-		452B100F18D08EA30036ACC6 /* vendors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendors.png; sourceTree = "<group>"; };
+		452B0FF918D08EA30036ACC6 /* add-budgest_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-budgest_iphone.png"; sourceTree = "<group>"; };
+		452B0FFA18D08EA30036ACC6 /* add-event_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-event_iphone.png"; sourceTree = "<group>"; };
+		452B0FFB18D08EA30036ACC6 /* add-guest_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-guest_iphone.png"; sourceTree = "<group>"; };
+		452B0FFC18D08EA30036ACC6 /* add-task_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-task_iphone.png"; sourceTree = "<group>"; };
+		452B0FFD18D08EA30036ACC6 /* add-vendor_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-vendor_iphone.png"; sourceTree = "<group>"; };
+		452B0FFE18D08EA30036ACC6 /* budgets_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budgets_iphone.png; sourceTree = "<group>"; };
+		452B0FFF18D08EA30036ACC6 /* calculate-bt_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculate-bt_iphone.png"; sourceTree = "<group>"; };
+		452B100018D08EA30036ACC6 /* events_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = events_iphone.png; sourceTree = "<group>"; };
+		452B100118D08EA30036ACC6 /* groupwise-bt_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "groupwise-bt_iphone.png"; sourceTree = "<group>"; };
+		452B100218D08EA30036ACC6 /* guest-list_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guest-list_iphone.png"; sourceTree = "<group>"; };
+		452B100318D08EA30036ACC6 /* img_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_iphone.png; sourceTree = "<group>"; };
+		452B100418D08EA30036ACC6 /* individually-bt_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "individually-bt_iphone.png"; sourceTree = "<group>"; };
+		452B100518D08EA30036ACC6 /* invitation_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invitation_iphone.png; sourceTree = "<group>"; };
+		452B100618D08EA30036ACC6 /* login-bt_320_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-bt_320_iphone.png"; sourceTree = "<group>"; };
+		452B100718D08EA30036ACC6 /* manage-bt_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "manage-bt_iphone.png"; sourceTree = "<group>"; };
+		452B100818D08EA30036ACC6 /* proceed_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proceed_iphone.png; sourceTree = "<group>"; };
+		452B100918D08EA30036ACC6 /* registration-320_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registration-320_iphone.png"; sourceTree = "<group>"; };
+		452B100A18D08EA30036ACC6 /* rsvp_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsvp_iphone.png; sourceTree = "<group>"; };
+		452B100B18D08EA30036ACC6 /* save-chenages_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save-chenages_iphone.png"; sourceTree = "<group>"; };
+		452B100C18D08EA30036ACC6 /* save_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save_iphone.png; sourceTree = "<group>"; };
+		452B100D18D08EA30036ACC6 /* send_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send_iphone.png; sourceTree = "<group>"; };
+		452B100E18D08EA30036ACC6 /* to-do-list_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "to-do-list_iphone.png"; sourceTree = "<group>"; };
+		452B100F18D08EA30036ACC6 /* vendors_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendors_iphone.png; sourceTree = "<group>"; };
 		45678BF518C70CB500254941 /* RSVPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSVPViewController.h; path = RSVP/RSVPViewController.h; sourceTree = "<group>"; };
 		45678BF618C70CB500254941 /* RSVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSVPViewController.m; path = RSVP/RSVPViewController.m; sourceTree = "<group>"; };
 		45678BF718C70CB500254941 /* RSVPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RSVPViewController.xib; path = RSVP/RSVPViewController.xib; sourceTree = "<group>"; };
@@ -339,21 +332,14 @@
 		4B2CD21818CAF34000B623C7 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
 		4B2CD21918CAF34000B623C7 /* vendors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendors.png; sourceTree = "<group>"; };
 		4B2CD21B18CAF34000B623C7 /* about-us-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-us-320.png"; sourceTree = "<group>"; };
-		4B2CD21C18CAF34000B623C7 /* budgets-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "budgets-320.png"; sourceTree = "<group>"; };
-		4B2CD21D18CAF34000B623C7 /* do-list-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "do-list-320.png"; sourceTree = "<group>"; };
-		4B2CD21E18CAF34000B623C7 /* events-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "events-320.png"; sourceTree = "<group>"; };
 		4B2CD21F18CAF34000B623C7 /* feature-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feature-320.png"; sourceTree = "<group>"; };
 		4B2CD22018CAF34000B623C7 /* group-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-320.png"; sourceTree = "<group>"; };
-		4B2CD22118CAF34000B623C7 /* guest-list-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guest-list-320.png"; sourceTree = "<group>"; };
 		4B2CD22218CAF34000B623C7 /* help-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-320.png"; sourceTree = "<group>"; };
 		4B2CD22318CAF34000B623C7 /* input-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-320.png"; sourceTree = "<group>"; };
 		4B2CD22418CAF34000B623C7 /* instruction-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instruction-320.png"; sourceTree = "<group>"; };
-		4B2CD22518CAF34000B623C7 /* invitations-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invitations-320.png"; sourceTree = "<group>"; };
 		4B2CD22618CAF34000B623C7 /* login-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-320.png"; sourceTree = "<group>"; };
 		4B2CD22718CAF34000B623C7 /* login-button-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-320.png"; sourceTree = "<group>"; };
 		4B2CD22818CAF34000B623C7 /* sign-up-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up-320.png"; sourceTree = "<group>"; };
-		4B2CD22918CAF34000B623C7 /* status-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-320.png"; sourceTree = "<group>"; };
-		4B2CD22A18CAF34000B623C7 /* vendors-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vendors-320.png"; sourceTree = "<group>"; };
 		4B344E7F18C855000037B961 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupViewController.h; path = Group/GroupViewController.h; sourceTree = "<group>"; };
 		4B344E8018C855000037B961 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupViewController.m; path = Group/GroupViewController.m; sourceTree = "<group>"; };
 		4B344E8118C855000037B961 /* GroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupViewController.xib; path = Group/GroupViewController.xib; sourceTree = "<group>"; };
@@ -721,45 +707,38 @@
 		4B2CD21A18CAF34000B623C7 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				452B0FF918D08EA30036ACC6 /* add-budgest.png */,
-				452B0FFA18D08EA30036ACC6 /* add-event.png */,
-				452B0FFB18D08EA30036ACC6 /* add-guest.png */,
-				452B0FFC18D08EA30036ACC6 /* add-task.png */,
-				452B0FFD18D08EA30036ACC6 /* add-vendor.png */,
-				452B0FFE18D08EA30036ACC6 /* budgets.png */,
-				452B0FFF18D08EA30036ACC6 /* calculate-bt.png */,
-				452B100018D08EA30036ACC6 /* events.png */,
-				452B100118D08EA30036ACC6 /* groupwise-bt.png */,
-				452B100218D08EA30036ACC6 /* guest-list.png */,
-				452B100318D08EA30036ACC6 /* img.png */,
-				452B100418D08EA30036ACC6 /* individually-bt.png */,
-				452B100518D08EA30036ACC6 /* invitation.png */,
-				452B100618D08EA30036ACC6 /* login-bt_320.png */,
-				452B100718D08EA30036ACC6 /* manage-bt.png */,
-				452B100818D08EA30036ACC6 /* proceed.png */,
-				452B100918D08EA30036ACC6 /* registration-320.png */,
-				452B100A18D08EA30036ACC6 /* rsvp.png */,
-				452B100B18D08EA30036ACC6 /* save-chenages.png */,
-				452B100C18D08EA30036ACC6 /* save.png */,
-				452B100D18D08EA30036ACC6 /* send.png */,
-				452B100E18D08EA30036ACC6 /* to-do-list.png */,
-				452B100F18D08EA30036ACC6 /* vendors.png */,
+				452B0FF918D08EA30036ACC6 /* add-budgest_iphone.png */,
+				452B0FFA18D08EA30036ACC6 /* add-event_iphone.png */,
+				452B0FFB18D08EA30036ACC6 /* add-guest_iphone.png */,
+				452B0FFC18D08EA30036ACC6 /* add-task_iphone.png */,
+				452B0FFD18D08EA30036ACC6 /* add-vendor_iphone.png */,
+				452B0FFE18D08EA30036ACC6 /* budgets_iphone.png */,
+				452B0FFF18D08EA30036ACC6 /* calculate-bt_iphone.png */,
+				452B100018D08EA30036ACC6 /* events_iphone.png */,
+				452B100118D08EA30036ACC6 /* groupwise-bt_iphone.png */,
+				452B100218D08EA30036ACC6 /* guest-list_iphone.png */,
+				452B100318D08EA30036ACC6 /* img_iphone.png */,
+				452B100418D08EA30036ACC6 /* individually-bt_iphone.png */,
+				452B100518D08EA30036ACC6 /* invitation_iphone.png */,
+				452B100618D08EA30036ACC6 /* login-bt_320_iphone.png */,
+				452B100718D08EA30036ACC6 /* manage-bt_iphone.png */,
+				452B100818D08EA30036ACC6 /* proceed_iphone.png */,
+				452B100918D08EA30036ACC6 /* registration-320_iphone.png */,
+				452B100A18D08EA30036ACC6 /* rsvp_iphone.png */,
+				452B100B18D08EA30036ACC6 /* save-chenages_iphone.png */,
+				452B100C18D08EA30036ACC6 /* save_iphone.png */,
+				452B100D18D08EA30036ACC6 /* send_iphone.png */,
+				452B100E18D08EA30036ACC6 /* to-do-list_iphone.png */,
+				452B100F18D08EA30036ACC6 /* vendors_iphone.png */,
 				4B2CD21B18CAF34000B623C7 /* about-us-320.png */,
-				4B2CD21C18CAF34000B623C7 /* budgets-320.png */,
-				4B2CD21D18CAF34000B623C7 /* do-list-320.png */,
-				4B2CD21E18CAF34000B623C7 /* events-320.png */,
 				4B2CD21F18CAF34000B623C7 /* feature-320.png */,
 				4B2CD22018CAF34000B623C7 /* group-320.png */,
-				4B2CD22118CAF34000B623C7 /* guest-list-320.png */,
 				4B2CD22218CAF34000B623C7 /* help-320.png */,
 				4B2CD22318CAF34000B623C7 /* input-320.png */,
 				4B2CD22418CAF34000B623C7 /* instruction-320.png */,
-				4B2CD22518CAF34000B623C7 /* invitations-320.png */,
 				4B2CD22618CAF34000B623C7 /* login-320.png */,
 				4B2CD22718CAF34000B623C7 /* login-button-320.png */,
 				4B2CD22818CAF34000B623C7 /* sign-up-320.png */,
-				4B2CD22918CAF34000B623C7 /* status-320.png */,
-				4B2CD22A18CAF34000B623C7 /* vendors-320.png */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -1517,12 +1496,10 @@
 			files = (
 				7AA585DA18BF09A300E59852 /* TodolistViewController.xib in Resources */,
 				452B0FF318D08E970036ACC6 /* login-bt_768.png in Resources */,
-				4B2CD25A18CAF34000B623C7 /* vendors-320.png in Resources */,
 				7AA5855518BF097D00E59852 /* AddBudget.xib in Resources */,
 				4B5B6C2118CF38FA00529396 /* EditVendorViewController.xib in Resources */,
-				4B2CD24E18CAF34000B623C7 /* events-320.png in Resources */,
-				452B101718D08EA30036ACC6 /* events.png in Resources */,
-				452B101C18D08EA30036ACC6 /* invitation.png in Resources */,
+				452B101718D08EA30036ACC6 /* events_iphone.png in Resources */,
+				452B101C18D08EA30036ACC6 /* invitation_iphone.png in Resources */,
 				4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */,
 				452B0FEE18D08E970036ACC6 /* calculate.png in Resources */,
 				4B2CD23B18CAF34000B623C7 /* groupwise-320.png in Resources */,
@@ -1547,30 +1524,28 @@
 				7AE4DA0E18C073D8009AC079 /* AddVendor.xib in Resources */,
 				7AA585B218BF099900E59852 /* SelectViewController.xib in Resources */,
 				7AA585D618BF09A300E59852 /* Cell3.xib in Resources */,
-				452B101318D08EA30036ACC6 /* add-task.png in Resources */,
-				452B102218D08EA30036ACC6 /* save-chenages.png in Resources */,
+				452B101318D08EA30036ACC6 /* add-task_iphone.png in Resources */,
+				452B102218D08EA30036ACC6 /* save-chenages_iphone.png in Resources */,
 				4B2CD25318CAF34000B623C7 /* input-320.png in Resources */,
 				7AA5855D18BF097D00E59852 /* DeleteBudgetCC.xib in Resources */,
 				459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */,
 				4B2CD22C18CAF34000B623C7 /* 640-1136.jpg in Resources */,
 				4B2CD23D18CAF34000B623C7 /* help.png in Resources */,
-				452B102118D08EA30036ACC6 /* rsvp.png in Resources */,
+				452B102118D08EA30036ACC6 /* rsvp_iphone.png in Resources */,
 				7AE4DA0218C06957009AC079 /* DetailVendor.xib in Resources */,
 				4B2CD24A18CAF34000B623C7 /* vendors.png in Resources */,
 				4B2CD24B18CAF34000B623C7 /* about-us-320.png in Resources */,
 				452B0FF618D08E970036ACC6 /* rsvp.png in Resources */,
-				452B102318D08EA30036ACC6 /* save.png in Resources */,
+				452B102318D08EA30036ACC6 /* save_iphone.png in Resources */,
 				7AA5857518BF098300E59852 /* Cell2.xib in Resources */,
 				4B2CD24418CAF34000B623C7 /* proceed.png in Resources */,
-				452B101618D08EA30036ACC6 /* calculate-bt.png in Resources */,
+				452B101618D08EA30036ACC6 /* calculate-bt_iphone.png in Resources */,
 				7AA5858B18BF098700E59852 /* GuestViewController.xib in Resources */,
-				452B101418D08EA30036ACC6 /* add-vendor.png in Resources */,
+				452B101418D08EA30036ACC6 /* add-vendor_iphone.png in Resources */,
 				4B2CD23118CAF34000B623C7 /* normal-background-320.jpg in Resources */,
-				452B101E18D08EA30036ACC6 /* manage-bt.png in Resources */,
-				4B2CD25118CAF34000B623C7 /* guest-list-320.png in Resources */,
+				452B101E18D08EA30036ACC6 /* manage-bt_iphone.png in Resources */,
 				452B0FEC18D08E970036ACC6 /* add-task.png in Resources */,
 				7AA5855718BF097D00E59852 /* AllBudget.xib in Resources */,
-				4B2CD25918CAF34000B623C7 /* status-320.png in Resources */,
 				7AA585BA18BF099900E59852 /* SendIndividuallyViewController.xib in Resources */,
 				7AA5858918BF098700E59852 /* EditGuestViewController.xib in Resources */,
 				4B2CD23018CAF34000B623C7 /* login-768.jpg in Resources */,
@@ -1586,23 +1561,22 @@
 				4B2CD22F18CAF34000B623C7 /* login-640.jpg in Resources */,
 				4B2CD24618CAF34000B623C7 /* save.png in Resources */,
 				7AA5855918BF097D00E59852 /* Customcell.xib in Resources */,
-				452B101218D08EA30036ACC6 /* add-guest.png in Resources */,
+				452B101218D08EA30036ACC6 /* add-guest_iphone.png in Resources */,
 				7AA585D418BF09A300E59852 /* AddTaskViewController.xib in Resources */,
 				7AE4DA1A18C07616009AC079 /* DeleteVendorCC.xib in Resources */,
-				452B101818D08EA30036ACC6 /* groupwise-bt.png in Resources */,
+				452B101818D08EA30036ACC6 /* groupwise-bt_iphone.png in Resources */,
 				4B2CD24218CAF34000B623C7 /* login.png in Resources */,
 				4B2CD24518CAF34000B623C7 /* save-changes.png in Resources */,
-				452B101F18D08EA30036ACC6 /* proceed.png in Resources */,
+				452B101F18D08EA30036ACC6 /* proceed_iphone.png in Resources */,
 				4B2CD23418CAF34000B623C7 /* add-guest.png in Resources */,
 				4B2CD23818CAF34000B623C7 /* do-list.png in Resources */,
-				452B102418D08EA30036ACC6 /* send.png in Resources */,
+				452B102418D08EA30036ACC6 /* send_iphone.png in Resources */,
 				7AE4D9FC18C066C8009AC079 /* ManageVendorCC.xib in Resources */,
 				7AA585EE18BF792300E59852 /* AllBudgetCC.xib in Resources */,
 				7AA5850318BF096E00E59852 /* InfoPlist.strings in Resources */,
 				4B2CD22B18CAF34000B623C7 /* 320-480.jpg in Resources */,
 				4B2CD25818CAF34000B623C7 /* sign-up-320.png in Resources */,
 				4B5B6C2718CF446700529396 /* ManageListViewController.xib in Resources */,
-				4B2CD24C18CAF34000B623C7 /* budgets-320.png in Resources */,
 				45678BFF18C70ED700254941 /* DestailsRSVPViewController.xib in Resources */,
 				4B2CD24818CAF34000B623C7 /* sign-up.png in Resources */,
 				4B2CD22E18CAF34000B623C7 /* login-320.jpg in Resources */,
@@ -1612,16 +1586,15 @@
 				4B2CD23E18CAF34000B623C7 /* individually-320.png in Resources */,
 				452B0FF018D08E970036ACC6 /* groupwise.png in Resources */,
 				7AA5857318BF098300E59852 /* AddEventViewController.xib in Resources */,
-				452B101D18D08EA30036ACC6 /* login-bt_320.png in Resources */,
-				452B101918D08EA30036ACC6 /* guest-list.png in Resources */,
-				4B2CD25518CAF34000B623C7 /* invitations-320.png in Resources */,
+				452B101D18D08EA30036ACC6 /* login-bt_320_iphone.png in Resources */,
+				452B101918D08EA30036ACC6 /* guest-list_iphone.png in Resources */,
 				7AA5858718BF098700E59852 /* AddGuestViewController.xib in Resources */,
-				452B101B18D08EA30036ACC6 /* individually-bt.png in Resources */,
+				452B101B18D08EA30036ACC6 /* individually-bt_iphone.png in Resources */,
 				4B2CD24018CAF34000B623C7 /* invitations.png in Resources */,
 				452B0FF518D08E970036ACC6 /* registration.png in Resources */,
 				7AA5855F18BF097D00E59852 /* EditBudget.xib in Resources */,
 				4B5B6C0318CEF68100529396 /* NPHelpViewController.xib in Resources */,
-				452B102018D08EA30036ACC6 /* registration-320.png in Resources */,
+				452B102018D08EA30036ACC6 /* registration-320_iphone.png in Resources */,
 				45678C0518C721C600254941 /* SelectEventRsvpViewController.xib in Resources */,
 				4B2CD23218CAF34000B623C7 /* about-us.png in Resources */,
 				4B2CD23718CAF34000B623C7 /* calculate-budgets.png in Resources */,
@@ -1640,23 +1613,22 @@
 				7AA5855118BF097D00E59852 /* CalculateBudget.xib in Resources */,
 				7AA5855318BF097D00E59852 /* DetailBudget.xib in Resources */,
 				4B5B6C0518CEF68100529396 /* NPInsViewController.xib in Resources */,
-				452B102518D08EA30036ACC6 /* to-do-list.png in Resources */,
+				452B102518D08EA30036ACC6 /* to-do-list_iphone.png in Resources */,
 				7AA5859718BF099500E59852 /* index2.jpg in Resources */,
-				452B101018D08EA30036ACC6 /* add-budgest.png in Resources */,
-				452B102618D08EA30036ACC6 /* vendors.png in Resources */,
+				452B101018D08EA30036ACC6 /* add-budgest_iphone.png in Resources */,
+				452B102618D08EA30036ACC6 /* vendors_iphone.png in Resources */,
 				7AA5856118BF097D00E59852 /* ManageBudget.xib in Resources */,
 				7AA5854F18BF097D00E59852 /* BudgetViewController.xib in Resources */,
 				4B2CD23518CAF34000B623C7 /* add.png in Resources */,
-				452B101518D08EA30036ACC6 /* budgets.png in Resources */,
+				452B101518D08EA30036ACC6 /* budgets_iphone.png in Resources */,
 				7AE4D9F618C064D8009AC079 /* ManageVendor.xib in Resources */,
 				4B2CD23A18CAF34000B623C7 /* feature.png in Resources */,
 				4B2CD23918CAF34000B623C7 /* events.png in Resources */,
 				7AA5850B18BF096E00E59852 /* Images.xcassets in Resources */,
-				4B2CD24D18CAF34000B623C7 /* do-list-320.png in Resources */,
 				452B0FF718D08E970036ACC6 /* sign-up-768.png in Resources */,
-				452B101A18D08EA30036ACC6 /* img.png in Resources */,
+				452B101A18D08EA30036ACC6 /* img_iphone.png in Resources */,
 				7AA5859618BF099500E59852 /* index.jpg in Resources */,
-				452B101118D08EA30036ACC6 /* add-event.png in Resources */,
+				452B101118D08EA30036ACC6 /* add-event_iphone.png in Resources */,
 				4B5B6C1118CEFAD200529396 /* VendorCell.xib in Resources */,
 				7AA585B818BF099900E59852 /* Cell1.xib in Resources */,
 				7AE4DA1418C074E8009AC079 /* DeleteVendor.xib in Resources */,
