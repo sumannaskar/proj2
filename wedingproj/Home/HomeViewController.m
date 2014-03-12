@@ -149,7 +149,7 @@
         [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"status-320.png"] forState:UIControlStateNormal];
         [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors-320.png"] forState:UIControlStateNormal];
         [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets-320.png"] forState:UIControlStateNormal];
-        [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-320.png"] forState:UIControlStateNormal];
+        [groupbtn setBackgroundImage:[UIImage imageNamed:@"new-group-320.png"] forState:UIControlStateNormal];
         [todolistbtn setBackgroundImage:[UIImage imageNamed:@"do-list-320.png"] forState:UIControlStateNormal];
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
@@ -181,7 +181,7 @@
             [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"status.png"] forState:UIControlStateNormal];
             [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors.png"] forState:UIControlStateNormal];
             [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets.png"] forState:UIControlStateNormal];
-            [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-320.png"] forState:UIControlStateNormal];
+            [groupbtn setBackgroundImage:[UIImage imageNamed:@"new-group-ipad.png"] forState:UIControlStateNormal];
             [todolistbtn setBackgroundImage:[UIImage imageNamed:@"do-list.png"] forState:UIControlStateNormal];
         }
         
