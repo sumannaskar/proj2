@@ -94,14 +94,12 @@
 		4B2CD24818CAF34000B623C7 /* sign-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21718CAF34000B623C7 /* sign-up.png */; };
 		4B2CD24918CAF34000B623C7 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21818CAF34000B623C7 /* status.png */; };
 		4B2CD24A18CAF34000B623C7 /* vendors.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21918CAF34000B623C7 /* vendors.png */; };
-		4B2CD24B18CAF34000B623C7 /* about-us-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21B18CAF34000B623C7 /* about-us-320.png */; };
 		4B2CD24F18CAF34000B623C7 /* feature-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD21F18CAF34000B623C7 /* feature-320.png */; };
 		4B2CD25018CAF34000B623C7 /* group-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22018CAF34000B623C7 /* group-320.png */; };
 		4B2CD25218CAF34000B623C7 /* help-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22218CAF34000B623C7 /* help-320.png */; };
 		4B2CD25318CAF34000B623C7 /* input-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22318CAF34000B623C7 /* input-320.png */; };
 		4B2CD25418CAF34000B623C7 /* instruction-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22418CAF34000B623C7 /* instruction-320.png */; };
 		4B2CD25618CAF34000B623C7 /* login-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22618CAF34000B623C7 /* login-320.png */; };
-		4B2CD25718CAF34000B623C7 /* login-button-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22718CAF34000B623C7 /* login-button-320.png */; };
 		4B2CD25818CAF34000B623C7 /* sign-up-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2CD22818CAF34000B623C7 /* sign-up-320.png */; };
 		4B344E8218C855000037B961 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344E8018C855000037B961 /* GroupViewController.m */; };
 		4B344E8318C855000037B961 /* GroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E8118C855000037B961 /* GroupViewController.xib */; };
@@ -123,6 +121,8 @@
 		4B5B6C2118CF38FA00529396 /* EditVendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1F18CF38FA00529396 /* EditVendorViewController.xib */; };
 		4B5B6C2618CF446700529396 /* ManageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B6C2418CF446700529396 /* ManageListViewController.m */; };
 		4B5B6C2718CF446700529396 /* ManageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C2518CF446700529396 /* ManageListViewController.xib */; };
+		4B944DDA18D0947F00208332 /* about-us-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B944DD918D0947F00208332 /* about-us-320.png */; };
+		4B944DDC18D094B000208332 /* login-button-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B944DDB18D094B000208332 /* login-button-320.png */; };
 		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
 		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
 		4BFAEDB618C9B270006AA867 /* EditBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAEDB418C9B270006AA867 /* EditBudgetViewController.m */; };
@@ -331,14 +331,12 @@
 		4B2CD21718CAF34000B623C7 /* sign-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up.png"; sourceTree = "<group>"; };
 		4B2CD21818CAF34000B623C7 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
 		4B2CD21918CAF34000B623C7 /* vendors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendors.png; sourceTree = "<group>"; };
-		4B2CD21B18CAF34000B623C7 /* about-us-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-us-320.png"; sourceTree = "<group>"; };
 		4B2CD21F18CAF34000B623C7 /* feature-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feature-320.png"; sourceTree = "<group>"; };
 		4B2CD22018CAF34000B623C7 /* group-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-320.png"; sourceTree = "<group>"; };
 		4B2CD22218CAF34000B623C7 /* help-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-320.png"; sourceTree = "<group>"; };
 		4B2CD22318CAF34000B623C7 /* input-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-320.png"; sourceTree = "<group>"; };
 		4B2CD22418CAF34000B623C7 /* instruction-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instruction-320.png"; sourceTree = "<group>"; };
 		4B2CD22618CAF34000B623C7 /* login-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-320.png"; sourceTree = "<group>"; };
-		4B2CD22718CAF34000B623C7 /* login-button-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-320.png"; sourceTree = "<group>"; };
 		4B2CD22818CAF34000B623C7 /* sign-up-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up-320.png"; sourceTree = "<group>"; };
 		4B344E7F18C855000037B961 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupViewController.h; path = Group/GroupViewController.h; sourceTree = "<group>"; };
 		4B344E8018C855000037B961 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupViewController.m; path = Group/GroupViewController.m; sourceTree = "<group>"; };
@@ -370,6 +368,8 @@
 		4B5B6C2318CF446700529396 /* ManageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManageListViewController.h; path = ManageList/ManageListViewController.h; sourceTree = "<group>"; };
 		4B5B6C2418CF446700529396 /* ManageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManageListViewController.m; path = ManageList/ManageListViewController.m; sourceTree = "<group>"; };
 		4B5B6C2518CF446700529396 /* ManageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ManageListViewController.xib; path = ManageList/ManageListViewController.xib; sourceTree = "<group>"; };
+		4B944DD918D0947F00208332 /* about-us-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-us-320.png"; sourceTree = "<group>"; };
+		4B944DDB18D094B000208332 /* login-button-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-320.png"; sourceTree = "<group>"; };
 		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
 		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
 		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
@@ -707,6 +707,8 @@
 		4B2CD21A18CAF34000B623C7 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				4B944DDB18D094B000208332 /* login-button-320.png */,
+				4B944DD918D0947F00208332 /* about-us-320.png */,
 				452B0FF918D08EA30036ACC6 /* add-budgest_iphone.png */,
 				452B0FFA18D08EA30036ACC6 /* add-event_iphone.png */,
 				452B0FFB18D08EA30036ACC6 /* add-guest_iphone.png */,
@@ -730,14 +732,12 @@
 				452B100D18D08EA30036ACC6 /* send_iphone.png */,
 				452B100E18D08EA30036ACC6 /* to-do-list_iphone.png */,
 				452B100F18D08EA30036ACC6 /* vendors_iphone.png */,
-				4B2CD21B18CAF34000B623C7 /* about-us-320.png */,
 				4B2CD21F18CAF34000B623C7 /* feature-320.png */,
 				4B2CD22018CAF34000B623C7 /* group-320.png */,
 				4B2CD22218CAF34000B623C7 /* help-320.png */,
 				4B2CD22318CAF34000B623C7 /* input-320.png */,
 				4B2CD22418CAF34000B623C7 /* instruction-320.png */,
 				4B2CD22618CAF34000B623C7 /* login-320.png */,
-				4B2CD22718CAF34000B623C7 /* login-button-320.png */,
 				4B2CD22818CAF34000B623C7 /* sign-up-320.png */,
 			);
 			path = iPhone;
@@ -1520,21 +1520,21 @@
 				4B2CD24F18CAF34000B623C7 /* feature-320.png in Resources */,
 				7AA585C218BF099D00E59852 /* LoginViewController.xib in Resources */,
 				4B2CD25218CAF34000B623C7 /* help-320.png in Resources */,
-				4B2CD25718CAF34000B623C7 /* login-button-320.png in Resources */,
 				7AE4DA0E18C073D8009AC079 /* AddVendor.xib in Resources */,
 				7AA585B218BF099900E59852 /* SelectViewController.xib in Resources */,
 				7AA585D618BF09A300E59852 /* Cell3.xib in Resources */,
+				4B944DDC18D094B000208332 /* login-button-320.png in Resources */,
 				452B101318D08EA30036ACC6 /* add-task_iphone.png in Resources */,
 				452B102218D08EA30036ACC6 /* save-chenages_iphone.png in Resources */,
 				4B2CD25318CAF34000B623C7 /* input-320.png in Resources */,
 				7AA5855D18BF097D00E59852 /* DeleteBudgetCC.xib in Resources */,
 				459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */,
 				4B2CD22C18CAF34000B623C7 /* 640-1136.jpg in Resources */,
+				4B944DDA18D0947F00208332 /* about-us-320.png in Resources */,
 				4B2CD23D18CAF34000B623C7 /* help.png in Resources */,
 				452B102118D08EA30036ACC6 /* rsvp_iphone.png in Resources */,
 				7AE4DA0218C06957009AC079 /* DetailVendor.xib in Resources */,
 				4B2CD24A18CAF34000B623C7 /* vendors.png in Resources */,
-				4B2CD24B18CAF34000B623C7 /* about-us-320.png in Resources */,
 				452B0FF618D08E970036ACC6 /* rsvp.png in Resources */,
 				452B102318D08EA30036ACC6 /* save_iphone.png in Resources */,
 				7AA5857518BF098300E59852 /* Cell2.xib in Resources */,
