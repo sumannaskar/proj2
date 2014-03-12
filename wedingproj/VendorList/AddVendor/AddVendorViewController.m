@@ -233,4 +233,45 @@
     }
     [categorytext resignFirstResponder];
 }
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [save setBackgroundImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
+        
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [BackImgv setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [BackImgv setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [BackImgv setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [BackImgv setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            [save setBackgroundImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
+            
+            
+        }
+        
+    }
+}
+
 @end

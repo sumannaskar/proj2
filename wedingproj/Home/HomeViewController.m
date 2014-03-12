@@ -143,14 +143,14 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [guestbtn setBackgroundImage:[UIImage imageNamed:@"guest-list-320.png"] forState:UIControlStateNormal];
-        [eventbtn setBackgroundImage:[UIImage imageNamed:@"events-320.png"] forState:UIControlStateNormal];
-        [invitationbtn setBackgroundImage:[UIImage imageNamed:@"invitations-320.png"] forState:UIControlStateNormal];
-        [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"status-320.png"] forState:UIControlStateNormal];
-        [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors-320.png"] forState:UIControlStateNormal];
-        [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets-320.png"] forState:UIControlStateNormal];
+        [guestbtn setBackgroundImage:[UIImage imageNamed:@"guest-list_iphone.png"] forState:UIControlStateNormal];
+        [eventbtn setBackgroundImage:[UIImage imageNamed:@"events_iphone.png"] forState:UIControlStateNormal];
+        [invitationbtn setBackgroundImage:[UIImage imageNamed:@"invitation_iphone.png"] forState:UIControlStateNormal];
+        [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"rsvp_iphone.png"] forState:UIControlStateNormal];
+        [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors_iphone.png"] forState:UIControlStateNormal];
+        [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets_iphone.png"] forState:UIControlStateNormal];
         [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-320.png"] forState:UIControlStateNormal];
-        [todolistbtn setBackgroundImage:[UIImage imageNamed:@"do-list-320.png"] forState:UIControlStateNormal];
+        [todolistbtn setBackgroundImage:[UIImage imageNamed:@"to-do-list_iphone.png"] forState:UIControlStateNormal];
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
@@ -178,10 +178,10 @@
             [guestbtn setBackgroundImage:[UIImage imageNamed:@"guest-list.png"] forState:UIControlStateNormal];
             [eventbtn setBackgroundImage:[UIImage imageNamed:@"events.png"] forState:UIControlStateNormal];
             [invitationbtn setBackgroundImage:[UIImage imageNamed:@"invitations.png"] forState:UIControlStateNormal];
-            [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"status.png"] forState:UIControlStateNormal];
+            [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"rsvp.png"] forState:UIControlStateNormal];
             [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors.png"] forState:UIControlStateNormal];
             [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets.png"] forState:UIControlStateNormal];
-            [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-320.png"] forState:UIControlStateNormal];
+            [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-768.png"] forState:UIControlStateNormal];
             [todolistbtn setBackgroundImage:[UIImage imageNamed:@"do-list.png"] forState:UIControlStateNormal];
         }
         
