@@ -7,6 +7,7 @@
 //
 
 #import "ManageBudget.h"
+#import "ManageListViewController.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #import "AllBudget.h"
@@ -132,10 +133,9 @@
 -(void) detail:(UIButton*)button
 {
     
-    AllBudget *AllBudget_ =[[AllBudget alloc]init];
-    AllBudget_.eventidpass=[eventid objectAtIndex:button.tag];
+    ManageListViewController *AllBudget_ =[[ManageListViewController alloc]init];
+    AllBudget_.eventidstr = [eventid objectAtIndex:button.tag];
     [self.navigationController pushViewController:AllBudget_ animated:YES];
-    
     
     
 }

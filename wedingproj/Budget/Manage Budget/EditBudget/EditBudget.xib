@@ -22,6 +22,7 @@
                 <outlet property="pickerVw" destination="ZEi-cU-sTb" id="cto-bd-BDB"/>
                 <outlet property="respondingView" destination="KVf-ga-vga" id="UxF-Zf-a29"/>
                 <outlet property="save" destination="S5E-ue-K0Z" id="c2H-9O-cms"/>
+                <outlet property="scroll" destination="mkl-rQ-C7L" id="6tT-cA-4dg"/>
                 <outlet property="totalamountdue" destination="aHc-DE-PrL" id="gPn-Yx-IlR"/>
                 <outlet property="totalamountduetext" destination="8jN-ZX-oea" id="pcK-br-3KG"/>
                 <outlet property="vendername" destination="ITF-JP-2Y7" id="7zb-aG-5YI"/>
@@ -38,6 +39,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="567.99999999999989"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mkl-rQ-C7L">
+                    <rect key="frame" x="0.0" y="-1.1368683772161603e-13" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </scrollView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="pwn-sJ-YD4">
                     <rect key="frame" x="127" y="142" width="178" height="30"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -122,8 +127,7 @@
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="e5h-GS-bY5">
                     <rect key="frame" x="127" y="321" width="185" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="backgroundColor" red="0.66274511810000003" green="0.92941182850000004" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>

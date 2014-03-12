@@ -91,6 +91,8 @@
 		4B5B6C1B18CF17EE00529396 /* AddVendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1918CF17EE00529396 /* AddVendorViewController.xib */; };
 		4B5B6C2018CF38FA00529396 /* EditVendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1E18CF38FA00529396 /* EditVendorViewController.m */; };
 		4B5B6C2118CF38FA00529396 /* EditVendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C1F18CF38FA00529396 /* EditVendorViewController.xib */; };
+		4B5B6C2618CF446700529396 /* ManageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B6C2418CF446700529396 /* ManageListViewController.m */; };
+		4B5B6C2718CF446700529396 /* ManageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B6C2518CF446700529396 /* ManageListViewController.xib */; };
 		4B9AF8C918BF15E900B97DC6 /* GuestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AF8C818BF15E900B97DC6 /* GuestCell.m */; };
 		4B9AF8CD18BF161600B97DC6 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */; };
 		4BFAEDB618C9B270006AA867 /* EditBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAEDB418C9B270006AA867 /* EditBudgetViewController.m */; };
@@ -305,6 +307,9 @@
 		4B5B6C1D18CF38FA00529396 /* EditVendorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditVendorViewController.h; path = VendorList/EditVendor/EditVendorViewController.h; sourceTree = "<group>"; };
 		4B5B6C1E18CF38FA00529396 /* EditVendorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditVendorViewController.m; path = VendorList/EditVendor/EditVendorViewController.m; sourceTree = "<group>"; };
 		4B5B6C1F18CF38FA00529396 /* EditVendorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditVendorViewController.xib; path = VendorList/EditVendor/EditVendorViewController.xib; sourceTree = "<group>"; };
+		4B5B6C2318CF446700529396 /* ManageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManageListViewController.h; path = ManageList/ManageListViewController.h; sourceTree = "<group>"; };
+		4B5B6C2418CF446700529396 /* ManageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManageListViewController.m; path = ManageList/ManageListViewController.m; sourceTree = "<group>"; };
+		4B5B6C2518CF446700529396 /* ManageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ManageListViewController.xib; path = ManageList/ManageListViewController.xib; sourceTree = "<group>"; };
 		4B9AF8C718BF15E900B97DC6 /* GuestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestCell.h; path = cell/GuestCell.h; sourceTree = "<group>"; };
 		4B9AF8C818BF15E900B97DC6 /* GuestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestCell.m; path = cell/GuestCell.m; sourceTree = "<group>"; };
 		4B9AF8CC18BF161600B97DC6 /* GuestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GuestCell.xib; path = cell/GuestCell.xib; sourceTree = "<group>"; };
@@ -737,6 +742,16 @@
 			name = EditVendor;
 			sourceTree = "<group>";
 		};
+		4B5B6C2218CF442F00529396 /* BudgetList */ = {
+			isa = PBXGroup;
+			children = (
+				4B5B6C2318CF446700529396 /* ManageListViewController.h */,
+				4B5B6C2418CF446700529396 /* ManageListViewController.m */,
+				4B5B6C2518CF446700529396 /* ManageListViewController.xib */,
+			);
+			name = BudgetList;
+			sourceTree = "<group>";
+		};
 		4B9AF8C618BF15BA00B97DC6 /* cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -881,6 +896,7 @@
 		7AA5853218BF097D00E59852 /* Manage Budget */ = {
 			isa = PBXGroup;
 			children = (
+				4B5B6C2218CF442F00529396 /* BudgetList */,
 				7AA5853B18BF097D00E59852 /* Customcell */,
 				7AA5854B18BF097D00E59852 /* ManageBudget.h */,
 				7AA5854C18BF097D00E59852 /* ManageBudget.m */,
@@ -1453,6 +1469,7 @@
 				7AA5850318BF096E00E59852 /* InfoPlist.strings in Resources */,
 				4B2CD22B18CAF34000B623C7 /* 320-480.jpg in Resources */,
 				4B2CD25818CAF34000B623C7 /* sign-up-320.png in Resources */,
+				4B5B6C2718CF446700529396 /* ManageListViewController.xib in Resources */,
 				4B2CD24C18CAF34000B623C7 /* budgets-320.png in Resources */,
 				45678BFF18C70ED700254941 /* DestailsRSVPViewController.xib in Resources */,
 				4B2CD24818CAF34000B623C7 /* sign-up.png in Resources */,
@@ -1542,6 +1559,7 @@
 				7AA5855A18BF097D00E59852 /* DeleteBudget.m in Sources */,
 				4B0C306318C09C2D00D500CF /* FeatureViewController.m in Sources */,
 				7AA5858618BF098700E59852 /* AddGuestViewController.m in Sources */,
+				4B5B6C2618CF446700529396 /* ManageListViewController.m in Sources */,
 				7AA5855818BF097D00E59852 /* Customcell.m in Sources */,
 				7AE4D9F518C064D8009AC079 /* ManageVendor.m in Sources */,
 				45678BFE18C70ED700254941 /* DestailsRSVPViewController.m in Sources */,

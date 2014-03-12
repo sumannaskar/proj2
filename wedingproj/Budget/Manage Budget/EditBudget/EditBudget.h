@@ -11,6 +11,7 @@
 @interface EditBudget : UIViewController<UITextFieldDelegate,UITextViewDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 {
     
+    IBOutlet UIScrollView *scroll;
     IBOutlet UIImageView *background;
     IBOutlet UILabel *eventname;
     IBOutlet UITextField *eventnametext;
