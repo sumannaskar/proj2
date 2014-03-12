@@ -7,15 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeatureViewController">
             <connections>
-                <outlet property="backgroundimgV" destination="KSJ-pc-c4U" id="kRB-z7-NaJ"/>
-                <outlet property="budgetbtn" destination="Ggb-GC-D3A" id="0ab-tv-d3W"/>
-                <outlet property="eventbtn" destination="eo3-Op-UoY" id="IXG-yG-QJD"/>
-                <outlet property="groupbtn" destination="rKH-6s-MMf" id="NRi-aE-OAX"/>
-                <outlet property="guestbtn" destination="DD0-iX-lLa" id="yJ5-H2-NKp"/>
-                <outlet property="invitationbtn" destination="bhh-Og-DUz" id="kVu-qn-Czd"/>
-                <outlet property="rsvpbtn" destination="0G1-eR-ve1" id="E7D-md-gNR"/>
-                <outlet property="todolistbtn" destination="emF-UW-YwA" id="hXC-VO-Nlo"/>
-                <outlet property="vendorbtn" destination="nyp-uP-g7i" id="ZO2-mj-6AL"/>
                 <outlet property="view" destination="596-6A-aan" id="Ymn-hk-Qde"/>
             </connections>
         </placeholder>
@@ -28,92 +19,70 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eo3-Op-UoY">
-                    <rect key="frame" x="2" y="145" width="102" height="80"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eo3-Op-UoY">
+                    <rect key="frame" x="35" y="265" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal">
+                    <state key="normal" title="Events">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="eventactn:" destination="-1" eventType="touchUpInside" id="fKs-uW-XMZ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="emF-UW-YwA">
-                    <rect key="frame" x="93" y="207" width="102" height="80"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="emF-UW-YwA">
+                    <rect key="frame" x="191" y="265" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal">
+                    <state key="normal" title="To Do List">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="todolistactn:" destination="-1" eventType="touchUpInside" id="k1y-0p-31t"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ggb-GC-D3A">
-                    <rect key="frame" x="2" y="251" width="102" height="80"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ggb-GC-D3A">
+                    <rect key="frame" x="35" y="426" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal">
+                    <state key="normal" title="Budgets">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="budgetactn:" destination="-1" eventType="touchUpInside" id="tTV-CG-xYG"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nyp-uP-g7i">
-                    <rect key="frame" x="93" y="314" width="102" height="80"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nyp-uP-g7i">
+                    <rect key="frame" x="191" y="426" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal">
+                    <state key="normal" title="Vendors">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="vendoractn:" destination="-1" eventType="touchUpInside" id="akd-eV-4Ey"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DD0-iX-lLa">
-                    <rect key="frame" x="2" y="39" width="102" height="80"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DD0-iX-lLa">
+                    <rect key="frame" x="35" y="79" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal">
+                    <state key="normal" title="Guest List">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="guestlistactn:" destination="-1" eventType="touchUpInside" id="NvF-hh-nK3"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bhh-Og-DUz">
-                    <rect key="frame" x="93" y="96" width="102" height="80"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bhh-Og-DUz">
+                    <rect key="frame" x="191" y="79" width="102" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal">
+                    <state key="normal" title="Invitations">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="invitationactn:" destination="-1" eventType="touchUpInside" id="8x8-bJ-Wh5"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0G1-eR-ve1">
-                    <rect key="frame" x="2" y="354" width="102" height="80"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="rsvpactn:" destination="-1" eventType="touchUpInside" id="58F-Lk-ryU"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rKH-6s-MMf">
-                    <rect key="frame" x="93" y="414" width="102" height="80"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="groupactn:" destination="-1" eventType="touchUpInside" id="8dg-KX-dT3"/>
                     </connections>
                 </button>
             </subviews>

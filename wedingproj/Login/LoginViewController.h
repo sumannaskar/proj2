@@ -20,10 +20,8 @@
     
     IBOutlet UIImageView *backgroundimgV;
     
-    IBOutlet UIImageView *logoimgv;
     NSString *AddLoginDataStr;
     NSMutableArray *AddLoginmessage;
-    
 
 }
 

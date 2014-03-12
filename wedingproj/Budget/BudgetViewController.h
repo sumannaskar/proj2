@@ -11,11 +11,8 @@
 @interface BudgetViewController : UIViewController
 {
     
-    IBOutlet UIButton *CalculateBudgetbtn;
-    IBOutlet UIButton *ManageBudgetbtn;
-    
-    IBOutlet UIImageView *backgroundimgV;
-    
+    IBOutlet UIButton *CalculateBudget;
+    IBOutlet UIButton *ManageBudget;
 }
 - (IBAction)ManageBudget:(id)sender;
 - (IBAction)CalculateBudget:(id)sender;

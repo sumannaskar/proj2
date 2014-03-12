@@ -249,7 +249,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [registerbtn setBackgroundImage:[UIImage imageNamed:@"registration-320_iphone.png"] forState:UIControlStateNormal];
+        [registerbtn setBackgroundImage:[UIImage imageNamed:@"login-320.png"] forState:UIControlStateNormal];
         
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
@@ -275,7 +275,7 @@
         if ([[UIScreen mainScreen] bounds].size.height == 1024)
         {
             [backgroundimgV setImage:[UIImage imageNamed:@"768-1004.jpg"]];
-            [registerbtn setBackgroundImage:[UIImage imageNamed:@"registration.png"] forState:UIControlStateNormal];
+            [registerbtn setBackgroundImage:[UIImage imageNamed:@"normal-background-320.jpg"] forState:UIControlStateNormal];
             
         }
         

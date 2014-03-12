@@ -191,7 +191,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [referencebtn setBackgroundImage:[UIImage imageNamed:@"send_iphone.png"] forState:UIControlStateNormal];
+        [referencebtn setBackgroundImage:[UIImage imageNamed:@"send_y-iphone.png"] forState:UIControlStateNormal];
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
             [backgoundImgview setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
@@ -215,7 +215,7 @@
         if ([[UIScreen mainScreen] bounds].size.height == 1024)
         {
             [backgoundImgview setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-            [referencebtn setBackgroundImage:[UIImage imageNamed:@"send.png"] forState:UIControlStateNormal];
+            [referencebtn setBackgroundImage:[UIImage imageNamed:@"send-ipad.png"] forState:UIControlStateNormal];
         }
         
     }

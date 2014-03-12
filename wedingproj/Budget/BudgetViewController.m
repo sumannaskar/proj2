@@ -30,7 +30,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self image];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,47 +48,4 @@
     CalculateBudget *CalculateBudget_ = [[CalculateBudget alloc]init];
     [self.navigationController pushViewController:CalculateBudget_ animated:YES];
 }
-
-#pragma mark -
-#pragma mark - dispatching different images for different devices
-
--(void)image
-{
-    if([[UIScreen mainScreen] bounds].size.height  < 600)
-    {
-        [CalculateBudgetbtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-        [ManageBudgetbtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-        
-        
-        if ([[UIScreen mainScreen] bounds].size.height == 568)
-        {
-            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-            
-        }
-        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-            
-        }
-        else
-        {
-            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-            
-        }
-        
-        
-    }
-    else
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 1024)
-        {
-            [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-            [CalculateBudgetbtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-            [ManageBudgetbtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-            
-        }
-        
-    }
-}
-
 @end

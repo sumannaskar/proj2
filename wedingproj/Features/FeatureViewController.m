@@ -28,7 +28,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self image];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,20 +64,6 @@
     [self.navigationController pushViewController:descipVC animated:YES];
 }
 
-- (IBAction)rsvpactn:(UIButton *)sender {
-    DescriptionViewController *descipVC=[[DescriptionViewController alloc]init];
-    descipVC.title=@"RSVP Stus";
-    descipVC.descriptiontxt=@"Show RSVP Status";
-    [self.navigationController pushViewController:descipVC animated:YES];
-}
-
-- (IBAction)groupactn:(UIButton *)sender {
-    DescriptionViewController *descipVC=[[DescriptionViewController alloc]init];
-    descipVC.title=@"Group";
-    descipVC.descriptiontxt=@"Group";
-    [self.navigationController pushViewController:descipVC animated:YES];
-}
-
 - (IBAction)guestlistactn:(UIButton *)sender {
     DescriptionViewController *descipVC=[[DescriptionViewController alloc]init];
     descipVC.title=@"Guest";
@@ -92,56 +77,4 @@
      descipVC.descriptiontxt=@"Invitations";
     [self.navigationController pushViewController:descipVC animated:YES];
 }
-#pragma mark -
-#pragma mark - dispatching different images for different devices
-
--(void)image
-{
-    if([[UIScreen mainScreen] bounds].size.height  < 600)
-    {
-        [guestbtn setBackgroundImage:[UIImage imageNamed:@"guest-list_iphone.png"] forState:UIControlStateNormal];
-        [eventbtn setBackgroundImage:[UIImage imageNamed:@"events_iphone.png"] forState:UIControlStateNormal];
-        [invitationbtn setBackgroundImage:[UIImage imageNamed:@"invitation_iphone.png"] forState:UIControlStateNormal];
-        [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"rsvp_iphone.png"] forState:UIControlStateNormal];
-        [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors_iphone.png"] forState:UIControlStateNormal];
-        [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets_iphone.png"] forState:UIControlStateNormal];
-        [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-320.png"] forState:UIControlStateNormal];
-        [todolistbtn setBackgroundImage:[UIImage imageNamed:@"to-do-list_iphone.png"] forState:UIControlStateNormal];
-        
-        if ([[UIScreen mainScreen] bounds].size.height == 568)
-        {
-            [backgroundimgV setImage:[UIImage imageNamed:@"640-1136.jpg"]];
-            
-        }
-        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-            [backgroundimgV setImage:[UIImage imageNamed:@"320-480.jpg"]];
-            
-        }
-        else
-        {
-            [backgroundimgV setImage:[UIImage imageNamed:@"320-480.jpg"]];
-            
-        }
-        
-        
-    }
-    else
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 1024)
-        {
-            [backgroundimgV setImage:[UIImage imageNamed:@"768-1004.jpg"]];
-            [guestbtn setBackgroundImage:[UIImage imageNamed:@"guest-list.png"] forState:UIControlStateNormal];
-            [eventbtn setBackgroundImage:[UIImage imageNamed:@"events.png"] forState:UIControlStateNormal];
-            [invitationbtn setBackgroundImage:[UIImage imageNamed:@"invitations.png"] forState:UIControlStateNormal];
-            [rsvpbtn setBackgroundImage:[UIImage imageNamed:@"rsvp.png"] forState:UIControlStateNormal];
-            [vendorbtn setBackgroundImage:[UIImage imageNamed:@"vendors.png"] forState:UIControlStateNormal];
-            [budgetbtn setBackgroundImage:[UIImage imageNamed:@"budgets.png"] forState:UIControlStateNormal];
-            [groupbtn setBackgroundImage:[UIImage imageNamed:@"group-768.png"] forState:UIControlStateNormal];
-            [todolistbtn setBackgroundImage:[UIImage imageNamed:@"do-list.png"] forState:UIControlStateNormal];
-        }
-        
-    }
-}
-
 @end

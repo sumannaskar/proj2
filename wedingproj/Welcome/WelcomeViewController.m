@@ -66,8 +66,8 @@
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
         [loginbtn setBackgroundImage:[UIImage imageNamed:@"login-320.png"] forState:UIControlStateNormal];
-        [signupbtn setBackgroundImage:[UIImage imageNamed:@"sign-up-red_iphone.png"] forState:UIControlStateNormal];
-        [aboutusbtn setBackgroundImage:[UIImage imageNamed:@"about-us_iphone.png"] forState:UIControlStateNormal];
+        [signupbtn setBackgroundImage:[UIImage imageNamed:@"sign-up-320.png"] forState:UIControlStateNormal];
+        [aboutusbtn setBackgroundImage:[UIImage imageNamed:@"about-us-320.png"] forState:UIControlStateNormal];
         [helpbtn setBackgroundImage:[UIImage imageNamed:@"help-320.png"] forState:UIControlStateNormal];
         [featuresbtn setBackgroundImage:[UIImage imageNamed:@"feature-320.png"] forState:UIControlStateNormal];
         [insbtn setBackgroundImage:[UIImage imageNamed:@"instruction-320.png"] forState:UIControlStateNormal];
