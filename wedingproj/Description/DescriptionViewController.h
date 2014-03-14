@@ -13,6 +13,9 @@
 {
     
     IBOutlet UITextView *descriptxtview;
+    
+    IBOutlet UIImageView *backgroundimgV;
+    
 }
 
 @property(nonatomic,retain) NSString *descriptiontxt;
