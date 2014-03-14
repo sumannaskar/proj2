@@ -484,7 +484,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [savebtn setBackgroundImage:[UIImage imageNamed:@"save-changes.png"] forState:UIControlStateNormal];
+        [savebtn setBackgroundImage:[UIImage imageNamed:@"save-chenages_iphone.png"] forState:UIControlStateNormal];
         
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)

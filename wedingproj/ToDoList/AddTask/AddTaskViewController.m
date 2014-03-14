@@ -502,7 +502,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [Addtaskbtn setBackgroundImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
+        [Addtaskbtn setBackgroundImage:[UIImage imageNamed:@"add-task_iphone.png"] forState:UIControlStateNormal];
         
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
@@ -528,7 +528,7 @@
         if ([[UIScreen mainScreen] bounds].size.height == 1024)
         {
             [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-             [Addtaskbtn setBackgroundImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
+             [Addtaskbtn setBackgroundImage:[UIImage imageNamed:@"add-task.png"] forState:UIControlStateNormal];
             
         }
         
