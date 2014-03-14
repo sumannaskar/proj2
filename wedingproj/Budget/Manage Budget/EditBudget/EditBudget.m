@@ -235,10 +235,7 @@
     
     vendernametext.text=[vendorName objectAtIndex:row];
     self.VId = [vendorId objectAtIndex:row];
-<<<<<<< HEAD
-=======
-    NSLog(@"suman");
->>>>>>> FETCH_HEAD
+
 }
 
 
