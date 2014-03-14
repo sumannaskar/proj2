@@ -33,10 +33,16 @@
     IBOutlet UIToolbar *picekrtoolbr;
     
     
+    NSDictionary *Editjson;
+    NSDictionary *Editjsondata;
+    NSMutableArray *EditName;
+    
     NSDictionary *json;
     NSMutableArray *jsondata;
      NSMutableArray *vendorName;
     NSMutableArray *vendorId;
+    
+     NSDictionary *Updatejson;
     
 }
 - (IBAction)save:(id)sender;
@@ -45,8 +51,8 @@
 - (IBAction)donedate:(id)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
 @property(nonatomic,retain)NSString *CategoryName;
-//@property(nonatomic,retain)NSString *paymentduedatepass;
-//@property(nonatomic,retain)NSString *totalamountduepass;
+@property(nonatomic,retain)NSString *CategoryId;
+@property(nonatomic,retain)NSString *VId;
 //@property(nonatomic,retain)NSString *amountpaidtodatepass;
 //@property(nonatomic,retain)NSString *vendernamepass;
 //@property(nonatomic,retain)NSString *infopass;

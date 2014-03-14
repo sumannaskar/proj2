@@ -11,7 +11,8 @@
 #import "SSKeychainQuery.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define VendorURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
-#define URL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
+#define EditURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=category_single&"]
+#define UpdateURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=category_budget&"]
 
 
 @interface EditBudget ()
@@ -43,7 +44,66 @@
     [datepickerVW setDate:[NSDate date]];
     
    // NSLog(@"%@",self.CategoryName);
+    Editjson = [[NSDictionary alloc]init];
+    Editjsondata = [[NSDictionary alloc]init];
+    EditName = [[NSMutableArray alloc]init];
     
+    NSString *string =[[NSString alloc]initWithFormat:@"category_id=%@&apikey=micronix_10_2014_wedsimple_proj",self.CategoryId];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",EditURL,string]];
+    // NSLog(@"my--%@",url);
+    
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData1:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+
+}
+-(void)fetchedData1:(NSData *)responseData
+{
+    NSError *error;
+    Editjson = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    // NSLog(@"%@",[json valueForKey:@"status"]);
+    if ([[Editjson valueForKey:@"availability"]isEqualToString:@"no"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
+    }
+    else{
+        Editjsondata = [Editjson valueForKey:@"data"];
+        eventnametext.text = [Editjsondata valueForKey:@"category_name"];
+        vendernametext.text = [Editjsondata valueForKey:@"vendor_name"];
+        self.VId = [Editjsondata valueForKey:@"vendor_id"];
+        paymentduedatetext.text = [Editjsondata valueForKey:@"due_date"];
+        totalamountduetext.text = [Editjsondata valueForKey:@"amount_due"];
+        amountpaidtodatetext.text = [Editjsondata valueForKey:@"amount_paid"];
+        infotext.text = [Editjsondata valueForKey:@"info"];
+    }
+
 }
 -(void)fetchedData:(NSData *)responseData
 {
@@ -70,6 +130,22 @@
     }
     
 }
+-(void)fetchedData2:(NSData *)responseData
+{
+    NSError *error;
+    Updatejson = [NSJSONSerialization
+                JSONObjectWithData:responseData //1
+                
+                options:kNilOptions
+                error:&error];
+    // NSLog(@"%@",[json valueForKey:@"status"]);
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:[Updatejson valueForKey:@"status"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
+    if ([[Updatejson valueForKey:@"status"]isEqualToString:@"Record Updated"]) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     if (textField.tag == 50) {
@@ -157,8 +233,8 @@
 {
     
     
-    
-    
+    vendernametext.text=[vendorName objectAtIndex:row];
+    self.VId = [vendorId objectAtIndex:row];
 }
 
 
@@ -169,8 +245,39 @@
 }
 
 - (IBAction)save:(id)sender {
+    Updatejson = [[NSDictionary alloc]init];
     
+    NSString *string =[[NSString alloc]initWithFormat:@"category_id=%@&category_name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",self.CategoryId,eventnametext.text,self.VId,paymentduedatetext.text,totalamountduetext.text,amountpaidtodatetext.text,infotext.text];
+    NSString* urlTextEscaped = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",UpdateURL,urlTextEscaped]];
+    // NSLog(@"my--%@",url);
     
+    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+         
+         if (data.length<1 || [tempstring isEqualToString:@"null"])
+         {
+             
+             
+             //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+             
+         }
+         
+         else
+         {
+             [self performSelectorOnMainThread:@selector(fetchedData2:)
+                                    withObject:data waitUntilDone:YES];
+             
+         }
+     }
+     );
+
 }
 
 - (IBAction)done:(id)sender
@@ -178,13 +285,15 @@
     if (!(vendernametext.text.length>0)) {
         
     vendernametext.text=[vendorName objectAtIndex:0];
+        self.VId = [vendorId objectAtIndex:0];
     }
     [vendernametext resignFirstResponder];
     
 }
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
-    vendernametext.text=@"";
+    vendernametext.text = [Editjsondata valueForKey:@"vendor_name"];
+    self.VId = [Editjsondata valueForKey:@"vendor_id"];
     [vendernametext resignFirstResponder];
 }
 - (IBAction)donedate:(id)sender
