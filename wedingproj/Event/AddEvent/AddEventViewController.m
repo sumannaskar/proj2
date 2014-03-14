@@ -264,7 +264,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [addeventbtn setBackgroundImage:[UIImage imageNamed:@"add-event.png"] forState:UIControlStateNormal];
+        [addeventbtn setBackgroundImage:[UIImage imageNamed:@"add-event_iphone.png"] forState:UIControlStateNormal];
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {

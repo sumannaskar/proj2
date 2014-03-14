@@ -165,7 +165,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [self.Proced setBackgroundImage:[UIImage imageNamed:@"proceed.png"] forState:UIControlStateNormal];
+        [self.Proced setBackgroundImage:[UIImage imageNamed:@"proceed_iphone.png"] forState:UIControlStateNormal];
         
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)

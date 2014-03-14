@@ -316,7 +316,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-       [self.Add setBackgroundImage:[UIImage imageNamed:@"add-guest.png"] forState:UIControlStateNormal];
+       [self.Add setBackgroundImage:[UIImage imageNamed:@"add-guest_iphone.png"] forState:UIControlStateNormal];
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {

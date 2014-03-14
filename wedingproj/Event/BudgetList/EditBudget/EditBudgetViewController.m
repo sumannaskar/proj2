@@ -134,7 +134,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [self.SaveBtn setBackgroundImage:[UIImage imageNamed:@"save.png"] forState:UIControlStateNormal];
+        [self.SaveBtn setBackgroundImage:[UIImage imageNamed:@"save-chenages_iphone.png"] forState:UIControlStateNormal];
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
@@ -159,7 +159,7 @@
         if ([[UIScreen mainScreen] bounds].size.height == 1024)
         {
             [self.BackImgv setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-            [self.SaveBtn setBackgroundImage:[UIImage imageNamed:@"save.png"] forState:UIControlStateNormal];
+            [self.SaveBtn setBackgroundImage:[UIImage imageNamed:@"save-changes.png"] forState:UIControlStateNormal];
             
         }
         

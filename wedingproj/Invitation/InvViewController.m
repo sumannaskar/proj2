@@ -128,8 +128,8 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [individually setBackgroundImage:[UIImage imageNamed:@"individually-320"] forState:UIControlStateNormal];
-        [Groupwise setBackgroundImage:[UIImage imageNamed:@"groupwise-320.png"] forState:UIControlStateNormal];
+        [individually setBackgroundImage:[UIImage imageNamed:@"individually-bt_iphone.png"] forState:UIControlStateNormal];
+        [Groupwise setBackgroundImage:[UIImage imageNamed:@"groupwise-bt_iphone.png"] forState:UIControlStateNormal];
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
@@ -154,8 +154,8 @@
         if ([[UIScreen mainScreen] bounds].size.height == 1024)
         {
             [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-            [individually setBackgroundImage:[UIImage imageNamed:@"individually-320"] forState:UIControlStateNormal];
-            [Groupwise setBackgroundImage:[UIImage imageNamed:@"groupwise-320.png"] forState:UIControlStateNormal];
+            [individually setBackgroundImage:[UIImage imageNamed:@"indivitually-bt.png"] forState:UIControlStateNormal];
+            [Groupwise setBackgroundImage:[UIImage imageNamed:@"groupwise.png"] forState:UIControlStateNormal];
             
         }
         
