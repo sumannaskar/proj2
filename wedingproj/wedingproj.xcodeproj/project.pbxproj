@@ -52,6 +52,7 @@
 		45678C0518C721C600254941 /* SelectEventRsvpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45678C0318C721C600254941 /* SelectEventRsvpViewController.xib */; };
 		4576A3CC18C46F6A00BEDCE6 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */; };
 		4576A3CD18C46F6A00BEDCE6 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */; };
+		4593847118D2F37E005A6E66 /* sign-up-red_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4593847018D2F37E005A6E66 /* sign-up-red_iphone.png */; };
 		459DD4A318C60D6600D26BFF /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A118C60D6600D26BFF /* DescriptionViewController.m */; };
 		459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */; };
 		459DD4A918C6126200D26BFF /* ReferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A718C6126200D26BFF /* ReferViewController.m */; };
@@ -284,6 +285,7 @@
 		4576A3C918C46F6A00BEDCE6 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
 		4576A3CA18C46F6A00BEDCE6 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
 		4576A3CB18C46F6A00BEDCE6 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
+		4593847018D2F37E005A6E66 /* sign-up-red_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up-red_iphone.png"; sourceTree = "<group>"; };
 		459DD4A018C60D6600D26BFF /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DescriptionViewController.h; path = Description/DescriptionViewController.h; sourceTree = "<group>"; };
 		459DD4A118C60D6600D26BFF /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DescriptionViewController.m; path = Description/DescriptionViewController.m; sourceTree = "<group>"; };
 		459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DescriptionViewController.xib; path = Description/DescriptionViewController.xib; sourceTree = "<group>"; };
@@ -707,6 +709,7 @@
 		4B2CD21A18CAF34000B623C7 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				4593847018D2F37E005A6E66 /* sign-up-red_iphone.png */,
 				4B944DDB18D094B000208332 /* login-button-320.png */,
 				4B944DD918D0947F00208332 /* about-us-320.png */,
 				452B0FF918D08EA30036ACC6 /* add-budgest_iphone.png */,
@@ -1539,6 +1542,7 @@
 				452B102318D08EA30036ACC6 /* save_iphone.png in Resources */,
 				7AA5857518BF098300E59852 /* Cell2.xib in Resources */,
 				4B2CD24418CAF34000B623C7 /* proceed.png in Resources */,
+				4593847118D2F37E005A6E66 /* sign-up-red_iphone.png in Resources */,
 				452B101618D08EA30036ACC6 /* calculate-bt_iphone.png in Resources */,
 				7AA5858B18BF098700E59852 /* GuestViewController.xib in Resources */,
 				452B101418D08EA30036ACC6 /* add-vendor_iphone.png in Resources */,

@@ -176,8 +176,13 @@
 - (IBAction)done:(id)sender
 {
     if (!(vendernametext.text.length>0)) {
-        
-    vendernametext.text=[vendorName objectAtIndex:0];
+        if (vendorName.count>0) {
+             vendernametext.text=[vendorName objectAtIndex:0];
+        }
+        else{
+            vendernametext.text=@"";
+        }
+   
     }
     [vendernametext resignFirstResponder];
     

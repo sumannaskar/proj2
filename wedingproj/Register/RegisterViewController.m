@@ -144,7 +144,7 @@
     {
         
         
-        UIAlertView *fillall =[[UIAlertView alloc]initWithTitle:@"Casa de Salud App" message:@"fill all the fields" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        UIAlertView *fillall =[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"fill all the fields" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
         [fillall show];
     }
     
@@ -249,7 +249,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [registerbtn setBackgroundImage:[UIImage imageNamed:@"login-320.png"] forState:UIControlStateNormal];
+        [registerbtn setBackgroundImage:[UIImage imageNamed:@"registration-320_iphone.png"] forState:UIControlStateNormal];
         
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
@@ -274,7 +274,7 @@
     {
         if ([[UIScreen mainScreen] bounds].size.height == 1024)
         {
-            [backgroundimgV setImage:[UIImage imageNamed:@"768-1004.jpg"]];
+            [backgroundimgV setImage:[UIImage imageNamed:@"registration.png"]];
             [registerbtn setBackgroundImage:[UIImage imageNamed:@"normal-background-320.jpg"] forState:UIControlStateNormal];
             
         }
