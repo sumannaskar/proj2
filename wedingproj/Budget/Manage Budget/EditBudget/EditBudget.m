@@ -283,12 +283,7 @@
 - (IBAction)done:(id)sender
 {
     if (!(vendernametext.text.length>0)) {
-        
-    vendernametext.text=[vendorName objectAtIndex:0];
-        self.VId = [vendorId objectAtIndex:0];
     }
-    [vendernametext resignFirstResponder];
-    
 }
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
@@ -305,7 +300,7 @@
 {
     paymentduedatetext.text=@"";
     [paymentduedatetext resignFirstResponder];
-    
+    NSLog(@"suman");
 }
 
 @end
