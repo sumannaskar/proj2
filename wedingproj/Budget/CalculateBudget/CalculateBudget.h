@@ -27,7 +27,7 @@ long budget;
     
 //    NSUserDefaults *prefs;
 //    IBOutlet UIButton *done;
-//    NSMutableArray *json;
+    NSDictionary *json;
     
     
     
