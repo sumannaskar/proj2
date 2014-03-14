@@ -38,7 +38,7 @@
     json = [[NSMutableArray alloc]init];
     GroupArray = [[NSMutableArray alloc]init];
      GroupIdArray = [[NSMutableArray alloc]init];
-     UpdateArray = [[NSMutableArray alloc]init];
+    
     
      nametxt.text = self.nameString;
      self.RoleText.text = self.roleString;
@@ -200,8 +200,7 @@
     if (self.pickerVw.tag==1) {
         self.GroupText.text=[GroupArray objectAtIndex:row];
          self.GroupIdString=[GroupIdArray objectAtIndex:row];
-        
-    }
+           }
     
     if (self.pickerVw.tag==3) {
         self.WithText.text=[WithArray objectAtIndex:row];
@@ -218,7 +217,6 @@
             
             self.GroupText.text=[GroupArray objectAtIndex:0];
             self.GroupIdString=[GroupIdArray objectAtIndex:0];
-            
         }
         
         [self.GroupText resignFirstResponder];
@@ -250,8 +248,6 @@
                 break;
             }
         }
-        
-        
         [self.GroupText resignFirstResponder];
         
     }
@@ -275,7 +271,7 @@
 }
 
 - (IBAction)SaveAction:(UIButton *)sender {
-    
+     UpdateArray = [[NSMutableArray alloc]init];
 //     NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"guest_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",self.GidString,nametxt.text,self.RoleText.text,self.EmailText.text,self.GroupText.text,self.WithText.text];
     
     NSString *SignUpdatra =[[NSString alloc]initWithFormat:@"guest_id=%@&name=%@&role=%@&email=%@&group_id=%@&no_of_guest=%@&apikey=micronix_10_2014_wedsimple_proj",self.GidString,nametxt.text,self.RoleText.text,self.EmailText.text,self.GroupIdString,self.WithText.text];
@@ -283,7 +279,7 @@
     NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
   //  NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",SaveURL,urlTextEscaped]];
-    //NSLog(@"%@",url);
+   // NSLog(@"%@",url);
     dispatch_async
     (kBgQueue, ^
      {
@@ -309,8 +305,7 @@
      }
      );
     
-    GuestViewController *GuestVC =[[GuestViewController alloc]init];
-    [self.navigationController pushViewController:GuestVC animated:YES];
+    
     
 }
 -(void)fetchedData1:(NSData *)responseData
@@ -322,6 +317,12 @@
             options:kNilOptions
             error:&error];
    // NSLog(@"%@",UpdateArray);
+    if ([[UpdateArray valueForKey:@"status"]isEqualToString:@"Record Updated"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:[UpdateArray valueForKey:@"status"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
+    }
+    GuestViewController *GuestVC =[[GuestViewController alloc]init];
+    [self.navigationController pushViewController:GuestVC animated:YES];
 }
 #pragma mark -
 #pragma mark - dispatching different images for different devices

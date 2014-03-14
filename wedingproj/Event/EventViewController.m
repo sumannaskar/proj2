@@ -9,6 +9,7 @@
 #import "EventViewController.h"
 #import "AddEventViewController.h"
 #import "EditEventViewController.h"
+#import "HomeViewController.h"
 #import "AllBudget.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
@@ -44,10 +45,11 @@
     json = [[NSDictionary alloc]init];
 
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"Eventviewcontroller");
-   
-//    UIBarButtonItem *add=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(Add:)];
-//    [self.navigationItem setRightBarButtonItem:add];
+    //NSLog(@"Eventviewcontroller");
+    self.navigationItem.hidesBackButton = YES;
+    UIBarButtonItem *home=[[UIBarButtonItem alloc]initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(Home:)];
+    [self.navigationItem setRightBarButtonItem:home];
+    
     isLoad = YES;
     checkImage = [[NSMutableArray alloc]init];
     EventScroll.delegate = self;
@@ -142,7 +144,11 @@
     AddEventViewController *AddeventVc=[[AddEventViewController alloc] init];
     [self.navigationController pushViewController:AddeventVc animated:YES];
 }
-
+-(void)Home:(UIBarButtonItem *)sender
+{
+    HomeViewController *homeVc=[[HomeViewController alloc] init];
+    [self.navigationController pushViewController:homeVc animated:YES];
+}
 - (IBAction)Delete:(UIBarButtonItem *)sender {
     
     BOOL uncheck=YES;

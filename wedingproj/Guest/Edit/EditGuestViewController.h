@@ -48,6 +48,7 @@
 @property (strong, nonatomic) NSString *roleString;
 @property (strong, nonatomic) NSString *emailString;
 @property (strong, nonatomic) NSString *groupString;
+//@property (strong, nonatomic) NSString *groupIdString;
 @property (strong, nonatomic) NSString *withString;
 
 @property (strong, nonatomic) NSString *GroupIdString;

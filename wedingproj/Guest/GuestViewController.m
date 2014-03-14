@@ -9,6 +9,7 @@
 #import "GuestViewController.h"
 #import "AddGuestViewController.h"
 #import "EditGuestViewController.h"
+#import "HomeViewController.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #define NIB_NAME @"GuestCell"
@@ -30,11 +31,18 @@
     }
     return self;
 }
-
+-(void)Home:(UIBarButtonItem *)sender
+{
+    HomeViewController *homeVc=[[HomeViewController alloc] init];
+    [self.navigationController pushViewController:homeVc animated:YES];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.hidesBackButton = YES;
+    UIBarButtonItem *home=[[UIBarButtonItem alloc]initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(Home:)];
+    [self.navigationItem setRightBarButtonItem:home];
     //[GuestTable setRowHeight: 100.00];
     json=[[NSDictionary alloc]init];
     
@@ -62,7 +70,7 @@
      NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
-   // NSLog(@"my--%@",url);
+    NSLog(@"my--%@",url);
     
    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
@@ -134,6 +142,7 @@
             [NoOfPerson addObject:[[Jsondata objectAtIndex:i ] valueForKey:@"no_of_guest"]];
     
         }
+       // NSLog(@"%@",GroupId);
     }
     [self setTableHeight];
     [InvTable reloadData];
@@ -239,6 +248,7 @@
      EditVc.roleString = [role objectAtIndex:button.tag];
      EditVc.emailString = [email objectAtIndex:button.tag];
      EditVc.groupString = [GroupName objectAtIndex:button.tag];
+     EditVc.GroupIdString = [GroupId objectAtIndex:button.tag];
      EditVc.withString = [NoOfPerson objectAtIndex:button.tag];
     
     //NSLog(@"%@",EditVc.withString);
@@ -345,8 +355,13 @@
             
             options:kNilOptions
             error:&error];
-    NSLog(@"%@",Deletejson);
-     NSLog(@"%@",Deletejson);
+    if ([[Deletejson valueForKey:@"status"]isEqualToString:@"Records Deleted"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:[Deletejson valueForKey:@"status"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
+        [self viewDidLoad];
+    }
+
+   
 }
 - (IBAction)AddAction:(UIBarButtonItem *)sender {
     AddGuestViewController *AddguestVc=[[AddGuestViewController alloc] init];
