@@ -62,7 +62,7 @@
      NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"]];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,string]];
-    NSLog(@"my--%@",url);
+   // NSLog(@"my--%@",url);
     
    // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async

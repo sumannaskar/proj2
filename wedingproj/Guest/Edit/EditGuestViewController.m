@@ -283,7 +283,7 @@
     NSString* urlTextEscaped = [SignUpdatra stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
   //  NSLog(@"%@",urlTextEscaped);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",SaveURL,urlTextEscaped]];
-  //  NSLog(@"%@",url);
+    //NSLog(@"%@",url);
     dispatch_async
     (kBgQueue, ^
      {
