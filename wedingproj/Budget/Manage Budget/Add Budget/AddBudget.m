@@ -31,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self image];
     [paymentduedatetext setInputView:datepickerView];
     [vendernametext setInputView:respondingView];
     [datepickerVW setDate:[NSDate date]];
@@ -195,5 +196,45 @@
     [paymentduedatetext resignFirstResponder];
     
 }
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [save setBackgroundImage:[UIImage imageNamed:@"add-budgest_iphone.png"] forState:UIControlStateNormal];
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [background setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [background setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [background setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [background setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+             [save setBackgroundImage:[UIImage imageNamed:@"add-budget.png"] forState:UIControlStateNormal];
+            
+            
+        }
+        
+    }
+}
+
 
 @end

@@ -24,6 +24,7 @@ long budget;
     
     IBOutlet UILabel *Estimate;
     
+    IBOutlet UIImageView *backgroundimgV;
     
 //    NSUserDefaults *prefs;
 //    IBOutlet UIButton *done;

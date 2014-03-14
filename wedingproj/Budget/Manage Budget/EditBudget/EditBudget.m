@@ -34,6 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //vendernametext.delegate = self;
+    [self image];
     vendernametext.tag = 50;
     
     [paymentduedatetext setInputView:datepickerView];
@@ -303,5 +304,45 @@
     [paymentduedatetext resignFirstResponder];
     NSLog(@"suman");
 }
+
+#pragma mark -
+#pragma mark - dispatching different images for different devices
+
+-(void)image
+{
+    if([[UIScreen mainScreen] bounds].size.height  < 600)
+    {
+        [save setBackgroundImage:[UIImage imageNamed:@"save-chenages_iphone.png"] forState:UIControlStateNormal];
+        
+        if ([[UIScreen mainScreen] bounds].size.height == 568)
+        {
+            [background setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+        {
+            [background setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        else
+        {
+            [background setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            
+        }
+        
+        
+    }
+    else
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+        {
+            [background setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
+            [save setBackgroundImage:[UIImage imageNamed:@"save-changes.png"] forState:UIControlStateNormal];
+            
+        }
+        
+    }
+}
+
 
 @end
