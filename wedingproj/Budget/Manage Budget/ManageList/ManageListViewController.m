@@ -160,7 +160,7 @@
     //NSLog(@"%ld",(long)button.tag);
     EditBudget *EditVc =[[EditBudget alloc]init];
     EditVc.CategoryName = [CatName objectAtIndex:button.tag];
-    
+     EditVc.CategoryId = [CatId objectAtIndex:button.tag];
     [self.navigationController pushViewController:EditVc animated:YES];
 }
 @end

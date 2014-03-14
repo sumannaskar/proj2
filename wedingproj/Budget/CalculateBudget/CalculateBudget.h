@@ -13,21 +13,24 @@ long budget;
 {
     
     IBOutlet UILabel *yourbudgetlevel;
-    IBOutlet UITextField *yourbudgettext;
+    
     IBOutlet UILabel *allocate;
+    
     IBOutlet UILabel *allocatetext;
+    
     IBOutlet UILabel *balancemain;
+    
     IBOutlet UILabel *balancemaintext;
-    NSUserDefaults *prefs;
-    IBOutlet UIButton *done;
-    NSMutableArray *json;
+    
+    IBOutlet UILabel *Estimate;
+    
+    
+//    NSUserDefaults *prefs;
+//    IBOutlet UIButton *done;
+//    NSMutableArray *json;
     
     
     
 }
-
-- (IBAction)done:(id)sender;
     
-
-
 @end
