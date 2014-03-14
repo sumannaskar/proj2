@@ -34,7 +34,7 @@
     
     [self recievedata];
     
-    
+    NSLog(@"adf");
 }
 
 
