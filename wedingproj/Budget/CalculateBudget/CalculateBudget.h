@@ -26,6 +26,7 @@ long budget;
     
     IBOutlet UIImageView *backgroundimgV;
     
+    
 //    NSUserDefaults *prefs;
 //    IBOutlet UIButton *done;
     NSDictionary *json;

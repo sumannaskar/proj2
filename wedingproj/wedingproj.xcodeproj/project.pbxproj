@@ -55,6 +55,7 @@
 		4593847118D2F37E005A6E66 /* sign-up-red_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4593847018D2F37E005A6E66 /* sign-up-red_iphone.png */; };
 		4593847518D313E8005A6E66 /* EditBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 4593847318D313E8005A6E66 /* EditBudget.m */; };
 		4593847618D313E8005A6E66 /* EditBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4593847418D313E8005A6E66 /* EditBudget.xib */; };
+		4593847C18D341B1005A6E66 /* more-details.png in Resources */ = {isa = PBXBuildFile; fileRef = 4593847B18D341B1005A6E66 /* more-details.png */; };
 		459DD4A318C60D6600D26BFF /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A118C60D6600D26BFF /* DescriptionViewController.m */; };
 		459DD4A418C60D6600D26BFF /* DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */; };
 		459DD4A918C6126200D26BFF /* ReferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459DD4A718C6126200D26BFF /* ReferViewController.m */; };
@@ -289,6 +290,7 @@
 		4593847218D313E8005A6E66 /* EditBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBudget.h; sourceTree = "<group>"; };
 		4593847318D313E8005A6E66 /* EditBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBudget.m; sourceTree = "<group>"; };
 		4593847418D313E8005A6E66 /* EditBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBudget.xib; sourceTree = "<group>"; };
+		4593847B18D341B1005A6E66 /* more-details.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more-details.png"; sourceTree = "<group>"; };
 		459DD4A018C60D6600D26BFF /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DescriptionViewController.h; path = Description/DescriptionViewController.h; sourceTree = "<group>"; };
 		459DD4A118C60D6600D26BFF /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DescriptionViewController.m; path = Description/DescriptionViewController.m; sourceTree = "<group>"; };
 		459DD4A218C60D6600D26BFF /* DescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DescriptionViewController.xib; path = Description/DescriptionViewController.xib; sourceTree = "<group>"; };
@@ -639,6 +641,7 @@
 		4B2CD1F718CAF34000B623C7 /* All Images */ = {
 			isa = PBXGroup;
 			children = (
+				4593847B18D341B1005A6E66 /* more-details.png */,
 				4B2CD1F818CAF34000B623C7 /* Background */,
 				4B2CD20018CAF34000B623C7 /* iPad */,
 				4B2CD21A18CAF34000B623C7 /* iPhone */,
@@ -1602,6 +1605,7 @@
 				45678C0518C721C600254941 /* SelectEventRsvpViewController.xib in Resources */,
 				4B2CD23218CAF34000B623C7 /* about-us.png in Resources */,
 				4B2CD23718CAF34000B623C7 /* calculate-budgets.png in Resources */,
+				4593847C18D341B1005A6E66 /* more-details.png in Resources */,
 				7AA5857918BF098300E59852 /* EventViewController.xib in Resources */,
 				7AA5855B18BF097D00E59852 /* DeleteBudget.xib in Resources */,
 				7AA585BC18BF099900E59852 /* InvViewController.xib in Resources */,

@@ -74,7 +74,7 @@
 {
     if([[UIScreen mainScreen] bounds].size.height  < 600)
     {
-        [morebtn setBackgroundImage:[UIImage imageNamed:@"send_y-iphone.png"] forState:UIControlStateNormal];
+        [morebtn setBackgroundImage:[UIImage imageNamed:@"more-details.png"] forState:UIControlStateNormal];
         
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
@@ -99,7 +99,7 @@
         if ([[UIScreen mainScreen] bounds].size.height == 1024)
         {
             [backgroundimgV setImage:[UIImage imageNamed:@"normal-background-320.jpg"]];
-            [morebtn setBackgroundImage:[UIImage imageNamed:@"send_y-iphone.png"] forState:UIControlStateNormal];
+            [morebtn setBackgroundImage:[UIImage imageNamed:@"more-details.png"] forState:UIControlStateNormal];
             
         }
         
