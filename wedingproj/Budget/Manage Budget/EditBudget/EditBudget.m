@@ -235,6 +235,7 @@
     
     vendernametext.text=[vendorName objectAtIndex:row];
     self.VId = [vendorId objectAtIndex:row];
+    NSLog(@"suman");
 }
 
 
