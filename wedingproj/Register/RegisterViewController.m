@@ -74,6 +74,13 @@
     [self.datepickerVW setDate:[NSDate date]];
     
 }
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 -(void)AddUserDetails
 {
     NSString *AddUserData=[[NSString alloc]initWithFormat:@"groom_name=%@&bride_name=%@&password=%@&u_email=%@&wedding_date=%@&country=%@%@",groomnametxt.text,bridenametxt.text,passwrdtxt.text,emailtxt.text,self.datetxt.text,countrycode,RegisterURL2];

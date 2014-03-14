@@ -5,7 +5,6 @@
 //  Created by macmini2 on 2/25/14.
 //  Copyright (c) 2014 Micronix Technologies. All rights reserved.
 //
-
 #import "EditBudget.h"
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
@@ -51,7 +50,7 @@
     NSString *string =[[NSString alloc]initWithFormat:@"category_id=%@&apikey=micronix_10_2014_wedsimple_proj",self.CategoryId];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",EditURL,string]];
-    // NSLog(@"my--%@",url);
+     NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
@@ -99,7 +98,7 @@
         vendernametext.text = [Editjsondata valueForKey:@"vendor_name"];
         self.VId = [Editjsondata valueForKey:@"vendor_id"];
         paymentduedatetext.text = [Editjsondata valueForKey:@"due_date"];
-        totalamountduetext.text = [Editjsondata valueForKey:@"amount_due"];
+        totalamountduetext.text = [Editjsondata valueForKey:@"amount_alloted"];
         amountpaidtodatetext.text = [Editjsondata valueForKey:@"amount_paid"];
         infotext.text = [Editjsondata valueForKey:@"info"];
     }
@@ -138,10 +137,11 @@
                 
                 options:kNilOptions
                 error:&error];
-    // NSLog(@"%@",[json valueForKey:@"status"]);
+     NSLog(@"%@",[Updatejson valueForKey:@"status"]);
+    
+    if ([[Updatejson valueForKey:@"status"]isEqualToString:@"Record Updated"]) {
         UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:[Updatejson valueForKey:@"status"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
         [nodata show];
-    if ([[Updatejson valueForKey:@"status"]isEqualToString:@"Record Updated"]) {
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
@@ -248,10 +248,10 @@
 - (IBAction)save:(id)sender {
     Updatejson = [[NSDictionary alloc]init];
     
-    NSString *string =[[NSString alloc]initWithFormat:@"category_id=%@&category_name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",self.CategoryId,eventnametext.text,self.VId,paymentduedatetext.text,totalamountduetext.text,amountpaidtodatetext.text,infotext.text];
+    NSString *string =[[NSString alloc]initWithFormat:@"category_id=%@&category_name=%@&vendor_id=%@&due_date=%@&amount_alloted=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",self.CategoryId,eventnametext.text,self.VId,paymentduedatetext.text,totalamountduetext.text,amountpaidtodatetext.text,infotext.text];
     NSString* urlTextEscaped = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",UpdateURL,urlTextEscaped]];
-    // NSLog(@"my--%@",url);
+     NSLog(@"my--%@",url);
     
     // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
     dispatch_async
