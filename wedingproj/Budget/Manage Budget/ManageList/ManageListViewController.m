@@ -157,8 +157,10 @@
 }
 -(void)EditButtonTapped:(UIButton *)button
 {
-    NSLog(@"%ld",(long)button.tag);
-    EditBudget *AllBudget_ =[[EditBudget alloc]init];
-    [self.navigationController pushViewController:AllBudget_ animated:YES];
+    //NSLog(@"%ld",(long)button.tag);
+    EditBudget *EditVc =[[EditBudget alloc]init];
+    EditVc.CategoryName = [CatName objectAtIndex:button.tag];
+    
+    [self.navigationController pushViewController:EditVc animated:YES];
 }
 @end

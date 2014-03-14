@@ -114,29 +114,29 @@
 
 - (IBAction)edit:(id)sender {
     
-    EditBudget *EditBudget_=[[EditBudget alloc]init];
-    EditBudget_.eventnamepass =[[[json valueForKey:
-                                  @"data" ] objectAtIndex:0] valueForKey:@"name"];
-    EditBudget_.vendernamepass=[[[json valueForKey:
-                                  @"data" ] objectAtIndex:0] valueForKey:@"vendor_name"];
-    EditBudget_.vendoridpass=[[[json valueForKey:
-                                @"data" ] objectAtIndex:0] valueForKey:@"vendor_id"];
-    EditBudget_.paymentduedatepass =[[[json valueForKey:
-                                       @"data" ] objectAtIndex:0] valueForKey:@"due_date"];
-    EditBudget_.amountpaidtodatepass=[[[json valueForKey:
-                                        @"data" ] objectAtIndex:0] valueForKey:@"amount_paid"];
-    EditBudget_.totalamountduepass =[[[json valueForKey:
-                                       @"data" ] objectAtIndex:0] valueForKey:@"amount_due"];
-    EditBudget_.infopass =[[[json valueForKey:
-                             @"data" ] objectAtIndex:0] valueForKey:@"info"];
-    EditBudget_.eventidpass=[[[json valueForKey:
-                               @"data" ] objectAtIndex:0] valueForKey:@"event_id"];
-    EditBudget_.budgetidpass=[[[json valueForKey:
-                                @"data" ] objectAtIndex:0] valueForKey:@"budget_id"];
-    
-    
-    [self.navigationController pushViewController:EditBudget_ animated:YES];
-    
-    
+//    EditBudget *EditBudget_=[[EditBudget alloc]init];
+//    EditBudget_.eventnamepass =[[[json valueForKey:
+//                                  @"data" ] objectAtIndex:0] valueForKey:@"name"];
+//    EditBudget_.vendernamepass=[[[json valueForKey:
+//                                  @"data" ] objectAtIndex:0] valueForKey:@"vendor_name"];
+//    EditBudget_.vendoridpass=[[[json valueForKey:
+//                                @"data" ] objectAtIndex:0] valueForKey:@"vendor_id"];
+//    EditBudget_.paymentduedatepass =[[[json valueForKey:
+//                                       @"data" ] objectAtIndex:0] valueForKey:@"due_date"];
+//    EditBudget_.amountpaidtodatepass=[[[json valueForKey:
+//                                        @"data" ] objectAtIndex:0] valueForKey:@"amount_paid"];
+//    EditBudget_.totalamountduepass =[[[json valueForKey:
+//                                       @"data" ] objectAtIndex:0] valueForKey:@"amount_due"];
+//    EditBudget_.infopass =[[[json valueForKey:
+//                             @"data" ] objectAtIndex:0] valueForKey:@"info"];
+//    EditBudget_.eventidpass=[[[json valueForKey:
+//                               @"data" ] objectAtIndex:0] valueForKey:@"event_id"];
+//    EditBudget_.budgetidpass=[[[json valueForKey:
+//                                @"data" ] objectAtIndex:0] valueForKey:@"budget_id"];
+//    
+//    
+//    [self.navigationController pushViewController:EditBudget_ animated:YES];
+//    
+//    
 }
 @end

@@ -31,13 +31,12 @@
     IBOutlet UILabel *vendername;
     IBOutlet UITextField *vendernametext;
     IBOutlet UIToolbar *picekrtoolbr;
-    NSMutableArray *json;
-    NSMutableArray *vendorname;
-     NSMutableArray *vendorid;
     
-    NSString *eventnamepass;
     
-
+    NSDictionary *json;
+    NSMutableArray *jsondata;
+     NSMutableArray *vendorName;
+    NSMutableArray *vendorId;
     
 }
 - (IBAction)save:(id)sender;
@@ -45,15 +44,15 @@
 - (IBAction)cancel:(UIBarButtonItem *)sender;
 - (IBAction)donedate:(id)sender;
 - (IBAction)canceldate:(UIBarButtonItem *)sender;
-@property(nonatomic,retain)NSString *eventnamepass;
-@property(nonatomic,retain)NSString *paymentduedatepass;
-@property(nonatomic,retain)NSString *totalamountduepass;
-@property(nonatomic,retain)NSString *amountpaidtodatepass;
-@property(nonatomic,retain)NSString *vendernamepass;
-@property(nonatomic,retain)NSString *infopass;
-@property(nonatomic,retain)NSString *budgetidpass;
-@property(nonatomic,retain)NSString *eventidpass;
-@property(nonatomic,retain)NSString *vendoridpass;
+@property(nonatomic,retain)NSString *CategoryName;
+//@property(nonatomic,retain)NSString *paymentduedatepass;
+//@property(nonatomic,retain)NSString *totalamountduepass;
+//@property(nonatomic,retain)NSString *amountpaidtodatepass;
+//@property(nonatomic,retain)NSString *vendernamepass;
+//@property(nonatomic,retain)NSString *infopass;
+//@property(nonatomic,retain)NSString *budgetidpass;
+//@property(nonatomic,retain)NSString *eventidpass;
+//@property(nonatomic,retain)NSString *vendoridpass;
 
 
 @end

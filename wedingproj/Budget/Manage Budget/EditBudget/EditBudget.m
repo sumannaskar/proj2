@@ -10,7 +10,7 @@
 #import "SSKeychain.h"
 #import "SSKeychainQuery.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=budget_update&"]
+#define VendorURL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
 #define URL1 [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=vendor&"]
 
 
@@ -19,7 +19,6 @@
 @end
 
 @implementation EditBudget
-@synthesize eventnamepass,infopass,paymentduedatepass,vendernamepass,amountpaidtodatepass,totalamountduepass,budgetidpass,eventidpass,vendoridpass;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,34 +33,55 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //vendernametext.delegate = self;
+    vendernametext.tag = 50;
+    
     [paymentduedatetext setInputView:datepickerView];
+    [vendernametext setInputView:respondingView];
     
    // pkarray=[[NSArray alloc]initWithObjects:@"A",@"B", nil];
     [datepickerVW setDate:[NSDate date]];
-    json =[[NSMutableArray alloc]init];
     
+   // NSLog(@"%@",self.CategoryName);
     
-    paymentduedatetext.text=paymentduedatepass;
-    eventnametext.text=eventnamepass;
-    infotext.text=infopass;
-//    vendernametext.text=vendernamepass;
-    amountpaidtodatetext.text=amountpaidtodatepass;
-    totalamountduetext.text=totalamountduepass;
-    if (![vendernamepass isEqual:@"select a vendor"]) {
-        vendernametext.userInteractionEnabled=NO;
-        vendernametext.text=vendernamepass;
+}
+-(void)fetchedData:(NSData *)responseData
+{
+    NSError *error;
+    json = [NSJSONSerialization
+            JSONObjectWithData:responseData //1
+            
+            options:kNilOptions
+            error:&error];
+    // NSLog(@"%@",[json valueForKey:@"status"]);
+    if ([[json valueForKey:@"availability"]isEqualToString:@"no"]) {
+        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [nodata show];
     }
-    else
-    {
-        vendernametext.userInteractionEnabled=YES;
-        [vendernametext setInputView:respondingView];
-        vendernametext.placeholder=vendernamepass;
-        vendorname =[[NSMutableArray alloc]init];
-        vendorid =[[NSMutableArray alloc]init];
+    else{
+        jsondata = [json valueForKey:@"data"];
+        for(int i=0;i<jsondata.count;i++ ) {
+            [vendorName addObject:[[jsondata objectAtIndex:i ] valueForKey:@"vendor_name"]];
+        }
+        for(int i=0;i<jsondata.count;i++ ) {
+            [vendorId addObject:[[jsondata objectAtIndex:i ] valueForKey:@"vendor_id"]];
+        }
+        [pickerVw reloadAllComponents];
+    }
+    
+}
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    if (textField.tag == 50) {
+        json = [[NSDictionary alloc]init];
+        jsondata = [[NSMutableArray alloc]init];
+        vendorId = [[NSMutableArray alloc]init];
+        vendorName = [[NSMutableArray alloc]init];
         
+        NSString *string =[[NSString alloc]initWithFormat:@"user_id=%@&category_name=%@&apikey=micronix_10_2014_wedsimple_proj",[SSKeychain passwordForService:@"LoginViewController" account:@"User"],self.CategoryName];
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@user_id=%@&apikey=micronix_10_2014_wedsimple_proj",URL1,[SSKeychain passwordForService:@"LoginViewController" account:@"User"]]];
-        NSLog(@"my--%@",url);
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",VendorURL,string]];
+        // NSLog(@"my--%@",url);
         
         // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
         dispatch_async
@@ -89,30 +109,9 @@
          }
          );
 
-        
     }
-    
+    return YES;
 }
-
-
--(void)fetchedData:(NSData *)responseData
-{
-    NSError *error;
-    json = [NSJSONSerialization
-            JSONObjectWithData:responseData //1
-            
-            options:kNilOptions
-            error:&error];
-    for (NSDictionary *data in json ) {
-        [vendorname addObject:[data valueForKey:@"vendor_name"]];
-        [vendorid addObject:[data valueForKey:@"vendor_id"]];
-        
-    }
-    
-    
-    
-}
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     [textField resignFirstResponder];
@@ -140,7 +139,7 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
   
-         return [vendorname count];
+         return [vendorName count];
   
 }
 
@@ -149,7 +148,7 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 
 {
-      return [vendorname objectAtIndex:row];
+      return [vendorName objectAtIndex:row];
     
 }
 
@@ -157,8 +156,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
-    vendernametext.text=[vendorname objectAtIndex:row];
-    vendoridpass=[vendorid objectAtIndex:row];
+    
     
     
 }
@@ -171,23 +169,6 @@
 }
 
 - (IBAction)save:(id)sender {
-    NSString *savedata =[[NSString alloc]initWithFormat:@"budget_id=%@&event_id=%@&name=%@&vendor_id=%@&due_date=%@&amount_due=%@&amount_paid=%@&info=%@&apikey=micronix_10_2014_wedsimple_proj",budgetidpass,eventidpass,eventnametext.text,vendoridpass,paymentduedatetext.text,amountpaidtodatetext.text,amountpaidtodatetext.text,infotext.text];
-    NSString* urlTextEscaped = [savedata stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",URL,urlTextEscaped]] ;
-    
-    NSMutableURLRequest *theRequest = [[NSMutableURLRequest alloc] initWithURL:url];
-    
-    [theRequest setHTTPMethod:@"POST"];
-    [theRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    NSError *error;
-    NSURLResponse *response;
-    
-    NSData *urlData=[NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
-    NSString *data=[[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
-    NSLog(@"%@",data);
-    
-    
     
     
 }
@@ -196,7 +177,7 @@
 {
     if (!(vendernametext.text.length>0)) {
         
-    vendernametext.text=[vendorname objectAtIndex:0];
+    vendernametext.text=[vendorName objectAtIndex:0];
     }
     [vendernametext resignFirstResponder];
     
@@ -213,7 +194,7 @@
 }
 - (IBAction)canceldate:(UIBarButtonItem *)sender
 {
-    paymentduedatetext.text=paymentduedatepass;
+    paymentduedatetext.text=@"";
     [paymentduedatetext resignFirstResponder];
     
 }
