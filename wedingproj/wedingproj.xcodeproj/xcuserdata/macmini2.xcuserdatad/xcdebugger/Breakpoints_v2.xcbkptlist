@@ -15,8 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
             endingLineNumber = "107"
-            landmarkName = "@implementation CalculateBudget"
-            landmarkType = "3">
+            landmarkName = "-didReceiveMemoryWarning"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
             endingLineNumber = "113"
-            landmarkName = "-retrivedata"
+            landmarkName = "-image"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -47,8 +47,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
             endingLineNumber = "118"
-            landmarkName = "@implementation CalculateBudget"
-            landmarkType = "3">
+            landmarkName = "-image"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,8 +63,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "@implementation CalculateBudget"
-            landmarkType = "3">
+            landmarkName = "-fetchedData:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -185,7 +185,7 @@
                   symbolName = "-[DeleteBudget viewDidLoad]"
                   moduleName = "wedingproj"
                   urlString = "file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/DeleteBudget/DeleteBudget.m"
-                  timestampString = "415893742.640726"
+                  timestampString = "416558463.12596"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -199,7 +199,7 @@
                   symbolName = "-[DeleteBudget viewDidLoad]"
                   moduleName = "wedingproj"
                   urlString = "file://localhost/Users/macmini2/Desktop/proj2/wedingproj/Budget/Manage%20Budget/DeleteBudget/DeleteBudget.m"
-                  timestampString = "415893742.641184"
+                  timestampString = "416558463.126341"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"

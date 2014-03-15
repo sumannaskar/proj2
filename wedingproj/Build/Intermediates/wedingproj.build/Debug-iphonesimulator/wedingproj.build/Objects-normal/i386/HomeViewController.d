@@ -15,4 +15,6 @@ dependencies: \
   /Users/macmini2/Desktop/proj2/wedingproj/Welcome/WelcomeViewController.h \
   /Users/macmini2/Desktop/proj2/wedingproj/Refer\ A\ Friend/ReferViewController.h \
   /Users/macmini2/Desktop/proj2/wedingproj/RSVP/SelectEvent/SelectEventRsvpViewController.h \
-  /Users/macmini2/Desktop/proj2/wedingproj/Group/GroupViewController.h
+  /Users/macmini2/Desktop/proj2/wedingproj/Group/GroupViewController.h \
+  /Users/macmini2/Desktop/proj2/wedingproj/VendorList/VendorListViewController.h \
+  /Users/macmini2/Desktop/proj2/wedingproj/VendorList/VendorCell/VendorCell.h
